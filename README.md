@@ -1,4 +1,17 @@
-### Hi there 👋
+## Aloha 👋
+
+I'm a 🚀 Space, 🐬 Sea and 🚗 Speed Geek. I'm passionate about 📸 photography and 🖥️ website design. Follow me on Twitter at [@sparker888](https://www.twitter.com/sparker888). And if you're into video games, join us playing [Eve Online](https://www.eveonline.com/signup?invc=bed0f5cf-ea4b-4c92-9128-b76165d69757).
+
+Check out my [personal gatsby site](https://ecstatic-elion-b17c35.netlify.app/). It's a work in progress started 8-18-21.
+
+You can also visit my [business site](https://www.gravitaldigital.com).
+
+## Thanks for your interest! 
+
+## Fly safe! o7
+
+# 🛸
+
 
 <!--
 **sparker888/sparker888** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
