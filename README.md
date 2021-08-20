@@ -15,14 +15,15 @@ Check out my [personal gatsby site](https://ecstatic-elion-b17c35.netlify.app/).
 For now, I can tell you that the following will be included:
 
 - [Tailwind CSS](https://tailwindcss.com/) with [twin](https://github.com/ben-rogerson/twin.macro)
+- [Green Sock Animation Platform (gsap)](https://greensock.com/blog/learning/react/)
 - [gatsby-source-filesystem](https://www.gatsbyjs.com/plugins/gatsby-source-filesystem)
 - [gatsby-plugin-image](https://www.gatsbyjs.com/plugins/gatsby-plugin-image)
 - [gatsby-plugin-sharp](https://www.gatsbyjs.com/plugins/gatsby-plugin-sharp)
 - [gatsby-transformer-sharp](https://www.gatsbyjs.com/plugins/gatsby-transformer-shar)
-- [React Helmet](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet)
 - [gatsby-plugin-mdx](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx)
 - [gatsby-plugin-sitemap](https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap)
 - [gatsby-plugin-google-tagmanager](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-tagmanager)
+- [React Helmet](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet)
 
 ## Thanks for your interest! You can visit my [business site](https://www.gravitaldigital.com), follow me on Twitter at [@sparker888](https://www.twitter.com/sparker888), and if you're into video games, join me and my friends playing [Eve Online](https://www.eveonline.com/signup?invc=bed0f5cf-ea4b-4c92-9128-b76165d69757).
 
