@@ -1,37 +1,37 @@
 module.exports = {
   siteMetadata: {
-    title: `@sparker888`,
-    description: `🚀 Space, 🐬 Sea and 🚗 Speed Geek. I'm passionate about 📸 photography and 🖥️ website design. Follow me on Twitter at @sparker888`,
-    author: `@sparker888`,
-    siteUrl: `https://ecstatic-elion-b17c35.netlify.app`,
+    siteUrl: "https://www.yourdomain.tld",
+    title: "cd sparker888",
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-image`,
+    "gatsby-plugin-gatsby-cloud",
+    "gatsby-plugin-image",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-plugin-manifest",
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        icon: "src/images/icon.png",
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    "gatsby-plugin-mdx",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        name: "images",
+        path: "./src/images/",
       },
+      __key: "images",
     },
-    `gatsby-plugin-gatsby-cloud`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: "./src/pages/",
+      },
+      __key: "pages",
+    },
   ],
-}
+};
