@@ -2,7 +2,7 @@
 
 # I build top performing websites and landing pages.
 
-This is an example of a Lighthouse report that scores websites in key areas related to Google's new [Web Vitals](https://support.google.com/webmasters/answer/9205520?hl=en) that started rolling out in June 2021.
+This is an example of a Lighthouse report that scores websites in key areas related to Google's new [Web Vitals](https://support.google.com/webmasters/answer/9205520?hl=en) that started rolling out in June 2021. This site was created [for a special client](https://www.benevolentseniorservices.com).
 
 Here's [why it's important](https://gravitaldigital.com/blog/googles-biggest-algorithm-change-goes-live-in-june/) to businesses, and [Forbes take](https://www.forbes.com/sites/forbesagencycouncil/2021/07/08/what-are-googles-new-core-web-vitals--why-should-your-business-care-about-them/?sh=5f8fc4f85989) on why you should care.
 
