@@ -1,6 +1,6 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  purge: ["./src/**/*.jsx", "./src/**/*.js"],
+  darkMode: "class", // Dark mode enabled! `dark` class must be present atop the HTML tree.
   theme: {
     extend: {},
   },

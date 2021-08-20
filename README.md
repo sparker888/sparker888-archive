@@ -10,7 +10,7 @@ Here's [why it's important](https://gravitaldigital.com/blog/googles-biggest-alg
 
 I'm a 🚀 Space, 🐬 Sea and 🚗 Car Geek. I'm passionate about 📸 photography and 🖥️ website design and development. 
 
-Check out my [personal gatsby site](https://ecstatic-elion-b17c35.netlify.app/). It's a work in progress started 8-18-21 that will eventually become a Gatsby 3.x starter that focuses on using [Tailwindcss](https://tailwindcss.com/) and [GSAP](https://greensock.com/) as well as many commonly used [Gatsby plugins](https://www.gatsbyjs.com/plugins).
+Check out my [personal gatsby site](https://sparker888tailwindstarter.gatsbyjs.io/). It's a work in progress started 8-18-21 that will eventually become a Gatsby 3.x starter that focuses on using [Tailwindcss](https://tailwindcss.com/) and [GSAP](https://greensock.com/) as well as many commonly used [Gatsby plugins](https://www.gatsbyjs.com/plugins).
 
 For now, I can tell you that the site base configuration started with the standard Gatsby site setup:
 
