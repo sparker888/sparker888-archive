@@ -12,7 +12,11 @@ I'm a 🚀 Space, 🐬 Sea and 🚗 Car Geek. I'm passionate about 📸 photogra
 
 Check out my [personal gatsby site](https://ecstatic-elion-b17c35.netlify.app/). It's a work in progress started 8-18-21 that will eventually become a Gatsby 3.x starter that focuses on using [Tailwindcss](https://tailwindcss.com/) and [GSAP](https://greensock.com/) as well as many commonly used [Gatsby plugins](https://www.gatsbyjs.com/plugins).
 
-For now, I can tell you that the following will be included:
+For now, I can tell you that the site base configuration started with the standard Gatsby site setup:
+
+`gatsby new`
+
+From there, the following plugins were added and configured (if not already part of the initial install):
 
 - [Tailwind CSS](https://tailwindcss.com/) with [twin](https://github.com/ben-rogerson/twin.examples/tree/master/gatsby-styled-components), [Styled Components](https://github.com/ben-rogerson/twin.examples/tree/master/gatsby-styled-components) and [gatsby-plugin-styled-components](https://www.gatsbyjs.com/plugins/gatsby-plugin-styled-components/)
 - [Green Sock Animation Platform (gsap)](https://greensock.com/blog/learning/react/)
