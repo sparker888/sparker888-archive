@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "cd sparker888",
+    siteUrl: "https://ecstatic-elion-b17c35.netlify.app/",
+    title: "sparker888's Gatsby Starter",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
@@ -11,6 +11,12 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
+        name: `sparker888 Gatsby Starter`,
+        short_name: `sparker888`,
+        start_url: `/`,
+        background_color: `#D7E8BA`,
+        theme_color: `#B3525A`,
+        display: `minimal-ui`,
         icon: "src/images/icon.png",
       },
     },
