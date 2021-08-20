@@ -1,5 +1,4 @@
 import React from "react"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 export default function Example() {
   return (

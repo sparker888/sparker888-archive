@@ -1,6 +1,5 @@
 import PropTypes from "prop-types"
 import React from "react"
-import "typeface-inter"
 import "../styles/global.css"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
