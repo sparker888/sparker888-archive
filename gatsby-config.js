@@ -1,7 +1,24 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://ecstatic-elion-b17c35.netlify.app/",
-    title: "sparker888's Gatsby Starter",
+    menu: [
+      { name: "Home", to: "/" },
+      { name: "Blog", to: "/blog" },
+    ],
+    links: {
+      facebook: "https://www.facebook.com/gogravital/",
+      instagram: "https://www.instagram.com/sparker808/",
+      twitter: "https://twitter.com/sparker888",
+      gravital: "https://gravitaldigital.com/",
+    },
+    locale: "en",
+    title: "sparker888's Gatsby Gravital GSAP Starter",
+    titleTemplate: "Gravital Digital · Greater Orlando Area",
+    description: "Blazingly fast websites and landing pages to meet Google's Core Web Vitals",
+    siteUrl: "https://ecstatic-elion-b17c35.netlify.app/", // No trailing slash allowed!
+    twitterUsername: "@GoGravital",
+    publicURL: "/gravital-default-image.jpg", // This will be the default image for social media shares (in the static folder)
+    organization: "Gravital Digital",
+    author: "@sparker888",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
@@ -9,20 +26,23 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: "gatsby-plugin-manifest", // See https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/
       options: {
         name: `sparker888 Gatsby Starter`,
         short_name: `sparker888`,
         start_url: `/`,
-        background_color: `#D7E8BA`,
-        theme_color: `#B3525A`,
+        background_color: `#333663`, // The background_color property is used on the splash screen when the application is first launched on mobile.
+        theme_color: `663399`, // The theme_color sets the color of the tool bar, and may be reflected in the app's preview in task switchers.
         display: `minimal-ui`,
         icon: "src/images/icon.png",
+        theme_color_in_head: false, // This will avoid adding theme-color meta tag.
       },
     },
     "gatsby-plugin-mdx",
+    "gatsby-plugin-postcss",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -39,5 +59,12 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "add tag manager id here",
+        enableWebVitalsTracking: true,
+      },
+    },  
   ],
 };

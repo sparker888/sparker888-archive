@@ -14,7 +14,7 @@ Check out my [personal gatsby site](https://ecstatic-elion-b17c35.netlify.app/).
 
 For now, I can tell you that the following will be included:
 
-- [Tailwind CSS](https://tailwindcss.com/) with [twin](https://github.com/ben-rogerson/twin.macro)
+- [Tailwind CSS](https://tailwindcss.com/) with [twin](https://github.com/ben-rogerson/twin.examples/tree/master/gatsby-styled-components), [Styled Components](https://github.com/ben-rogerson/twin.examples/tree/master/gatsby-styled-components) and [gatsby-plugin-styled-components](https://www.gatsbyjs.com/plugins/gatsby-plugin-styled-components/)
 - [Green Sock Animation Platform (gsap)](https://greensock.com/blog/learning/react/)
 - [gatsby-source-filesystem](https://www.gatsbyjs.com/plugins/gatsby-source-filesystem)
 - [gatsby-plugin-image](https://www.gatsbyjs.com/plugins/gatsby-plugin-image)
