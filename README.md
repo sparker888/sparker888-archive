@@ -8,7 +8,7 @@ Here's [why it's important](https://gravitaldigital.com/blog/googles-biggest-alg
 
 ## Aloha 🤙 and thanks for stopping by.
 
-I'm a 🚀 Space, 🐬 Sea and 🚗 Car Geek. I'm passionate about 📸 photography and 🖥️ website design and development. 
+I'm a 🚀 Space, 🐬 Sea and 🚗 Car Geek. I'm passionate about 📸 photography and 🖥️ website design and development.
 
 Check out my [personal gatsby site](https://sparker888tailwindstarter.gatsbyjs.io/). It's a work in progress started 8-18-21 that will eventually become a Gatsby 3.x starter that focuses on using [Tailwindcss](https://tailwindcss.com/) and [GSAP](https://greensock.com/) as well as many commonly used [Gatsby plugins](https://www.gatsbyjs.com/plugins).
 
@@ -25,6 +25,9 @@ From there, the following plugins were added and configured (if not already part
 - [gatsby-plugin-sharp](https://www.gatsbyjs.com/plugins/gatsby-plugin-sharp)
 - [gatsby-transformer-sharp](https://www.gatsbyjs.com/plugins/gatsby-transformer-shar)
 - [gatsby-plugin-mdx](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx)
+- [gatsby-remark-images](https://www.gatsbyjs.com/plugins/gatsby-remark-images/)
+- [gatsby-remark-prismjs](https://www.gatsbyjs.com/plugins/gatsby-remark-prismjs/)
+- [gatsby-plugin-mdx-embed](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx-embed/)
 - [gatsby-plugin-sitemap](https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap)
 - [gatsby-plugin-google-tagmanager](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-tagmanager)
 - [React Helmet](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet)

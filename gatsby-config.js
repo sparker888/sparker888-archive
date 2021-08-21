@@ -13,7 +13,8 @@ module.exports = {
     locale: "en",
     title: "sparker888's Gatsby Gravital GSAP Starter",
     titleTemplate: "Gravital Digital · Greater Orlando Area",
-    description: "Blazingly fast websites and landing pages to meet Google's Core Web Vitals",
+    description:
+      "Blazingly fast websites and landing pages to meet Google's Core Web Vitals",
     siteUrl: "https://ecstatic-elion-b17c35.netlify.app/", // No trailing slash allowed!
     twitterUsername: "@GoGravital",
     publicURL: "/gravital-default-image.jpg", // This will be the default image for social media shares (in the static folder)
@@ -38,10 +39,35 @@ module.exports = {
         theme_color_in_head: false, // This will avoid adding theme-color meta tag.
       },
     },
-    "gatsby-plugin-mdx",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        defaultLayouts: {
+          pages: path.join(__dirname, "./src/templates/pages.js"),
+        },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 1035,
+              sizeByPixelDensity: true,
+            },
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+            },
+          },
+        ],
+      },
+    },
     "gatsby-plugin-postcss",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-mdx-embed",
     "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-source-filesystem",
@@ -60,11 +86,27 @@ module.exports = {
       __key: "pages",
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "projects",
+        path: "./content/projects/",
+      },
+      __key: "projects",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "posts",
+        path: "./content/posts/",
+      },
+      __key: "posts",
+    },
+    {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "add tag manager id here",
         enableWebVitalsTracking: true,
       },
-    },  
+    },
   ],
 };
