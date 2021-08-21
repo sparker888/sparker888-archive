@@ -14,7 +14,7 @@ Check out my [personal gatsby site](https://sparker888tailwindstarter.gatsbyjs.i
 
 For now, I can tell you that the site base configuration started with the standard Gatsby site setup:
 
-`gatsby new`
+`npm init gatsby`
 
 From there, the following plugins were added and configured (if not already part of the initial install):
 
