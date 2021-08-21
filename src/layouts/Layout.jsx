@@ -1,22 +1,17 @@
-import PropTypes from "prop-types"
-import React from "react"
-import "../styles/global.css"
-import Footer from "../components/Footer"
-import Header from "../components/Header"
+import React from "react";
+import { GlobalStyles } from "twin.macro";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, ...rest }) => {
   return (
-    <>
+    <div {...rest}>
+      <GlobalStyles />
       <Header />
       {children}
       <Footer />
-    </>
-  )
-}
+    </div>
+  );
+};
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-  isHome: PropTypes.bool,
-}
-
-export default Layout
+export default Layout;
