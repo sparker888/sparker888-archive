@@ -6,11 +6,13 @@ This is an example of a Lighthouse report that scores websites in key areas rela
 
 Here's [why it's important](https://gravitaldigital.com/blog/googles-biggest-algorithm-change-goes-live-in-june/) to businesses, and [Forbes take](https://www.forbes.com/sites/forbesagencycouncil/2021/07/08/what-are-googles-new-core-web-vitals--why-should-your-business-care-about-them/?sh=5f8fc4f85989) on why you should care.
 
-## Aloha 🤙 and thanks for stopping by. This repo is going to be a Gatsby Tailwind Twin GSAP starter. See it [LIVE](https://sparker888tailwindstarter.gatsbyjs.io/).
+## Aloha 🤙 and thanks for stopping by.
 
 I'm a 🚀 Space, 🐬 Sea and 🚗 Car Geek. I'm passionate about 📸 photography and 🖥️ website design and development.
 
-Check out my [personal gatsby site](https://sparker888tailwindstarter.gatsbyjs.io/). It's a work in progress started 8-18-21 that will eventually become a Gatsby 3.x starter that focuses on using [Tailwindcss](https://tailwindcss.com/) and [GSAP](https://greensock.com/) as well as many commonly used [Gatsby plugins](https://www.gatsbyjs.com/plugins).
+### This repo will serve as my personal site as well as a Gatsby Tailwind Twin GSAP starter. See it [LIVE](https://sparker888tailwindstarter.gatsbyjs.io/).
+
+It's a work in progress started 8-18-21 that will eventually become a Gatsby 3.x starter that focuses on using [Tailwindcss](https://tailwindcss.com/) and [GSAP](https://greensock.com/) as well as many commonly used [Gatsby plugins](https://www.gatsbyjs.com/plugins).
 
 For now, I can tell you that the site base configuration started with the standard Gatsby site setup:
 
