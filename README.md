@@ -6,7 +6,7 @@ This is an example of a Lighthouse report that scores websites in key areas rela
 
 Here's [why it's important](https://gravitaldigital.com/blog/googles-biggest-algorithm-change-goes-live-in-june/) to businesses, and [Forbes take](https://www.forbes.com/sites/forbesagencycouncil/2021/07/08/what-are-googles-new-core-web-vitals--why-should-your-business-care-about-them/?sh=5f8fc4f85989) on why you should care.
 
-## Aloha 🤙 and thanks for stopping by.
+## Aloha 🤙 and thanks for stopping by. This repo is going to be a Gatsby Tailwind Twin GSAP starter. See it [LIVE](https://sparker888tailwindstarter.gatsbyjs.io/).
 
 I'm a 🚀 Space, 🐬 Sea and 🚗 Car Geek. I'm passionate about 📸 photography and 🖥️ website design and development.
 
