@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 const path = require("path");
 module.exports = {
   siteMetadata: {
@@ -38,6 +42,14 @@ module.exports = {
         display: `minimal-ui`,
         icon: "src/images/icon.png",
         theme_color_in_head: false, // This will avoid adding theme-color meta tag.
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        downloadLocal: true,
       },
     },
     {

@@ -33,6 +33,7 @@ From there, the following plugins were added and configured (if not already part
 - [gatsby-plugin-sitemap](https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap)
 - [gatsby-plugin-google-tagmanager](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-tagmanager)
 - [React Helmet](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet)
+- [dotenv](https://www.npmjs.com/package/dotenv)
 
 ## Thanks for your interest! You can visit my [business site](https://www.gravitaldigital.com), follow me on Twitter at [@sparker888](https://www.twitter.com/sparker888), and if you're into video games, join me and my friends playing [Eve Online](https://www.eveonline.com/signup?invc=bed0f5cf-ea4b-4c92-9128-b76165d69757).
 
