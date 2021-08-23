@@ -3,14 +3,14 @@ import { GlobalStyles } from "twin.macro";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-const Layout = ({ children, ...rest }) => {
+const Layout = ({ children }) => {
   return (
-    <div {...rest}>
+    <>
       <GlobalStyles />
       <Header />
       {children}
       <Footer />
-    </div>
+    </>
   );
 };
 
