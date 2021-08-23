@@ -12,12 +12,12 @@ module.exports = {
       gravital: "https://gravitaldigital.com/",
     },
     locale: "en",
-    title: "sparker888's Gatsby Gravital GSAP Starter",
-    titleTemplate: "Gravital Digital · Greater Orlando Area",
+    title: "Stephen Parker Gatsby · Tailwind Twin.macro GSAP Starter",
+    titleTemplate: "Stephen Parker Gatsby · Tailwind Twin.macro GSAP Starter",
     description:
-      "Blazingly fast websites and landing pages to meet Google's Core Web Vitals",
+      "A blazingly fast Gatsby starter designed to meet Google's Core Web Vitals",
     siteUrl: "https://ecstatic-elion-b17c35.netlify.app/", // No trailing slash allowed!
-    twitterUsername: "@GoGravital",
+    twitterUsername: "@sparker888",
     publicURL: "/gravital-default-image.jpg", // This will be the default image for social media shares (in the static folder)
     organization: "Gravital Digital",
     author: "@sparker888",
@@ -85,22 +85,6 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "projects",
-        path: "./content/projects/",
-      },
-      __key: "projects",
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "posts",
-        path: "./content/posts/",
-      },
-      __key: "posts",
     },
     {
       resolve: "gatsby-plugin-google-tagmanager",
