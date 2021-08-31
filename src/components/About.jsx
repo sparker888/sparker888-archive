@@ -22,7 +22,7 @@ const About = () => {
             </h2>
 
             <p className="my-4 text-gray-500 dark:text-gray-400 lg:max-w-md">
-              Hi! I'm Steve Parker, entrepreneur and front-end developer lead
+              I'm Steve Parker, entrepreneur and front-end developer lead
               for{" "}
               <a
                 className="font-bold text-indigo-600 dark:text-indigo-400"

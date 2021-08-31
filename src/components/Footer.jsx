@@ -4,15 +4,18 @@ export default function Example() {
   return (
     <footer className="container flex flex-row items-center justify-center px-6 py-4 mx-auto bg-white dark:bg-gray-800 sm:flex-column">
       <a
-        href="#"
-        className="text-xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300 mx-1.5 sm:mx-6"
+        href="https://github.com/sparker888/sparker888"
+        className="text-xl text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300 mx-1.5 sm:mx-6"
       >
         Gatsby Tailwind Twin GSAP Starter
       </a>
 
-      <p className="py-2 text-gray-800 dark:text-white sm:py-0 mx-1.5 sm:mx-6">
-        All rights reserved
-      </p>
+      <a
+        href="https://www.mozilla.org/en-US/MPL/2.0/"
+        className="text-xld text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300 mx-1.5 sm:mx-6"
+      >
+        MPL 2.0 License
+      </a>
 
       <div className="flex mx-1.5 sm:mx-6">
         <a
