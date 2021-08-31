@@ -12,6 +12,10 @@ I'm a 🚀 Space, 🐬 Sea and 🚗 Car Geek. I'm passionate about 📸 photogra
 
 ### This repo will serve as my personal site as well as a Gatsby Tailwind Twin GSAP starter. See it [LIVE](https://sparker888tailwindstarter.gatsbyjs.io/).
 
+**Why Gatsby?**
+
+*Gatsby uses powerful pre-configuration to build a website that uses only static files for incredibly fast page loads, service workers, code splitting, server side rendering, smart image loading, asset optimization, and data prefetching. It's incredibly easy to work with. It's ideal for small websites, landing pages, and simple PWAs.*
+
 It's a work in progress started 8-18-21 that will eventually become a Gatsby 3.x starter that focuses on using [Tailwindcss](https://tailwindcss.com/) and [GSAP](https://greensock.com/) as well as many commonly used [Gatsby plugins](https://www.gatsbyjs.com/plugins).
 
 For now, I can tell you that the site base configuration started with the standard Gatsby site setup:
