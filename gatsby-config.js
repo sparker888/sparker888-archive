@@ -20,7 +20,7 @@ module.exports = {
     titleTemplate: "Stephen Parker Gatsby · Tailwind Twin.macro GSAP Starter",
     description:
       "A blazingly fast Gatsby starter designed to meet Google's Core Web Vitals",
-    siteURL: "https://ecstatic-elion-b17c35.netlify.app/", // No trailing slash allowed!
+    siteURL: "https://ecstatic-elion-b17c35.netlify.app", // No trailing slash allowed!
     twitterUsername: "@sparker888",
     publicURL: "/gravital-default-image.jpg", // This will be the default image for social media shares (in the static folder)
     organization: "Gravital Digital",
