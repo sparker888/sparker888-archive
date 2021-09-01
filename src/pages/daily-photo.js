@@ -3,8 +3,9 @@ import { graphql, useStaticQuery } from 'gatsby'
 import { getImage } from 'gatsby-plugin-image';
 
 import { BgImage } from 'gbimage-bridge';
+import Layout from '../layouts/Layout';
 
-const DailyPic = () => {
+const DailyPhoto = () => {
   const { placeholderImage123 } = useStaticQuery(
           graphql`
       query {
@@ -23,8 +24,10 @@ const DailyPic = () => {
   const pluginImage = getImage(placeholderImage123);
 
   return (
-          <BgImage image={pluginImage} className="min-h-screen" />
+    <Layout>
+      <BgImage image={pluginImage} className="min-h-screen" />
+    </Layout>
   )
 }
 
-export default DailyPic
+export default DailyPhoto

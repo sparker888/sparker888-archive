@@ -25,7 +25,7 @@ const About = () => {
   const pluginImage = getImage(placeholderImage123);
 
   return (
-    <BgImage image={pluginImage} className="bg-contain bg-bottom mt-1">
+    <BgImage image={pluginImage} className="bg-contain bg-bottom my-1">
       <section>
         <div className="container px-6 py-6 mx-auto">
           <div className="items-center lg:flex lg:justify-center">
@@ -40,7 +40,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="flex-row items-center justify-start mx-6 my-4">
+            <div className="flex-row items-center justify-start mx-6 my-2">
               <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">
                 Aloha! 🤙
               </h2>
@@ -56,8 +56,7 @@ const About = () => {
                 </a>
                 . This site is a work in progress. The goal is to create a viable
                 Gatsby starter for Tailwindscss with support for CSS-in-JS using
-                twin.macro. In addition, I'll be adding GSAP code to the
-                components.
+                twin.macro and Greensock animations (GSAP).
               </p>
               <p className="my-4 text-gray-500 dark:text-gray-400 lg:max-w-md">
                 When will it be completed? I'm targeting September 9, 2021. It can
@@ -72,7 +71,7 @@ const About = () => {
         <div className="container px-6 pt-4 pb-28 mx-auto">
           <div className="items-center flex justify-center flex-col lg:flex-row mb-10">
             
-            <div className="max-w-sm mx-4 overflow-hidden bg-white rounded-lg shadow-md">
+            <div className="max-w-sm mx-4 mt-4 overflow-hidden bg-white rounded-lg shadow-md">
                 <img className="object-cover w-full h-64" src="https://images.unsplash.com/photo-1576124566721-6496f8c53365?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzMDUwMjc1Mw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" alt="Article"></img>
                 <div className="p-6">
                   <div>
@@ -92,7 +91,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="max-w-sm mx-4 overflow-hidden bg-white rounded-lg shadow-md">
+            <div className="max-w-sm mx-4 mt-4 overflow-hidden bg-white rounded-lg shadow-md">
             <img className="object-cover w-full h-64" src="https://images.unsplash.com/photo-1539729112389-13d30728ae0e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzMDUwMzAxMg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" alt="Article"></img>
                 <div className="p-6">
                   <div>
