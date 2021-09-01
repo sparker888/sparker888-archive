@@ -14,7 +14,7 @@ const SEO = ({ title, description, publicURL }) => {
     titleTemplate,
     defaultDescription,
     defaultImage,
-    siteURL,
+    siteUrl,
     organization,
     twitterUsername,
   } = site.siteMetadata;
@@ -22,9 +22,9 @@ const SEO = ({ title, description, publicURL }) => {
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    imageArticle: `${siteURL}${publicURL || defaultImage}`,
+    imageArticle: `${siteUrl}${publicURL || defaultImage}`,
     organization: organization,
-    url: `${siteURL}${pathname}`,
+    url: `${siteUrl}${pathname}`,
   };
 
   return (
@@ -69,7 +69,7 @@ SEO.propTypes = {
   title: PropTypes.string,
   titleTemplate: PropTypes.string,
   description: PropTypes.string,
-  siteURL: PropTypes.string,
+  siteUrl: PropTypes.string,
   publicURL: PropTypes.string,
   organization: PropTypes.string,
   twitterUsername: PropTypes.string,
@@ -79,7 +79,7 @@ SEO.defaultProps = {
   title: null,
   titleTemplate: null,
   description: null,
-  siteURL: null,
+  siteUrl: null,
   publicURL: null,
   twitterUsername: null,
 };
@@ -91,7 +91,7 @@ const query = graphql`
         defaultTitle: title
         titleTemplate
         defaultDescription: description
-        siteURL
+        siteUrl
         defaultImage: publicURL
         organization
         twitterUsername

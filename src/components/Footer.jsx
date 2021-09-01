@@ -5,10 +5,10 @@ export default function Example() {
     <footer className="bg-white shadow">
       <div className="container flex flex-row items-center justify-center p-6 mx-auto bg-white sm:flex-column">
         <a
-          href="https://github.com/sparker888/sparker888"
+          href="https://github.com/sparker888/sparker888-tailwindcss-starter"
           className="text-gray-800 hover:text-gray-700 mx-1.5 sm:mx-6"
         >
-          Gatsby Tailwind Twin GSAP Starter
+          Use my Gatsby sparker888-tailwindcss-starter!
         </a>
 
         <a
@@ -25,7 +25,7 @@ export default function Example() {
             aria-label="Twitter"
           >
             <svg
-              className="w-5 h-5 text-gray-700 fill-current  hover:text-gray-600 "
+              className="w-5 h-5 text-blue-400 fill-current  hover:text-blue-900 "
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >
@@ -39,7 +39,7 @@ export default function Example() {
             aria-label="Facebook"
           >
             <svg
-              className="w-5 h-5 text-gray-700 fill-current hover:text-gray-600"
+              className="w-5 h-5 text-blue-400 fill-current hover:text-blue-900"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >
@@ -53,7 +53,7 @@ export default function Example() {
             aria-label="Linkden"
           >
             <svg
-              className="w-5 h-5 text-gray-700 fill-current hover:text-gray-600"
+              className="w-5 h-5 text-blue-400 fill-current hover:text-blue-900"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >
@@ -67,7 +67,7 @@ export default function Example() {
             aria-label="Github"
           >
             <svg
-              className="w-5 h-5 text-gray-700 fill-current hover:text-gray-600"
+              className="w-5 h-5 text-blue-400 fill-current hover:text-blue-900"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >

@@ -20,7 +20,7 @@ module.exports = {
     titleTemplate: "Stephen Parker Gatsby · Tailwind Twin.macro GSAP Starter",
     description:
       "A blazingly fast Gatsby starter designed to meet Google's Core Web Vitals",
-    siteURL: "https://ecstatic-elion-b17c35.netlify.app", // No trailing slash allowed!
+    siteUrl: "https://ecstatic-elion-b17c35.netlify.app", // No trailing slash allowed!
     twitterUsername: "@sparker888",
     publicURL: "/gravital-default-image.jpg", // This will be the default image for social media shares (in the static folder)
     organization: "Gravital Digital",
@@ -34,7 +34,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest", // See https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/
       options: {
-        name: `sparker888 Gatsby Starter`,
+        name: `sparker888 Gatsby Tailwinds Starter`,
         short_name: `sparker888`,
         start_url: `/`,
         background_color: `#333663`, // The background_color property is used on the splash screen when the application is first launched on mobile.

@@ -41,15 +41,15 @@ const About = () => {
               </div>
             </div>
             <div className="flex-row items-center justify-start mx-6 my-2">
-              <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">
+              <h2 className="text-3xl font-bold text-gray-800">
                 Aloha! 🤙
               </h2>
 
-              <p className="my-4 text-gray-500 dark:text-gray-400 lg:max-w-md">
+              <p className="my-4 text-gray-800 lg:max-w-md">
                 I'm Steve Parker, entrepreneur and front-end developer lead
                 for{" "}
                 <a
-                  className="font-bold text-indigo-600 dark:text-indigo-400"
+                  className="font-bold text-blue-400"
                   href="https://twitter.com/gogravital"
                 >
                   @GoGravital
@@ -58,7 +58,7 @@ const About = () => {
                 Gatsby starter for Tailwindscss with support for CSS-in-JS using
                 twin.macro and Greensock animations (GSAP).
               </p>
-              <p className="my-4 text-gray-500 dark:text-gray-400 lg:max-w-md">
+              <p className="my-4 text-gray-800 dark:text-gray-400 lg:max-w-md">
                 When will it be completed? I'm targeting September 9, 2021. It can
                 be used now but I have yet to implement project and post sections
                 and MDX content. Please check back then. Thanks for your interest!
