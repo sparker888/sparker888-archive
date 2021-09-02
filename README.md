@@ -60,7 +60,7 @@ For more details, see [this Tuts](https://webdesign.tutsplus.com/articles/an-int
 
 sparker888-tailwindcss-starter a work in progress started 8-18-21 and I plan to have it completed on 9-9-21.
 
-The following plugins were added and configured (if not already part of the initial install):
+This repo started with `gatsby init` and I added and configured the following plugins (if not already part of the initial install):
 
 - [Tailwind CSS](https://tailwindcss.com/) with [twin](https://github.com/ben-rogerson/twin.examples/tree/master/gatsby-styled-components), [Styled Components](https://github.com/ben-rogerson/twin.examples/tree/master/gatsby-styled-components) and [gatsby-plugin-styled-components](https://www.gatsbyjs.com/plugins/gatsby-plugin-styled-components/)
 - [Green Sock Animation Platform (gsap)](https://greensock.com/blog/learning/react/)
@@ -76,6 +76,8 @@ The following plugins were added and configured (if not already part of the init
 - [gatsby-plugin-google-tagmanager](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-tagmanager)
 - [React Helmet](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet)
 - [dotenv](https://www.npmjs.com/package/dotenv)
+
+I used the [Tailwindcss Gatsby documentation](https://tailwindcss.com/docs/guides/gatsby) in tandem with the [twin Gatsby Installation documentation](https://github.com/ben-rogerson/twin.examples/tree/master/gatsby-styled-components) to configure the setup. Additional configuration of PostCSS came from [Andrew's article](https://nystudio107.com/blog/using-tailwind-css-with-gatsby-react-emotion-styled-components), and finally, a few helpful bits were gleaned from [gatsby-tailwind-emotion-starter](https://github.com/pauloelias/gatsby-tailwind-emotion-starter) from [Paulo Elias](https://github.com/pauloelias).
 
 **Important Notes**
 
