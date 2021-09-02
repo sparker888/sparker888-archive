@@ -16,7 +16,7 @@ This is the README.md for my site that also serves as a Gatsby 3.x starter repos
 
 **✨ View the live site [here](https://sparker888tailwindstarter.gatsbyjs.io/).**
 
-## 💡 The Technology I'm Using
+## 💡 Why I'm Using the Technology I'm Using
 
 **Why Gatsby?**
 
