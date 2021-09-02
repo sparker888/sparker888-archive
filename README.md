@@ -12,7 +12,7 @@ I'm a 🚀 Space, 🐬 Sea and 🚗 Car Geek. I'm passionate about 📸 photogra
 
 *🚧 This repo is under construction - As of September 2, 2021 🚧*
 
-Welcome to the README.md for my personal bio site that also serves as a Gatsby 3.x starter bringing together the maagic of [Tailwindcss](https://tailwindcss.com/) with [twin](https://github.com/ben-rogerson/twin.macro) and the super animation powers of [GSAP](https://greensock.com/). The project uses a core set of modern [Gatsby plugins](https://www.gatsbyjs.com/plugins) as listed below. I'm also experimenting with [Simple React lightbox](https://simple-react-lightbox.dev/).
+Welcome to the README.md for my personal bio site that also serves as a Gatsby 3.x starter bringing together the magic of [Tailwindcss](https://tailwindcss.com/) with [twin](https://github.com/ben-rogerson/twin.macro) and the super animation powers of [GSAP](https://greensock.com/). The project uses a core set of modern [Gatsby plugins](https://www.gatsbyjs.com/plugins) as listed below. I'm also experimenting with [Simple React lightbox](https://simple-react-lightbox.dev/).
 
 **✨ View the live site [here](https://sparker888tailwindstarter.gatsbyjs.io/).**
 
@@ -20,7 +20,9 @@ Welcome to the README.md for my personal bio site that also serves as a Gatsby 3
 
 *Gatsby uses powerful pre-configuration to build a website that uses only static files for incredibly fast page loads, service workers, code splitting, server side rendering, smart image loading, asset optimization, and data prefetching. It's incredibly easy to work with. It's ideal for small websites, landing pages, and simple PWAs.*
 
-**Why Tailwinds?**
+**Why Tailwind?**
+
+Max Stoiber, the inventor of styled components, tells the story better than I can in his article ["Why I Love Tailwind](https://mxstbr.com/thoughts/tailwind/). Here's a rundown of some of the benefits I've seen using it:
 
 * Human readable
 * Low specificity by default
