@@ -109,7 +109,7 @@ From there, I followed the [Tailwindcss Gatsby installation documentation](https
 
     Open the `my-gatsby-tailwind-twin-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-## 📚 Learn More About Gatsby
+## 🎓 Learn More About Gatsby
 
 To learn more about Gatsby, use the following resources:
 

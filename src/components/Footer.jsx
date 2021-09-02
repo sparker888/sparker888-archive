@@ -16,10 +16,10 @@ const SocialLink = tw(props => <a {...props}/>)`
 mx-2
 `
 const SocialLinks = tw.div`
-flex mx-1.5 sm:mx-6 sm:mt-3
+flex mx-1.5 mb-2 sm:mx-6 sm:mt-3
 `
 const SVGIcon = tw(props => <svg {...props}/>)`
-w-5 h-5 text-blue-400 fill-current  hover:text-blue-900
+w-5 h-5 text-gunmetal fill-current  hover:text-bleu
 `
 const InlineIcon = tw(props => <img {...props}/>)`
 w-5 h-5 inline-block
@@ -37,7 +37,6 @@ export default function Example() {
 
         <Link
           href="https://www.mozilla.org/en-US/MPL/2.0/"
-          className="text-gray-800 hover:text-gray-700 mx-1.5 sm:mx-6"
         >
           MPL 2.0 License
         </Link>
@@ -60,7 +59,6 @@ export default function Example() {
             aria-label="Facebook"
           >
             <SVGIcon
-              className="w-5 h-5 text-blue-400 fill-current hover:text-blue-900"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >
@@ -70,10 +68,9 @@ export default function Example() {
 
           <SocialLink
             href="https://www.linkedin.com/in/sparker888/"
-            aria-label="Linkden"
+            aria-label="LinkedIn"
           >
             <SVGIcon
-              className="w-5 h-5 text-blue-400 fill-current hover:text-blue-900"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >

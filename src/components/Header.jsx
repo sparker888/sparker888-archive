@@ -7,15 +7,15 @@ const NavBar = tw.nav`
 `
 
 const Wrapper = tw.div`
-  container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize
+  container flex items-center justify-center p-6 mx-auto text-gunmetal capitalize
 `
 
 const ActiveLink = tw(props => <Link {...props}/>)`
-  text-gray-800 border-b-2 border-blue-500 mx-1.5 sm:mx-6
+  text-gunmetal border-b-2 border-burnt mx-1.5 sm:mx-6
 `
 
 const StyledLink = tw(props => <Link {...props}/>)`
-  border-b-2 border-transparent hover:text-gray-800 hover:border-blue-500 mx-1.5 sm:mx-6
+  border-b-2 border-transparent text-gunmetal-light hover:text-gunmetal mx-1.5 sm:mx-6
 `
 
 export default function Header() {

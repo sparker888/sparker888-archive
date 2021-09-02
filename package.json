@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-twin-macro-mdx-gsap",
+  "name": "sparker888",
   "version": "1.0.0",
   "private": true,
-  "description": "Gatsy started that includes tailwindcss, twin.macro, MDX and filesystem route api modified from a starter by https://github.com/matiasfha",
+  "description": "Gatsy starter that includes Tailwindcss, twin.macro, and GSAP",
   "author": "Stephen Parker",
   "keywords": [
     "gatsby",
@@ -27,6 +27,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/libre-caslon-text": "^4.5.0",
+    "@fontsource/montserrat": "^4.5.1",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "dotenv": "^10.0.0",
