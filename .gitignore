@@ -72,6 +72,7 @@ yarn-error.log
 # VS Code
 .vscode/
 *.code-workspace
+sparker888.code-workspace
 
 # Webstorm
 .idea/
