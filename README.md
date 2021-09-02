@@ -40,7 +40,7 @@ This is the README.md for my site that also serves as a Gatsby 3.x starter repos
 
 **Why CSS-in-JS (Emotion and Styled Components)?**
 
-*I'll assume you're on board the CSS-in-JS train by now, but if now, I encourage you to check out [CSS in JS, an Emotional Topic devMode.fm podcast episode](https://devmode.fm/episodes/css-in-js-an-emotional-topic). There are some really nice advantages to working with Styled Components (CSS-in-JS), including:*
+*I'll assume you're on board the CSS-in-JS train by now, but if not, I encourage you to check out [CSS in JS, an Emotional Topic devMode.fm podcast episode](https://devmode.fm/episodes/css-in-js-an-emotional-topic). There are some really nice advantages to working with Styled Components (CSS-in-JS), including:*
 
 * Local Scoping
 * Encapsulation
@@ -77,11 +77,11 @@ This repo started with `gatsby init` and I added and configured the following pl
 - [React Helmet](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet)
 - [dotenv](https://www.npmjs.com/package/dotenv)
 
-I used the [Tailwindcss Gatsby documentation](https://tailwindcss.com/docs/guides/gatsby) in tandem with the [twin Gatsby Installation documentation](https://github.com/ben-rogerson/twin.examples/tree/master/gatsby-styled-components) to configure the setup. Additional configuration of PostCSS came from [Andrew's article](https://nystudio107.com/blog/using-tailwind-css-with-gatsby-react-emotion-styled-components), and finally, a few helpful bits were gleaned from [gatsby-tailwind-emotion-starter](https://github.com/pauloelias/gatsby-tailwind-emotion-starter) from [Paulo Elias](https://github.com/pauloelias).
+From there, I followed the [Tailwindcss Gatsby installation documentation](https://tailwindcss.com/docs/guides/gatsby) in tandem with the [twin.macro Gatsby Installation documentation](https://github.com/ben-rogerson/twin.examples/tree/master/gatsby-styled-components) to configure the setup. Additional configuration of PostCSS came from [Andrew's article](https://nystudio107.com/blog/using-tailwind-css-with-gatsby-react-emotion-styled-components), and finally, a few helpful bits were gleaned from [gatsby-tailwind-emotion-starter](https://github.com/pauloelias/gatsby-tailwind-emotion-starter) from [Paulo Elias](https://github.com/pauloelias).
 
 **Important Notes**
 
-*If you decide to spin up this starter, you will need to remove the plugin for Contentful as well as the references to Contentful and the API keys in gatsby-config.js before building. I'm moving to Strapi, but this is a work in progress. I'll update this section in another day or two.*
+*If you decide to spin up this starter, you will need to remove the plugin for Contentful as well as the references to Contentful and the API keys in gatsby-config.js before building. I'm moving to Strapi, but this is a work in progress. I'll update this section in another day or two. This will be sorted out within the next week.*
 
 ## 🚀 Quick start
 
