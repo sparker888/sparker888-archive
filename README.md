@@ -90,7 +90,7 @@ The following plugins were added and configured (if not already part of the init
     gatsby new my-gatsby-tailwind-twin-starter https://github.com/sparker888/sparker888
     ```
 
-1.  **Start developing.**
+2.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
@@ -99,12 +99,21 @@ The following plugins were added and configured (if not already part of the init
     gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
+3.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
     Open the `my-gatsby-tailwind-twin-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-    
+
+    ## 📚 Learn More About Gatsby
+
+To learn more about Gatsby, use the following resources:
+
+- [Gatsby Documentation](https://www.gatsbyjs.com/docs/) - learn about Gatsby's features and API.
+- [Gatsby Tutorial](https://www.gatsbyjs.com/tutorial/) - a great Gatsby tutorial.
+
+You can check out [the Gatsby GitHub repository](https://github.com/gatsbyjs/gatsby) - your feedback and contributions are welcome!
+
 ## Thanks for your interest! You can visit my [business site](https://www.gravitaldigital.com), follow me on Twitter at [@sparker888](https://www.twitter.com/sparker888), and if you're into video games, join me and my friends playing [Eve Online](https://www.eveonline.com/signup?invc=bed0f5cf-ea4b-4c92-9128-b76165d69757).
 
 ### Fly safe!
