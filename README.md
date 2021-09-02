@@ -48,6 +48,8 @@ View my site [here](https://sparker888tailwindstarter.gatsbyjs.io/).
 
 Twin blends the magic of Tailwind with the flexibility of CSS-in-JS! It leverages Tailwind's marvelous system and developer experience without the downsides of atomic CSS.
 
+## Use this site as a Gatsby + Tailwind + twin starter (soon)
+
 **Repo Status** 
 
 sparker888-tailwindcss-starter a work in progress started 8-18-21 and I plan to have it completed on 9-9-21.
@@ -73,6 +75,9 @@ From there, the following plugins were added and configured (if not already part
 - [React Helmet](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet)
 - [dotenv](https://www.npmjs.com/package/dotenv)
 
+**Important Notes**
+
+*If you do decide to use as a starter, you will need to remove the plugin for Contentful as well as the references to Contentful and the API keys in gatsby-config.js. I'm moving to Strapi, but this is a work in progress.*
 ## Thanks for your interest! You can visit my [business site](https://www.gravitaldigital.com), follow me on Twitter at [@sparker888](https://www.twitter.com/sparker888), and if you're into video games, join me and my friends playing [Eve Online](https://www.eveonline.com/signup?invc=bed0f5cf-ea4b-4c92-9128-b76165d69757).
 
 ### Fly safe!

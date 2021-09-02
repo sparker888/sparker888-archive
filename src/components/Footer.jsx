@@ -1,5 +1,7 @@
-import tw from "twin.macro"
+import tw from "twin.macro";
 import React from "react";
+import gatsbylogo from "../images/gatsby.svg";
+import tailwindlogo from "../images/tailwind.svg";
 
 const FooterBar = tw.div`
   bg-white shadow
@@ -19,6 +21,9 @@ flex mx-1.5 sm:mx-6 sm:mt-3
 const SVGIcon = tw(props => <svg {...props}/>)`
 w-5 h-5 text-blue-400 fill-current  hover:text-blue-900
 `
+const InlineIcon = tw(props => <img {...props}/>)`
+w-5 h-5 inline-block
+`
 
 export default function Example() {
   return (
@@ -27,7 +32,7 @@ export default function Example() {
         <Link
           href="https://github.com/sparker888/sparker888-tailwindcss-starter"
         >
-          Use this site as a Tailwindcss + twin starter!
+          Use this site as a <InlineIcon src={gatsbylogo}/> Gatsby + <InlineIcon src={tailwindlogo}/> Tailwindcss + twin starter!
         </Link>
 
         <Link
