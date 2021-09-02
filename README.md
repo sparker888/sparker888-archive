@@ -16,11 +16,11 @@ This is the README.md for my site that also serves as a Gatsby 3.x starter repos
 
 **✨ View the live site [here](https://sparker888tailwindstarter.gatsbyjs.io/).**
 
-## 💡 Why I'm Using the Technology I'm Using
+## 💡 Why I'm Using Gatsby + Tailwind + Twin
 
 **Why Gatsby?**
 
-*Gatsby uses powerful pre-configuration to build a website that uses only static files for incredibly fast page loads, service workers, code splitting, server side rendering, smart image loading, asset optimization, and data prefetching. It's incredibly easy to work with. It's ideal for small websites, landing pages, and simple PWAs.*
+*Gatsby uses powerful pre-configuration to build a website that uses only static files for incredibly fast page loads, service workers, code splitting, server side rendering, smart image loading, asset optimization, and data prefetching. It's incredibly easy to work with. It's ideal for small websites, landing pages, and simple PWAs. Gatsby and supporting technologies enables me to achieve the Lighthouse scores that you see above.*
 
 **Why Tailwind?**
 
