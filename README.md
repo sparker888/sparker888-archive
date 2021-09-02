@@ -10,11 +10,13 @@ Here's [why it's important](https://gravitaldigital.com/blog/googles-biggest-alg
 
 I'm a 🚀 Space, 🐬 Sea and 🚗 Car Geek. I'm passionate about 📸 photography and 🖥️ website design and development.
 
-*🚧 This repo is under construction - As of September 2, 2021 🚧*
+*🚧 As of September 2, 2021 I'm currently building my personal bio site. 🚧*
 
-Welcome to the README.md for my personal bio site that also serves as a Gatsby 3.x starter bringing together the magic of [Tailwindcss](https://tailwindcss.com/) with [twin](https://github.com/ben-rogerson/twin.macro) and the super animation powers of [GSAP](https://greensock.com/). The project uses a core set of modern [Gatsby plugins](https://www.gatsbyjs.com/plugins) as listed below. I'm also experimenting with [Simple React lightbox](https://simple-react-lightbox.dev/).
+This is the README.md for my site that also serves as a Gatsby 3.x starter repository bringing together the magic of [Tailwindcss](https://tailwindcss.com/) with [twin](https://github.com/ben-rogerson/twin.macro) and the super animation powers of [GSAP](https://greensock.com/). The project uses a core set of modern [Gatsby plugins](https://www.gatsbyjs.com/plugins) as listed below. I'm also experimenting with [Simple React lightbox](https://simple-react-lightbox.dev/).
 
 **✨ View the live site [here](https://sparker888tailwindstarter.gatsbyjs.io/).**
+
+## 💡 The Technology I'm Using
 
 **Why Gatsby?**
 
@@ -105,7 +107,7 @@ The following plugins were added and configured (if not already part of the init
 
     Open the `my-gatsby-tailwind-twin-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-    ## 📚 Learn More About Gatsby
+## 📚 Learn More About Gatsby
 
 To learn more about Gatsby, use the following resources:
 
