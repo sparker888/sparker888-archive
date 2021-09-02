@@ -43,6 +43,10 @@ module.exports = {
           DEFAULT: "#253237",
         },
       },
+      spacing: {
+        "128": "32rem",
+        "144": "36 rem"
+      },
     },  
     fontFamily: {
       sans: ["Montserrat", "system-ui", "sans-serif"],

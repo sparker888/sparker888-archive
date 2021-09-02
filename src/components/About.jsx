@@ -43,7 +43,7 @@ const About = () => {
   max-w-lg
   `
   const StyledPortrait = tw(props => <img {...props}/>)`
-  object-cover object-center w-full h-64 rounded-md shadow
+  object-cover object-center w-full h-64 shadow rounded-md
   `
   const IntroWrapper = tw.div`
   flex-row items-center justify-start pt-5 mx-6 my-2
@@ -64,7 +64,7 @@ const About = () => {
   items-center flex justify-center flex-col lg:flex-row mb-10
   `
   const CardWrapper = tw.div`
-  max-w-sm mx-4 mt-4 overflow-hidden bg-white rounded-lg shadow-md
+  max-w-sm mx-4 mt-4 overflow-hidden bg-white rounded-2xl shadow-md
   `
   const CardImage = tw(props => <img {...props}/>)`
   object-cover w-full h-64
