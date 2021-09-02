@@ -58,11 +58,7 @@ For more details, see [this Tuts](https://webdesign.tutsplus.com/articles/an-int
 
 sparker888-tailwindcss-starter a work in progress started 8-18-21 and I plan to have it completed on 9-9-21.
 
-For now, I can tell you that the site base configuration started with the standard Gatsby site setup:
-
-`npm init gatsby`
-
-From there, the following plugins were added and configured (if not already part of the initial install):
+The following plugins were added and configured (if not already part of the initial install):
 
 - [Tailwind CSS](https://tailwindcss.com/) with [twin](https://github.com/ben-rogerson/twin.examples/tree/master/gatsby-styled-components), [Styled Components](https://github.com/ben-rogerson/twin.examples/tree/master/gatsby-styled-components) and [gatsby-plugin-styled-components](https://www.gatsbyjs.com/plugins/gatsby-plugin-styled-components/)
 - [Green Sock Animation Platform (gsap)](https://greensock.com/blog/learning/react/)
@@ -82,6 +78,33 @@ From there, the following plugins were added and configured (if not already part
 **Important Notes**
 
 *If you decide to spin up this starter, you will need to remove the plugin for Contentful as well as the references to Contentful and the API keys in gatsby-config.js before building. I'm moving to Strapi, but this is a work in progress. I'll update this section in another day or two.*
+
+## 🚀 Quick start
+
+1.  **Create the Gatsby site.**
+
+    Use the Gatsby CLI to create a new site, specifying the `sparker888` starter.
+
+    ```shell
+    # create a new Gatsby site using the gatsby-tailwind-emotion-starter
+    gatsby new my-gatsby-tailwind-twin-starter https://github.com/sparker888/sparker888
+    ```
+
+1.  **Start developing.**
+
+    Navigate into your new site’s directory and start it up.
+
+    ```shell
+    cd my-gatsby-tailwind-twin-starter/
+    gatsby develop
+    ```
+
+1.  **Open the source code and start editing!**
+
+    Your site is now running at `http://localhost:8000`!
+
+    Open the `my-gatsby-tailwind-twin-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    
 ## Thanks for your interest! You can visit my [business site](https://www.gravitaldigital.com), follow me on Twitter at [@sparker888](https://www.twitter.com/sparker888), and if you're into video games, join me and my friends playing [Eve Online](https://www.eveonline.com/signup?invc=bed0f5cf-ea4b-4c92-9128-b76165d69757).
 
 ### Fly safe!
