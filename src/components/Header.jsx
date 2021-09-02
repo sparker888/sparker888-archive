@@ -1,44 +1,47 @@
+import tw from "twin.macro"
 import React from "react";
+import { Link } from "gatsby";
+
+const NavBar = tw.nav`
+  bg-white shadow
+`
+
+const Wrapper = tw.div`
+  container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize
+`
+
+const ActiveLink = tw(props => <Link {...props}/>)`
+  text-gray-800 border-b-2 border-blue-500 mx-1.5 sm:mx-6
+`
+
+const StyledLink = tw(props => <Link {...props}/>)`
+  border-b-2 border-transparent hover:text-gray-800 hover:border-blue-500 mx-1.5 sm:mx-6
+`
 
 export default function Header() {
   return (
-    <nav className="bg-white shadow">
-      <div className="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize">
-        <a
-          href="/"
-          className="text-gray-800 border-b-2 border-blue-500 mx-1.5 sm:mx-6"
-        >
-          About
-        </a>
+    <NavBar>
+      <Wrapper>
+        <ActiveLink to="/">
+          Stephen Parker
+        </ActiveLink>
 
-        <a
-          href="daily-photo"
-          className="border-b-2 border-transparent hover:text-gray-800 hover:border-blue-500 mx-1.5 sm:mx-6"
-        >
+        <StyledLink to="/daily-photo">
           Daily Photo
-        </a>
+        </StyledLink>
 
-        <a
-          href="skilltree"
-          className="border-b-2 border-transparent hover:text-gray-800 hover:border-blue-500 mx-1.5 sm:mx-6"
-        >
+        <StyledLink to="/skilltree">
           Skill Tree
-        </a>
+        </StyledLink>
 
-        <a
-          href="projects"
-          className="border-b-2 border-transparent hover:text-gray-800 hover:border-blue-500 mx-1.5 sm:mx-6"
-        >
+        <StyledLink to="/projects">
           Projects
-        </a>
+        </StyledLink>
 
-        <a
-          href="blog"
-          className="border-b-2 border-transparent hover:text-gray-800 hover:border-blue-500 mx-1.5 sm:mx-6"
-        >
+        <StyledLink to="/blog">
           My Blog
-        </a>
-      </div>
-    </nav>
+        </StyledLink>
+      </Wrapper>
+    </NavBar>
   );
 }

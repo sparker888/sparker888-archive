@@ -69,6 +69,10 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
+# VS Code
+.vscode/
+*.code-workspace
+
 # Webstorm
 .idea/
 

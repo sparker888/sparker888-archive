@@ -10,13 +10,47 @@ Here's [why it's important](https://gravitaldigital.com/blog/googles-biggest-alg
 
 I'm a 🚀 Space, 🐬 Sea and 🚗 Car Geek. I'm passionate about 📸 photography and 🖥️ website design and development.
 
-### This repo will serve as my personal site as well as a Gatsby Tailwind Twin GSAP starter. See it [LIVE](https://sparker888tailwindstarter.gatsbyjs.io/).
+### This repo will serve as my personal site as well as a Gatsby 3.x starter that brings together the maagic of [Tailwindcss](https://tailwindcss.com/) with [twin](https://github.com/ben-rogerson/twin.macro) and the super animation powers of [GSAP](https://greensock.com/) as well as many commonly used [Gatsby plugins](https://www.gatsbyjs.com/plugins). I'm also experimenting with [Simple React lightbox](https://simple-react-lightbox.dev/) 
+
+View my site [here](https://sparker888tailwindstarter.gatsbyjs.io/).
 
 **Why Gatsby?**
 
 *Gatsby uses powerful pre-configuration to build a website that uses only static files for incredibly fast page loads, service workers, code splitting, server side rendering, smart image loading, asset optimization, and data prefetching. It's incredibly easy to work with. It's ideal for small websites, landing pages, and simple PWAs.*
 
-It's a work in progress started 8-18-21 that will eventually become a Gatsby 3.x starter that focuses on using [Tailwindcss](https://tailwindcss.com/) and [GSAP](https://greensock.com/) as well as many commonly used [Gatsby plugins](https://www.gatsbyjs.com/plugins).
+**Why Tailwinds?**
+
+* Human readable
+* Low specificity by default
+* Handles variations
+* Modular/Composable
+* Performant
+* Doesn’t make naming hard
+* Allows safe refactoring
+* Extensible
+* Does not enforce bad markup patterns
+* Positive impact on developer velocity/productivity
+* Reasonable learning curve
+
+**Why CSS-in-JS (Emotion and Styled Components)?**
+
+*I'll assume you're on board the CSS-in-JS train by now, but if now, I encourage you to check out [CSS in JS, an Emotional Topic devMode.fm podcast episode](https://devmode.fm/episodes/css-in-js-an-emotional-topic). There are some really nice advantages to working with Styled Components (CSS-in-JS), including:*
+
+* Local Scoping
+* Encapsulation
+* Portability
+* Reusability
+* Dynamic Functionality
+
+*For more details, see [this Tuts](https://webdesign.tutsplus.com/articles/an-introduction-to-css-in-js-examples-pros-and-cons--cms-33574) which also goes into more detail on the cons and some examples. I'm using it because I get the benefits of a hybrid approach to styling with both a utility CSS and styled components. I love being able to use the tw import to create new styles and define my components, clone and style existing components and mix in styled imports for conditional styling (and I'm still leveling up on the subject).
+
+**Why twin?**
+
+Twin blends the magic of Tailwind with the flexibility of CSS-in-JS! It leverages Tailwind's marvelous system and developer experience without the downsides of atomic CSS.
+
+**Repo Status** 
+
+sparker888-tailwindcss-starter a work in progress started 8-18-21 and I plan to have it completed on 9-9-21.
 
 For now, I can tell you that the site base configuration started with the standard Gatsby site setup:
 

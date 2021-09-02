@@ -1,3 +1,4 @@
+import tw from "twin.macro"
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { getImage } from 'gatsby-plugin-image';
@@ -23,9 +24,13 @@ const DailyPhoto = () => {
   )
   const pluginImage = getImage(placeholderImage123);
 
+  const StyledBgImage = tw(props => <BgImage {...props}/>)`
+  min-h-screen
+  `
+
   return (
     <Layout>
-      <BgImage image={pluginImage} className="min-h-screen" />
+      <StyledBgImage image={pluginImage}/>
     </Layout>
   )
 }
