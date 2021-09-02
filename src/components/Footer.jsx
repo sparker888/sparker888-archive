@@ -30,7 +30,7 @@ export default function Example() {
     <FooterBar>
       <Wrapper>
         <Link
-          href="https://github.com/sparker888/sparker888-tailwindcss-starter"
+          href="https://github.com/sparker888/sparker888"
         >
           Use this site as a <InlineIcon src={gatsbylogo}/> Gatsby + <InlineIcon src={tailwindlogo}/> Tailwindcss + twin starter!
         </Link>
