@@ -1,6 +1,6 @@
 [![Stephen Parker builds fast websites.](https://res.cloudinary.com/gravital-digital/image/upload/v1629435211/lighthouse-performance_szftjp.png)](https://www.linkedin.com/in/sparker888/)
 
-# I build top performing websites and landing pages.
+# I build top performing websites and marketing landing pages.
 
 This is an example of a Lighthouse report that scores websites in key areas related to Google's new [Web Vitals](https://support.google.com/webmasters/answer/9205520?hl=en) that started rolling out in June 2021. This site with these stellar scores was created [for a special client](https://www.benevolentseniorservices.com).
 
