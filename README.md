@@ -10,7 +10,8 @@ Here's [why it's important](https://gravitaldigital.com/blog/googles-biggest-alg
 
 I'm a 🚀 Space, 🐬 Sea and 🚗 Car Geek. I'm passionate about 📸 photography and 🖥️ website design and development.
 
-### This repo will serve as my personal site as well as a Gatsby 3.x starter that brings together the maagic of [Tailwindcss](https://tailwindcss.com/) with [twin](https://github.com/ben-rogerson/twin.macro) and the super animation powers of [GSAP](https://greensock.com/) as well as many commonly used [Gatsby plugins](https://www.gatsbyjs.com/plugins). I'm also experimenting with [Simple React lightbox](https://simple-react-lightbox.dev/) 
+*🚧 This repo is under construction - As of September 2, 2021 🚧*
+## Welcome to the README.md for my personal bio site that will also server as a Gatsby 3.x starter that brings together the maagic of [Tailwindcss](https://tailwindcss.com/) with [twin](https://github.com/ben-rogerson/twin.macro) and the super animation powers of [GSAP](https://greensock.com/) as well as many commonly used [Gatsby plugins](https://www.gatsbyjs.com/plugins). I'm also experimenting with [Simple React lightbox](https://simple-react-lightbox.dev/) 
 
 View my site [here](https://sparker888tailwindstarter.gatsbyjs.io/).
 
@@ -48,9 +49,9 @@ View my site [here](https://sparker888tailwindstarter.gatsbyjs.io/).
 
 Twin blends the magic of Tailwind with the flexibility of CSS-in-JS! It leverages Tailwind's marvelous system and developer experience without the downsides of atomic CSS.
 
-## Use this site as a Gatsby + Tailwind + twin starter (soon)
+## Use this repository as a Gatsby + Tailwind + twin starter (more soon)
 
-**Repo Status** 
+**Current Status as of September 2, 2021** 
 
 sparker888-tailwindcss-starter a work in progress started 8-18-21 and I plan to have it completed on 9-9-21.
 
