@@ -50,7 +50,7 @@ Max Stoiber, the inventor of styled components, tells the story better than I ca
 
 **Why twin?**
 
-Twin blends the magic of Tailwind with the flexibility of CSS-in-JS! It leverages Tailwind's marvelous system and developer experience without the downsides of atomic CSS.
+Twin blends the magic of Tailwind with the flexibility of CSS-in-JS! It leverages Tailwind's marvelous system and developer experience without the downsides of atomic CSS. More importantly, it's the combination of Gatsby, Tailwind and twin that allows us to do some amazing stuff. Here is the [original article by Andrew Welch](https://nystudio107.com/blog/using-tailwind-css-with-gatsby-react-emotion-styled-components) that got me excited for this powerful combination of front-end React-based technologies.
 
 ## Use this repository as a Gatsby + Tailwind + twin starter (more soon)
 
