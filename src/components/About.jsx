@@ -25,7 +25,7 @@ const About = () => {
   const pluginImage = getImage(placeholderImage123);
 
   const StyledBgImage = tw(props => <BgImage {...props}/>)`
-    bg-contain bg-bottom my-1
+  bg-contain bg-bottom my-1
   `
   const UpperWrapper = tw.div`
   container px-6 py-6 mx-auto
@@ -46,16 +46,16 @@ const About = () => {
   object-cover object-center w-full h-64 rounded-md shadow
   `
   const IntroWrapper = tw.div`
-  flex-row items-center justify-start mx-6 my-2
+  flex-row items-center justify-start pt-5 mx-6 my-2
   `
   const IntroHeader = tw(props => <h2 {...props}/>)`
-  text-3xl font-bold text-gray-800
+  text-3xl font-bold text-bleu
   `
   const IntroParagraph = tw(props => <p {...props}/>)`
-  my-4 text-gray-800 lg:max-w-md
+  my-4 text-gunmetal lg:max-w-md
   `
   const IntroLink = tw(props => <a {...props}/>)`
-  font-bold text-blue-400
+  font-bold text-burnt
   `
   const CardsWrapper = tw.div`
   container px-6 pt-4 pb-28 mx-auto
@@ -73,16 +73,16 @@ const About = () => {
   p-6
   `
   const Category = tw.div`
-  text-xs font-medium text-blue-600 uppercase
+  text-xs font-medium text-bleu uppercase
   `
   const CardContentWrapper = tw.div`
   mt-4
   `
   const TitleLink = tw(props => <a {...props}/>)`
-  block mt-2 text-2xl font-semibold text-gray-800 hover:text-gray-600 hover:underline
+  block mt-2 text-2xl font-semibold text-gunmetal hover:text-gunmetal-light hover:underline
   `
   const CardText = tw.div`
-  mt-2 text-sm text-gray-600
+  mt-2 text-sm text-gunmetal
   `
   const CardAvatar = tw(props => <img {...props}/>)`
   object-cover h-10 rounded-full
@@ -91,7 +91,7 @@ const About = () => {
   flex items-center
   `
   const ArticleDate = tw.div`
-  mx-1 text-xs text-gray-600
+  mx-1 text-xs text-gunmetal
   `
 
   return (
@@ -122,14 +122,17 @@ const About = () => {
                 >
                   @GoGravital
                 </IntroLink>
-                . This site is a work in progress. The goal is to create a viable
-                Gatsby starter for Tailwindscss with support for CSS-in-JS using
-                twin.macro and Greensock animations (GSAP).
+                . This site serves as my bio and blog space, and it's also a full-fledged
+                Gatsby starter using Tailwind, twin.macro and Greensock (GSAP) to showcase my development skills.
               </IntroParagraph>
               <IntroParagraph>
-                When will it be completed? I'm targeting September 9, 2021. It can
-                be used now but I have yet to implement project and post sections
-                and MDX content. Please check back then. Thanks for your interest!
+                I'm targeting a Sept. 9th completion date, but the repo can be cloned from{" "}
+                <IntroLink
+                  href="https://github.com/sparker888/sparker888"
+                >
+                  GitHub
+                </IntroLink>
+                {" "}now. Be sure to read the notes if you do. Thanks for your interest!
               </IntroParagraph>
             </IntroWrapper>
           </UpperInnerWrapper>
