@@ -11,9 +11,10 @@ Here's [why it's important](https://gravitaldigital.com/blog/googles-biggest-alg
 I'm a 🚀 Space, 🐬 Sea and 🚗 Car Geek. I'm passionate about 📸 photography and 🖥️ website design and development.
 
 *🚧 This repo is under construction - As of September 2, 2021 🚧*
-## Welcome to the README.md for my personal bio site that will also server as a Gatsby 3.x starter that brings together the maagic of [Tailwindcss](https://tailwindcss.com/) with [twin](https://github.com/ben-rogerson/twin.macro) and the super animation powers of [GSAP](https://greensock.com/) as well as many commonly used [Gatsby plugins](https://www.gatsbyjs.com/plugins). I'm also experimenting with [Simple React lightbox](https://simple-react-lightbox.dev/) 
 
-View my site [here](https://sparker888tailwindstarter.gatsbyjs.io/).
+Welcome to the README.md for my personal bio site that also serves as a Gatsby 3.x starter bringing together the maagic of [Tailwindcss](https://tailwindcss.com/) with [twin](https://github.com/ben-rogerson/twin.macro) and the super animation powers of [GSAP](https://greensock.com/). The project uses a core set of modern [Gatsby plugins](https://www.gatsbyjs.com/plugins) as listed below. I'm also experimenting with [Simple React lightbox](https://simple-react-lightbox.dev/).
+
+**✨ View the live site [here](https://sparker888tailwindstarter.gatsbyjs.io/).
 
 **Why Gatsby?**
 
@@ -78,7 +79,7 @@ From there, the following plugins were added and configured (if not already part
 
 **Important Notes**
 
-*If you do decide to use as a starter, you will need to remove the plugin for Contentful as well as the references to Contentful and the API keys in gatsby-config.js. I'm moving to Strapi, but this is a work in progress.*
+*If you decide to spin up this starter, you will need to remove the plugin for Contentful as well as the references to Contentful and the API keys in gatsby-config.js before building. I'm moving to Strapi, but this is a work in progress. I'll update this section in another day or two.*
 ## Thanks for your interest! You can visit my [business site](https://www.gravitaldigital.com), follow me on Twitter at [@sparker888](https://www.twitter.com/sparker888), and if you're into video games, join me and my friends playing [Eve Online](https://www.eveonline.com/signup?invc=bed0f5cf-ea4b-4c92-9128-b76165d69757).
 
 ### Fly safe!
