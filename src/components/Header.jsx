@@ -35,23 +35,28 @@ export default function Header() {
         <InactiveIcon />
         </MenuLink>
 
-        <StyledLink to="/">
+        <StyledLink to="/"
+          activeStyle={tw`text-gunmetal border-b-2 border-burnt mx-1.5 sm:mx-6`}>
           Stephen Parker
         </StyledLink>
 
-        <StyledLink to="/daily-photo">
+        <StyledLink to="/daily-photo"
+          activeStyle={tw`text-gunmetal border-b-2 border-burnt mx-1.5 sm:mx-6`}>
           Daily Photo
         </StyledLink>
 
-        <StyledLink to="/skilltree">
+        <StyledLink to="/skilltree"
+          activeStyle={tw`text-gunmetal border-b-2 border-burnt mx-1.5 sm:mx-6`}>
           Skill Tree
         </StyledLink>
 
-        <StyledLink to="/projects">
+        <StyledLink to="/projects"
+          activeStyle={tw`text-gunmetal border-b-2 border-burnt mx-1.5 sm:mx-6`}>
           Projects
         </StyledLink>
 
-        <StyledLink to="/blog">
+        <StyledLink to="/blog"
+          activeStyle={tw`text-gunmetal border-b-2 border-burnt mx-1.5 sm:mx-6`}>
           My Blog
         </StyledLink>
       </Wrapper>
