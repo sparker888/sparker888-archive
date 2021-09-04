@@ -35,12 +35,6 @@ export default function Example() {
           Use this site as a <InlineIcon src={gatsbylogo}/> Gatsby + <InlineIcon src={tailwindlogo}/> Tailwindcss + twin starter!
         </Link>
 
-        <Link
-          href="https://www.mozilla.org/en-US/MPL/2.0/"
-        >
-          MPL 2.0 License
-        </Link>
-
         <SocialLinks>
           <SocialLink
             href="https://twitter.com/sparker888"
