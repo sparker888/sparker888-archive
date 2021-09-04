@@ -7,10 +7,10 @@ const FooterBar = tw.div`
   bg-white shadow
 `
 const Wrapper = tw.div`
-container flex md:flex-row items-center justify-center p-6 mx-auto bg-white sm:flex-col
+container flex flex-col items-center justify-center p-6 mx-auto bg-white 
 `
 const Link = tw(props => <a {...props}/>)`
-text-gray-800 hover:text-gray-700 mx-1.5 sm:mx-6 sm:my-1
+text-gray-800 hover:text-gray-700 mx-1.5 my-3
 `
 const SocialLink = tw(props => <a {...props}/>)`
 mx-2
