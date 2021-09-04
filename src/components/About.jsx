@@ -1,8 +1,9 @@
-import tw from "twin.macro"
+import tw, { styled } from "twin.macro"
 import React from "react";
-import { graphql, useStaticQuery } from 'gatsby'
-import { getImage } from 'gatsby-plugin-image';
-import { BgImage } from 'gbimage-bridge';
+import { graphql, useStaticQuery } from "gatsby"
+import { getImage } from "gatsby-plugin-image";
+import { BgImage } from "gbimage-bridge";
+import bkgndimage from "../images/wave.jpg";
 
 const About = () => {
 
@@ -24,79 +25,9 @@ const About = () => {
   
   const pluginImage = getImage(placeholderImage123);
 
-  const StyledBgImage = tw(props => <BgImage {...props}/>)`
-  bg-contain bg-bottom my-1
-  `
-  const UpperWrapper = tw.div`
-  container px-6 py-6 mx-auto
-  `
-  const UpperInnerWrapper = tw.div`
-  items-center lg:flex lg:justify-center
-  `
-  const PortraitWrapper = tw.div`
-  mt-8 lg:mt-0 mx-6
-  `
-  const PortraitInnerWrapper = tw.div`
-  flex items-center justify-center
-  `
-  const ImageFrame = tw.div`
-  max-w-lg
-  `
-  const StyledPortrait = tw(props => <img {...props}/>)`
-  object-cover object-center w-full h-64 shadow rounded-md
-  `
-  const IntroWrapper = tw.div`
-  flex-row items-center justify-start pt-5 mx-6 my-2
-  `
-  const IntroHeader = tw(props => <h2 {...props}/>)`
-  text-3xl font-bold text-bleu
-  `
-  const IntroParagraph = tw(props => <p {...props}/>)`
-  my-4 text-gunmetal lg:max-w-md
-  `
-  const IntroLink = tw(props => <a {...props}/>)`
-  font-bold text-burnt
-  `
-  const CardsWrapper = tw.div`
-  container px-6 pt-4 pb-28 mx-auto
-  `
-  const CardsInnerWrapper = tw.div`
-  items-center flex justify-center flex-col lg:flex-row mb-10
-  `
-  const CardWrapper = tw.div`
-  max-w-sm mx-4 mt-4 overflow-hidden bg-white rounded-2xl shadow-md
-  `
-  const CardImage = tw(props => <img {...props}/>)`
-  object-cover w-full h-64
-  `
-  const CardInnerWrapper = tw.div`
-  p-6
-  `
-  const Category = tw.div`
-  text-xs font-medium text-bleu uppercase
-  `
-  const CardContentWrapper = tw.div`
-  mt-4
-  `
-  const TitleLink = tw(props => <a {...props}/>)`
-  block mt-2 text-2xl font-semibold text-gunmetal hover:text-gunmetal-light hover:underline
-  `
-  const CardText = tw.div`
-  mt-2 text-sm text-gunmetal
-  `
-  const CardAvatar = tw(props => <img {...props}/>)`
-  object-cover h-10 rounded-full
-  `
-  const AvatarBlock = tw.div`
-  flex items-center
-  `
-  const ArticleDate = tw.div`
-  mx-1 text-xs text-gunmetal
-  `
-
   return (
     <StyledBgImage image={pluginImage}>
-      <section>
+      <TopSection>
         <UpperWrapper>
           <UpperInnerWrapper>
             <PortraitWrapper>
@@ -137,7 +68,7 @@ const About = () => {
             </IntroWrapper>
           </UpperInnerWrapper>
         </UpperWrapper>
-      </section>
+      </TopSection>
       <section>
         <CardsWrapper>
           <CardsInnerWrapper>
@@ -190,3 +121,77 @@ const About = () => {
 };
 
 export default About;
+
+const StyledBgImage = tw(BgImage)`
+bg-contain bg-bottom my-1
+`
+const TopSection = styled.section`
+${tw`lg:bg-none bg-contain bg-fixed bg-no-repeat bg-center my-1 border-2`}
+background-image: url(${bkgndimage});
+`
+const UpperWrapper = tw.div`
+container px-6 py-6 mx-auto border-2
+`
+const UpperInnerWrapper = tw.div`
+items-center lg:flex lg:justify-center border-2
+`
+const PortraitWrapper = tw.div`
+mt-8 lg:mt-0 mx-6 border-2
+`
+const PortraitInnerWrapper = tw.div`
+flex items-center justify-center border-2
+`
+const ImageFrame = tw.div`
+max-w-lg border-2
+`
+const StyledPortrait = tw(props => <img {...props}/>)`
+object-cover object-center w-full h-64 shadow rounded-md
+`
+const IntroWrapper = tw.div`
+flex-row items-center justify-start pt-5 mx-6 my-2 border-2
+`
+const IntroHeader = tw.h2`
+text-3xl font-bold text-bleu
+`
+const IntroParagraph = tw(props => <p {...props}/>)`
+my-4 text-gunmetal lg:max-w-md
+`
+const IntroLink = tw(props => <a {...props}/>)`
+font-bold text-burnt
+`
+const CardsWrapper = tw.div`
+container px-6 pt-4 pb-28 mx-auto border-2
+`
+const CardsInnerWrapper = tw.div`
+items-center flex justify-center flex-col lg:flex-row mb-10 border-2
+`
+const CardWrapper = tw.div`
+max-w-sm mx-4 mt-4 overflow-hidden bg-white rounded-2xl shadow-md border-2
+`
+const CardInnerWrapper = tw.div`
+p-6 border-2
+`
+const CardImage = tw.img`
+object-cover w-full h-64 border-2
+`
+const Category = tw.div`
+text-xs font-medium text-bleu uppercase border-2
+`
+const CardContentWrapper = tw.div`
+mt-4 border-2
+`
+const TitleLink = tw.a`
+block mt-2 text-2xl font-semibold text-gunmetal hover:text-gunmetal-light hover:underline
+`
+const CardText = tw.div`
+mt-2 text-sm text-gunmetal border-2
+`
+const CardAvatar = tw.img`
+object-cover h-10 rounded-full
+`
+const AvatarBlock = tw.div`
+flex items-center border-2
+`
+const ArticleDate = tw.div`
+mx-1 text-xs text-gunmetal border-2
+`

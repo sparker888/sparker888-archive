@@ -21,7 +21,7 @@ const ActiveIcon = tw(props => <MenuIcon {...props}/>)`
 const ActiveLink = tw(props => <Link {...props}/>)`
   text-gunmetal border-b-2 border-burnt mx-1.5 sm:mx-6
 `
-const StyledLink = tw(props => <Link {...props}/>)`
+const StyledLink = tw(Link)`
   border-b-2 border-transparent text-gunmetal-light hover:text-gunmetal mx-1.5 sm:mx-6
 `
 
