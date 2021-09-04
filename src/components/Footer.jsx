@@ -7,7 +7,7 @@ const FooterBar = tw.div`
   bg-white shadow
 `
 const Wrapper = tw.div`
-container flex flex-col items-center justify-center p-6 mx-auto bg-white 
+container flex flex-col items-center justify-center p-6 mx-auto
 `
 const Link = tw(props => <a {...props}/>)`
 text-gray-800 hover:text-gray-700 mx-1.5 my-3
@@ -33,12 +33,6 @@ export default function Example() {
           href="https://github.com/sparker888/sparker888"
         >
           Use this site as a <InlineIcon src={gatsbylogo}/> Gatsby + <InlineIcon src={tailwindlogo}/> Tailwindcss + twin starter!
-        </Link>
-
-        <Link
-          href="https://www.mozilla.org/en-US/MPL/2.0/"
-        >
-          MPL 2.0 License
         </Link>
 
         <SocialLinks>
