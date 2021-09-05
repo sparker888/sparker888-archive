@@ -59,10 +59,10 @@ const Wrapper = styled.div`
 ${tw`container`};
 `
 const InnerWrapper = styled.div`
-${tw`container`};
+${tw`bg-powder`};
 `
-const SVGIcon = styled.div`
-${tw`w-20 h-20 text-gunmetal fill-current  hover:text-bleu`}
+const SVGIcon = tw(props => <svg {...props}/>)`
+w-20 h-20 text-gunmetal fill-current  hover:text-bleu
 `
 const StyledLink = styled(Link)`
 ${tw`border-b-2 border-transparent text-gunmetal-light hover:text-gunmetal mx-1.5 sm:mx-6`};
