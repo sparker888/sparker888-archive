@@ -1,29 +1,7 @@
-import tw from "twin.macro";
+import tw, { styled } from "twin.macro";
 import React from "react";
 import gatsbylogo from "../images/gatsby.svg";
 import tailwindlogo from "../images/tailwind.svg";
-
-const FooterBar = tw.div`
-  bg-white shadow
-`
-const Wrapper = tw.div`
-container flex flex-col items-center justify-center p-6 mx-auto bg-white 
-`
-const Link = tw(props => <a {...props}/>)`
-text-gray-800 hover:text-gray-700 mx-1.5 my-3
-`
-const SocialLink = tw(props => <a {...props}/>)`
-mx-2
-`
-const SocialLinks = tw.div`
-flex mx-1.5 mb-2 sm:mx-6 sm:mt-3
-`
-const SVGIcon = tw(props => <svg {...props}/>)`
-w-5 h-5 text-gunmetal fill-current  hover:text-bleu
-`
-const InlineIcon = tw(props => <img {...props}/>)`
-w-5 h-5 inline-block
-`
 
 export default function Example() {
   return (
@@ -88,3 +66,25 @@ export default function Example() {
     </FooterBar>
   );
 }
+
+const FooterBar = styled.div`
+  ${tw`bg-white shadow`}
+`
+const Wrapper = styled.div`
+  ${tw`container flex flex-col items-center justify-center p-6 mx-auto bg-white`}
+`
+const Link = styled.a`
+  ${tw`text-gray-800 hover:text-gray-700 mx-1.5 my-3`}
+`
+const SocialLink = styled.div`
+  ${tw`mx-2`}
+`
+const SocialLinks = styled.div`
+  ${tw`flex mx-1.5 mb-2 sm:mx-6 sm:mt-3`}
+`
+const SVGIcon = styled.div`
+  ${tw`w-5 h-5 text-gunmetal fill-current  hover:text-bleu`}
+`
+const InlineIcon = styled.img`
+  ${tw`w-5 h-5 inline-block`}
+`
