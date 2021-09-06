@@ -52,10 +52,10 @@ const Wrapper = styled.div`
 ${tw`container shadow`};
 `
 const InnerWrapper = styled.div`
-${tw``};
+${tw`sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3`};
 `
 const NavWrapperTop = styled.div`
-${tw`flex items-center justify-between px-4 py-3`};
+${tw`flex items-center justify-between px-4 py-3 sm:py-0`};
 `
 const IconLink = styled(Link)`
 ${tw`text-gunmetal`};
@@ -70,8 +70,6 @@ const IconButton = styled.div`
 ${tw`sm:hidden w-10 h-10 fill-current`};
 `
 const NavWrapperBottom = styled.div`
-${tw`px-2 pt-2 pb-4`};
+${tw`px-2 pt-2 pb-4 sm:flex sm:px-6`};
 `
-const StyledLink = styled(Link)`
-${tw`block mt-1 px-2 py-1 font-semibold text-gunmetal rounded hover:bg-powder`};
-`
+
