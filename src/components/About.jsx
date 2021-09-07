@@ -1,7 +1,7 @@
 import tw, { styled } from "twin.macro"
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby"
-import { getImage } from "gatsby-plugin-image";
+import { StaticImage, getImage } from "gatsby-plugin-image";
 import { BgImage } from "gbimage-bridge";
 import bkgndimage from "../images/wave.jpg";
 
@@ -33,10 +33,13 @@ const About = () => {
             <PortraitWrapper>
               <PortraitInnerWrapper>
                 <ImageFrame>
-                  <StyledPortrait
+                  <StyledPortrait>
+                    <StaticImage
                     src="https://res.cloudinary.com/gravital-digital/image/upload/v1629628368/sparker-portrait_bv6dzq.jpg"
                     alt="Stephen Parker's Portrait"
-                  />
+                    placeholder="blurred"
+                    />
+                  </StyledPortrait>
                 </ImageFrame>
               </PortraitInnerWrapper>
             </PortraitWrapper>
@@ -144,7 +147,7 @@ flex items-center justify-center border-2
 const ImageFrame = tw.div`
 max-w-lg border-2
 `
-const StyledPortrait = tw(props => <img {...props}/>)`
+const StyledPortrait = tw.div`
 object-cover object-center w-full h-64 shadow rounded-md
 `
 const IntroWrapper = tw.div`

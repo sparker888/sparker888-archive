@@ -7,7 +7,10 @@ module.exports = {
   siteMetadata: {
     menu: [
       { name: "Home", to: "/" },
-      { name: "Blog", to: "/blog" },
+      { name: "Daily Photo", to: "/daily-photo"},
+      { name: "Skill Tree", to: "/skilltree"},
+      { name: "Projects", to: "/projects"},
+      { name: "My Blog", to: "/blog" },
     ],
     links: {
       facebook: "https://www.facebook.com/gogravital/",
@@ -86,7 +89,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: `${__dirname}/src/images/`,
       },
       __key: "images",
     },
@@ -94,7 +97,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "pages",
-        path: "./src/pages/",
+        path: `${__dirname}/src/pages/`,
       },
       __key: "pages",
     },
