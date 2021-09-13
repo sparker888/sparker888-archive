@@ -56,9 +56,9 @@ For more details, see [this Tuts](https://webdesign.tutsplus.com/articles/an-int
 
 ## Use this repository as a Gatsby + Tailwind + twin starter (more soon)
 
-**Current Status as of September 2, 2021** 
+**Current Status as of September 13, 2021** 
 
-sparker888-tailwindcss-starter a work in progress started 8-18-21 and I plan to have it completed on 9-9-21.
+sparker888-tailwindcss-starter a work in progress started 8-18-21 and I plan to have it completed on 9-15-21.
 
 This repo started with `gatsby init` and I added and configured the following plugins (if not already part of the initial install):
 
