@@ -28,7 +28,7 @@ module.exports = {
           lightest: "#A9E5EF",
         },
         almond: {
-          DEFAULT: "#EFB9A9",
+          DEFAULT: "#FFECD1",
           light: "#FFF4EB",
           dark: "#663C00",
         },

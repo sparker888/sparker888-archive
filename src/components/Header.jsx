@@ -65,10 +65,10 @@ const NavWrapperTop = styled.div`
 ${tw`flex items-center justify-between px-4 py-3 sm:py-0`};
 `
 const IconLink = styled(Link)`
-${tw`text-ming`};
+${tw`text-ming-light`};
 `
 const SVGIcon = styled(props => <svg {...props}/>)`
-${tw`w-10 h-10 fill-current hover:text-ming-light`};
+${tw`w-10 h-10 fill-current hover:text-amber`};
 `
 const ButtonWrap = styled.button`
 ${tw`block text-almond hover:text-almond-light focus:text-almond-light`}

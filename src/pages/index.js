@@ -2,6 +2,7 @@ import tw from "twin.macro"
 import React from "react";
 import SEO from "../components/seo";
 import Layout from "../layouts/Layout";
+import Intro from "../components/Intro";
 import About from "../components/About"
 import { graphql } from "gatsby"
 
@@ -9,6 +10,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO />
+      <Intro />
       <HeroWrapper>
         {data.heroes && data.heroes.nodes.length > 0 ? (
           <About items={data.heroes.nodes} />

@@ -1,7 +1,7 @@
 import tw from "twin.macro"
 import PropTypes from "prop-types"
 import Heroes from "./Heroes"
-import React, { useEffect, useRef } from "react"
+import React from "react"
 
 const About = ({ items }) => {
   return (

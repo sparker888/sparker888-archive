@@ -111,8 +111,8 @@ const Button2 = tw.button`
 rounded-md shadow ml-3
 `
 const Link1 = tw.a`
-w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-fogra bg-almond hover:text-amber hover:bg-ming md:py-4 md:text-lg md:px-10
+w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-fogra bg-almond-light hover:text-white hover:bg-ming-light md:py-4 md:text-lg md:px-10
 `
 const Link2 = tw.a`
-w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-kobe bg-almond hover:text-ming hover:bg-amber md:py-4 md:text-lg md:px-10
+w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-kobe bg-almond-light hover:text-white hover:bg-kobe-light md:py-4 md:text-lg md:px-10
 `

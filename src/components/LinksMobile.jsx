@@ -16,14 +16,19 @@ export default function LinksMobile() {
             Daily Photo
         </StyledLink>
 
+        <StyledLink to="/projects"
+            activeStyle={tw`block mt-1 sm:mt-0 sm:ml-2 px-2 py-1 font-semibold text-almond-light rounded`}>
+            Projects
+        </StyledLink>
+
         <StyledLink to="/skilltree"
             activeStyle={tw`block mt-1 sm:mt-0 sm:ml-2 px-2 py-1 font-semibold text-almond-light rounded`}>
             Skill Tree
         </StyledLink>
 
-        <StyledLink to="/projects"
+        <StyledLink to="/gallery"
             activeStyle={tw`block mt-1 sm:mt-0 sm:ml-2 px-2 py-1 font-semibold text-almond-light rounded`}>
-            Projects
+            Gallery
         </StyledLink>
 
         <StyledLink to="/blog"
