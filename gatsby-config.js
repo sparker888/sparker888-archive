@@ -16,7 +16,7 @@ module.exports = {
       gravital: "https://gravitaldigital.com/",
     },
     locale: "en",
-    title: "Stephen Parker Gatsby · Tailwind Twin.macro GSAP Starter",
+    title: "Stephen Parker | Gatsby · Contentful · Tailwind · Twin.macro · GSAP Starter",
     titleTemplate: "Stephen Parker Gatsby · Tailwind Twin.macro GSAP Starter",
     description:
       "A blazingly fast Gatsby starter designed to meet Google's Core Web Vitals",
