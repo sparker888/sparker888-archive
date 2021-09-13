@@ -14,7 +14,7 @@ I'm a 🚀 Space, 🐬 Sea and 🚗 Car Geek. I'm passionate about 📸 photogra
 
 This is the README.md for my site that also serves as a Gatsby 3.x starter repository bringing together the magic of [Tailwindcss](https://tailwindcss.com/) with [twin](https://github.com/ben-rogerson/twin.macro) and the super animation powers of [GSAP](https://greensock.com/). The project uses a core set of modern [Gatsby plugins](https://www.gatsbyjs.com/plugins) as listed below. I'm also experimenting with [Simple React lightbox](https://simple-react-lightbox.dev/).
 
-**✨ Within the next week the site will be live [here](https://sparker888tailwindstarter.gatsbyjs.io/).**
+**✨ The development site can be viewed [here](https://zen-jennings-d17986.netlify.app/).**
 
 ## 💡 Why I'm Using Gatsby + Tailwind + Twin
 
