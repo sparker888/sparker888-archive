@@ -8,48 +8,55 @@ export default function Header() {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  // determine what to show if isOpen is true from video
-
   return (
+    <FullWidth>
+      <Wrapper>
+        <InnerWrapper>
+          <NavWrapperTop>
+            <IconLink to="/">
+              <SVGIcon
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 128 128">
+                <path d="M 27.234,80.19 50.52,102.74 C 80.46,77.65 118.54,55.8 120.62,7.05 71.96,10.7 50.38,48.8 27.234,80.19 Z" />
+                <path d="M 105.79162,32.141736 A 7.1393516,7.222031 44.076489 1 1 95.533635,22.209212 7.1393516,7.222031 44.076489 1 1 105.79162,32.141736 Z" />
+                <path d="M 91.621624,46.781736 A 7.1393517,7.2220311 44.076489 1 1 81.363635,36.849212 7.1393517,7.2220311 44.076489 1 1 91.621624,46.781736 Z" />
+                <path d="M 77.261624,61.611736 A 7.1393517,7.2220311 44.076489 1 1 67.003635,51.679212 7.1393517,7.2220311 44.076489 1 1 77.261624,61.611736 Z" />
+                <path d="M 27.234,80.19 7.461,87.05 C 11.737,74.37 18.504,57.98 27.637,52.38 33.64,48.7 47.96,51.44 47.96,51.44 L 27.234,80.19 Z" />
+                <path d="m 51.23,102.01 -6.22,19.98 c 12.54,-4.68 28.7,-11.97 34.01,-21.28 3.48,-6.12 0.28,-20.34 0.28,-20.34 l -28.07,21.64 z" />
+              </SVGIcon>
+            </IconLink>
 
-    <Wrapper>
-      <InnerWrapper>
-        <NavWrapperTop>
-          <IconLink to="/">
-            <SVGIcon
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512">
-              <path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9 1.4.3 2.6.4 3.8.4 8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1-8.4 1.9-15.9 2.7-22.6 2.7-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1 10.5 0 20-3.4 25.6-6 2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8 0 0 1.6-.5 5-.5 8.1 0 26.4 3.1 56.6 24.1 17.9-5.1 37-7.6 56.1-7.7 19 .1 38.2 2.6 56.1 7.7 30.2-21 48.5-24.1 56.6-24.1 3.4 0 5 .5 5 .5 12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5 1.2 0 2.6-.1 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z" />
-            </SVGIcon>
-          </IconLink>
+            <div>
+              <ButtonWrap type="button" onClick={() => setIsOpen(!isOpen)}>
+                <IconButton> 
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20">
+                      {isOpen ?
+                      <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                      : 
+                      <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+                      }  
+                  </svg>
+                </IconButton>
+              </ButtonWrap>  
+            </div>
+          </NavWrapperTop>
+          
+          <NavWrapperBottom>
+          {isOpen ? <LinksMobile /> : <LinksDesktop />}          
+          </NavWrapperBottom>
 
-          <div>
-            <ButtonWrap type="button" onClick={() => setIsOpen(!isOpen)}>
-              <IconButton> 
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20">
-                    {isOpen ?
-                    <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
-                    : 
-                    <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
-                    }  
-                </svg>
-              </IconButton>
-            </ButtonWrap>  
-          </div>
-        </NavWrapperTop>
-        
-        <NavWrapperBottom>
-        {isOpen ? <LinksMobile /> : <LinksDesktop />}          
-        </NavWrapperBottom>
-
-      </InnerWrapper>  
-    </Wrapper>
+        </InnerWrapper>  
+      </Wrapper>
+    </FullWidth>
   )
 }
 
+const FullWidth = styled.div`
+${tw`sticky top-0 z-10 bg-fogra-light`};
+`
 const Wrapper = styled.div`
-${tw`container shadow`};
+${tw`container bg-fogra mx-auto`};
 `
 const InnerWrapper = styled.div`
 ${tw`sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3`};
@@ -58,13 +65,13 @@ const NavWrapperTop = styled.div`
 ${tw`flex items-center justify-between px-4 py-3 sm:py-0`};
 `
 const IconLink = styled(Link)`
-${tw`text-gunmetal`};
+${tw`text-ming`};
 `
 const SVGIcon = styled(props => <svg {...props}/>)`
-${tw`w-10 h-10 fill-current`};
+${tw`w-10 h-10 fill-current hover:text-ming-light`};
 `
 const ButtonWrap = styled.button`
-${tw`block text-burnt-light hover:text-burnt focus:text-burnt-light`}
+${tw`block text-almond hover:text-almond-light focus:text-almond-light`}
 `
 const IconButton = styled.div`
 ${tw`sm:hidden w-10 h-10 fill-current`};

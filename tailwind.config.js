@@ -17,30 +17,30 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
       
-        violet: {
-          light: "#bcacc3",
-          DEFAULT: "#5d4a66",
-          dark: "#413347",
+        fogra: {
+          DEFAULT: "#001524",
+          light: "#003052",
+          lightest: "#0077CC",
         },
-        powder: {
-          DEFAULT: "#C2DFE3",
-          dark: "#57A7B2",
-          darkest: "#1A3438",
+        ming: {
+          DEFAULT: "#15616D",
+          light: "#43C7DB",
+          lightest: "#A9E5EF",
         },
-        burnt: {
-          light: "#EFB9A9",
-          DEFAULT: "#DE6B48",
-          dark: "#672713",
+        almond: {
+          DEFAULT: "#EFB9A9",
+          light: "#FFF4EB",
+          dark: "#663C00",
         },
-        bleu: {
-          light: "#A8CBF0",
-          DEFAULT: "#3083DC",
-          dark: "#123C69",
+        amber: {
+          DEFAULT: "#FF7D00",
+          dark: "#FFC370",
+          darkest: "#8F4500",
         },
-        gunmetal: {
-          lightest: "#C2D0D6",
-          light: "#6C8F9D",
-          DEFAULT: "#253237",
+        kobe: {
+          DEFAULT: "#78290F",
+          light: "#E45525",
+          lightest: "#F2AA92",
         },
       },
       spacing: {

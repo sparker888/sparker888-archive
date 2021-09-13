@@ -66,9 +66,9 @@
     "twin.macro": "^2.7.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.3.3",
+    "autoprefixer": "^10.3.4",
     "gatsby-plugin-postcss": "^4.13.0",
     "postcss": "^8.3.6",
-    "tailwindcss": "^2.2.9"
+    "tailwindcss": "^2.2.14"
   }
 }
