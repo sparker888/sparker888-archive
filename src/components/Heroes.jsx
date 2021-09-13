@@ -99,7 +99,7 @@ const FlexRow = tw.div`
 flex flex-wrap sm:flex-col
 `
 const P = tw.p`
-flex flex-auto mt-6 text-xl text-almond-light max-w-3xl
+flex flex-auto mt-6 font-serif text-2xl text-white max-w-3xl
 `
 const Buttons = tw.div`
 flex flex-auto mt-5 max-w-md mx-auto flex justify-center md:mt-8

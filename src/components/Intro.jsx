@@ -68,7 +68,7 @@ const Span2 = tw.span`
 block text-fogra-lightest xl:inline
 `
 const P = tw.p`
-mt-3 max-w-md mx-auto text-lg text-fogra-light sm:text-xl md:mt-5 md:max-w-3xl
+mt-3 max-w-md mx-auto font-serif text-xl text-fogra-light sm:text-xl md:mt-5 md:max-w-3xl
 `
 const ButtonWrap = tw.div`
 mt-10 sm:flex sm:justify-center lg:justify-start

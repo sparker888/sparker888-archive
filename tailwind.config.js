@@ -50,7 +50,7 @@ module.exports = {
     },  
     fontFamily: {
       sans: ["Montserrat", "system-ui", "sans-serif"],
-      serif: ["Libre Caslon Text", "ui-serif", "Georgia"],
+      serif: ["Inria Serif", "ui-serif", "Georgia"],
     },
   },
   plugins: [],

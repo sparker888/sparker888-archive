@@ -27,6 +27,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/inria-serif": "^4.5.0",
     "@fontsource/libre-caslon-text": "^4.5.0",
     "@fontsource/montserrat": "^4.5.1",
     "@heroicons/react": "^1.0.4",

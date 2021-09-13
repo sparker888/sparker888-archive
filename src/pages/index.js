@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => {
         {data.heroes && data.heroes.nodes.length > 0 ? (
           <About items={data.heroes.nodes} />
         ) : (
-          <div>No bios found.</div>
+          <div>No Projects found.</div>
         )}
       </HeroWrapper>
     </Layout>

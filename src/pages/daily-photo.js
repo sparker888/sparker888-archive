@@ -24,7 +24,7 @@ const DailyPhoto = () => {
   )
   const pluginImage = getImage(placeholderImage123);
 
-  const StyledBgImage = tw(props => <BgImage {...props}/>)`
+  const StyledBgImage = tw(BgImage)`
   min-h-screen
   `
 
