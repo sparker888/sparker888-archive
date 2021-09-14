@@ -11,27 +11,27 @@ export default function LinksDesktop() {
             Stephen Parker
         </StyledLink>
 
-        <StyledLink to="/daily-photo"
+        <StyledLink to="/daily-photo/"
             activeStyle={tw`block mt-1 sm:mt-0 sm:ml-2 px-2 py-1 font-semibold text-almond-light rounded`}>
             Daily Photo
         </StyledLink>
 
-        <StyledLink to="/projects"
+        <StyledLink to="/projects/"
             activeStyle={tw`block mt-1 sm:mt-0 sm:ml-2 px-2 py-1 font-semibold text-almond-light rounded`}>
             Projects
         </StyledLink>
 
-        <StyledLink to="/skilltree"
+        <StyledLink to="/skilltree/"
             activeStyle={tw`block mt-1 sm:mt-0 sm:ml-2 px-2 py-1 font-semibold text-almond-light rounded`}>
             Skill Tree
         </StyledLink>
 
-        <StyledLink to="/gallery"
+        <StyledLink to="/gallery/"
             activeStyle={tw`block mt-1 sm:mt-0 sm:ml-2 px-2 py-1 font-semibold text-almond-light rounded`}>
             Gallery
         </StyledLink>
 
-        <StyledLink to="/blog"
+        <StyledLink to="/blog/"
             activeStyle={tw`block mt-1 sm:mt-0 sm:ml-2 px-2 py-1 font-semibold text-almond-light rounded`}>
             My Blog
         </StyledLink>

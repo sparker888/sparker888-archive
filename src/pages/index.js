@@ -3,7 +3,7 @@ import React from "react";
 import SEO from "../components/seo";
 import Layout from "../layouts/Layout";
 import Intro from "../components/Intro";
-import About from "../components/About"
+import Featured from "../components/Featured"
 import { graphql } from "gatsby"
 
 const IndexPage = ({ data }) => {
@@ -11,13 +11,13 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO />
       <Intro />
-      <HeroWrapper>
+      <FeaturedHeroesWrapper>
         {data.heroes && data.heroes.nodes.length > 0 ? (
-          <About items={data.heroes.nodes} />
+          <Featured items={data.heroes.nodes} />
         ) : (
           <div>No Projects found.</div>
         )}
-      </HeroWrapper>
+      </FeaturedHeroesWrapper>
     </Layout>
   );
 };
@@ -34,6 +34,6 @@ export const query = graphql`
   }
 `
 
-const HeroWrapper = tw.div`
+const FeaturedHeroesWrapper = tw.div`
 w-full
 `

@@ -77,6 +77,8 @@ This repo started with `gatsby init` and I added and configured the following pl
 - [React Helmet](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet)
 - [dotenv](https://www.npmjs.com/package/dotenv)
 - [@heroicons](https://github.com/tailwindlabs/heroicons)
+- [@tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
+- [@tailwindcss/typography](https://github.com/tailwindlabs/tailwindcss-typography)
 
 From there, I followed the [Tailwindcss Gatsby installation documentation](https://tailwindcss.com/docs/guides/gatsby) in tandem with the [twin.macro Gatsby Installation documentation](https://github.com/ben-rogerson/twin.examples/tree/master/gatsby-styled-components) to configure the setup. Additional configuration of PostCSS came from [Andrew's article](https://nystudio107.com/blog/using-tailwind-css-with-gatsby-react-emotion-styled-components), and finally, a few helpful bits were gleaned from [gatsby-tailwind-emotion-starter](https://github.com/pauloelias/gatsby-tailwind-emotion-starter) from [Paulo Elias](https://github.com/pauloelias).
 

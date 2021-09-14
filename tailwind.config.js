@@ -53,7 +53,10 @@ module.exports = {
       serif: ["Inria Serif", "ui-serif", "Georgia"],
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+  ],
 }
 
 // See a supported list of Tailwind plugins compatible with twin.macro here: https://twin-docs.netlify.app/plugin-support
