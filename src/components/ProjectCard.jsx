@@ -5,7 +5,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 
 const ProjectCard = (props) => {
-  const { title, slug, tag, hero } = props
+  const { title, slug, intro, tag, hero } = props
 
   const image = getImage(hero)
 
@@ -21,7 +21,10 @@ const ProjectCard = (props) => {
           </TagWrapper>
           <ProjectLink to={`/${slug}`}>
             <ProjectTitle>{title}</ProjectTitle>
-            <ProjectIntro>{title}</ProjectIntro>
+            <ProjectIntro dangerouslySetInnerHTML={{
+              __html: intro.childMarkdownRemark.rawMarkdownBody,
+              }} 
+            />
           </ProjectLink>
         </FlexWrapper>
       </ContentWrapper>
@@ -35,7 +38,6 @@ ProjectCard.propTypes = {
   slug: PropTypes.string.isRequired,
   intro: PropTypes.object.isRequired,
   tag: PropTypes.string.isRequired,
-  intro: PropTypes.string,
 }
 
 export default ProjectCard
@@ -82,14 +84,14 @@ const TagWrapper = tw.div`
 text-sm font-medium text-indigo-600
 `
 const Category = tw.div`
-mt-0
+mt-0 text-amber
 `
 const ProjectLink = styled(Link)`
   ${tw`block mt-2`};
 `
 const ProjectTitle = tw.div`
-text-xl font-semibold text-gray-900
+text-xl font-semibold text-fogra
 `
 const ProjectIntro = tw.div`
-mt-3 text-base text-gray-500
+mt-3 text-base font-serif text-fogra-light
 `

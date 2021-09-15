@@ -36,18 +36,20 @@ const ProjectCards = ({ items }) => {
           <InnerWrapper>
             <TitleWrapper>
               <H2>
-                From the blog
+                Featured Projects
               </H2>
               <P>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
                 libero labore natus atque, ducimus sed.
               </P>
             </TitleWrapper>
-            {items.map(item => (
-                <CardsWrapper key={item.id}>
-                <ProjectCard {...item} />
-                </CardsWrapper>
-            ))}
+            <CardsWrapper>
+                {items.map(item => (
+                    <CardsInnerWrap key={item.id}>
+                    <ProjectCard {...item} />
+                    </CardsInnerWrap>
+                ))}
+            </CardsWrapper>
           </InnerWrapper>
         </OuterWrapper>
       </StyledBgImage>
@@ -83,11 +85,14 @@ const TitleWrapper = tw.div`
 text-center
 `
 const H2 = tw.h2`
-text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl
+text-3xl tracking-tight font-extrabold text-fogra sm:text-4xl
 `
 const P = tw.p`
-mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4
+mt-3 max-w-2xl mx-auto text-xl text-almond sm:mt-4
 `
 const CardsWrapper = tw.div`
 mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-none
+`
+const CardsInnerWrap = tw.section`
+flex flex-col rounded-lg shadow-lg overflow-hidden
 `
