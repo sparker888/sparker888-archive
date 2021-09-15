@@ -30,17 +30,14 @@ const ProjectPages = ({ items }) => {
     <Container>
       <StyledBgImage image={pluginImage}>
         <OuterWrapper>
-          <Inset>
-            <SetHeight />
-          </Inset>
           <InnerWrapper>
-            <CardsWrapper>
+            <ProjectWrapper>
                 {items.map(item => (
-                    <CardsInnerWrap key={item.id}>
+                    <ProjectInnerWrap key={item.id}>
                     <ProjectPage {...item} />
-                    </CardsInnerWrap>
+                    </ProjectInnerWrap>
                 ))}
-            </CardsWrapper>
+            </ProjectWrapper>
           </InnerWrapper>
         </OuterWrapper>
       </StyledBgImage>
@@ -61,26 +58,17 @@ const StyledBgImage = tw(BgImage)`
 w-full bg-center bg-cover
 `
 const OuterWrapper = tw.div`
-relative bg-transparent pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8
-`
-const Inset = tw.div`
-absolute inset-0
-`
-const SetHeight = tw.div`
-bg-transparent h-1/3 sm:h-2/3
+relative bg-transparent pt-4 pb-8 px-4 sm:px-6 lg:pt-12 lg:pb-12 lg:px-12
 `
 const InnerWrapper = tw.div`
-relative w-full
+relative w-full 
 `
 const H2 = tw.h2`
 text-3xl tracking-tight font-extrabold text-fogra sm:text-4xl
 `
-const P = tw.p`
-mt-3 max-w-2xl mx-auto text-xl text-almond sm:mt-4
+const ProjectWrapper = tw.div`
+mt-0 max-w-lg mx-auto grid gap-5 lg:grid-cols-1 lg:max-w-none
 `
-const CardsWrapper = tw.div`
-mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-1 lg:max-w-none
-`
-const CardsInnerWrap = tw.section`
+const ProjectInnerWrap = tw.section`
 flex flex-col rounded-lg shadow-lg overflow-hidden
 `

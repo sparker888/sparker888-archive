@@ -30,7 +30,7 @@ const ProjectPage = (props) => {
         <FlexWrapper>
           <TextWrapper>
             <H1>{title}</H1>
-            <Button to={nextProjectUrl}>View Live</Button>
+            <Button href={liveUrl} target="_blank">View Live</Button>
           </TextWrapper>
         </FlexWrapper>
       </StyledBgImage>
@@ -65,12 +65,10 @@ const ProjectPage = (props) => {
                 </Description>
                 <ButtonWrapper>
                   <Button1>
-                    <Button1Style href={liveUrl}>Live Site</Button1Style>
+                    <Button1Style href={liveUrl} target="_blank">Live Site</Button1Style>
                   </Button1>
                   <Button2>
-                    <Button2Style href={liveUrl}>
-                      Next Project
-                    </Button2Style>
+                    <Button2Style to={nextProjectUrl}>Next Project</Button2Style>
                   </Button2>
                 </ButtonWrapper>
               </DescriptionInnerWrapper>
@@ -124,7 +122,7 @@ ProjectPage.propTypes = {
   tag: PropTypes.string.isRequired,
   subhead: PropTypes.string.isRequired,
   secondTitle: PropTypes.string.isRequired,
-  loveUrl: PropTypes.string.isRequired,
+  liveUrl: PropTypes.string.isRequired,
   nextProjectUrl: PropTypes.string.isRequired,
   summary: PropTypes.object.isRequired,
   description: PropTypes.object.isRequired,
@@ -168,7 +166,7 @@ const OuterWrapper = tw.div`
 bg-white pb-8 sm:pb-12 lg:pb-12
 `
 const InnerWrapper = tw.div`
-pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48
+pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-24
 `
 const SectionOneWrapper = tw.section`
 sm: mx-12
@@ -183,11 +181,10 @@ const TextWrapper = tw.div`
 text-center
 `
 const H1 = tw.h1`
-text-2xl font-serif font-semibold text-fogra uppercase lg:text-3xl
+text-2xl font-serif font-semibold text-fogra uppercase lg:text-3xl mb-8
 `
-const Button = styled(Link)`
-  ${tw`w-full px-4 py-2 mt-4 text-sm font-medium text-white uppercase transition-colors duration-200 transform bg-kobe rounded-md lg:w-auto hover:bg-kobe-light focus:outline-none focus:bg-kobe-light
-`};
+const Button = tw.a`
+w-full px-4 py-2 mt-4 lg:mt-8 text-sm font-medium text-white uppercase transition-colors duration-200 transform bg-kobe rounded-md lg:w-auto hover:bg-kobe-light focus:outline-none focus:bg-kobe-light
 `
 const ProjectTitle = tw.section`
 text-base max-w-prose mx-auto lg:max-w-none
@@ -217,28 +214,28 @@ const P = tw.div`
 mx-0 text-fogra
 `
 const DescriptionText = tw.ul`
-mx-0 text-kobe
+mx-0 font-serif text-fogra
 `
 const SummaryText = tw.li`
-mx-0 text-kobe
+mx-0 font-serif text-fogra
 `
 const SubHead = tw.div`
 my-4 text-2xl leading-8 font-extrabold tracking-tight text-fogra-lightest sm:text-3xl
 `
 const ButtonWrapper = tw.div`
-mt-10 flex text-base max-w-prose mx-auto lg:max-w-none
+mt-10 flex flex-row-reverse text-base max-w-prose mx-auto lg:max-w-none
 `
 const Button1 = tw.button`
 rounded-md shadow
 `
 const Button2 = tw.button`
-rounded-md shadow ml-4
+rounded-md shadow mx-4
 `
 const Button1Style = tw.a`
 w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-kobe hover:bg-kobe-light
 `
-const Button2Style = tw.a`
-w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-ming hover:bg-ming-light
+const Button2Style = styled(Link)`
+  ${tw`w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-ming hover:bg-ming-light`}
 `
 const ScreenOuterWrapper = tw.div`
 sm:mx-auto sm:max-w-3xl sm:px-6
@@ -250,7 +247,7 @@ const PatternSection = tw.div`
 hidden sm:block
 `
 const PatternDefinition = tw.div`
-absolute inset-y-0 left-1/2 w-screen bg-gray-50 rounded-l-3xl lg:left-80 lg:right-0 lg:w-full
+absolute inset-y-0 left-1/2 w-screen bg-kobe-lightest rounded-l-3xl lg:left-80 lg:right-0 lg:w-full
 `
 const SVG = tw.svg`
 absolute top-8 right-1/2 -mr-3 lg:m-0 lg:left-0

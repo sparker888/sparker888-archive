@@ -40,7 +40,10 @@ module.exports = {
         kobe: {
           DEFAULT: "#78290F",
           light: "#E45525",
-          lightest: "#F2AA92",
+          lightest: "#ffe9d6",
+        },
+        productbg: {
+          DEFAULT: "#EBF7FF",
         },
       },
       spacing: {
