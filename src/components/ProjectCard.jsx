@@ -5,7 +5,13 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 
 const ProjectCard = (props) => {
-  const { title, slug, intro, tag, hero } = props
+  const { 
+    title, 
+    slug, 
+    intro, 
+    tag, 
+    hero 
+  } = props
 
   const image = getImage(hero)
 
@@ -21,9 +27,10 @@ const ProjectCard = (props) => {
           </TagWrapper>
           <ProjectLink to={`/${slug}`}>
             <ProjectTitle>{title}</ProjectTitle>
-            <ProjectIntro dangerouslySetInnerHTML={{
-              __html: intro.childMarkdownRemark.rawMarkdownBody,
-              }} 
+            <ProjectIntro
+              dangerouslySetInnerHTML={{
+                __html: intro.childMarkdownRemark.rawMarkdownBody,
+              }}
             />
           </ProjectLink>
         </FlexWrapper>
@@ -56,10 +63,7 @@ export const query = graphql`
     tag
     order
     hero {
-      gatsbyImageData(
-          placeholder: BLURRED, 
-          layout: CONSTRAINED,
-          )
+      gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
     }
   }
 `

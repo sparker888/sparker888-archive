@@ -7,6 +7,7 @@ import ProjectCards from "../components/ProjectCards"
 import { graphql } from "gatsby"
 
 const Projects = ({ data }) => {
+  console.log(data)
   return (
     <Layout>
       <SEO />
