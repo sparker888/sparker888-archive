@@ -1,4 +1,4 @@
-import tw, {styled, css } from "twin.macro";
+import tw, {styled } from "twin.macro";
 import React, { useState } from "react";
 import { Link } from "gatsby";
 import LinksMobile from "./LinksMobile";

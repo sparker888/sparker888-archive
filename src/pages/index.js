@@ -1,6 +1,6 @@
 import tw from "twin.macro"
 import React from "react";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 import Layout from "../layouts/Layout";
 import Intro from "../components/Intro";
 import Featured from "../components/Featured"
@@ -9,7 +9,7 @@ import { graphql } from "gatsby"
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <SEO />
+      <Seo />
       <Intro />
       <FeaturedHeroesWrapper>
         {data.heroes && data.heroes.nodes.length > 0 ? (

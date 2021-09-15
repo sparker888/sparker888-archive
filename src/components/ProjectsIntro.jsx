@@ -72,12 +72,6 @@ mt-10 sm:flex sm:justify-center lg:justify-start
 const Button1 = tw.button`
 rounded-md shadow
 `
-const Button2 = tw.button`
-mt-3 rounded-md shadow sm:mt-0 ml-3
-`
 const Link1 = tw.a`
 w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-kobe hover:bg-kobe-light md:py-4 md:text-lg md:px-10
-`
-const Link2 = tw.a`
-w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-ming hover:bg-ming-light md:py-4 md:text-lg md:px-10
 `

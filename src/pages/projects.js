@@ -1,6 +1,6 @@
 import tw from "twin.macro"
 import React from "react";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 import Layout from "../layouts/Layout";
 import ProjectsIntro from "../components/ProjectsIntro";
 import ProjectCards from "../components/ProjectCards"
@@ -10,7 +10,7 @@ const Projects = ({ data }) => {
   console.log(data)
   return (
     <Layout>
-      <SEO />
+      <Seo />
       <ProjectsIntro />
       <FeaturedProjectsWrapper>
         {data.project && data.project.nodes.length > 0 ? (

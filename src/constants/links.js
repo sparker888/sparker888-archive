@@ -34,5 +34,3 @@ const data = [
   ]
   
   export default data
-
-  const style = "{tw`block mt-1 sm:mt-0 sm:ml-2 px-2 py-1 font-semibold text-almond-light rounded`}"

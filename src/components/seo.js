@@ -5,7 +5,7 @@ import { useLocation } from "@reach/router";
 import { useStaticQuery, graphql } from "gatsby";
 
 const SEO = ({ title, description, publicURL }) => {
-  //destructure props from query as defaults
+  {/* destructure props from query as defaults */}
   const { pathname } = useLocation();
   const { site } = useStaticQuery(query);
 
@@ -31,8 +31,8 @@ const SEO = ({ title, description, publicURL }) => {
     <>
       <Helmet title={seo.title} titleTemplate={titleTemplate}>
         {" "}
-        //main title tag - the most important one-page factor for seo. Content
-        is the most important factor.
+        {/* main title tag - the most important one-page factor for seo. Content
+        is the most important factor.*/}
         {/* General tags */}
         <meta name="description" content={seo.description} />
         <meta name="image" content={seo.imageArticle} />

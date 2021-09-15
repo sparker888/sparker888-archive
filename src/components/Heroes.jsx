@@ -18,7 +18,7 @@ const Heroes = props => {
       </ImageWrapper>
       <TextCover>
         <div>
-        <H1 css={{color}} css={{justifyContent}}>{heroTitle}</H1>
+        <H1 css={{color, justifyContent}}>{heroTitle}</H1>
         </div>
         <FlexRow css={{flexDirection}}>
         <P>{heroText}</P>

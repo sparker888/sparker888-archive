@@ -1,17 +1,17 @@
 import tw from "twin.macro"
 import React from "react";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 import Layout from "../layouts/Layout";
-import ProjectPages from "../projects/ProjectPages"
+import ProjectPages from "../projects/ProjectPages";
 import { graphql } from "gatsby"
 
-const Project = ({data}) => {
+const GravitalProject = ({data}) => {
 
   console.log(data);
   
   return (
     <Layout>
-      <SEO />
+      <Seo />
       <FeaturedProjectWrapper>
         {data.myproject && data.myproject.nodes.length > 0 ? (
           <ProjectPages items={data.myproject.nodes} />
@@ -23,7 +23,7 @@ const Project = ({data}) => {
   );
 };
 
-export default Project
+export default GravitalProject
 
 export const query = graphql`
   query ProjectQuery {

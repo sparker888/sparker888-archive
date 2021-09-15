@@ -1,7 +1,6 @@
 import tw, {styled} from "twin.macro";
 import React from 'react';
 import { Link } from "gatsby";
-import pageLinks from "../constants/links";
 
 export default function LinksMobile() {
 

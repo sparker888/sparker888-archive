@@ -79,7 +79,7 @@ const ProjectPage = (props) => {
             <ScreenInnerWrapper>
               <PatternSection>
                 <PatternDefinition />
-                <SVG width={404} height={392} fill="none" viewBox="0 0 404 392">
+                <Svg width={404} height={392} fill="none" viewBox="0 0 404 392">
                   <defs>
                     <pattern
                       id="837c3e70-6c3a-44e6-8854-cc48c737b659"
@@ -89,7 +89,7 @@ const ProjectPage = (props) => {
                       height={20}
                       patternUnits="userSpaceOnUse"
                     >
-                      <RECT
+                      <Rect
                         x={0}
                         y={0}
                         width={4}
@@ -103,7 +103,7 @@ const ProjectPage = (props) => {
                     height={392}
                     fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"
                   />
-                </SVG>
+                </Svg>
               </PatternSection>
               <ScreenSection>
                 <GatsbyImage image={image} alt={title} className="screenShot" />
@@ -210,9 +210,6 @@ relative
 const Description = tw.div`
 prose prose-indigo text-fogra mx-auto lg:max-w-none
 `
-const P = tw.div`
-mx-0 text-fogra
-`
 const DescriptionText = tw.ul`
 mx-0 font-serif text-fogra
 `
@@ -247,9 +244,9 @@ const PatternSection = tw.div`
 hidden sm:block
 `
 const PatternDefinition = tw.div`
-absolute inset-y-0 left-1/2 w-screen bg-kobe-lightest rounded-l-3xl lg:left-80 lg:right-0 lg:w-full
+absolute inset-y-0 left-1/2 w-screen bg-ming-lightest rounded-l-3xl lg:left-80 lg:right-0 lg:w-full
 `
-const SVG = tw.svg`
+const Svg = tw.svg`
 absolute top-8 right-1/2 -mr-3 lg:m-0 lg:left-0
 `
 const ScreenSection = styled.div`
@@ -258,9 +255,9 @@ const ScreenSection = styled.div`
     width: 100%;
   }
 `
-const IMG = tw.img`
+{/*const IMG = tw.img`
 w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none
-`
-const RECT = tw.rect`
+`*/}
+const Rect = tw.rect`
 text-gray-200
 `

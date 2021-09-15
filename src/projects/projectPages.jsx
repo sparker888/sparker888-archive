@@ -1,6 +1,6 @@
 import tw from "twin.macro"
 import React from "react"
-import { graphql, useStaticQuery, Link } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
 import { BgImage } from "gbimage-bridge"
 import PropTypes from "prop-types"
@@ -62,9 +62,6 @@ relative bg-transparent pt-4 pb-8 px-4 sm:px-6 lg:pt-12 lg:pb-12 lg:px-12
 `
 const InnerWrapper = tw.div`
 relative w-full 
-`
-const H2 = tw.h2`
-text-3xl tracking-tight font-extrabold text-fogra sm:text-4xl
 `
 const ProjectWrapper = tw.div`
 mt-0 max-w-lg mx-auto grid gap-5 lg:grid-cols-1 lg:max-w-none
