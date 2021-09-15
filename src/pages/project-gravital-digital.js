@@ -2,10 +2,10 @@ import tw from "twin.macro"
 import React from "react";
 import SEO from "../components/seo";
 import Layout from "../layouts/Layout";
-import ProjectQuery from "../projects/ProjectQuery"
+import ProjectPages from "../projects/ProjectPages"
 import { graphql } from "gatsby"
 
-const ProjectShowcasePage = ({data}) => {
+const Project = ({data}) => {
 
   console.log(data);
   
@@ -14,7 +14,7 @@ const ProjectShowcasePage = ({data}) => {
       <SEO />
       <FeaturedProjectWrapper>
         {data.myproject && data.myproject.nodes.length > 0 ? (
-          <ProjectQuery items={data.myproject.nodes} />
+          <ProjectPages items={data.myproject.nodes} />
         ) : (
           <div>No Project found.</div>
         )}
@@ -23,13 +23,13 @@ const ProjectShowcasePage = ({data}) => {
   );
 };
 
-export default ProjectShowcasePage
+export default Project
 
 export const query = graphql`
-  query ProjectPage {
+  query ProjectQuery {
     myproject: allContentfulProject(filter: {title: {eq: "Project: Gravital Digital"}}) {
       nodes {
-        ...ProjectQuery
+        ...ProjectPage
       }
     }
   }
