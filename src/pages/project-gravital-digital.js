@@ -35,5 +35,5 @@ export const query = graphql`
   }
 `
 const FeaturedProjectWrapper = tw.div`
-w-full
+w-full my-0
 `
