@@ -1,16 +1,39 @@
+import tw from "twin.macro"
 import React from "react";
 import SEO from "../components/seo";
 import Layout from "../layouts/Layout";
-import Project from "../components/Project"
+import ProjectsIntro from "../components/ProjectsIntro";
+import ProjectCards from "../components/ProjectCards"
+import { graphql } from "gatsby"
 
 const Projects = ({ data }) => {
   return (
     <Layout>
       <SEO />
-      <Project />
+      <ProjectsIntro />
+      <FeaturedProjectsWrapper>
+        {data.project && data.project.nodes.length > 0 ? (
+          <ProjectCards items={data.project.nodes} />
+        ) : (
+          <div>No Projects found.</div>
+        )}
+      </FeaturedProjectsWrapper>
     </Layout>
   );
 };
 
 export default Projects
 
+export const query = graphql`
+  query ProjectsQuery {
+    project: allContentfulProject (sort: { fields: [order] order: ASC} ) {
+      nodes {
+        ...ProjectCard
+      }
+    }
+  }
+`
+
+const FeaturedProjectsWrapper = tw.div`
+w-full
+`

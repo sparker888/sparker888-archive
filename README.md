@@ -68,6 +68,7 @@ This repo started with `gatsby init` and I added and configured the following pl
 - [gatsby-plugin-image](https://www.gatsbyjs.com/plugins/gatsby-plugin-image)
 - [gatsby-plugin-sharp](https://www.gatsbyjs.com/plugins/gatsby-plugin-sharp)
 - [gatsby-transformer-sharp](https://www.gatsbyjs.com/plugins/gatsby-transformer-shar)
+- [gatsby-transformer-remark](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/)
 - [gatsby-plugin-mdx](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx)
 - [gatsby-remark-images](https://www.gatsbyjs.com/plugins/gatsby-remark-images/)
 - [gatsby-remark-prismjs](https://www.gatsbyjs.com/plugins/gatsby-remark-prismjs/)

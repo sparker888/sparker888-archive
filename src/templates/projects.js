@@ -55,18 +55,15 @@ const Project = () => {
               <Description>
                 <P>
                   Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget
-                  pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.
+                  pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna. Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet
+                  velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus
+                  egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.
                 </P>
                 <UL role="list">
                   <LI>Quis eLIt egestas venenatis mattis dignissim.</LI>
                   <LI>Cras cras lobortis vitae vivamus ULtricies faciLIsis tempus.</LI>
                   <LI>Orci in sit morbi dignissim metus diam arcu pretium.</LI>
                 </UL>
-                <P>
-                  Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet
-                  velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus
-                  egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.
-                </P>
                 <SubHead>We’re here to help</SubHead>
                 <P>
                   Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam.
@@ -148,13 +145,13 @@ const StyledBgImage = tw(BgImage)`
 w-full bg-center bg-cover h-128
 `
 const FlexWrapper = tw.div`
-flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50
+flex items-center justify-center w-full h-full bg-opacity-100
 `
 const TextWrapper = tw.div`
 text-center
 `
 const H1 = tw.h1`
-text-2xl font-serif font-semibold text-white uppercase lg:text-3xl
+text-2xl font-serif font-semibold text-fogra uppercase lg:text-3xl
 `
 const Button = tw.button`
 w-full px-4 py-2 mt-4 text-sm font-medium text-white uppercase transition-colors duration-200 transform bg-kobe rounded-md lg:w-auto hover:bg-kobe-light focus:outline-none focus:bg-kobe-light
@@ -192,7 +189,7 @@ mx-0 text-kobe
 const LI = tw.li`
 mx-0 text-kobe
 `
-const SubHead = tw.p`
+const SubHead = tw.div`
 my-4 text-2xl leading-8 font-extrabold tracking-tight text-fogra-lightest sm:text-3xl
 `
 const ButtonWrapper = tw.div`

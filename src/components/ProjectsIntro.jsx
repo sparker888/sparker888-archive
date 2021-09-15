@@ -1,43 +1,43 @@
 import tw from "twin.macro"
 import React from "react"
 
-const Intro = () => {
+const ProjectsIntro = () => {
   return (
     <Main>
       <LeftBlock>
         <BlockWrapper>
           <H1>
-            <Span1>🤙 Aloha and Welcome. I'm</Span1>{" "}
-            <Span2>Stephen Parker</Span2>
+            <Span1>With incredible technology,</Span1>{" "}
+            <Span2>I'm building amazing things! 🔥</Span2>
           </H1>
           <P>
-            Thanks for your interest. If you came to review projects and skills,
-            please begin with showcase projects below. If you're checking out
-            the Gatsby Starter, feel free to look around. A link to the GitHub
-            repo is in the footer. Please bear with me as the build is still in
-            progress. Mahalo!
+            For 25 years, I have been building websites for some of the largest
+            brands, smallest businesses, brightest entrepreneurs and just for
+            fun. During the past six months, I have brushed up on JavaScript,
+            the latest styling methods and taken a deep dive into React with a
+            focus on @GatsbyJS. Check out some of my latest work!
           </P>
           <ButtonWrap>
             <Button1>
-              <Link1 href="/gallery">Gallery</Link1>
+              <Link1 href="/gallery">Next Featured</Link1>
             </Button1>
-            <Button2>
-              <Link2 href="/blog">My Blog</Link2>
-            </Button2>
+            {/* <Button2>
+                  <Link2 href="/blog">My Blog</Link2>
+                </Button2> */}
           </ButtonWrap>
         </BlockWrapper>
       </LeftBlock>
       <RightBlock>
         <Image
-          src="https://res.cloudinary.com/gravital-digital/image/upload/v1629628368/sparker-portrait_bv6dzq.jpg"
-          alt="Stephen Parker's Portrait"
+          src="https://res.cloudinary.com/gravital-digital/image/upload/v1631644795/building-things_hbfo2q.png"
+          alt="Lego Star Wars"
         />
       </RightBlock>
     </Main>
   )
 }
 
-export default Intro
+export default ProjectsIntro
 
 const Main = tw.main`
 lg:relative bg-almond-light
