@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout";
 import ProjectWrapper from "../projects/ProjectWrapper";
 import { graphql } from "gatsby"
 
-const VisualsProject = ({data}) => {
+const GravitalProject = ({data}) => {
 
   console.log(data);
   
@@ -23,11 +23,11 @@ const VisualsProject = ({data}) => {
   );
 };
 
-export default VisualsProject
+export default GravitalProject
 
 export const query = graphql`
-  query Project1Query {
-    myproject: allContentfulProject(filter: {title: {eq: "Project: Gravital Digital"}}) {
+  query Project4Query {
+    myproject: allContentfulProject(filter: {title: {eq: "Project: Gravital Visuals"}}) {
       nodes {
         ...ProjectPage
       }
