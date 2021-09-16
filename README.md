@@ -10,7 +10,7 @@ Here's [why it's important](https://gravitaldigital.com/blog/googles-biggest-alg
 
 I'm a 🚀 Space, 🐬 Sea and 🚗 Car Geek. I'm passionate about 📸 photography and 🖥️ website design and development.
 
-*🚧 As of September 2, 2021 I'm currently building my personal bio site. 🚧*
+*🚧 As of September 16, 2021 I'm currently building my personal bio site. 🚧*
 
 This is the README.md for my site that also serves as a Gatsby 3.x starter repository bringing together the magic of [Tailwindcss](https://tailwindcss.com/) with [twin](https://github.com/ben-rogerson/twin.macro) and the super animation powers of [GSAP](https://greensock.com/). The project uses a core set of modern [Gatsby plugins](https://www.gatsbyjs.com/plugins) as listed below. I'm also experimenting with [Simple React lightbox](https://simple-react-lightbox.dev/).
 
@@ -56,9 +56,9 @@ For more details, see [this Tuts](https://webdesign.tutsplus.com/articles/an-int
 
 ## Use this repository as a Gatsby + Tailwind + twin starter (more soon)
 
-**Current Status as of September 13, 2021** 
+**Current Status as of September 16, 2021** 
 
-sparker888-tailwindcss-starter a work in progress started 8-18-21 and I plan to have it completed on 9-15-21.
+sparker888-tailwindcss-starter a work in progress started 8-18-21 and I plan to have it completed on 9-20-21.
 
 This repo started with `gatsby init` and I added and configured the following plugins (if not already part of the initial install):
 
@@ -85,7 +85,7 @@ From there, I followed the [Tailwindcss Gatsby installation documentation](https
 
 **Important Notes**
 
-*If you decide to spin up this starter, you will need to remove the plugin for Contentful as well as the references to Contentful and the API keys in gatsby-config.js before building. I'm moving to Strapi, but this is a work in progress. I'll update this section in another day or two. This will be sorted out within the next week.*
+*This site is a work in progress. If you're not familiar with these packages and how such a site works, I recommend finding another starter. I'll keep this site updated and announce when this starter is ready to go. Thanks.*
 
 ## 🚀 Quick start
 
