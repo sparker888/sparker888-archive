@@ -1,3 +1,5 @@
+// This component is not currently being used, but was the source of other project components like ProjectPage.jsx.
+
 import tw, { styled } from "twin.macro"
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby"

@@ -178,10 +178,11 @@ const FlexWrapper = tw.div`
 flex items-center justify-center w-full h-full bg-opacity-100
 `
 const TextWrapper = tw.div`
-text-center
+text-center pl-8 pr-8 md:py-12
 `
-const H1 = tw.h1`
-text-2xl font-serif font-semibold text-fogra uppercase lg:text-3xl mb-8
+const H1 = styled.h1`
+  text-shadow: 4px 4px 8px black;
+  ${tw`text-5xl font-serif font-semibold text-white drop-shadow-2xl uppercase lg:text-6xl mb-8`}
 `
 const Button = tw.a`
 w-full px-4 py-2 mt-4 lg:mt-8 text-sm font-medium text-white uppercase transition-colors duration-200 transform bg-kobe rounded-md lg:w-auto hover:bg-kobe-light focus:outline-none focus:bg-kobe-light

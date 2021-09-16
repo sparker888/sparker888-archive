@@ -36,11 +36,10 @@ const ProjectCards = ({ items }) => {
           <InnerWrapper>
             <TitleWrapper>
               <H2>
-                Featured Projects
+                My Featured Projects
               </H2>
               <P>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
-                libero labore natus atque, ducimus sed.
+                These projects showcase both my UI/UX development and digital media capabilities as a photographer and videographer. Enjoy!
               </P>
             </TitleWrapper>
             <CardsWrapper>

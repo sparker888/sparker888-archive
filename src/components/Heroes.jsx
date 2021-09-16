@@ -24,10 +24,10 @@ const Heroes = props => {
         <P>{heroText}</P>
         <Buttons>
           <Button1>
-            <Link1 to="/skilltree">Skills</Link1>
+            <Link1 to="/skilltree/">Skills</Link1>
           </Button1>
           <Button2>
-            <Link2 to="/projects">Details</Link2>
+            <Link2 to="/projects/">Details</Link2>
           </Button2>
         </Buttons>
         </FlexRow>
