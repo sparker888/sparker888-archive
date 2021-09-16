@@ -1,6 +1,6 @@
 import tw, { styled } from "twin.macro"
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import PropTypes from "prop-types"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
@@ -23,20 +23,12 @@ const Heroes = props => {
         <FlexRow css={{flexDirection}}>
         <P>{heroText}</P>
         <Buttons>
-              <Button1>
-                <Link1
-                  href="/skilltree"
-                >
-                  Skills
-                </Link1>
-              </Button1>
-              <Button2>
-                <Link2
-                  href="/projects"
-                >
-                  Details
-                </Link2>
-              </Button2>
+          <Button1>
+            <Link1 to="/skilltree">Skills</Link1>
+          </Button1>
+          <Button2>
+            <Link2 to="/projects">Details</Link2>
+          </Button2>
         </Buttons>
         </FlexRow>
       </TextCover>
@@ -110,9 +102,9 @@ rounded-md shadow
 const Button2 = tw.button`
 rounded-md shadow ml-3
 `
-const Link1 = tw.a`
-w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-fogra bg-almond-light hover:text-white hover:bg-ming-light md:py-4 md:text-lg md:px-10
+const Link1 = styled(Link)`
+  ${tw`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-fogra bg-almond-light hover:text-white hover:bg-ming-light md:py-4 md:text-lg md:px-10`}
 `
-const Link2 = tw.a`
-w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-kobe bg-almond-light hover:text-white hover:bg-kobe-light md:py-4 md:text-lg md:px-10
+const Link2 = styled(Link)`
+  ${tw`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-kobe bg-almond-light hover:text-white hover:bg-kobe-light md:py-4 md:text-lg md:px-10`}
 `
