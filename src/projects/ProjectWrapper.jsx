@@ -6,7 +6,7 @@ import { BgImage } from "gbimage-bridge"
 import PropTypes from "prop-types"
 import ProjectPage from "./ProjectPage"
 
-const ProjectPages = ({ items }) => {
+const ProjectWrapper = ({ items }) => {
 
   const { placeholderImage } = useStaticQuery(
     graphql`
@@ -31,13 +31,13 @@ const ProjectPages = ({ items }) => {
       <StyledBgImage image={pluginImage}>
         <OuterWrapper>
           <InnerWrapper>
-            <ProjectWrapper>
+            <ProjectInnerWrapper>
                 {items.map(item => (
                     <ProjectInnerWrap key={item.id}>
                     <ProjectPage {...item} />
                     </ProjectInnerWrap>
                 ))}
-            </ProjectWrapper>
+            </ProjectInnerWrapper>
           </InnerWrapper>
         </OuterWrapper>
       </StyledBgImage>
@@ -45,11 +45,11 @@ const ProjectPages = ({ items }) => {
   )
 }
 
-ProjectPages.propTypes = {
+ProjectWrapper.propTypes = {
     items: PropTypes.arrayOf(PropTypes.object).isRequired,
   }
 
-export default ProjectPages
+export default ProjectWrapper
 
 const Container = tw.div`
 w-full
@@ -63,7 +63,7 @@ relative bg-transparent pt-4 pb-8 px-4 sm:px-6 lg:pt-12 lg:pb-12 lg:px-12
 const InnerWrapper = tw.div`
 relative w-full 
 `
-const ProjectWrapper = tw.div`
+const ProjectInnerWrapper = tw.div`
 mt-0 max-w-lg mx-auto grid gap-5 lg:grid-cols-1 lg:max-w-none
 `
 const ProjectInnerWrap = tw.section`

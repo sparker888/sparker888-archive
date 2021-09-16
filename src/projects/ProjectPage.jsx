@@ -253,11 +253,14 @@ const ScreenSection = styled.div`
   ${tw`relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12`}
   .screenShot {
     width: 100%;
+    border-radius: 0.25rem;
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    box-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-ring-color: rgba(0, 0, 0, var(--tw-ring-opacity));
+    --tw-ring-opacity: 0.05;
   }
 `
-{/*const IMG = tw.img`
-w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none
-`*/}
 const Rect = tw.rect`
 text-gray-200
 `
