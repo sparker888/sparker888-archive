@@ -1,6 +1,6 @@
 import tw from "twin.macro"
 import React from "react";
-import Seo from "../components/seo";
+import Seo from "../components/Seo";
 import Layout from "../layouts/Layout";
 import ProjectWrapper from "../projects/ProjectWrapper";
 import { graphql } from "gatsby"

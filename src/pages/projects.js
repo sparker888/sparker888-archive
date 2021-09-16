@@ -1,6 +1,6 @@
 import tw from "twin.macro"
 import React from "react";
-import Seo from "../components/seo";
+import Seo from "../components/Seo";
 import Layout from "../layouts/Layout";
 import ProjectsIntro from "../components/ProjectsIntro";
 import ProjectCards from "../components/ProjectCards"
