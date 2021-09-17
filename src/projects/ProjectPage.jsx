@@ -4,6 +4,7 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { BgImage } from "gbimage-bridge"
 import PropTypes from "prop-types"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 const ProjectPage = (props) => {
   const {
@@ -30,7 +31,9 @@ const ProjectPage = (props) => {
         <FlexWrapper>
           <TextWrapper>
             <H1>{title}</H1>
-            <Button href={liveUrl} target="_blank">View Live</Button>
+            <Button href={liveUrl} target="_blank">
+              View Live
+            </Button>
           </TextWrapper>
         </FlexWrapper>
       </StyledBgImage>
@@ -42,33 +45,31 @@ const ProjectPage = (props) => {
               <Title>{secondTitle}</Title>
             </ProjectTitle>
             <ProjectIntro>
-              <IntroParagraph
-                dangerouslySetInnerHTML={{
-                  __html: intro.childMarkdownRemark.rawMarkdownBody,
-                }}
-              />
+              <IntroParagraph>
+                <MDXRenderer>{intro.childMdx.body}</MDXRenderer>
+              </IntroParagraph>
             </ProjectIntro>
             <DescriptionOuterWrapper>
               <DescriptionInnerWrapper>
                 <Description>
-                  <DescriptionText
-                    dangerouslySetInnerHTML={{
-                      __html: description.childMarkdownRemark.rawMarkdownBody,
-                    }}
-                  />
+                  <DescriptionText>
+                  <MDXRenderer>{description.childMdx.body}</MDXRenderer>
+                  </DescriptionText>
                   <SubHead>{subhead}</SubHead>
-                  <SummaryText
-                    dangerouslySetInnerHTML={{
-                      __html: summary.childMarkdownRemark.rawMarkdownBody,
-                    }}
-                  />
+                  <SummaryText>
+                  <MDXRenderer>{summary.childMdx.body}</MDXRenderer>
+                  </SummaryText>
                 </Description>
                 <ButtonWrapper>
                   <Button1>
-                    <Button1Style href={liveUrl} target="_blank">Live Site</Button1Style>
+                    <Button1Style href={liveUrl} target="_blank">
+                      Live Site
+                    </Button1Style>
                   </Button1>
                   <Button2>
-                    <Button2Style to={nextProjectUrl}>Next Project</Button2Style>
+                    <Button2Style to={nextProjectUrl}>
+                      Next Project
+                    </Button2Style>
                   </Button2>
                 </ButtonWrapper>
               </DescriptionInnerWrapper>
@@ -133,33 +134,33 @@ export default ProjectPage
 export const query = graphql`
   fragment ProjectPage on ContentfulProject {
     title
-        intro {
-          childMarkdownRemark {
-            rawMarkdownBody
-          }
-        }
-        tag
-        subhead
-        secondTitle
-        liveUrl
-        nextProjectUrl
-        summary {
-          childMarkdownRemark {
-            rawMarkdownBody
-          }
-        }
-        description {
-          childMarkdownRemark {
-            rawMarkdownBody
-          }
-        }
-        hero {
-          gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
-        }
-        screenshot {
-          gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
-        }
+    intro {
+      childMdx {
+        body
       }
+    }
+    tag
+    subhead
+    secondTitle
+    liveUrl
+    nextProjectUrl
+    summary {
+      childMdx {
+        body
+      }
+    }
+    description {
+      childMdx {
+        body
+      }
+    }
+    hero {
+      gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
+    }
+    screenshot {
+      gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
+    }
+  }
 `
 
 const OuterWrapper = tw.div`
@@ -255,9 +256,12 @@ const ScreenSection = styled.div`
   .screenShot {
     width: 100%;
     border-radius: 0.25rem;
-    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    box-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    box-shadow: var(--tw-ring-inset) 0 0 0
+      calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     --tw-ring-color: rgba(0, 0, 0, var(--tw-ring-opacity));
     --tw-ring-opacity: 0.05;
   }

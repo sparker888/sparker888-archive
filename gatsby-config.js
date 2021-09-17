@@ -55,6 +55,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-mdx",
       options: {
+        extensions: [`.md`, `.mdx`],
         defaultLayouts: {
           pages: path.join(__dirname, "./src/templates/pages.js"),
         },
@@ -81,17 +82,6 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-mdx-embed",
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        // Footnotes mode (default: true)
-        footnotes: true,
-        // GitHub Flavored Markdown mode (default: true)
-        gfm: true,
-        // Plugins configs
-        plugins: [],
-      },
-    },
     "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-source-filesystem",

@@ -3,6 +3,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import PropTypes from "prop-types"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 const ProjectCard = (props) => {
   const { 
@@ -27,11 +28,9 @@ const ProjectCard = (props) => {
           </TagWrapper>
           <ProjectLink to={`/${slug}`}>
             <ProjectTitle>{title}</ProjectTitle>
-            <ProjectIntro
-              dangerouslySetInnerHTML={{
-                __html: intro.childMarkdownRemark.rawMarkdownBody,
-              }}
-            />
+            <ProjectIntro>
+              <MDXRenderer>{intro.childMdx.body}</MDXRenderer>
+            </ProjectIntro>
           </ProjectLink>
         </FlexWrapper>
       </ContentWrapper>
@@ -56,8 +55,8 @@ export const query = graphql`
     title
     slug
     intro {
-      childMarkdownRemark {
-        rawMarkdownBody
+      childMdx {
+        rawBody
       }
     }
     tag
