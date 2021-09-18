@@ -71,9 +71,9 @@ const GalleryWrapper = tw.div`
 mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8
 `
 const ImageWrap = styled.div`
-  ${tw`col-span-1 flex justify-center py-8 px-8 bg-gray-50`}
+  ${tw`col-span-1 flex justify-center bg-almond`}
   .imageBox {
-    max-height: 96rem;
+    object-fit: cover;
   }
 `
 const PublicURL = tw.a`
