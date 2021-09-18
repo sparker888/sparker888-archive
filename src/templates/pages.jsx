@@ -178,6 +178,7 @@ export const query = graphql`
       metaDescription
       author {
         name
+        title
       }
       publishDate(formatString: "MMMM DD, YYYY")
     }
