@@ -8,8 +8,8 @@ const ProjectsIntro = () => {
       <LeftBlock>
         <BlockWrapper>
           <H1>
-            <Span1>With incredible technology,</Span1>{" "}
-            <Span2>I'm building amazing things! 🔥</Span2>
+            <Span1>Modern development</Span1>{" "}
+            <Span2>delivers better performance. 🚀</Span2>
           </H1>
           <P>
             For 25 years, I have built and managed digital properties for some of the largest brands, smallest businesses, brightest entrepreneurs and <SPAN href="https://sparker888.github.io/eve_ships/" target="_blank">just for fun</SPAN>. I have worked with a lot of great people and technology along the way.

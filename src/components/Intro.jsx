@@ -22,7 +22,7 @@ const Intro = () => {
               <Link1 href="/gallery">Gallery</Link1>
             </Button1>
             <Button2>
-              <Link2 href="/blog">My Blog</Link2>
+              <Link2 href="/blog/">Articles</Link2>
             </Button2>
           </ButtonWrap>
         </BlockWrapper>

@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Heroes = props => {
-    const { heroTitle, color, heroText, justifyContent, flexDirection, heroImage, backgroundColor, order } = props
+    const { heroTitle, color, heroText, justifyContent, flexDirection, heroImage, backgroundColor } = props
 
     const image = getImage(heroImage)
   
@@ -24,7 +24,7 @@ const Heroes = props => {
         <P>{heroText}</P>
         <Buttons>
           <Button1>
-            <Link1 to="/skilltree/">Skills</Link1>
+            <Link1 to="/skills/">Skills</Link1>
           </Button1>
           <Button2>
             <Link2 to="/projects/">Details</Link2>

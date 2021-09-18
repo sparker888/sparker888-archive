@@ -8,8 +8,8 @@ const ArticlesIntro = () => {
       <LeftBlock>
         <BlockWrapper>
           <H1>
-            <Span1>My articles on frontend development,</Span1>{" "}
-            <Span2>digital marketing and photography! 📸</Span2>
+            <Span1>Articles on modern development,</Span1>{" "}
+            <Span2>marketing and photography! 📸</Span2>
           </H1>
           <P>
             For 25 years, I have built and managed digital properties for some of the largest brands, smallest businesses, brightest entrepreneurs and <SPAN href="https://sparker888.github.io/eve_ships/" target="_blank">just for fun</SPAN>. I have worked with a lot of great people and technology along the way.
