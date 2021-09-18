@@ -7,7 +7,7 @@ import Layout from "../layouts/Layout"
 import Seo from "../components/Seo"
 import ArticleWrapper from "./ArticleWrapper"
 
-export default (props) => {
+const Pages = (props) => {
   const {
     body,
     mainImage,
@@ -152,6 +152,8 @@ export default (props) => {
     </Layout>
   )
 }
+
+export default Pages;
 
 export const query = graphql`
   query ArticleItemQuery($slug: String!) {

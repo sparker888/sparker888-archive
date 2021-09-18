@@ -64,6 +64,7 @@ This repo started with `gatsby init` and I added and configured the following pl
 
 - [Tailwind CSS](https://tailwindcss.com/) with [twin](https://github.com/ben-rogerson/twin.examples/tree/master/gatsby-styled-components), [Styled Components](https://github.com/ben-rogerson/twin.examples/tree/master/gatsby-styled-components) and [gatsby-plugin-styled-components](https://www.gatsbyjs.com/plugins/gatsby-plugin-styled-components/)
 - [Green Sock Animation Platform (gsap)](https://greensock.com/blog/learning/react/)
+- [Simple React lightbox](https://simple-react-lightbox.dev/)
 - [gatsby-source-filesystem](https://www.gatsbyjs.com/plugins/gatsby-source-filesystem)
 - [gatsby-plugin-image](https://www.gatsbyjs.com/plugins/gatsby-plugin-image)
 - [gatsby-plugin-sharp](https://www.gatsbyjs.com/plugins/gatsby-plugin-sharp)

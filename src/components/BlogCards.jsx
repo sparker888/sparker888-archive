@@ -40,7 +40,7 @@ const BlogCards
                 My Featured Articles
               </H2>
               <P>
-                My blog tends to focus on modern Jamstack development, trends in digital marketing, and helpful advice for photographers. I hope you enjoy!
+                My blog will focus on modern Jamstack development, trends in digital marketing, and helpful advice for photographers.
               </P>
             </TitleWrapper>
             <CardsWrapper>

@@ -11,14 +11,14 @@ const ArticlesIntro = () => {
             <Span1>Articles on modern development,</Span1>{" "}
             <Span2>marketing and photography! 📸</Span2>
           </H1>
-          <P>
-            For 25 years, I have built and managed digital properties for some of the largest brands, smallest businesses, brightest entrepreneurs and <SPAN href="https://sparker888.github.io/eve_ships/" target="_blank">just for fun</SPAN>. I have worked with a lot of great people and technology along the way.
+          <P>Here on my blog, my goal is to share some of the coolest things I'm working with in the development world. I've also worked with teams helping to market and sell companies, so I'll share some insights to being successful. Occasionally, you might get <SPAN href="https://i.imgur.com/ElNzCqq.png" target="_blank">cool art</SPAN> and weird memes. 
           </P>
-          <P>This year, I took six months off to up my game as a frontend UI/UX developer and focus on becoming adept at <SPAN href="https://www.gatsbyjs.com/" target="_blank">Gatsby JS</SPAN>. I also invested lots of time and money into my photography and videography gear and skills. Check out the results...
+          <P>
+            Having grown up on the Space Coast of Florida, I have a passion for technology, space and the ocean. I grew up as a space baby with an engineer for a father so I spent a lot of time working on cars, watching NASA launches, and sailing and surfing.  I'll share some stories and beautiful images of Florida and Hawaii. Aloha!
           </P>
           <ButtonWrap>
             <Button1>
-              <Link1 to="../blog/sparker888-project-portfolio">The Latest!</Link1>
+              <Link1 to="../blog/sparker888-project-portfolio">Dive In!</Link1>
             </Button1>
               {/* <Button2>
                 <Link2 href="/blog">My Blog</Link2>
