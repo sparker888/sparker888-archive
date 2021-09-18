@@ -191,7 +191,7 @@ const InnerWrapper = tw.div`
 relative w-full 
 `
 const ProjectInnerWrapper = tw.div`
-relative pb-16 bg-almond overflow-hidden rounded-lg shadow-lg sm:mx-6 md:mx-8 lg:mx-12 xl:mx-16 2xl:mx-24 3xl:mx-36
+relative pb-16 bg-almond overflow-hidden rounded-lg shadow-lg sm:mx-6 md:mx-6 lg:mx-8 xl:mx-12 2xl:mx-20 3xl:mx-24
 `
 const MainImageWrapper = tw.div`
 w-full pb-8
@@ -221,7 +221,7 @@ const CategoryWrapper = tw.span`
 block text-base text-center text-amber font-semibold tracking-wide uppercase mx-auto
 `
 const TitleWrapper = tw.span`
-mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-fogra-lightest sm:text-4xl
+mt-2 lg:mb-8 md:mb-6 sm:mb-4 block text-3xl text-center leading-8 font-extrabold tracking-tight text-fogra-lightest sm:text-4xl
 `
 const Author = tw.h2`
 pt-4 text-2xl leading-tight font-serif tracking-tight text-kobe

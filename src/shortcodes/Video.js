@@ -1,5 +1,5 @@
 import React from 'react'
-import video from '../../assets/connect.mp4'
+import video from '../assets/connect.mp4'
 import styled from 'styled-components'
 export const RegVideo = () => {
   return (

@@ -11,19 +11,14 @@ export default function LinksMobile() {
             Stephen Parker
         </StyledLink>
 
-        <StyledLink to="/daily-photo/"
-            activeStyle={tw`block mt-1 sm:mt-0 sm:ml-2 px-2 py-1 font-semibold text-almond-light rounded`}>
-            Daily Photo
-        </StyledLink>
-
         <StyledLink to="/projects/"
             activeStyle={tw`block mt-1 sm:mt-0 sm:ml-2 px-2 py-1 font-semibold text-almond-light rounded`}>
             Projects
         </StyledLink>
 
-        <StyledLink to="/skilltree/"
+        <StyledLink to="/skills/"
             activeStyle={tw`block mt-1 sm:mt-0 sm:ml-2 px-2 py-1 font-semibold text-almond-light rounded`}>
-            Skill Tree
+            Skills
         </StyledLink>
 
         <StyledLink to="/gallery/"
@@ -33,7 +28,12 @@ export default function LinksMobile() {
 
         <StyledLink to="/blog/"
             activeStyle={tw`block mt-1 sm:mt-0 sm:ml-2 px-2 py-1 font-semibold text-almond-light rounded`}>
-            My Blog
+            Articles
+        </StyledLink>
+
+        <StyledLink to="/daily-photo/"
+            activeStyle={tw`block mt-1 sm:mt-0 sm:ml-2 px-2 py-1 font-semibold text-almond-light rounded`}>
+            Zen
         </StyledLink>
     </>
     )

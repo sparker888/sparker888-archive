@@ -76,7 +76,7 @@ const Wrapper = styled.div`
 const ExternalLink = styled.a`
   ${tw`text-almond-light hover:text-ming-light mx-1.5 my-3`}
 `
-const SocialLink = styled.div`
+const SocialLink = styled.a`
   ${tw`mx-2`}
 `
 const SocialLinks = styled.div`
