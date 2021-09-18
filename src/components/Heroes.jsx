@@ -13,7 +13,7 @@ const Heroes = props => {
 
     <SectionOne>
       <ImageWrapper>
-          <GatsbyImage image={image} alt={order} className="sectionImage"/>
+          <GatsbyImage image={image} alt={heroTitle} className="sectionImage"/>
           <ColorCast css={{backgroundColor}} />
       </ImageWrapper>
       <TextCover>

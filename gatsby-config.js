@@ -57,7 +57,7 @@ module.exports = {
       options: {
         extensions: [`.md`, `.mdx`],
         defaultLayouts: {
-          pages: path.join(__dirname, "./src/templates/pages.js"),
+          pages: path.join(__dirname, "./src/templates/pages.jsx"),
         },
         gatsbyRemarkPlugins: [
           {

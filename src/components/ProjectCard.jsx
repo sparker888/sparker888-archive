@@ -56,7 +56,7 @@ export const query = graphql`
     slug
     intro {
       childMdx {
-        rawBody
+        body
       }
     }
     tag

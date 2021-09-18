@@ -29,7 +29,7 @@ const ProjectsIntro = () => {
       <RightBlock>
         <Image
           src="https://res.cloudinary.com/gravital-digital/image/upload/v1631817844/sigmund-04asBB737-k-unsplash_vohkmj.jpg"
-          alt="React: Like lego building blocks"
+          alt="Photo by Sigmund on Unsplash"
         />
       </RightBlock>
     </Main>
