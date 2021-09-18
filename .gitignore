@@ -79,3 +79,6 @@ sparker888.code-workspace
 
 # Remove export.json for now
 export.json
+
+# React Lightbox
+.npmrc
