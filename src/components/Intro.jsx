@@ -11,15 +11,14 @@ const Intro = () => {
             <Span2>Stephen Parker</Span2>
           </H1>
           <P>
-            Thanks for your interest. If you came to review projects and skills,
-            please begin with showcase projects below. If you're checking out
-            the Gatsby Starter, feel free to look around. A link to the GitHub
-            repo is in the footer. Please bear with me as the build is still in
-            progress. Mahalo!
+            Thanks for your interest! If you came to review my projects and skills,
+            feel free to begin with the showcase projects below. If you're checking out
+            the Gatsby Starter, take a look around. A link to the GitHub
+            repo is in the footer. I'm nearing completion of the site. Mahalo!
           </P>
           <ButtonWrap>
             <Button1>
-              <Link1 href="/gallery">Gallery</Link1>
+              <Link1 href="/gallery/">Gallery</Link1>
             </Button1>
             <Button2>
               <Link2 href="/blog/">Articles</Link2>

@@ -14,7 +14,7 @@ const ProjectsIntro = () => {
           <P>
             For 25 years, I have built and managed digital properties for some of the largest brands, smallest businesses, brightest entrepreneurs and <SPAN href="https://sparker888.github.io/eve_ships/" target="_blank">just for fun</SPAN>. I have worked with a lot of great people and technology along the way.
           </P>
-          <P>This year, I took six months off to up my game as a frontend UI/UX developer and focus on becoming adept at <SPAN href="https://www.gatsbyjs.com/" target="_blank">Gatsby JS</SPAN>. I also invested lots of time and money into my photography and videography gear and skills. Check out the results...
+          <P>This year, thanks to <Span3 to="/skills/" >new skills</Span3>, I've been able to build several projects to promote services with sites that score highly with <SPAN href="https://gravitaldigital.com/blog/navigating-google-core-web-vitals-report/" target="_blank">Google's new algorithm measures</SPAN> for speed and performance using modern web development. I'm pleased to present these projects... 
           </P>
           <ButtonWrap>
             <Button1>
@@ -61,6 +61,9 @@ block xl:inline text-fogra
 `
 const Span2 = tw.span`
 block text-fogra-lightest xl:inline
+`
+const Span3 = styled(Link)`
+  ${tw`block xl:inline text-kobe hover:text-amber`}
 `
 const P = tw.p`
 mt-3 max-w-md mx-auto font-serif text-xl text-fogra-light sm:text-xl md:mt-5 lg:mt-10 md:max-w-3xl

@@ -40,7 +40,7 @@ const BlogCards
                 My Featured Articles
               </H2>
               <P>
-                With my articles I try to provide helpful advice on UI/UX development and up-to-date information for photographers and videographers. Enjoy!
+                My blog tends to focus on modern Jamstack development, trends in digital marketing, and helpful advice for photographers. I hope you enjoy!
               </P>
             </TitleWrapper>
             <CardsWrapper>
@@ -93,7 +93,7 @@ const P = tw.p`
 mt-3 max-w-2xl mx-auto text-xl text-kobe sm:mt-4
 `
 const CardsWrapper = tw.div`
-mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-none
+mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none
 `
 const CardsInnerWrap = tw.section`
 flex flex-col rounded-lg shadow-lg overflow-hidden

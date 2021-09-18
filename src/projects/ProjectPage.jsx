@@ -212,11 +212,11 @@ relative
 const Description = tw.div`
 prose prose-indigo text-fogra mx-auto lg:max-w-none
 `
-const DescriptionText = tw.ul`
-mx-0 font-serif text-fogra
+const DescriptionText = tw.div`
+font-serif text-fogra
 `
-const SummaryText = tw.li`
-mx-0 font-serif text-fogra
+const SummaryText = tw.div`
+font-serif text-fogra
 `
 const SubHead = tw.div`
 my-4 text-2xl leading-8 font-extrabold tracking-tight text-fogra-lightest sm:text-3xl

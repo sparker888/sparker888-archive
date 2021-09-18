@@ -17,38 +17,44 @@ const BlogCard = (props) => {
   } = props
 
   const image = getImage(thumbImage)
+  const authorImage = getImage(author.photo)
 
   return (
+
     <CardsInnerWrap>
-      <HeroWrapper>
+              <HeroWrapper>
         <GatsbyImage image={image} alt={thumbText} className="HeroImage" />
       </HeroWrapper>
-      <ContentWrapper>
-        <FlexWrapper>
-          <TagWrapper>
-            <Category>{category.name}</Category>
-          </TagWrapper>
-          <ProjectLink to={`/blog/${slug}`}>
-            <ProjectTitle>{title}</ProjectTitle>
-            <ProjectIntro>{metaDescription}</ProjectIntro>
-            <div>
-              <Author>{author.name}</Author>
-              <Published>
+              <ContentWrapper>
+                <FlexWrapper>
+                  <TagWrapper>
+                    <Category>{category.name}</Category>
+                  </TagWrapper>
+                  <ArticleLink to={`/blog/${slug}`}>
+                    <ArticleTitle>{title}</ArticleTitle>
+                    <ArticleIntro>{metaDescription}</ArticleIntro>
+                  </ArticleLink> 
+                </FlexWrapper>
+                <AuthorWrapper>
+                  <AuthorImageWrapper>
+                    <GatsbyImage image={authorImage} alt={author.name} className="AuthorImgWrapper" />
+                  </AuthorImageWrapper>
+                  <NameDateWrapper>
+                    <Author>{author.name}</Author>
+                    <Published>
                 <time dateTime="2020-03-16">{publishDate}</time>
               </Published>
-            </div>
-          </ProjectLink>
-        </FlexWrapper>
-      </ContentWrapper>
-    </CardsInnerWrap>
+                  </NameDateWrapper>
+                </AuthorWrapper>
+              </ContentWrapper>
+      </CardsInnerWrap>
   )
 }
 
 BlogCard.propTypes = {
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  category: PropTypes.number.isRequired,
-  author: PropTypes.string,
+  category: PropTypes.string.isRequired,
   datePublished: PropTypes.instanceOf(Date),
   metaDescription: PropTypes.string.isRequired,
   thumbText: PropTypes.string.isRequired,
@@ -65,6 +71,9 @@ export const query = graphql`
     }
     author {
       name
+      photo {
+        gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
+      } 
     }
     publishDate(formatString: "MMMM DD, YYYY")
     metaDescription
@@ -92,19 +101,33 @@ const FlexWrapper = tw.div`
 flex-1
 `
 const TagWrapper = tw.div`
-text-sm font-medium text-indigo-600
+text-sm font-medium text-kobe
 `
 const Category = tw.div`
 mt-0 text-amber
 `
-const ProjectLink = styled(Link)`
+const ArticleLink = styled(Link)`
   ${tw`block mt-2`};
 `
-const ProjectTitle = tw.div`
+const ArticleTitle = tw.div`
 text-xl font-semibold text-fogra
 `
-const ProjectIntro = tw.div`
+const ArticleIntro = tw.div`
 mt-3 text-base font-serif text-fogra-light
+`
+const AuthorWrapper = tw.div`
+mt-6 flex items-center
+`
+const AuthorImageWrapper = styled.div`
+  ${tw`flex-shrink-0`}
+  .AuthorImgWrapper {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 9999px;
+  }
+`
+const NameDateWrapper = tw.div`
+ml-3
 `
 const Author = tw.div`
 my-0 text-sm font-serif font-medium text-ming

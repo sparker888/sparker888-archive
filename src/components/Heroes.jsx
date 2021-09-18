@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Heroes = props => {
-    const { heroTitle, color, heroText, justifyContent, flexDirection, heroImage, backgroundColor } = props
+    const { heroTitle, color, heroText, justifyContent, flexDirection, heroImage, backgroundColor, liveUrl } = props
 
     const image = getImage(heroImage)
   
@@ -27,7 +27,7 @@ const Heroes = props => {
             <Link1 to="/skills/">Skills</Link1>
           </Button1>
           <Button2>
-            <Link2 to="/projects/">Details</Link2>
+            <Link2 to={`/${liveUrl}`}>Details</Link2>
           </Button2>
         </Buttons>
         </FlexRow>
@@ -45,6 +45,7 @@ Heroes.propTypes = {
   flexDirection: PropTypes.string.isRequired,
   backgroundColor: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
+  liveUrl: PropTypes.string.isRequired,
 }
 
 export default Heroes;
@@ -59,6 +60,7 @@ export const query = graphql`
     justifyContent
     flexDirection
     backgroundColor
+    liveUrl
     heroImage{
       gatsbyImageData(
         layout: FULL_WIDTH

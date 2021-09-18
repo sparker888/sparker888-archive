@@ -12,9 +12,9 @@ const ProjectsIntro = () => {
             <Span2>delivers better performance. 🚀</Span2>
           </H1>
           <P>
-            For 25 years, I have built and managed digital properties for some of the largest brands, smallest businesses, brightest entrepreneurs and <SPAN href="https://sparker888.github.io/eve_ships/" target="_blank">just for fun</SPAN>. I have worked with a lot of great people and technology along the way.
+            Five years ago, Matt Biilimann coined the term Jamstack <SPAN href="https://jamstack.org/" target="_blank">at Smashing Conference</SPAN>, and it defined the future of web development and deployment.
           </P>
-          <P>This year, I took six months off to up my game as a frontend UI/UX developer and focus on becoming adept at <SPAN href="https://www.gatsbyjs.com/" target="_blank">Gatsby JS</SPAN>. I also invested lots of time and money into my photography and videography gear and skills. Check out the results...
+          <P>This year, guided by this philosophy, I upped my game as a frontend UI/UX developer by focusing on  <SPAN href="https://www.gatsbyjs.com/" target="_blank">Gatsby</SPAN>, functional components, styled components and headless CMS.
           </P>
           <ButtonWrap>
             <Button1>
