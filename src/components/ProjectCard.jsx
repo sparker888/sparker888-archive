@@ -67,7 +67,7 @@ export const query = graphql`
   }
 `
 const CardsInnerWrap = tw.section`
-flex flex-col rounded-lg shadow-lg overflow-hidden
+flex flex-col rounded-lg overflow-hidden
 `
 const HeroWrapper = styled.div`
   ${tw`flex-shrink-0`}
@@ -78,13 +78,13 @@ const HeroWrapper = styled.div`
   }
 `
 const ContentWrapper = tw.div`
-flex-1 bg-white p-6 flex flex-col justify-between
+flex-1 bg-almond p-6 flex flex-col justify-between
 `
 const FlexWrapper = tw.div`
 flex-1
 `
 const TagWrapper = tw.div`
-text-sm font-medium text-indigo-600
+text-sm font-medium text-ming
 `
 const Category = tw.div`
 mt-0 text-amber
@@ -93,7 +93,7 @@ const ProjectLink = styled(Link)`
   ${tw`block mt-2`};
 `
 const ProjectTitle = tw.div`
-text-xl font-semibold text-fogra
+text-xl font-semibold text-fogra-lightest
 `
 const ProjectIntro = tw.div`
 mt-3 text-base font-serif text-fogra-light

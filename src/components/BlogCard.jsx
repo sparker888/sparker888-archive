@@ -87,7 +87,7 @@ export const query = graphql`
   }
 `
 const CardsInnerWrap = tw.section`
-flex flex-col rounded-lg shadow-lg overflow-hidden
+flex flex-col bg-almond rounded-lg shadow-lg overflow-hidden
 `
 const HeroWrapper = styled.div`
   ${tw`flex-shrink-0`}
@@ -98,7 +98,7 @@ const HeroWrapper = styled.div`
   }
 `
 const ContentWrapper = tw.div`
-flex-1 bg-white p-6 flex flex-col justify-between
+flex-1 bg-white p-6 flex flex-col justify-between bg-almond
 `
 const FlexWrapper = tw.div`
 flex-1
