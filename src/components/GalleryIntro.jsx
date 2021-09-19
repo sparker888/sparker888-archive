@@ -2,41 +2,41 @@ import tw, { styled } from "twin.macro"
 import React from "react"
 import { Link } from "gatsby"
 
-const ArticlesIntro = () => {
+const GalleryIntro = () => {
   return (
     <Main>
       <LeftBlock>
         <BlockWrapper>
           <H1>
-            <Span1>Articles on modern development,</Span1>{" "}
-            <Span2>marketing, drones and more! 🚁</Span2>
+            <Span1>Sony Alphas</Span1>{" "}
+            <Span2>capture magnificent images! 📸</Span2>
           </H1>
-          <P>Here on my blog, my goal is to share some of the coolest things I'm working with in the development world. I've also worked with teams helping to market and sell companies, so I'll share some insights to being successful. Occasionally, you might get <SPAN href="https://i.imgur.com/ElNzCqq.png" target="_blank">cool art</SPAN> and weird memes. 
-          </P>
           <P>
-            Having grown up on the Space Coast of Florida, I have a passion for technology, space and the ocean. I grew up as a space baby with an engineer for a father so I spent a lot of time working on cars, watching NASA launches, and sailing and surfing.  I'll share some stories and beautiful images of Florida and Hawaii. Aloha!
+            For 25 years, I have built and managed digital properties for some of the largest brands, smallest businesses, brightest entrepreneurs and <SPAN href="https://sparker888.github.io/eve_ships/" target="_blank">just for fun</SPAN>. I have worked with a lot of great people and technology along the way.
+          </P>
+          <P>This year, thanks to <Span3 to="/skills/" >new skills</Span3>, I've been able to build several projects to promote services with sites that score highly with <SPAN href="https://gravitaldigital.com/blog/navigating-google-core-web-vitals-report/" target="_blank">Google's new algorithm measures</SPAN> for speed and performance using modern web development. I'm pleased to present these projects... 
           </P>
           <ButtonWrap>
             <Button1>
-              <Link1 to="../blog/sparker888-project-portfolio">Dive In!</Link1>
+              <Link1 to="../project-gravital-digital">Dive In!</Link1>
             </Button1>
-              {/* <Button2>
-                <Link2 href="/blog">My Blog</Link2>
-              </Button2> */}
+            {/* <Button2>
+                  <Link2 href="/blog">My Blog</Link2>
+                </Button2> */}
           </ButtonWrap>
         </BlockWrapper>
       </LeftBlock>
       <RightBlock>
         <Image
-          src="https://res.cloudinary.com/gravital-digital/image/upload/v1632071646/james-donaldson-toPRrcyAIUY-unsplash_tc50zd.jpg"
-          alt="Photo by James Donaldson on Unsplash"
+          src="https://res.cloudinary.com/gravital-digital/image/upload/v1632072081/andreas-dress-Toy5c-5o5Vo-unsplash_weylre.jpg"
+          alt="Photo by Andreas Dress on Unsplash"
         />
       </RightBlock>
     </Main>
   )
 }
 
-export default ArticlesIntro
+export default GalleryIntro
 
 const Main = tw.main`
 lg:relative bg-almond-light
@@ -61,6 +61,9 @@ block xl:inline text-fogra
 `
 const Span2 = tw.span`
 block text-fogra-lightest xl:inline
+`
+const Span3 = styled(Link)`
+  ${tw`block xl:inline text-kobe hover:text-amber`}
 `
 const P = tw.p`
 mt-3 max-w-md mx-auto font-serif text-xl text-fogra-light sm:text-xl md:mt-5 lg:mt-10 md:max-w-3xl
