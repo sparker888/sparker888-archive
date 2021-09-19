@@ -51,6 +51,8 @@ export const pageQuery = graphql`
               transformOptions: { fit: COVER }
               placeholder: BLURRED
               webpOptions: { quality: 85 }
+              width: 600
+              height: 400
             )
           }
         }
@@ -71,9 +73,9 @@ const GalleryWrapper = tw.div`
 mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8
 `
 const ImageWrap = styled.div`
-  ${tw`col-span-1 flex justify-center bg-almond`}
+  ${tw`col-span-1 flex justify-center items-center bg-almond`}
   .imageBox {
-    object-fit: cover;
+    width: 100%;
   }
 `
 const PublicURL = tw.a`
