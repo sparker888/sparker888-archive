@@ -57,7 +57,8 @@ const BlogCard = (props) => {
 BlogCard.propTypes = {
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
+  category: PropTypes.object.isRequired,
+  author: PropTypes.object.isRequired,
   datePublished: PropTypes.instanceOf(Date),
   metaDescription: PropTypes.string.isRequired,
   thumbText: PropTypes.string.isRequired,
@@ -87,7 +88,7 @@ export const query = graphql`
   }
 `
 const CardsInnerWrap = tw.section`
-flex flex-col bg-almond rounded-lg shadow-lg overflow-hidden
+flex flex-col bg-almond rounded-lg overflow-hidden
 `
 const HeroWrapper = styled.div`
   ${tw`flex-shrink-0`}

@@ -22,7 +22,7 @@ module.exports = {
       "A blazingly fast Gatsby starter designed to meet Google's Core Web Vitals",
     siteUrl: "https://ecstatic-elion-b17c35.netlify.app", // No trailing slash allowed!
     twitterUsername: "@sparker888",
-    publicURL: "/gravital-default-image.jpg", // This will be the default image for social media shares (in the static folder)
+    publicURL: "/sparker888-default-image.jpg", // This will be the default image for social media shares (in the static folder)
     organization: "Gravital Digital",
     author: "@sparker888",
   },

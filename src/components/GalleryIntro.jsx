@@ -12,13 +12,13 @@ const GalleryIntro = () => {
             <Span2>capture magnificent images! 📸</Span2>
           </H1>
           <P>
-            For 25 years, I have built and managed digital properties for some of the largest brands, smallest businesses, brightest entrepreneurs and <SPAN href="https://sparker888.github.io/eve_ships/" target="_blank">just for fun</SPAN>. I have worked with a lot of great people and technology along the way.
+            Having owned many cameras in my career, I've come to love and depend on my Sony Alpha gear. Sony makes truly wonderful, high-quality products. I'm glad they stepped up their game with their interchangeable lens gear in recent years.
           </P>
-          <P>This year, thanks to <Span3 to="/skills/" >new skills</Span3>, I've been able to build several projects to promote services with sites that score highly with <SPAN href="https://gravitaldigital.com/blog/navigating-google-core-web-vitals-report/" target="_blank">Google's new algorithm measures</SPAN> for speed and performance using modern web development. I'm pleased to present these projects... 
+          <P>This year, I've invested in additional equipment to improve my ability to quickly shoot real estate and portraits on site. The equipment includes powerful yet small flashes from Godox, carbon fiber tripods and lightweight modifiers, backdrops and stands designed for travel. 
           </P>
           <ButtonWrap>
             <Button1>
-              <Link1 to="../project-gravital-digital">Dive In!</Link1>
+              <Link1 to="./hurricane-larry-photography">Dive In!</Link1>
             </Button1>
             {/* <Button2>
                   <Link2 href="/blog">My Blog</Link2>

@@ -1,28 +1,31 @@
-import tw from "twin.macro"
+import tw, { styled } from "twin.macro"
 import React from "react"
+import { Link } from "gatsby"
 
 const Intro = () => {
+
   return (
     <Main>
       <LeftBlock>
         <BlockWrapper>
           <H1>
             <Span1>🤙 Aloha and Welcome. I'm</Span1>{" "}
-            <Span2>Stephen Parker</Span2>
+            <Span2>Stephen Parker aka @sparker888</Span2>
           </H1>
           <P>
             Thanks for your interest! If you came to review my projects and skills,
             feel free to begin with the showcase projects below. If you're checking out
-            the Gatsby Starter, take a look around. A link to the GitHub
-            repo is in the footer. I'm nearing completion of the site. Mahalo!
+            the Gatsby Starter, take a look around. A link to the repo is in the footer.
+          </P>
+          <P>I'm a frontend UI/UX developer and this is my latest project. If you would like to know more about how I built it, here's <Link3 to="/blog/sparker888-project-portfolio">my article</Link3> on the subject. Enjoy!
           </P>
           <ButtonWrap>
-            <Button1>
-              <Link1 href="/gallery/">Gallery</Link1>
-            </Button1>
             <Button2>
-              <Link2 href="/blog/">Articles</Link2>
+              <Link2 to="/skills/">About Me</Link2>
             </Button2>
+            <Button1>
+              <Link1 to="/gallery/">Contact Me</Link1>
+            </Button1>
           </ButtonWrap>
         </BlockWrapper>
       </LeftBlock>
@@ -69,14 +72,17 @@ const ButtonWrap = tw.div`
 mt-10 sm:flex sm:justify-center lg:justify-start
 `
 const Button1 = tw.button`
-rounded-md shadow
+ml-3 rounded-md shadow
 `
 const Button2 = tw.button`
-mt-3 rounded-md shadow sm:mt-0 ml-3
+rounded-md shadow sm:mt-0
 `
-const Link1 = tw.a`
-w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-kobe hover:bg-kobe-light md:py-4 md:text-lg md:px-10
+const Link1 = styled(Link)`
+  ${tw`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-kobe hover:bg-kobe-light md:py-4 md:text-lg md:px-10`}
 `
-const Link2 = tw.a`
-w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-ming hover:bg-ming-light md:py-4 md:text-lg md:px-10
+const Link2 = styled(Link)`
+  ${tw`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-ming hover:bg-ming-light md:py-4 md:text-lg md:px-10`}
+`
+const Link3= styled(Link)`
+  ${tw`text-kobe hover:text-amber`}
 `

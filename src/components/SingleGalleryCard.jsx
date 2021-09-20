@@ -38,7 +38,8 @@ const SingleGalleryCard = (props) => {
 SingleGalleryCard.propTypes = {
   slug: PropTypes.string.isRequired,
   galleryName: PropTypes.string.isRequired,
-  galleryDescription: PropTypes.string.isRequired,
+  galleryMainImage: PropTypes.object.isRequired,
+  galleryDescription: PropTypes.object.isRequired,
 }
 
 export default SingleGalleryCard
@@ -59,7 +60,7 @@ export const query = graphql`
   }
 `
 const CardsInnerWrap = tw.section`
-flex flex-col bg-almond rounded-lg shadow-lg overflow-hidden
+flex flex-col bg-almond rounded-lg overflow-hidden
 `
 const HeroWrapper = styled.div`
   ${tw`flex-shrink-0`}
@@ -70,7 +71,7 @@ const HeroWrapper = styled.div`
   }
 `
 const ContentWrapper = tw.div`
-flex-1 bg-white p-6 flex flex-col justify-between bg-almond
+flex-1 bg-almond p-6 flex flex-col justify-between bg-almond
 `
 const FlexWrapper = tw.div`
 flex-1

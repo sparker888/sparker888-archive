@@ -67,7 +67,7 @@ export const query = graphql`
   }
 `
 const CardsInnerWrap = tw.section`
-flex flex-col rounded-lg overflow-hidden
+flex flex-col bg-almond rounded-lg overflow-hidden
 `
 const HeroWrapper = styled.div`
   ${tw`flex-shrink-0`}
