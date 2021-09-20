@@ -2,6 +2,7 @@ import tw, { styled } from "twin.macro"
 import React from "react"
 import Layout from "../layouts/Layout"
 import SkillsIntro from "../components/SkillsIntro"
+import SkillsTree from "../components/SkillsTree"
 
 const Skills = () => {
   return (
@@ -16,6 +17,7 @@ const Skills = () => {
             </ContentWrapper>
           </InnerWrapper>
         </Wrapper>
+        <SkillsTree />
       </Layout>
     </div>
   )

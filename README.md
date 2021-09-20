@@ -78,6 +78,7 @@ This repo started with `gatsby init` and I added and configured the following pl
 - [React Helmet](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet)
 - [dotenv](https://www.npmjs.com/package/dotenv)
 - [@heroicons](https://github.com/tailwindlabs/heroicons)
+- [headlessui](https://headlessui.dev/)
 - [@tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
 - [@tailwindcss/typography](https://github.com/tailwindlabs/tailwindcss-typography)
 
