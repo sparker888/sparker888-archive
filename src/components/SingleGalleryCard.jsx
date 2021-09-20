@@ -50,7 +50,7 @@ export const query = graphql`
     id
     galleryName
     galleryMainImage {
-      gatsbyImageData(height: 200, width: 300, quality: 30, placeholder: BLURRED)
+      gatsbyImageData(height: 200, width: 300, quality: 100, placeholder: BLURRED)
         }
     galleryDescription {
       childMdx {

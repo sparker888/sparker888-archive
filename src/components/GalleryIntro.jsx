@@ -14,11 +14,11 @@ const GalleryIntro = () => {
           <P>
             Having owned many cameras in my career, I've come to love and depend on my Sony Alpha gear. Sony makes truly wonderful, high-quality products. I'm glad they stepped up their game with their interchangeable lens gear in recent years.
           </P>
-          <P>This year, I've invested in additional equipment to improve my ability to quickly shoot real estate and portraits on site. The equipment includes powerful yet small flashes from Godox, carbon fiber tripods and lightweight modifiers, backdrops and stands designed for travel. 
+          <P>This year, I've invested in additional equipment to improve my ability to quickly shoot real estate and portraits on site. The equipment includes powerful yet small flashes from Godox, carbon fiber tripods and lightweight modifiers, backdrops and stands designed for travel. I'm pleased to share some of my recent work.
           </P>
           <ButtonWrap>
             <Button1>
-              <Link1 to="./hurricane-larry-photography">Dive In!</Link1>
+              <Link1 to="../hurricane-larry-photography">Dive In!</Link1>
             </Button1>
             {/* <Button2>
                   <Link2 href="/blog">My Blog</Link2>
