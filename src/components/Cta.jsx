@@ -40,7 +40,7 @@ const Cta = () => {
             Thanks for your consideration
           </Title>
           <Copy>
-            I'm always interested in supporting great people and organizations to to create amazing things. I can work virtually anywhere, and I'm available for on-site work in the Greater Orlando and Brevard area. 
+            I'm always interested in supporting great people and organizations that create amazing things. I can work virtually anywhere, and I'm available for on-site work in the Greater Orlando and Brevard area. 
           </Copy>
           <ButtonOuterWrap>
             <ButtonInnerWrap>
