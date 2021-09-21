@@ -16,7 +16,7 @@ const ProjectsIntro = () => {
           </P>
           <P>This year, guided by this philosophy, I upped my game as a frontend UI/UX developer by focusing on  <SPAN href="https://www.gatsbyjs.com/" target="_blank">Gatsby</SPAN>, functional components, styled components and headless CMS.
           </P>
-          <P>Beyond presentation, I'm continuing to explore ways of using React hooks, connect to a variety of APIs, and learning more details of <SPAN href="https://graphql.org/" target="_blank">GraphQL</SPAN>, to query, filter and sort data from a variety of sources, including powerful MDX files.
+          <P>Beyond presentation, I'm continuing to explore ways of using React hooks, working with a variety of APIs, and learning more details of <SPAN href="https://graphql.org/" target="_blank">GraphQL</SPAN>, to query, filter and sort data from a variety of sources, including powerful MDX files.
           </P>
           {/*<ButtonWrap>
             <Button1>
@@ -66,12 +66,6 @@ block text-fogra-lightest xl:inline
 `
 const P = tw.p`
 mt-3 max-w-md mx-auto font-serif text-xl text-fogra-light sm:text-xl md:mt-5 lg:mt-10 md:max-w-3xl
-`
-const ButtonWrap = tw.div`
-mt-10 sm:flex sm:justify-center lg:justify-start
-`
-const Button1 = tw.button`
-rounded-md shadow
 `
 const Link1 = styled(Link)`
   ${tw`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-kobe hover:bg-kobe-light md:py-4 md:text-lg md:px-10`}
