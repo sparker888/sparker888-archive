@@ -99,7 +99,6 @@ const Pages = (props) => {
                     />
                   </Svg2>
                   <Svg3
-                    className=""
                     width={404}
                     height={384}
                     fill="none"

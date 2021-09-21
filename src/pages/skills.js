@@ -1,21 +1,25 @@
-import tw, { styled } from "twin.macro"
 import React from "react"
 import Layout from "../layouts/Layout"
 import SkillsIntro from "../components/SkillsIntro"
+import SkillsMain from "../components/SkillsMain"
+import JavaScriptSkills from "../components/JavaScriptSkills"
+import CssSkills from "../components/CssSkills"
+import ReactSkills from "../components/ReactSkills"
+import GatsbySkills from "../components/GatsbySkills"
+import GraphqlSkills from "../components/GraphqlSkills"
+
 
 const Skills = () => {
   return (
     <div>
       <Layout>
         <SkillsIntro />
-        <Wrapper>
-          <InnerWrapper>
-            <ContentWrapper>
-              <Span>🚧THIS PAGE IS UNDER CONSTRUCTION🚧</Span>
-              <Span>This is where my skills will be listed, a contact form, and download resume button.</Span>
-            </ContentWrapper>
-          </InnerWrapper>
-        </Wrapper>
+        <SkillsMain />
+        <JavaScriptSkills />
+        <CssSkills />
+        <ReactSkills />
+        <GatsbySkills />
+        <GraphqlSkills />
       </Layout>
     </div>
   )
@@ -23,15 +27,3 @@ const Skills = () => {
 
 export default Skills
 
-const Wrapper = tw.div`
-bg-almond
-`
-const InnerWrapper = tw.div`
-max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8
-`
-const ContentWrapper = tw.h2`
-text-3xl font-extrabold tracking-tight text-amber sm:text-4xl
-`
-const Span = tw.span`
-block
-`

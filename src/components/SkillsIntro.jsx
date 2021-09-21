@@ -16,14 +16,16 @@ const ProjectsIntro = () => {
           </P>
           <P>This year, guided by this philosophy, I upped my game as a frontend UI/UX developer by focusing on  <SPAN href="https://www.gatsbyjs.com/" target="_blank">Gatsby</SPAN>, functional components, styled components and headless CMS.
           </P>
-          <ButtonWrap>
+          <P>Beyond presentation, I'm continuing to explore ways of using React hooks, connect to a variety of APIs, and learning more details of <SPAN href="https://graphql.org/" target="_blank">GraphQL</SPAN>, to query, filter and sort data from a variety of sources, including powerful MDX files.
+          </P>
+          {/*<ButtonWrap>
             <Button1>
               <Link1 to="../project-gravital-digital">Dive In!</Link1>
             </Button1>
-            {/* <Button2>
+             <Button2>
                   <Link2 href="/blog">My Blog</Link2>
-                </Button2> */}
-          </ButtonWrap>
+                </Button2> 
+          </ButtonWrap>*/}
         </BlockWrapper>
       </LeftBlock>
       <RightBlock>
