@@ -17,11 +17,11 @@ const Intro = () => {
             feel free to begin with the showcase projects below. If you're checking out
             the Gatsby Starter, take a look around. A link to the repo is in the footer.
           </P>
-          <P>I'm a frontend UI/UX developer and this is my latest project. If you would like to know more about how I built it, here's <Link3 to="/blog/sparker888-project-portfolio">my article</Link3> on the subject. Enjoy!
+          <P>For those here for the first time, I'm a frontend UI/UX React/Gatsby developer and entrepreneur. The website you are looking at now is my latest project. If you're interested in knowing how I built it, <Link3 to="/blog/sparker888-project-portfolio">here's my article</Link3> covering the build technology.
           </P>
           <ButtonWrap>
             <Button2>
-              <Link2 to="/skills/">About Me</Link2>
+              <Link2 to="/skills/">My Skills</Link2>
             </Button2>
             <Button1>
               <Link1 to="/gallery/">Contact Me</Link1>
