@@ -7,6 +7,7 @@ import CssSkills from "../components/CssSkills"
 import ReactSkills from "../components/ReactSkills"
 import GatsbySkills from "../components/GatsbySkills"
 import GraphqlSkills from "../components/GraphqlSkills"
+import Cta from "../components/Cta"
 
 
 const Skills = () => {
@@ -20,6 +21,7 @@ const Skills = () => {
         <ReactSkills />
         <GatsbySkills />
         <GraphqlSkills />
+        <Cta />
       </Layout>
     </div>
   )
