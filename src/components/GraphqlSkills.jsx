@@ -5,45 +5,31 @@ import { CheckIcon } from "@heroicons/react/outline"
 
 const skills = [
   {
-    name: "Skill name here",
+    name: "Query Operation Type and Naming",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " I'm clear with and use the query operation type, operation name and many standard query fields -- particularly those used with GatsbyJS.",
   },
   {
-    name: "Skill name here",
+    name: "GraphQL Schema",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " I understand how GraphQL schemas are set up and able to write queries against data.",
   },
   {
-    name: "Skill name here",
+    name: "Data types",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " I can query, sort and filter many common data types including formatting dates, managing markdown, MDX and media.",
   },
   {
-    name: "Skill name here",
+    name: "Fragments",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " I'm able to define GraphQL query fragments to manage and format data as I have done for this site.",
   },
   {
-    name: "Skill name here",
+    name: "Advanced Concepts",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " Currently, I'm learning more about the GraphQL specification, Schemas and Types.",
   },
-  {
-    name: "Skill name here",
-    description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
-  },
-  {
-    name: "Skill name here",
-    description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
-  },
-  {
-    name: "Skill name here",
-    description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
-  },
+
 ]
 
 export default function GraphqlSkills() {
@@ -59,8 +45,7 @@ export default function GraphqlSkills() {
           />
           <Title>GraphQL</Title>
           <Description>
-            Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-            Malesuada adipiscing sagittis vel nulla nec.
+            GraphQL query language is new to me as it is to many developers. Fortunately, I have used it to query both local data and API data from third-party sources for several projects now and I'm very comfortable with Gatsby's GraphiQL interface, Gatsby plugins that expose available data and common GraphQL data structures.
           </Description>
         </div>
         <SkillsWrapper>
