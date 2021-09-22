@@ -108,7 +108,6 @@ const ProjectPage = (props) => {
               </PatternSection>
               <ScreenSection>
                 <GatsbyImage image={image} alt={title} className="screenShot" />
-                <GatsbyImage image={image} alt={title} className="screenShot" />
               </ScreenSection>
             </ScreenInnerWrapper>
           </ScreenOuterWrapper>
