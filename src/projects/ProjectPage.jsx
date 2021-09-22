@@ -108,6 +108,7 @@ const ProjectPage = (props) => {
               </PatternSection>
               <ScreenSection>
                 <GatsbyImage image={image} alt={title} className="screenShot" />
+                <GatsbyImage image={image} alt={title} className="screenShot" />
               </ScreenSection>
             </ScreenInnerWrapper>
           </ScreenOuterWrapper>
@@ -264,6 +265,7 @@ const ScreenSection = styled.div`
       calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     --tw-ring-color: rgba(0, 0, 0, var(--tw-ring-opacity));
     --tw-ring-opacity: 0.05;
+    margin: 2rem;
   }
 `
 const Rect = tw.rect`
