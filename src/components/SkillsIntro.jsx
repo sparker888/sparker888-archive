@@ -14,7 +14,7 @@ const ProjectsIntro = () => {
           <P>
             Five years ago, Matt Biilimann coined the term Jamstack <Span href="https://jamstack.org/" target="_blank">at Smashing Conference</Span>, and it defined the future of web development and deployment.
           </P>
-          <P>This year, guided by this philosophy, I upped my game as a frontend UI/UX developer by focusing on  <Span href="https://www.gatsbyjs.com/" target="_blank">Gatsby</Span>, functional components, styled components and headless CMS.
+          <P>This year, guided by this philosophy, I upped my game as a frontend UX/UI developer by focusing on  <Span href="https://www.gatsbyjs.com/" target="_blank">Gatsby</Span>, functional components, styled components and headless CMS.
           </P>
           <P>Beyond presentation, I'm continuing to explore ways of using React hooks, working with a variety of APIs, and learning more details of <Span href="https://graphql.org/" target="_blank">GraphQL</Span>, to query, filter and sort data from a variety of sources, including powerful MDX files.
           </P>
