@@ -44,7 +44,7 @@ const Cta = () => {
           </Copy>
           <ButtonOuterWrap>
             <ButtonInnerWrap>
-              <Button2Style to="/daily-photo/">Contact Me</Button2Style>
+              <Button2Style to="/skills/">Contact Me</Button2Style>
               <Button1Style href={`../Sparker888_Résumé_2021.pdf`}>
                 Download Résumé
               </Button1Style>

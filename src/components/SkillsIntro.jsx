@@ -12,11 +12,11 @@ const ProjectsIntro = () => {
             <Span2>delivers better performance. 🚀</Span2>
           </H1>
           <P>
-            Five years ago, Matt Biilimann coined the term Jamstack <SPAN href="https://jamstack.org/" target="_blank">at Smashing Conference</SPAN>, and it defined the future of web development and deployment.
+            Five years ago, Matt Biilimann coined the term Jamstack <Span href="https://jamstack.org/" target="_blank">at Smashing Conference</Span>, and it defined the future of web development and deployment.
           </P>
-          <P>This year, guided by this philosophy, I upped my game as a frontend UI/UX developer by focusing on  <SPAN href="https://www.gatsbyjs.com/" target="_blank">Gatsby</SPAN>, functional components, styled components and headless CMS.
+          <P>This year, guided by this philosophy, I upped my game as a frontend UI/UX developer by focusing on  <Span href="https://www.gatsbyjs.com/" target="_blank">Gatsby</Span>, functional components, styled components and headless CMS.
           </P>
-          <P>Beyond presentation, I'm continuing to explore ways of using React hooks, working with a variety of APIs, and learning more details of <SPAN href="https://graphql.org/" target="_blank">GraphQL</SPAN>, to query, filter and sort data from a variety of sources, including powerful MDX files.
+          <P>Beyond presentation, I'm continuing to explore ways of using React hooks, working with a variety of APIs, and learning more details of <Span href="https://graphql.org/" target="_blank">GraphQL</Span>, to query, filter and sort data from a variety of sources, including powerful MDX files.
           </P>
           {/*<ButtonWrap>
             <Button1>
@@ -70,6 +70,6 @@ mt-3 max-w-md mx-auto font-serif text-xl text-fogra-light sm:text-xl md:mt-5 lg:
 const Link1 = styled(Link)`
   ${tw`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-kobe hover:bg-kobe-light md:py-4 md:text-lg md:px-10`}
 `
-const SPAN = tw.a`
+const Span = tw.a`
 text-kobe hover:text-amber
 `

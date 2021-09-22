@@ -31,6 +31,11 @@ export default function LinksMobile() {
             Articles
         </StyledLink>
 
+        <StyledLink to="/contact/"
+            activeStyle={tw`block mt-1 sm:mt-0 sm:ml-2 px-2 py-1 font-semibold text-almond-light rounded`}>
+            Contact
+        </StyledLink>
+
         <StyledLink to="/daily-photo/"
             activeStyle={tw`block mt-1 sm:mt-0 sm:ml-2 px-2 py-1 font-semibold text-almond-light rounded`}>
             Zen

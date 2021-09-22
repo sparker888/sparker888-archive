@@ -16,11 +16,11 @@ module.exports = {
       gravital: "https://gravitaldigital.com/",
     },
     locale: "en",
-    title: "Stephen Parker | Gatsby · Contentful · Tailwind · Twin.macro · GSAP Starter",
-    titleTemplate: "Stephen Parker Gatsby · Tailwind Twin.macro GSAP Starter",
+    title: "Stephen Parker | UX/UI Gatsby/React Frontend Developer",
+    titleTemplate: "Check out the latest work and photography by @sparker888",
     description:
       "A blazingly fast Gatsby starter designed to meet Google's Core Web Vitals",
-    siteUrl: "https://ecstatic-elion-b17c35.netlify.app", // No trailing slash allowed!
+    siteUrl: "https://zen-jennings-d17986.netlify.app", // No trailing slash allowed!
     twitterUsername: "@sparker888",
     publicURL: "/sparker888-default-image.jpg", // This will be the default image for social media shares (in the static folder)
     organization: "Gravital Digital",

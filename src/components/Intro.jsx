@@ -24,7 +24,7 @@ const Intro = () => {
               <Link2 to="/skills/">My Skills</Link2>
             </Button2>
             <Button1>
-              <Link1 to="/gallery/">Contact Me</Link1>
+              <Link1 to="/contact/">Contact Me</Link1>
             </Button1>
           </ButtonWrap>
         </BlockWrapper>

@@ -12,7 +12,7 @@ const MultipleGalleryCards
   const { placeholderImage } = useStaticQuery(
     graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "mesh-gradient3.png" }) {
+        placeholderImage: file(relativePath: { eq: "mesh-gradient2-light.png" }) {
           childImageSharp {
             gatsbyImageData(
               quality: 25

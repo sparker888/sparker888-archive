@@ -50,6 +50,11 @@ module.exports = {
         "128": "32rem",
         "144": "36 rem"
       },
+      zIndex: {
+
+        '-10': '-10',
+        '-20': '-20',
+       },
     },  
     fontFamily: {
       sans: ["Montserrat", "system-ui", "sans-serif"],
