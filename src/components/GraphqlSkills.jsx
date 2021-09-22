@@ -17,7 +17,7 @@ const skills = [
   {
     name: "Data types",
     description:
-      " I can query, sort and filter many common data types including formatting dates, managing markdown, MDX and media.",
+      " I can query, sort and filter and combine many common data types including JSON, markdown, MDX and media.",
   },
   {
     name: "Fragments",

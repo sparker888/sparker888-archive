@@ -61,9 +61,10 @@ const Contact = () => {
   const pluginImage = getImage(placeholderImage)
 
   return (
+    <StyledBgImage image={pluginImage}>
     <Layout>
       {/* Header */}
-      <StyledBgImage image={pluginImage}>
+      
         <OuterHeaderWrap>
           <InnerHeaderWrap>
             <HeaderContentWrap>
@@ -81,7 +82,7 @@ const Contact = () => {
             </HeaderContentWrap>
           </InnerHeaderWrap>
         </OuterHeaderWrap>
-      </StyledBgImage>
+
       {/* Contact section */}
       <ContactSection aria-labelledby="contact-heading">
         <MainContentOuterWrap>
@@ -306,6 +307,7 @@ const Contact = () => {
         </MainContentOuterWrap>
       </ContactSection>
     </Layout>
+    </StyledBgImage>
   )
 }
 
@@ -333,13 +335,13 @@ const Span = tw.a`
 text-kobe hover:text-amber
 `
 const ContactSection = tw.section`
-relative bg-fogra-light
+relative bg-transparent
 `
 const MainContentOuterWrap = tw.div`
-max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-fogra-light
+max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-transparent
 `
 const MainContentInnerWrap = tw.div`
-relative bg-white shadow-xl
+relative bg-transparent shadow-xl
 `
 const MainContentGridWrap = tw.div`
 grid grid-cols-1 lg:grid-cols-3
@@ -391,20 +393,11 @@ const ContactMailDd = styled.dl`
     color: rgba(169, 229, 239, var(--tw-text-opacity));
   }
 `
-const SocialUl = tw.ul`
-mt-8 flex space-x-12
-`
-const SocialLink = styled.a`
-  ${tw`text-kobe hover:text-amber`}
-`
-const Svg3 = tw.div`
-w-7 h-7
-`
 const ScreenReader = tw.span`
 sr-only
 `
 const ContactFormWrap = tw.div`
-py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12 bg-almond
+py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12 bg-transparent
 `
 const FormTitle = tw.h3`
 text-lg font-medium text-kobe
