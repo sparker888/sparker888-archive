@@ -17,9 +17,9 @@ module.exports = {
     },
     locale: "en",
     title: "Stephen Parker | UX/UI Gatsby/React Frontend Developer",
-    titleTemplate: "Check out the latest work and photography by @sparker888",
+    titleTemplate: "Stephen Parker | UX/UI Gatsby/React Frontend Developer",
     description:
-      "A blazingly fast Gatsby starter designed to meet Google's Core Web Vitals",
+      "Check out the latest work and photography by @sparker888",
     siteUrl: "https://zen-jennings-d17986.netlify.app", // No trailing slash allowed!
     twitterUsername: "@sparker888",
     publicURL: "/sparker888-default-image.jpg", // This will be the default image for social media shares (in the static folder)
