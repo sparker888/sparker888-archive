@@ -5,44 +5,44 @@ import { CheckIcon } from "@heroicons/react/outline"
 
 const skills = [
   {
-    name: "Skill name here",
+    name: "CSS Basics",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " Differences in past versions, current modules being used, popular libraries and how preprocessors are used.",
   },
   {
-    name: "Skill name here",
+    name: "CSS Selectors and Specificity",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " type, class and id selectors, descendant combinators, and child combinators, specificity weight.",
   },
   {
-    name: "Skill name here",
+    name: "CSS Text, Color, Fonts",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " typography, color values, gradients, and unit sizing.",
   },
   {
-    name: "Skill name here",
+    name: "CSS Flexbox",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " flexbox properties, flex direction, wrap, grow, shrink, and order.",
   },
   {
-    name: "Skill name here",
+    name: "CSS Grid",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " Template columns, Column Start/End, Template rows, Grid auto flow, auto columns and auto rows.",
   },
   {
-    name: "Skill name here",
+    name: "CSS Advanced Concepts",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " CSS pseudo selectors, Block Formatting Context (BFC), Clearing Techniques, Resetting vs. Normalizing CSS.",
   },
   {
-    name: "Skill name here",
+    name: "Bootstrap",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " I have used Bootstrap for years and I'm familiar with other similar systems such as Foundation.",
   },
   {
-    name: "Skill name here",
+    name: "Modern Styling Systems",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " I'm familiar with Sass, Less, Styled Components, Emotion, ThemeUI and Tailwindcss (and twin.macro).",
   },
 ]
 
@@ -115,8 +115,8 @@ const Dt = tw.dt`
 mx-0
 `
 const SkillName = tw.div`
-ml-9 text-lg leading-6 font-medium text-fogra-light
+ml-9 text-lg leading-6 font-medium text-amber-darkest
 `
 const Dd = tw.dd`
-mt-2 ml-9 text-base text-gray-500
+mt-2 ml-9 text-base text-fogra
 `

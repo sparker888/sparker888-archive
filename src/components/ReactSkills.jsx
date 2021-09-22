@@ -115,8 +115,8 @@ const Dt = tw.dt`
 mx-0
 `
 const SkillName = tw.div`
-ml-9 text-lg leading-6 font-medium text-fogra-light
+ml-9 text-lg leading-6 font-medium text-amber-darkest
 `
 const Dd = tw.dd`
-mt-2 ml-9 text-base text-gray-500
+mt-2 ml-9 text-base text-fogra
 `

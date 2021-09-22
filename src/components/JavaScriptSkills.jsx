@@ -5,44 +5,39 @@ import { CheckIcon } from "@heroicons/react/outline"
 
 const skills = [
   {
-    name: "Skill name here",
+    name: "JavaScript Basics",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " JS Variables, Types, Array Methods and Operators",
   },
   {
-    name: "Skill name here",
+    name: "Functional Programming in JS",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " Function scope, Closures and Hoisting, and Higher Order Functions.",
   },
   {
-    name: "Skill name here",
+    name: "Objects in JavaScript",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " The this keyword, Implicit and Explicit Binding, Prototypal Inheritance.",
   },
   {
-    name: "Skill name here",
+    name: "Some Advanced Concepts",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " Polyfills, Async and Defer, Debouncing and Throttling.",
   },
   {
-    name: "Skill name here",
+    name: "Storage in JavaScript",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " localStorage and sessionStorage.",
   },
   {
-    name: "Skill name here",
+    name: "JQuery",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " I've used JQuery for years and understand it well but no longer use it.",
   },
   {
-    name: "Skill name here",
+    name: "Regular Expressions",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
-  },
-  {
-    name: "Skill name here",
-    description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " I know enough to look things up and create a working RegEx.",
   },
 ]
 
@@ -115,8 +110,8 @@ const Dt = tw.dt`
 mx-0
 `
 const SkillName = tw.div`
-ml-9 text-lg leading-6 font-medium text-fogra-light
+ml-9 text-lg leading-6 font-medium text-amber-darkest
 `
 const Dd = tw.dd`
-mt-2 ml-9 text-base text-gray-500
+mt-2 ml-9 text-base text-fogra
 `
