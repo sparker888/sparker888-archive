@@ -55,7 +55,7 @@ export default Gallery
 export const pageQuery = graphql`
   query {
     gallery: contentfulGallery(
-      galleryName: { eq: "Hurricane Larry Photography" }
+      galleryName: { eq: "Hurricane Larry Gallery" }
     ) {
       id
       galleryName
