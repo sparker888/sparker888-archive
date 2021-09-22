@@ -7,7 +7,7 @@ const skills = [
   {
     name: "Routing",
     description:
-      " I can crate unique and template-based pages and compose component elements like headers and footers. I'm comfortable with JSXm markdown and headless CMS.",
+      " I can crate unique and template-based pages and compose component elements like headers and footers. I'm comfortable with JSX, local markdown files and headless CMS.",
   },
   {
     name: "Styling",
