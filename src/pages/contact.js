@@ -1,12 +1,45 @@
-import tw, { css, styled } from "twin.macro"
-import React from "react"
+import tw, { styled } from "twin.macro"
+import React, { useState } from "react"
 import Layout from "../layouts/Layout"
-import { graphql, useStaticQuery } from "gatsby"
+import { navigate, graphql, useStaticQuery } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
 import { BgImage } from "gbimage-bridge"
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline"
 
+// This function encodes the captured form data in the format that Netlify's backend requires
+function encode(data) {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
+
 const Contact = () => {
+
+  const [name, setName] = useState("")
+
+  const handleChange = (e) => {
+    setName({ ...name, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = (event) => {
+    // Prevent the default onSubmit behavior
+    event.preventDefault();
+    // POST the encoded form with the content-type header that's required for a text submission
+    // Note that the header will be different for POSTing a file
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ 
+        "form-name": event.target.getAttribute("name"), 
+        ...name
+      })
+    })
+      // On success, redirect to the custom success page using Gatsby's `navigate` helper function
+      .then(() => navigate("/thank-you/"))
+      // On error, show the error in an alert
+      .catch(error => alert(error));
+  };
+
   const { placeholderImage } = useStaticQuery(
     graphql`
       query {
@@ -170,10 +203,12 @@ const Contact = () => {
               <ContactFormWrap>
                 <FormTitle>Send me a message</FormTitle>
                 <Form
-                  name="contact"
                   form
+                  name="contact"
                   id="bss-netlify-form"
                   method="POST"
+                  onSubmit={handleSubmit}
+                  action="/"
                   data-netlify="true"
                   data-netlify-honeypot="bot-field"
                 >
@@ -193,6 +228,7 @@ const Contact = () => {
                         name="first-name"
                         id="first-name"
                         autoComplete="given-name"
+                        onChange={handleChange}
                       />
                     </Mt1>
                   </div>
@@ -204,6 +240,7 @@ const Contact = () => {
                         name="last-name"
                         id="last-name"
                         autoComplete="family-name"
+                        onChange={handleChange}
                       />
                     </Mt1>
                   </div>
@@ -215,6 +252,7 @@ const Contact = () => {
                         name="email"
                         type="email"
                         autoComplete="email"
+                        onChange={handleChange}
                       />
                     </Mt1>
                   </div>
@@ -230,13 +268,14 @@ const Contact = () => {
                         id="phone"
                         autoComplete="tel"
                         aria-describedby="phone-optional"
+                        onChange={handleChange}
                       />
                     </Mt1>
                   </div>
                   <ColSpan>
                     <LabelSubject htmlFor="subject">Subject</LabelSubject>
                     <Mt1>
-                      <InputSubject type="text" name="subject" id="subject" />
+                      <InputSubject type="text" name="subject" id="subject" onChange={handleChange} />
                     </Mt1>
                   </ColSpan>
                   <ColSpan>
@@ -253,6 +292,7 @@ const Contact = () => {
                         rows={4}
                         aria-describedby="message-max"
                         defaultValue={""}
+                        onChange={handleChange}
                       />
                     </Mt1>
                   </ColSpan>
