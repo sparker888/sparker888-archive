@@ -15,6 +15,7 @@ const ProjectPage = (props) => {
     secondTitle,
     hero,
     screenshot,
+    screenshot2,
     liveUrl,
     nextProjectUrl,
     description,
@@ -24,6 +25,7 @@ const ProjectPage = (props) => {
   const heroImage = getImage(hero)
 
   const image = getImage(screenshot)
+  const image2 = getImage(screenshot2)
 
   return (
     <>
@@ -108,6 +110,7 @@ const ProjectPage = (props) => {
               </PatternSection>
               <ScreenSection>
                 <GatsbyImage image={image} alt={title} className="screenShot" />
+                <GatsbyImage image={image2} alt={secondTitle} className="screenShot" />
               </ScreenSection>
             </ScreenInnerWrapper>
           </ScreenOuterWrapper>
@@ -158,6 +161,9 @@ export const query = graphql`
       gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
     }
     screenshot {
+      gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
+    }
+    screenshot2 {
       gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
     }
   }

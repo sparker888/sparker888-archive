@@ -6,7 +6,7 @@ import MultipleGalleryCards from "../components/MultipleGalleryCards"
 import { graphql } from "gatsby"
 
 const Projects = ({ data }) => {
-  console.log(data)
+
   return (
     <Layout>
       <GalleryIntro />
