@@ -5,44 +5,39 @@ import { CheckIcon } from "@heroicons/react/outline"
 
 const skills = [
   {
-    name: "Skill name here",
+    name: "React Fundamentals",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " Virtual DOM, JSX, Components, props and state Objects, Unidirectional Data Flow, Server-side Rendering.",
   },
   {
-    name: "Skill name here",
+    name: "Lists and Keys",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " I'm very familiar with the .map() function to convert both lists of data (arrays) as well as other components into lists of elements with the key prop.",
   },
   {
-    name: "Skill name here",
+    name: "Event Listeners and Handling Events",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " I'm very familiar with onClick, onChange and onSubmit props and using these to toggle states and manage data'.",
   },
   {
-    name: "Skill name here",
+    name: "Essential React Hooks",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " useState hook, useEffect hook, useRef hook, and Callback functions.",
   },
   {
-    name: "Skill name here",
+    name: "Advanced React Hooks",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " I have only read about more advanced and custom hooks such as the useMemo, useContext, and useReducer hooks.",
   },
   {
-    name: "Skill name here",
+    name: "State Management",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " I understand the basics of the Redux library and have worked with Actions, Reduders and Store in two learning projects.",
   },
   {
-    name: "Skill name here",
+    name: "React Performance",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
-  },
-  {
-    name: "Skill name here",
-    description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " Identifying bottlenecks, Chrome performance tab, DevTools Profiler, Production builds.",
   },
 ]
 
@@ -59,8 +54,7 @@ export default function ReactSkills() {
           />
           <Title>React</Title>
           <Description>
-            Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-            Malesuada adipiscing sagittis vel nulla nec.
+            I am relatively new to React, yet I'm comfortable with all the basics in terms of designing components, passing props and using essential hooks. I'm learning more advanced concepts now.
           </Description>
         </div>
         <SkillsWrapper>

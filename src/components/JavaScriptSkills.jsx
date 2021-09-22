@@ -54,8 +54,7 @@ export default function JavaScript() {
           />
           <Title>JavaScript ES6</Title>
           <Description>
-            Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-            Malesuada adipiscing sagittis vel nulla nec.
+            I have used JavaScript for many years but I was not using it when the big changes happened with ES6 and the now common practice of arrow and higher order functions. I'm learning them quickly (and really enjoy them).
           </Description>
         </div>
         <SkillsWrapper>

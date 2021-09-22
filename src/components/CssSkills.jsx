@@ -12,7 +12,7 @@ const skills = [
   {
     name: "CSS Selectors and Specificity",
     description:
-      " type, class and id selectors, descendant combinators, and child combinators, specificity weight.",
+      " CSS type, class and id selectors, descendant combinators, and child combinators, specificity weight.",
   },
   {
     name: "CSS Text, Color, Fonts",
@@ -22,7 +22,7 @@ const skills = [
   {
     name: "CSS Flexbox",
     description:
-      " flexbox properties, flex direction, wrap, grow, shrink, and order.",
+      " CSS Box model, flexbox properties, flex direction, wrap, grow, shrink, and order.",
   },
   {
     name: "CSS Grid",
@@ -32,7 +32,7 @@ const skills = [
   {
     name: "CSS Advanced Concepts",
     description:
-      " CSS pseudo selectors, Block Formatting Context (BFC), Clearing Techniques, Resetting vs. Normalizing CSS.",
+      " Responsive Web design, CSS pseudo selectors, Block Formatting Context (BFC), Clearing Techniques, Resetting vs. Normalizing CSS.",
   },
   {
     name: "Bootstrap",
@@ -42,7 +42,7 @@ const skills = [
   {
     name: "Modern Styling Systems",
     description:
-      " I'm familiar with Sass, Less, Styled Components, Emotion, ThemeUI and Tailwindcss (and twin.macro).",
+      " I'm familiar with Sass, Less, Styled Components, Emotion, theme-ui and Tailwindcss (and twin.macro).",
   },
 ]
 
@@ -59,8 +59,7 @@ export default function CssSkills() {
           />
           <Title>CSS 3</Title>
           <Description>
-            Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-            Malesuada adipiscing sagittis vel nulla nec.
+            I have used CSS for many years and understand the language well. During my career, I have gone from vanilla CSS, to using libraries and frameworks, to design systems, preprocessors and now use modern styling and utility systems such as Styled Components, Theme UI and Tailwindcss.
           </Description>
         </div>
         <SkillsWrapper>

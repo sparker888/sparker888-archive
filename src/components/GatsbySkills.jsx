@@ -5,44 +5,44 @@ import { CheckIcon } from "@heroicons/react/outline"
 
 const skills = [
   {
-    name: "Skill name here",
+    name: "Routing",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " I can crate unique and template-based pages and compose component elements like headers and footers. I'm comfortable with JSXm markdown and headless CMS.",
   },
   {
-    name: "Skill name here",
+    name: "Styling",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " Gatsby supports multiple styling systems I'm familiar with inslucing standard CSS, preprocessors like Sass and CSS-in-JSS solutions like Styled Components, Tailwind and theme-ui.",
   },
   {
-    name: "Skill name here",
+    name: "Images and Media",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " Gatsby's image and media handling are simply stellar. I'm very familiar with the key image plugins and comfortable with static and GraphQL queries and performance configurations.",
   },
   {
-    name: "Skill name here",
+    name: "Plugins and Themes",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " The plugin and theme ecosystem are wide and deep, but I now have experience using several dozen common plugins and have worked with a complicated theme system site.",
   },
   {
-    name: "Skill name here",
+    name: "Sourcing Data",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " I have the knowledge and resources to pull data from wherever it lives -- a CMS, the filesystem, a spreadsheet, a database, and in many formats and through common APIs.",
   },
   {
-    name: "Skill name here",
+    name: "SEO",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " I have created customized SEO configurations using React Helmet with content front matter and images to provide optimal search and social performance.",
   },
   {
-    name: "Skill name here",
+    name: "Deployment Pipeline",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " I'm comfortable working with Gatsby's CLI and development servers, working with various APIs, providing previews to content providers and CDN deployment.",
   },
   {
-    name: "Skill name here",
+    name: "Performance and Scaling",
     description:
-      " Intelligentsia fam chambray blue bottle, raclette narwhal wayfarers messenger bag hammock biodiesel pop-up YOLO jean shorts.",
+      " I've primarily focused on the basics such as image optimization and lazy load/inline scripts. I've moved on to purge css to remove unnecessary styling file size overhead. I'm learning more in this area now.",
   },
 ]
 
@@ -59,8 +59,7 @@ export default function GatsbySkills() {
           />
           <Title>GatsbyJS</Title>
           <Description>
-            Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-            Malesuada adipiscing sagittis vel nulla nec.
+            Having used other static site tools in the past, I consider GatsbyJS to be in another category. This system of using React is simply amazing in terms of the quality and number of plugins that make difficult React configurations trivial. Gatsby has a huge future and I'm all in with the community.
           </Description>
         </div>
         <SkillsWrapper>
