@@ -8,8 +8,8 @@ const ArticlesIntro = () => {
       <LeftBlock>
         <BlockWrapper>
           <H1>
-            <Span1>Articles on modern development,</Span1>{" "}
-            <Span2>marketing, drones and more!</Span2>{" "}<Span3>🚁</Span3>
+            <Span1>Articles on modern development,</Span1>{" "} <Span3>🚁</Span3> 
+            <Span2>marketing, drones and more!</Span2>{" "}
           </H1>
           <P>
             Here on my blog, my goal is to share some of the coolest things I'm working with in the development world. I've also worked with teams helping to market and sell companies, so I'll share some insights to being successful. Occasionally, you might get <Span4 href="https://i.imgur.com/ElNzCqq.png" target="_blank">cool art</Span4> and weird memes. 
@@ -58,13 +58,13 @@ const H1 = tw.h1`
 text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl
 `
 const Span1 = tw.span`
-block xl:inline text-fogra
+block inline text-fogra sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl
 `
 const Span2 = tw.span`
-block text-fogra-lightest xl:inline
+block inline text-fogra-lightest sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl
 `
 const Span3 = tw.span`
-block inline mb-1 md:mb-2 sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl
+block inline mb-1 md:mb-2 sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl
 `
 const Span4 = tw.a`
 text-kobe hover:text-amber

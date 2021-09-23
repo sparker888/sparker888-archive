@@ -10,7 +10,7 @@ const Intro = () => {
         <BlockWrapper>
           <H1>
             <Span1>🤙</Span1>
-            <Span2>Aloha and Welcome. I'm</Span2>{" "}
+            <Span2>{" "}Aloha and Welcome. I'm</Span2>{" "}
             <Span3>Stephen Parker aka @sparker888</Span3>
           </H1>
           <P>
@@ -62,7 +62,7 @@ const H1 = tw.h1`
 text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl
 `
 const Span1 = tw.span`
-block mb-1 md:mb-2 sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl
+block xl:inline mb-1 md:mb-2 sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl
 `
 const Span2 = tw.span`
 block xl:inline text-fogra

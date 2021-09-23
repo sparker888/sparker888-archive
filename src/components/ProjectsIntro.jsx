@@ -8,19 +8,19 @@ const ProjectsIntro = () => {
       <LeftBlock>
         <BlockWrapper>
           <H1>
-            <Span1>✨</Span1>
             <Span2>With incredible technology,</Span2>{" "}
-            <Span3>I'm building amazing things!</Span3>
+            <Span3>We can build  amazing things!</Span3>{" "}
+            <Span1>✨</Span1>
           </H1>
           <P>
-            For 25 years, I have built and managed digital properties for some of the largest brands, smallest businesses, brightest entrepreneurs and <Span4 href="https://sparker888.github.io/eve_ships/" target="_blank">just for fun</Span4>. I have worked with a lot of great people and technology along the way.
+            For 25 years, I have worked with some fantastic teams to build and manage digital properties for some of the largest brands, smallest businesses, brightest entrepreneurs and <Span4 href="https://sparker888.github.io/eve_ships/" target="_blank">just for fun</Span4>. 
           </P>
           <P>
-            This year, thanks to <Span5 to="/skills/" >new skills</Span5>, I've been able to build several projects to promote services with sites that score highly with <Span4 href="https://gravitaldigital.com/blog/navigating-google-core-web-vitals-report/" target="_blank">Google's new algorithm measures</Span4> for speed and performance using modern web development. I'm pleased to present these projects... 
+            This year, thanks to <Span5 to="/skills/" >new skills</Span5>, I've been able to complete several projects that showcase my skills and score highly for <Span4 href="https://gravitaldigital.com/blog/navigating-google-core-web-vitals-report/" target="_blank">Google's new algorithm measures</Span4> that measure speed and performance. 
           </P>
           <ButtonWrap>
             <Button1>
-              <Link1 to="../project-gravital-digital">Dive In!</Link1>
+              <Link1 to="../project-gravital-digital">Take a Look</Link1>
             </Button1>
             {/* <Button2>
                   <Link2 href="/blog">My Blog</Link2>
@@ -59,13 +59,13 @@ const H1 = tw.h1`
 text-4xl tracking-tight font-extrabold sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
 `
 const Span1 = tw.span`
-block mb-2 md:mb-4 sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl
+block inline mb-2 md:mb-4 sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl
 `
 const Span2 = tw.span`
-block xl:inline text-fogra
+block inline text-fogra sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
 `
 const Span3 = tw.span`
-block text-fogra-lightest sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
+block inline text-fogra-lightest sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
 `
 const Span4 = tw.a`
 text-kobe hover:text-amber

@@ -8,9 +8,8 @@ const GalleryIntro = () => {
       <LeftBlock>
         <BlockWrapper>
           <H1>
-            <Span1>📸</Span1>
             <Span2>Sony Alphas</Span2>{" "}
-            <Span3>capture magnificent images!</Span3>
+            <Span3>capture</Span3> <Span1>📸</Span1> <Span3>magnificent images!</Span3>
           </H1>
           <P>
             Having owned many cameras in my career, I've come to love and depend on my Sony Alpha gear. Sony makes truly wonderful, high-quality products. I'm glad they stepped up their game with their interchangeable lens gear in recent years.
@@ -59,13 +58,13 @@ const H1 = tw.h1`
 text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl
 `
 const Span1 = tw.span`
-block mb-1 md:mb-2 sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl
+block inline mb-1 md:mb-2 sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl
 `
 const Span2 = tw.span`
-block xl:inline text-fogra
+block inline text-fogra sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
 `
 const Span3 = tw.span`
-block text-fogra-lightest sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
+block inline text-fogra-lightest sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
 `
 const P = tw.p`
 mt-3 max-w-md mx-auto font-serif text-xl text-fogra-light sm:text-xl md:mt-5 lg:mt-10 md:max-w-3xl
