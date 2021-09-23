@@ -9,9 +9,10 @@ const ArticlesIntro = () => {
         <BlockWrapper>
           <H1>
             <Span1>Articles on modern development,</Span1>{" "}
-            <Span2>marketing, drones and more! 🚁</Span2>
+            <Span2>marketing, drones and more!</Span2>{" "}<Span3>🚁</Span3>
           </H1>
-          <P>Here on my blog, my goal is to share some of the coolest things I'm working with in the development world. I've also worked with teams helping to market and sell companies, so I'll share some insights to being successful. Occasionally, you might get <SPAN href="https://i.imgur.com/ElNzCqq.png" target="_blank">cool art</SPAN> and weird memes. 
+          <P>
+            Here on my blog, my goal is to share some of the coolest things I'm working with in the development world. I've also worked with teams helping to market and sell companies, so I'll share some insights to being successful. Occasionally, you might get <Span4 href="https://i.imgur.com/ElNzCqq.png" target="_blank">cool art</Span4> and weird memes. 
           </P>
           <P>
             Having grown up on the Space Coast of Florida, I have a passion for technology, space and the ocean. I grew up as a space baby with an engineer for a father so I spent a lot of time working on cars, watching NASA launches, and sailing and surfing.  I'll share some stories and beautiful images of Florida and Hawaii. Aloha!
@@ -42,7 +43,7 @@ const Main = tw.main`
 lg:relative bg-almond-light
 `
 const LeftBlock = tw.div`
-mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left
+mx-auto max-w-7xl w-full pt-8 pb-10 text-center lg:py-16 lg:text-left
 `
 const RightBlock = tw.div`
 relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full
@@ -62,6 +63,12 @@ block xl:inline text-fogra
 const Span2 = tw.span`
 block text-fogra-lightest xl:inline
 `
+const Span3 = tw.span`
+block inline mb-1 md:mb-2 sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl
+`
+const Span4 = tw.a`
+text-kobe hover:text-amber
+`
 const P = tw.p`
 mt-3 max-w-md mx-auto font-serif text-xl text-fogra-light sm:text-xl md:mt-5 lg:mt-10 md:max-w-3xl
 `
@@ -74,6 +81,4 @@ rounded-md shadow
 const Link1 = styled(Link)`
   ${tw`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-kobe hover:bg-kobe-light md:py-4 md:text-lg md:px-10`}
 `
-const SPAN = tw.a`
-text-kobe hover:text-amber
-`
+

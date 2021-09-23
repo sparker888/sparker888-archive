@@ -8,13 +8,15 @@ const ProjectsIntro = () => {
       <LeftBlock>
         <BlockWrapper>
           <H1>
-            <Span1>With incredible technology,</Span1>{" "}
-            <Span2>I'm building amazing things! 🔥</Span2>
+            <Span1>✨</Span1>
+            <Span2>With incredible technology,</Span2>{" "}
+            <Span3>I'm building amazing things!</Span3>
           </H1>
           <P>
-            For 25 years, I have built and managed digital properties for some of the largest brands, smallest businesses, brightest entrepreneurs and <SPAN href="https://sparker888.github.io/eve_ships/" target="_blank">just for fun</SPAN>. I have worked with a lot of great people and technology along the way.
+            For 25 years, I have built and managed digital properties for some of the largest brands, smallest businesses, brightest entrepreneurs and <Span4 href="https://sparker888.github.io/eve_ships/" target="_blank">just for fun</Span4>. I have worked with a lot of great people and technology along the way.
           </P>
-          <P>This year, thanks to <Span3 to="/skills/" >new skills</Span3>, I've been able to build several projects to promote services with sites that score highly with <SPAN href="https://gravitaldigital.com/blog/navigating-google-core-web-vitals-report/" target="_blank">Google's new algorithm measures</SPAN> for speed and performance using modern web development. I'm pleased to present these projects... 
+          <P>
+            This year, thanks to <Span5 to="/skills/" >new skills</Span5>, I've been able to build several projects to promote services with sites that score highly with <Span4 href="https://gravitaldigital.com/blog/navigating-google-core-web-vitals-report/" target="_blank">Google's new algorithm measures</Span4> for speed and performance using modern web development. I'm pleased to present these projects... 
           </P>
           <ButtonWrap>
             <Button1>
@@ -42,7 +44,7 @@ const Main = tw.main`
 lg:relative bg-almond-light
 `
 const LeftBlock = tw.div`
-mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left
+mx-auto max-w-7xl w-full pt-8 pb-10 text-center lg:py-16 lg:text-left
 `
 const RightBlock = tw.div`
 relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full
@@ -54,15 +56,21 @@ const BlockWrapper = tw.div`
 px-4 lg:w-1/2 sm:px-8 xl:pr-16
 `
 const H1 = tw.h1`
-text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl
+text-4xl tracking-tight font-extrabold sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
 `
 const Span1 = tw.span`
-block xl:inline text-fogra
+block mb-2 md:mb-4 sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl
 `
 const Span2 = tw.span`
-block text-fogra-lightest xl:inline
+block xl:inline text-fogra
 `
-const Span3 = styled(Link)`
+const Span3 = tw.span`
+block text-fogra-lightest sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
+`
+const Span4 = tw.a`
+text-kobe hover:text-amber
+`
+const Span5 = styled(Link)`
   ${tw`block xl:inline text-kobe hover:text-amber`}
 `
 const P = tw.p`
@@ -76,7 +84,4 @@ rounded-md shadow
 `
 const Link1 = styled(Link)`
   ${tw`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-kobe hover:bg-kobe-light md:py-4 md:text-lg md:px-10`}
-`
-const SPAN = tw.a`
-text-kobe hover:text-amber
 `
