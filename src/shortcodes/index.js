@@ -6,4 +6,5 @@ export {
   Video,
   Code,
   Blockquote,
+  Counter,
 }
