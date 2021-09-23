@@ -19,7 +19,7 @@ module.exports = {
     title: "Stephen Parker | UI/UX Gatsby/React Frontend Developer",
     titleTemplate: "Stephen Parker | UI/UX Gatsby/React Frontend Developer",
     description:
-      "Check out the latest work in my portfolio website...",
+      "Check out the latest work on @sparker888's portfolio site.",
     siteUrl: "https://www.sparker888.com", // No trailing slash allowed!
     twitterUsername: "@sparker888",
     publicURL: "/sparker888-default-image.jpg", // This will be the default image for social media shares (in the static folder)
