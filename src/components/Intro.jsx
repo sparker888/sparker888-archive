@@ -19,7 +19,7 @@ const Intro = () => {
             the Gatsby Starter, take a look around. A link to the repo is in the footer.
           </P>
           <P>
-             For those here for the first time, I'm a frontend UI/UX React/Gatsby developer and entrepreneur. The website you are looking at now is my latest project. If you're interested in knowing how I built it, <Span5 to="/blog/sparker888-project-portfolio">here's my article</Span5> covering the build technology.
+             For those here for the first time, I'm a frontend UI/UX React/Gatsby developer and entrepreneur. The website you are looking at now is my latest project. If you're interested in knowing some of the technology, here's my first article: <Span5 to="/blog/sparker888-gatsby-and-mdx-like-blogging-on-steroids">Gatsby and MDX: Like blogging on steroids</Span5>.
           </P>
           <ButtonWrap>
             <Button1>
