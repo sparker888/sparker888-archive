@@ -9,7 +9,7 @@ const ProjectsIntro = () => {
         <BlockWrapper>
           <H1>
             <Span2>With incredible technology,</Span2>{" "}
-            <Span3>We can build  amazing things!</Span3>{" "}
+            <Span3>we're building amazing things!</Span3>{" "}
             <Span1>✨</Span1>
           </H1>
           <P>
