@@ -19,7 +19,7 @@ const ProjectsIntro = () => {
             For 25 years, I have worked with some fantastic teams to build and manage digital properties for some of the largest brands, smallest businesses, brightest entrepreneurs and <Span4 href="https://sparker888.github.io/eve_ships/" target="_blank">just for fun</Span4>. 
           </P>
           <P>
-            This year,  I've been able to help clients get more visibility on the Web and score highly for <Span4 href="https://gravitaldigital.com/blog/navigating-google-core-web-vitals-report/" target="_blank">Google's new algorithm measures</Span4> to help them move up in the rankings. 
+            This year,  I've been able to help clients get more visibility on the Web and score highly for <Span4 href="https://gravitaldigital.com/blog/navigating-google-core-web-vitals-report/" target="_blank">Google's new algorithm measures</Span4> to help them move up in the search engine rankings for more traffic and sales. 
           </P>
           <ButtonWrap>
             <Button1>
