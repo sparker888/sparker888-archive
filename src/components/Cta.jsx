@@ -7,7 +7,7 @@ const Cta = () => {
   const { mainImage } = useStaticQuery(
     graphql`
       query {
-        mainImage: file(relativePath: { eq: "the-sign-small.jpg" }) {
+        mainImage: file(relativePath: { eq: "do-something-great.jpg" }) {
           childImageSharp {
             gatsbyImageData(
               quality: 100
@@ -28,7 +28,7 @@ const Cta = () => {
         <GatsbyImage
           className="styledMainImage"
           image={image}
-          alt="Photo by Austin Chan on Unsplash"
+          alt="Photo by Clark Tibbs on Unsplash"
         />
       </MainImageWrapper>
       <OuterContentWrapper>
