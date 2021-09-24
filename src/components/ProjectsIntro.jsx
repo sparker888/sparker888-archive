@@ -13,7 +13,7 @@ const ProjectsIntro = () => {
             <Span1>✨</Span1>
           </H1>
           <H3>
-            This year I built an amazing studio! Thanks to a lot of technology and <Span6 to="/skills/" >new skills</Span6>, I&#8217;m helping more businesses meet their goals.
+            This year I built an amazing studio! Thanks to a lot of cool technology and <Span6 to="/skills/" >improved skills</Span6>, I&#8217;m helping more businesses meet their goals.
           </H3>
           <P>
             For 25 years, I have worked with some fantastic teams to build and manage digital properties for some of the largest brands, smallest businesses, brightest entrepreneurs and <Span4 href="https://sparker888.github.io/eve_ships/" target="_blank">just for fun</Span4>. 
