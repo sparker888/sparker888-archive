@@ -8,15 +8,18 @@ const ProjectsIntro = () => {
       <LeftBlock>
         <BlockWrapper>
           <H1>
-            <Span2>With incredible technology,</Span2>{" "}
-            <Span3>we're building amazing things!</Span3>{" "}
+            <Span2>With the latest technology,</Span2>{" "}
+            <Span3>I&#8217;m helping clients succeed!</Span3>{" "}
             <Span1>✨</Span1>
           </H1>
+          <H3>
+            This year I built an amazing studio! Thanks to a lot of technology and <Span6 to="/skills/" >new skills</Span6>, I&#8217;m helping more businesses meet their goals.
+          </H3>
           <P>
             For 25 years, I have worked with some fantastic teams to build and manage digital properties for some of the largest brands, smallest businesses, brightest entrepreneurs and <Span4 href="https://sparker888.github.io/eve_ships/" target="_blank">just for fun</Span4>. 
           </P>
           <P>
-            This year, thanks to <Span5 to="/skills/" >new skills</Span5>, I've been able to complete several projects that showcase my skills and score highly for <Span4 href="https://gravitaldigital.com/blog/navigating-google-core-web-vitals-report/" target="_blank">Google's new algorithm measures</Span4> that measure speed and performance. 
+            This year,  I've been able to help clients get more visibility on the Web and score highly for <Span4 href="https://gravitaldigital.com/blog/navigating-google-core-web-vitals-report/" target="_blank">Google's new algorithm measures</Span4> to help them move up in the rankings. 
           </P>
           <ButtonWrap>
             <Button1>
@@ -30,7 +33,7 @@ const ProjectsIntro = () => {
       </LeftBlock>
       <RightBlock>
         <Image
-          src="https://res.cloudinary.com/gravital-digital/image/upload/v1631817844/sigmund-04asBB737-k-unsplash_vohkmj.jpg"
+          src="https://res.cloudinary.com/gravital-digital/image/upload/v1632493418/studio_shot_jljjuq.jpg"
           alt="Photo by Sigmund on Unsplash"
         />
       </RightBlock>
@@ -58,6 +61,9 @@ px-4 lg:w-1/2 sm:px-8 xl:pr-16
 const H1 = tw.h1`
 text-4xl tracking-tight font-extrabold sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
 `
+const H3 = tw.h3`
+mt-3 max-w-md mx-auto font-serif text-2xl md:text-3xl text-amber-darkest md:mt-5 md:max-w-3xl
+`
 const Span1 = tw.span`
 block inline mb-2 md:mb-4 sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl
 `
@@ -71,7 +77,10 @@ const Span4 = tw.a`
 text-kobe hover:text-amber
 `
 const Span5 = styled(Link)`
-  ${tw`block xl:inline text-kobe hover:text-amber`}
+  ${tw`block inline text-kobe hover:text-amber`}
+`
+const Span6 = styled(Link)`
+  ${tw`block inline text-fogra-lightest hover:text-amber`}
 `
 const P = tw.p`
 mt-3 max-w-md mx-auto font-serif text-xl text-fogra-light sm:text-xl md:mt-5 lg:mt-10 md:max-w-3xl

@@ -10,16 +10,17 @@ const Intro = () => {
         <BlockWrapper>
           <H1>
             <Span1>🤙</Span1>
-            <Span2>{" "}Aloha and Welcome. I'm</Span2>{" "}
+            <Span2>{" "}Aloha and Welcome. I&#8217;m</Span2>{" "}
             <Span3>Stephen Parker aka @sparker888</Span3>
           </H1>
+          <H3>
+            I work as a frontend Web developer, photographer and entrepreneur, and I&#8217;m a <Span6 href="https://www.visitspacecoast.com/">Space Coast</Span6>  native and ocean lover. Thanks for checking out my website!
+          </H3>   
           <P>
-            Thanks for your interest! If you came to review my projects and skills,
-            feel free to begin with the showcase projects below. If you're checking out
-            the Gatsby Starter, take a look around. A link to the repo is in the footer.
+            An overview of several recent projects are linked below. My photography galleries are <Span5 to="/gallery/">here</Span5>. If you're here for the Gatsby Starter, take a look around. The repository for this website is <Span4 href="https://www.gatsbyjs.com/" target="_blank">here</Span4>. Please note that I still have a few things to finish.
           </P>
           <P>
-             For those here for the first time, I'm a frontend UI/UX React/Gatsby developer and entrepreneur. The website you are looking at now is my latest project. Building it also inspired this site's first article: <Span5 to="/blog/sparker888-gatsby-and-mdx-like-blogging-on-steroids">Gatsby and MDX: Like blogging on steroids</Span5>.
+             I have worked in a number of marketing and sales roles in my career, and decided last year to return to my roots and focus on UI/UX React/Gatsby development. The website you are looking at now is my latest project. You can see the skills I used to build it <Span5 to="/skills/">here</Span5>. The process inspired the site's first article: <Span5 to="/blog/sparker888-gatsby-and-mdx-like-blogging-on-steroids">Gatsby and MDX: Like blogging on steroids</Span5>.
           </P>
           <ButtonWrap>
             <Button1>
@@ -61,6 +62,9 @@ px-4 lg:w-1/2 sm:px-8 xl:pr-16
 const H1 = tw.h1`
 text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl
 `
+const H3 = tw.h3`
+mt-3 max-w-md mx-auto font-serif text-2xl md:text-3xl text-amber-darkest md:mt-5 md:max-w-3xl
+`
 const Span1 = tw.span`
 block xl:inline mb-1 md:mb-2 sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl
 `
@@ -70,8 +74,14 @@ block xl:inline text-fogra
 const Span3 = tw.span`
 block text-fogra-lightest sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
 `
+const Span4 = tw.a`
+inline text-kobe hover:text-amber
+`
 const Span5 = styled(Link)`
-  ${tw`block xl:inline text-kobe hover:text-amber`}
+  ${tw`block inline text-kobe hover:text-amber`}
+`
+const Span6 = tw.a`
+text-fogra-lightest hover:text-amber
 `
 const P = tw.p`
 mt-3 max-w-md mx-auto font-serif text-xl text-fogra-light sm:text-xl md:mt-5 md:max-w-3xl

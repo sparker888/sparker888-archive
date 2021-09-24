@@ -8,14 +8,14 @@ const GalleryIntro = () => {
       <LeftBlock>
         <BlockWrapper>
           <H1>
-            <Span2>Sony Alphas</Span2>{" "}
-            <Span3>capture</Span3> <Span1>📸</Span1> <Span3>magnificent images!</Span3>
+          <Span1>📸</Span1> <Span2>For speed and efficiency,</Span2>{" "}
+            <Span3>I&#8217;ve gone minimalist and lightweight!</Span3>
           </H1>
+          <H3>
+            I&#8217;ve also stepped up my game as a professional photographer. I&#8217;m now a licensed and insured <Span6 href="https://www.ppa.com/" target="_blank">PPA</Span6> member!
+          </H3>
           <P>
-            Having owned many cameras in my career, I've come to love and depend on my Sony Alpha gear. Sony makes truly wonderful, high-quality products. I'm glad they stepped up their game with their interchangeable lens gear in recent years.
-          </P>
-          <P>
-            This year, I've invested in additional equipment to improve my ability to quickly shoot real estate and portraits on site. The equipment includes powerful yet small flashes from Godox, carbon fiber tripods and lightweight modifiers, backdrops and stands designed for travel. I'm pleased to share some of my recent work.
+            This year, I focused on light and portable for quick real estate, on-site, and outdoor shoots. The equipment includes a lighter camera -- the Sony a6600, a carbon fiber tripod, several light yet powerful flashes from Godox, and lightweight modifiers, backdrops and stands designed for travel. Here are a few of the results.
           </P>
           <ButtonWrap>
             <Button1>
@@ -29,7 +29,7 @@ const GalleryIntro = () => {
       </LeftBlock>
       <RightBlock>
         <Image
-          src="https://res.cloudinary.com/gravital-digital/image/upload/v1632072081/andreas-dress-Toy5c-5o5Vo-unsplash_weylre.jpg"
+          src="https://res.cloudinary.com/gravital-digital/image/upload/v1632493822/pro-photo_pwqvom.jpg"
           alt="Photo by Andreas Dress on Unsplash"
         />
       </RightBlock>
@@ -57,6 +57,9 @@ px-4 lg:w-1/2 sm:px-8 xl:pr-16
 const H1 = tw.h1`
 text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl
 `
+const H3 = tw.h3`
+mt-3 max-w-md mx-auto font-serif text-2xl md:text-3xl text-amber-darkest md:mt-5 md:max-w-3xl
+`
 const Span1 = tw.span`
 block inline mb-1 md:mb-2 sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl
 `
@@ -65,6 +68,9 @@ block inline text-fogra sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
 `
 const Span3 = tw.span`
 block inline text-fogra-lightest sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
+`
+const Span6 = tw.a`
+text-fogra-lightest hover:text-amber
 `
 const P = tw.p`
 mt-3 max-w-md mx-auto font-serif text-xl text-fogra-light sm:text-xl md:mt-5 lg:mt-10 md:max-w-3xl
@@ -77,7 +83,4 @@ rounded-md shadow
 `
 const Link1 = styled(Link)`
   ${tw`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-kobe hover:bg-kobe-light md:py-4 md:text-lg md:px-10`}
-`
-const SPAN = tw.a`
-text-kobe hover:text-amber
 `

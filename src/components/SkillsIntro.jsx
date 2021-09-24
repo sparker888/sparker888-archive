@@ -9,17 +9,20 @@ const ProjectsIntro = () => {
         <BlockWrapper>
           <H1>
             
-            <Span2>Modern</Span2> <Span1>🚀</Span1> <Span2>development</Span2>{" "}
-            <Span3>delivers better performance.</Span3>
+            <Span2>With modern development skills,</Span2>{" "}
+            <Span3>I build websites that perform.</Span3><Span1>🚀</Span1>
           </H1>
+          <H3>
+            Five years ago, Matt Biilimann coined the term Jamstack <Span6 href="https://jamstack.org/" target="_blank">at Smashing Conference</Span6>. This talk has helped to redefine modern Web development and deployment. 
+          </H3>
+          <H3italic>
+            I'm all in!
+          </H3italic>
           <P>
-            Five years ago, Matt Biilimann coined the term Jamstack <Span4 href="https://jamstack.org/" target="_blank">at Smashing Conference</Span4>, and it defined the future of web development and deployment.
-          </P>
+            Starting last year, I went back to my roots as a web developer and learned React. With a focus on my UI/UX speciality, I dove fairly deep into several different styling systems, worked with a few headless CMS providers, and started working with<Span4 href="https://greensock.com/" target="_blank"> Greensock</Span4> animation. My biggest achievement has been becoming very proficient with 
+            <Span4 href="https://www.gatsbyjs.com/" target="_blank"> Gatsby</Span4>.</P>
           <P>
-            This year, guided by this philosophy, I upped my game as a frontend UX/UI developer by focusing on  <Span4 href="https://www.gatsbyjs.com/" target="_blank">Gatsby</Span4>, functional components, styled components and headless CMS.
-          </P>
-          <P>
-            Beyond presentation, I'm continuing to explore ways of using React hooks, working with a variety of APIs, and learning more details of <Span4 href="https://graphql.org/" target="_blank">GraphQL</Span4> to query, filter and sort data from a variety of sources, including powerful MDX files.
+            I've really enjoyed learning and using <Span4 href="https://graphql.org/" target="_blank">GraphQL</Span4> and <Span4 href="https://mdxjs.com/mdx/" target="_blank">MDX</Span4>, so I'm in the midst of a deep dive into these technologies now.
           </P>
           {/*<ButtonWrap>
             <Button1>
@@ -61,6 +64,12 @@ px-4 lg:w-1/2 sm:px-8 xl:pr-16
 const H1 = tw.h1`
 text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl
 `
+const H3 = tw.h3`
+mt-3 max-w-md mx-auto font-serif text-2xl md:text-3xl text-amber-darkest md:mt-5 md:max-w-3xl
+`
+const H3italic = tw.h3`
+mt-3 max-w-md mx-auto font-serif italic text-2xl md:text-3xl text-amber-darkest md:mt-5 md:max-w-3xl
+`
 const Span1 = tw.span`
 block inline mb-2 md:mb-4 sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl
 `
@@ -72,6 +81,9 @@ block inline text-fogra-lightest sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
 `
 const Span4 = tw.a`
 text-kobe hover:text-amber
+`
+const Span6 = tw.a`
+text-fogra-lightest hover:text-amber
 `
 const P = tw.p`
 mt-3 max-w-md mx-auto font-serif text-xl text-fogra-light sm:text-xl md:mt-5 lg:mt-10 md:max-w-3xl
