@@ -1,5 +1,5 @@
 import React from "react"
-import { styled } from "twin.macro"
+import { styled, css } from "twin.macro"
 const Counter = () => {
   const [count, setCount] = React.useState(0)
   return (
@@ -21,7 +21,7 @@ const Counter = () => {
   )
 }
 
-// Styling Only
+// Styling Only - Consider moving these to separate components and importing them in. That way we can use tailwind more easily.
 
 const Wrapper = styled.div`
   max-width: 500px;
