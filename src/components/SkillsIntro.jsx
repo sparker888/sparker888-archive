@@ -16,7 +16,7 @@ const ProjectsIntro = () => {
             Five years ago, Matt Biilimann coined the term Jamstack <Span6 href="https://jamstack.org/" target="_blank">at Smashing Conference</Span6>. This talk has helped to redefine modern Web development and deployment. 
           </H3>
           <H3italic>
-            I'm all in!
+            I&#8217;m all in!
           </H3italic>
           <P>
             Starting last year, I went back to my roots as a web developer and learned React. With a focus on my UI/UX speciality, I dove fairly deep into several different styling systems, worked with a few headless CMS providers, and started working with<Span4 href="https://greensock.com/" target="_blank"> Greensock</Span4> animation. My biggest achievement has been becoming very proficient with 
@@ -62,13 +62,13 @@ const BlockWrapper = tw.div`
 px-4 lg:w-1/2 sm:px-8 xl:pr-16
 `
 const H1 = tw.h1`
-text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl
+text-4xl tracking-tight font-extrabold text-fogra sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl
 `
 const H3 = tw.h3`
 mt-3 max-w-md mx-auto font-serif text-2xl md:text-3xl text-amber-darkest md:mt-5 md:max-w-3xl
 `
 const H3italic = tw.h3`
-mt-3 max-w-md mx-auto font-serif italic text-2xl md:text-3xl text-amber-darkest md:mt-5 md:max-w-3xl
+mt-3 max-w-md mx-auto font-serif italic text-center text-3xl md:text-4xl text-amber-darkest md:mt-5 md:max-w-3xl
 `
 const Span1 = tw.span`
 block inline mb-2 md:mb-4 sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl
