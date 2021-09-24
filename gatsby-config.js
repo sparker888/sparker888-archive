@@ -16,8 +16,8 @@ module.exports = {
       gravital: "https://gravitaldigital.com/",
     },
     locale: "en",
-    title: "Stephen Parker | UI/UX Gatsby/React Frontend Developer",
-    titleTemplate: "Stephen Parker | UI/UX Gatsby/React Frontend Developer",
+    title: "Stephen Parker | Frontend Web Developer and Photographer",
+    titleTemplate: "Stephen Parker | Frontend Developer and Photographer",
     description:
       "Check out the latest work on @sparker888's portfolio site.",
     siteUrl: "https://www.sparker888.com", // No trailing slash allowed!
