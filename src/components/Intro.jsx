@@ -14,7 +14,7 @@ const Intro = () => {
             <Span3>Stephen Parker aka @sparker888</Span3>
           </H1>
           <H3>
-            I work as a frontend Web developer, photographer and entrepreneur, and I&#8217;m a <Span6 href="https://www.visitspacecoast.com/" target="_blank">Space Coast</Span6>  native and ocean lover. Thanks for checking out my website!
+            I work as a frontend Web developer, photographer and entrepreneur. I&#8217;m a <Span6 href="https://www.visitspacecoast.com/" target="_blank">Space Coast</Span6>  native and ocean lover. Thanks for checking out my website!
           </H3>   
           <P>
             An overview of several recent projects are linked below. My photography galleries are <Span5 to="/gallery/">here</Span5>. If you're here for the Gatsby Starter, take a look around. The repository for this website is <Span4 href="https://www.gatsbyjs.com/" target="_blank">here</Span4>. Please note that I still have a few things to finish.
