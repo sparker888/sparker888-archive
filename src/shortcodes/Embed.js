@@ -1,16 +1,16 @@
 import React from "react"
 import tw from "twin.macro";
 
-const Code = ({ children }) => {
+const Embed = ({ code }) => {
   return (
     <CodeBlock>
-      {children}
+      {code}
     </CodeBlock>
   )
 }
 
-export default Code
+export default Embed
 
 const CodeBlock = tw.div`
-text-amber bg-fogra-light px-5 py-5 mb-20 rounded-2xl
+px-5 py-5
 `
