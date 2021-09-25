@@ -68,6 +68,6 @@ const IframeVideoWrapper = styled.div`
 `
 
 Video.defaultProps = {
-  src: 'https://www.youtube.com/embed/-8ORfgUa8ow',
+  src: 'https://www.youtube.com/embed/xG8CcgbckY0',
   title: 'the best html css tutorial ever !',
 }
