@@ -193,7 +193,7 @@ const InnerWrapper = tw.div`
 relative w-full 
 `
 const ProjectInnerWrapper = tw.div`
-relative pb-16 bg-almond overflow-hidden rounded-lg shadow-lg sm:mx-6 md:mx-6 lg:mx-8 xl:mx-12 2xl:mx-20 3xl:mx-24
+relative pb-16 bg-almond-light overflow-hidden rounded-lg shadow-lg sm:mx-6 md:mx-6 lg:mx-8 xl:mx-12 2xl:mx-20 3xl:mx-24
 `
 const MainImageWrapper = tw.div`
 w-full pb-8
