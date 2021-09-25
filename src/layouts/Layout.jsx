@@ -13,8 +13,8 @@ const shortcodes = {
   Blockquote,
   Counter,
   h2: (props) => {
-  console.log(props)
-  return<h2>random heading</h2>
+    console.log(props)
+    return<h2 {...props}>{props.children}</h2>
   },
 }
 
