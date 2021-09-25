@@ -12,7 +12,10 @@ const shortcodes = {
   Code,
   Blockquote,
   Counter,
-  h2: () => <h2>alternate title</h2>
+  h2: (props) => {
+  console.log(props)
+  return<h2>random heading</h2>
+  },
 }
 
 const Layout = ({ children }) => {
