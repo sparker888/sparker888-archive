@@ -9,15 +9,10 @@ const shortcodes = {
   HeartButton,
   RegVideo,
   Video,
-  Code,
+  InlineCode: Code,
   Blockquote,
   Counter,
-  h2: (props) => {
-    console.log(props)
-    return<h2 {...props}>{props.children}</h2>
-  },
 }
-
 const Layout = ({ children }) => {
   return (
     <>
