@@ -1,6 +1,7 @@
 import React from 'react'
 import video from '../assets/creepy-old-house.mp4'
 import styled from 'styled-components'
+
 export const RegVideo = () => {
   return (
     <RegVideoWrapper>
