@@ -9,7 +9,7 @@ const shortcodes = {
   HeartButton,
   RegVideo,
   Video,
-  InlineCode: Code,
+  Code,
   Blockquote,
   Counter,
 }
