@@ -5,7 +5,7 @@ export const RegVideo = () => {
   return (
     <RegVideoWrapper>
       <video controls autoPlay muted loop>
-        <source src={video} type="video/mov" />
+        <source src={video} type="video/quicktime" />
       </video>
     </RegVideoWrapper>
   )
