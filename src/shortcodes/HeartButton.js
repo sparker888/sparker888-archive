@@ -8,15 +8,7 @@ const HeartButton = () => {
     <Wrapper>
       <div>
         <button onClick={() => setValue(value + 1)}>
-          <HeartIcon
-            aria-hidden="true"
-            css={css`
-              position: absolute;
-              height: 1.5rem;
-              width: 1.5rem;
-              --tw-text-opacity: 1;
-              color: rgba(6, 95, 70, var(--tw-text-opacity));
-            `} />
+          <HeartIcon className="h-5 w-5 text-blue-500"/>
         </button>
         <p>
           Liked the post?
