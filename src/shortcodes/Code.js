@@ -12,5 +12,5 @@ const Code = ({ children }) => {
 export default Code
 
 const CodeBlock = tw.div`
-text-kobe
+text-kobe bg-fogra px-1 py-1 border-2xl
 `
