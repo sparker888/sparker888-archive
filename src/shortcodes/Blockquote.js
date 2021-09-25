@@ -21,7 +21,7 @@ const Blockquote = ({ children }) => {
               height={20}
               patternUnits="userSpaceOnUse"
             >
-              <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+              <Rect1 x={0} y={0} width={4} height={4} fill="currentColor" />
             </pattern>
           </defs>
           <rect width={784} height={404} fill="url(#e56e3f81-d9c1-4b83-a3ba-0d0ac8c32f32)" />
@@ -67,13 +67,16 @@ relative lg:flex lg:items-center
 const PatternWrapper = tw.div`
 relative lg:ml-10
 `
+const Rect1 = tw.div`
+text-amber
+`
 const Svg1 = tw.div`
 absolute top-full left-0 transform translate-x-80 -translate-y-24 lg:hidden
 `
 const Svg = tw.div`
 absolute top-0 left-0 transform -translate-x-8 -translate-y-24 h-36 w-36 text-kobe opacity-50
 `
-const BlockQuoteWrap = tw.div`
+const BlockQuoteWrap = tw.blockquote`
 relative
 `
 const BlockQuoteTextWrap = tw.div`
