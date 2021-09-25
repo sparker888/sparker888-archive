@@ -11,7 +11,9 @@ const shortcodes = {
   Video,
   Code,
   Blockquote,
-  Counter }
+  Counter,
+  h2: () => <h2>alternate title</h2>
+}
 
 const Layout = ({ children }) => {
   return (
