@@ -1,11 +1,11 @@
 import React from 'react'
-import video from '../assets/old-creepy-house.mov'
+import video from '../assets/old-creepy-house.mp4'
 import styled from 'styled-components'
 export const RegVideo = () => {
   return (
     <RegVideoWrapper>
       <video controls autoPlay muted loop>
-        <source src={video} type="video/quicktime" />
+        <source src={video} type="video/mp4" />
       </video>
     </RegVideoWrapper>
   )
