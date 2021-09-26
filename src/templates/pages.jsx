@@ -51,12 +51,11 @@ const Pages = (props) => {
                         height={20}
                         patternUnits="userSpaceOnUse"
                       >
-                        <rect
+                        <Rect1
                           x={0}
                           y={0}
                           width={4}
                           height={4}
-                          className="text-fogra-lightest"
                           fill="currentColor"
                         />
                       </pattern>
@@ -82,12 +81,11 @@ const Pages = (props) => {
                         height={20}
                         patternUnits="userSpaceOnUse"
                       >
-                        <rect
+                        <Rect1
                           x={0}
                           y={0}
                           width={4}
                           height={4}
-                          className="text-fogra-lightest"
                           fill="currentColor"
                         />
                       </pattern>
@@ -113,7 +111,7 @@ const Pages = (props) => {
                         height={20}
                         patternUnits="userSpaceOnUse"
                       >
-                        <rect
+                        <Rect1
                           x={0}
                           y={0}
                           width={4}
@@ -212,6 +210,9 @@ absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32
 `
 const Svg3 = tw.div`
 absolute bottom-12 left-full transform translate-x-32
+`
+const Rect1 = tw.div`
+text-fogra-lightest
 `
 const MainContentWrapper = tw.div`
 relative px-4 sm:px-6 lg:px-8
