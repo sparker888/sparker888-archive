@@ -10,7 +10,7 @@ export default function Example() {
         <ExternalLink
           href="https://github.com/sparker888/sparker888"
         >
-          Use this site as a <InlineIcon src={gatsbylogo}/> Gatsby + <InlineIcon src={tailwindlogo}/> Tailwindcss + twin starter!
+          Use this site as a <InlineIcon src={gatsbylogo} alt="GatsbyJS"/> Gatsby + <InlineIcon src={tailwindlogo} alt="Tailwindcss"/> Tailwindcss + twin starter!
         </ExternalLink>
 
         <SocialLinks>
