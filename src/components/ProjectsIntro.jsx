@@ -9,7 +9,7 @@ const ProjectsIntro = () => {
         <BlockWrapper>
           <H1>
             <Span2>With the latest technology,</Span2>{" "}
-            <Span3>I&#8217;m helping clients succeed!</Span3>{" "}
+            <Span3>I help businesses succeed!</Span3>{" "}
             <Span1>✨</Span1>
           </H1>
           <H3>
@@ -33,8 +33,8 @@ const ProjectsIntro = () => {
       </LeftBlock>
       <RightBlock>
         <Image
-          src="https://res.cloudinary.com/gravital-digital/image/upload/v1632493418/studio_shot_jljjuq.jpg"
-          alt="Photo by Sigmund on Unsplash"
+          src="https://res.cloudinary.com/gravital-digital/image/upload/v1632685222/sparker888-studio-low_hzb7oa.jpg"
+          alt="@sparker888's studio"
         />
       </RightBlock>
     </Main>
@@ -59,7 +59,7 @@ const BlockWrapper = tw.div`
 px-4 lg:w-1/2 sm:px-8 xl:pr-16
 `
 const H1 = tw.h1`
-text-4xl tracking-tight font-extrabold sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
+text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl
 `
 const H3 = tw.h3`
 mt-3 max-w-md mx-auto font-serif text-2xl md:text-3xl text-amber-darkest md:mt-5 md:max-w-3xl
@@ -68,10 +68,10 @@ const Span1 = tw.span`
 block inline mb-2 md:mb-4 sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl
 `
 const Span2 = tw.span`
-block inline text-fogra sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
+block inline text-fogra 
 `
 const Span3 = tw.span`
-block inline text-fogra-lightest sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
+block inline text-fogra-lightest
 `
 const Span4 = tw.a`
 text-kobe hover:text-amber
