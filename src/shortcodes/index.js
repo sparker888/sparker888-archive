@@ -4,6 +4,8 @@ import Blockquote from './Blockquote'
 import Embed from './Embed'
 import Code from './Code'
 import CodeBlock from './CodeBlocks'
+import PrismSetup from './PrismSetup'
+
 export {
   RegVideo,
   Video,
@@ -12,4 +14,5 @@ export {
   Counter,
   Embed,
   CodeBlock,
+  PrismSetup,
 }

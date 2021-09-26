@@ -1,10 +1,17 @@
 import React from "react"
 import Highlight, { defaultProps } from 'prism-react-renderer'
-// import theme from 'prism-renderer/themes/vsDark'
+import theme from 'prism-react-renderer/themes/vsDark'
 
-const CodeBlock = props => {
+const exampleCode = `
+(function someDemo() {
+  var test = "Hello World!";
+  console.log(test);
+})();`
+
+const CodeBlock = (props) => {
+  console.log(props)
   return (
-    <Highlight {...defaultProps} code={props.children.props.children.trim()} language="jsx">
+    <Highlight {...defaultProps} code={exampleCode} language="jsx">
     {({ className, style, tokens, getLineProps, getTokenProps }) => (
       <pre className={className} style={style}>
         {tokens.map((line, i) => (
