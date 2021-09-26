@@ -64,9 +64,6 @@ text-4xl tracking-tight font-extrabold text-fogra sm:text-5xl md:text-6xl lg:tex
 const H3 = tw.h3`
 mt-3 max-w-md mx-auto font-serif text-2xl md:text-3xl text-amber-darkest md:mt-5 md:max-w-3xl
 `
-const H3italic = tw.h3`
-mt-3 max-w-md mx-auto font-serif italic text-center text-3xl md:text-4xl text-amber-darkest md:mt-5 md:max-w-3xl
-`
 const Span1 = tw.span`
 block inline mb-2 md:mb-4 sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl
 `

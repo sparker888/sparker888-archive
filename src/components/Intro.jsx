@@ -69,10 +69,10 @@ const Span1 = tw.span`
 block inline mb-1 md:mb-2 
 `
 const Span2 = tw.span`
-block inline text-fogra
+block inline text-fogra sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
 `
 const Span3 = tw.span`
-block text-fogra-lightest 
+block text-fogra-lightest sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
 `
 const Span4 = tw.a`
 inline text-kobe hover:text-amber
