@@ -137,7 +137,7 @@ const H1 = tw.h1`
 text-2xl tracking-tight font-extrabold text-fogra-light sm:text-3xl md:text-4xl
 `
 const Span1 = tw.span`
-block text-almond
+block text-amber-dark
 `
 const Span2 = tw.span`
 block text-ming-light mt-6

@@ -3,14 +3,16 @@ import React from "react";
 import Seo from "../components/Seo";
 import Layout from "../layouts/Layout";
 import Intro from "../components/Intro";
+import Sparker from "../components/Sparker"
 import Featured from "../components/Featured";
 import { graphql } from "gatsby";
 
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <Intro />
       <Seo />
+      <Intro />
+      <Sparker />
       <FeaturedHeroesWrapper>
         {data.heroes && data.heroes.nodes.length > 0 ? (
           <Featured items={data.heroes.nodes} />

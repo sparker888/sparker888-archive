@@ -55,7 +55,7 @@ const Container = tw.div`
 w-full
 `
 const StyledBgImage = tw(BgImage)`
-w-full bg-center bg-cover
+w-full bg-center bg-cover py-12
 `
 const OuterWrapper = tw.div`
 relative bg-transparent pt-4 pb-8 px-4 sm:px-6 lg:pt-12 lg:pb-12 lg:px-12

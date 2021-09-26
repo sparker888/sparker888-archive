@@ -13,13 +13,10 @@ const ProjectsIntro = () => {
             <Span3>I build websites that perform.</Span3><Span1>🚀</Span1>
           </H1>
           <H3>
-            Five years ago, Matt Biilimann coined the term Jamstack <Span6 href="https://jamstack.org/" target="_blank">at Smashing Conference</Span6>. This talk has helped to redefine modern Web development and deployment. 
+            Five years ago, Matt Biilimann coined the term Jamstack <Span6 href="https://jamstack.org/" target="_blank">at Smashing Conference</Span6>. His talk inspired me to jump back into the development world. 
           </H3>
-          <H3italic>
-            I&#8217;m all in!
-          </H3italic>
           <P>
-            Starting last year, I went back to my roots as a web developer and learned React. With a focus on my UI/UX speciality, I dove fairly deep into several different styling systems, worked with a few headless CMS providers, and started working with<Span4 href="https://greensock.com/" target="_blank"> Greensock</Span4> animation. My biggest achievement has been becoming very proficient with 
+            So starting last year, I learned React with a focus on my UI/UX speciality, I dove fairly deep into several different styling systems, worked with a few headless CMS providers, and started working with<Span4 href="https://greensock.com/" target="_blank"> Greensock</Span4> animation. My biggest achievement has been becoming very proficient with 
             <Span4 href="https://www.gatsbyjs.com/" target="_blank"> Gatsby</Span4>.</P>
           <P>
             I've really enjoyed learning and using <Span4 href="https://graphql.org/" target="_blank">GraphQL</Span4> and <Span4 href="https://mdxjs.com/mdx/" target="_blank">MDX</Span4>, so I'm in the midst of a deep dive into these technologies now.
