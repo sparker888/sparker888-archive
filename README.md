@@ -75,6 +75,7 @@ This repo started with `gatsby init` and I added and configured the following pl
 - [gatsby-plugin-mdx-embed](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx-embed/)
 - [gatsby-plugin-sitemap](https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap)
 - [gatsby-plugin-google-tagmanager](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-tagmanager)
+- [prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer)
 - [React Helmet](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet)
 - [dotenv](https://www.npmjs.com/package/dotenv)
 - [@heroicons](https://github.com/tailwindlabs/heroicons)

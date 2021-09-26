@@ -3,6 +3,7 @@ import Counter from './Counter'
 import Blockquote from './Blockquote'
 import Embed from './Embed'
 import Code from './Code'
+import CodeBlock from './CodeBlocks'
 export {
   RegVideo,
   Video,
@@ -10,4 +11,5 @@ export {
   Blockquote,
   Counter,
   Embed,
+  CodeBlock,
 }
