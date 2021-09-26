@@ -10,11 +10,11 @@ const Intro = () => {
         <BlockWrapper>
           <H1>
             <Span1>🤙</Span1>
-            <Span2>{" "}Aloha. I&#8217;m Steve Parker</Span2>{" "}
+            <Span2>{" "}Aloha. I&#8217;m Steve Parker.</Span2>{" "}
             <Span3>I build high-performance websites.</Span3>
           </H1>
           <H3>
-          <Span6 to="/skills/">My skills</Span6> with modern development languages enable me create sites that are lightning fast. They flow smoothly for users and rank highly on Google. Thanks for checking out my website!
+          <Span6 to="/skills/">My skills</Span6> with modern development languages enable me create sites that are lightning fast. They flow smoothly for users, rank highly on Google, and outperform WordPress sites. 
           </H3>   
           <P>
             If you're here for the Gatsby Starter, take a look around. The repository for this website is <Span4 href="https://www.gatsbyjs.com/" target="_blank">here</Span4>. Please note that I still have a few things to finish.
