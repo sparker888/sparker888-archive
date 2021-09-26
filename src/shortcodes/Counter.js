@@ -1,27 +1,25 @@
 import React from "react"
-import { styled, css } from "twin.macro"
+import tw, { styled } from "twin.macro"
 const Counter = () => {
   const [count, setCount] = React.useState(0)
   return (
     <Wrapper>
-      <h1>counter</h1>
-      <span id="value">{count}</span>
-      <div className="btn-container">
-        <button className="btn dec-btn" onClick={() => setCount(count - 1)}>
-          decrease
-        </button>
-        <button className="btn reset-btn" onClick={() => setCount(0)}>
-          reset
-        </button>
-        <button className="btn inc-btn" onClick={() => setCount(count + 1)}>
-          increase
-        </button>
+      <H1>Simple Counter</H1>
+      <Span id="value">{count}</Span>
+      <div>
+        <DecreaseBtn onClick={() => setCount(count - 1)}>
+          Decrease
+        </DecreaseBtn>
+        <ResetBtn onClick={() => setCount(0)}>
+          Reset
+        </ResetBtn>
+        <IncreaseBtn onClick={() => setCount(count + 1)}>
+          Increase
+        </IncreaseBtn>
       </div>
     </Wrapper>
   )
 }
-
-// Styling Only - Consider moving these to separate components and importing them in. That way we can use tailwind more easily.
 
 const Wrapper = styled.div`
   max-width: 500px;
@@ -29,37 +27,25 @@ const Wrapper = styled.div`
   padding: 1rem 1.5rem;
   background: var(--clr-grey-10);
   text-align: center;
+    ${tw`bg-white`}
   #value {
     font-size: 6rem;
     font-weight: bold;
-  }
-  .btn {
-    margin: 0.5rem;
-  }
-  .dec-btn {
-    background: var(--clr-red-dark);
-    color: var(--clr-white);
-  }
-  .dec-btn:hover {
-    background: var(--clr-red-light);
-    color: var(--clr-red-dark);
-  }
-  .inc-btn {
-    background: var(--clr-green-dark);
-    color: var(--clr-white);
-  }
-  .inc-btn:hover {
-    background: var(--clr-green-light);
-    color: var(--clr-green-dark);
-  }
-  .reset-btn {
-    background: var(--clr-black);
-    color: var(--clr-white);
-  }
-  .reset-btn:hover {
-    background: var(--clr-grey-5);
-    color: var(--clr-white);
-  }
-`
+  }`
+  const H1 = tw.p`
+  relative h-full text-3xl font-serif max-w-prose mx-auto text-fogra my-0
+  `
+  const Span = tw.p`
+  relative my-1 mx-1 py-1 px-1 h-full text-3xl font-sans max-w-prose mx-auto text-fogra-lightest
+  `
+  const DecreaseBtn = tw.button`
+  rounded-md shadow mx-2 my-2 px-5 bg-fogra-light text-white hover:bg-amber
+  `
+  const ResetBtn = tw.button`
+  rounded-md shadow mx-2 my-2 px-5 bg-fogra-light text-white hover:bg-amber
+  `
+  const IncreaseBtn = tw.button`
+  rounded-md shadow mx-2 my-2 px-5 bg-fogra-light text-white hover:bg-amber
+  `
 
 export default Counter
