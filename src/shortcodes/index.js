@@ -3,7 +3,6 @@ import Counter from './Counter'
 import Blockquote from './Blockquote'
 import Embed from './Embed'
 import Code from './Code'
-import CodeBlock from './CodeBlocks'
 import PrismSetup from './PrismSetup'
 
 export {
@@ -13,6 +12,5 @@ export {
   Blockquote,
   Counter,
   Embed,
-  CodeBlock,
   PrismSetup,
 }

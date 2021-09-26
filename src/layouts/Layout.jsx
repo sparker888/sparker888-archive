@@ -3,7 +3,7 @@ import { GlobalStyles } from "twin.macro";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { MDXProvider } from "@mdx-js/react"
-import { RegVideo, Video, Counter, Blockquote, Embed, Code, CodeBlock } from "../shortcodes"
+import { RegVideo, Video, Counter, Blockquote, Embed, Code, PrismSetup } from "../shortcodes"
 
 const shortcodes = { 
   RegVideo,
@@ -12,7 +12,7 @@ const shortcodes = {
   blockquote: Blockquote,
   Embed,
   inlineCode: Code,
-  pre: CodeBlock,
+  pre: PrismSetup,
 }
 const Layout = ({ children }) => {
   return (

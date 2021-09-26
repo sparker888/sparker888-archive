@@ -29,7 +29,6 @@ module.exports = {
   plugins: [
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
-    "gatsby-remark-images",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
@@ -60,23 +59,6 @@ module.exports = {
         defaultLayouts: {
           pages: path.join(__dirname, "./src/templates/pages.jsx"),
         },
-        gatsbyRemarkPlugins: [
-          {
-            resolve: "gatsby-remark-images",
-            options: {
-              maxWidth: 1035,
-              sizeByPixelDensity: true,
-            },
-          },
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              classPrefix: "language-",
-              inlineCodeMarker: null,
-              aliases: {},
-            },
-          },
-        ],
       },
     },
     "gatsby-plugin-postcss",

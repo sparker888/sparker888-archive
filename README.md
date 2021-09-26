@@ -71,7 +71,6 @@ This repo started with `gatsby init` and I added and configured the following pl
 - [gatsby-transformer-sharp](https://www.gatsbyjs.com/plugins/gatsby-transformer-shar)
 - [gatsby-plugin-mdx](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx)
 - [gatsby-remark-images](https://www.gatsbyjs.com/plugins/gatsby-remark-images/)
-- [gatsby-remark-prismjs](https://www.gatsbyjs.com/plugins/gatsby-remark-prismjs/)
 - [gatsby-plugin-mdx-embed](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx-embed/)
 - [gatsby-plugin-sitemap](https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap)
 - [gatsby-plugin-google-tagmanager](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-tagmanager)
