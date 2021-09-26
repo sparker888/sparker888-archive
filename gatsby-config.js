@@ -6,8 +6,12 @@ const path = require("path");
 module.exports = {
   siteMetadata: {
     menu: [
-      { name: "Home", to: "/" },
-      { name: "Blog", to: "/blog" },
+      { name: "Stephen Parker", to: "/" },
+      { name: "Projects", to: "/projects/" },
+      { name: "Skills", to: "/skills" },
+      { name: "Gallery", to: "/gallery/" },
+      { name: "Articles", to: "/blog/" },
+      { name: "Contact", to: "/contact/" },
     ],
     links: {
       facebook: "https://www.facebook.com/gogravital/",

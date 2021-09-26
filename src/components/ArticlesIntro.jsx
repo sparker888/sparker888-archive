@@ -19,7 +19,7 @@ const ArticlesIntro = () => {
           </P>
           <ButtonWrap>
             <Button1>
-              <Link1 to="../blog/sparker888-project-portfolio">Dive In!</Link1>
+              <Link1 to="../blog/sparker888-gatsby-and-mdx-like-blogging-on-steroids">Dive In!</Link1>
             </Button1>
               {/* <Button2>
                 <Link2 href="/blog">My Blog</Link2>
