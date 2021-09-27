@@ -9,7 +9,7 @@ const ArticlesIntro = () => {
         <BlockWrapper>
           <H1>
             <Span2>Articles on modern development,</Span2>{" "} <Span1>🚁</Span1> 
-            <Span3>mrketing, drones and more!</Span3>{" "}
+            <Span3>marketing, drones and more!</Span3>{" "}
           </H1>
           <P>
             Here on my blog, my goal is to share some of the coolest things I'm working with in the development world. I've also worked with teams helping to market and sell companies, so I'll share some insights to being successful. Occasionally, you might get <Span4 href="https://i.imgur.com/ElNzCqq.png" target="_blank">cool art</Span4> and weird memes. 
