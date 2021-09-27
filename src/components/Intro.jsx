@@ -17,7 +17,7 @@ const Intro = () => {
           <Span6 to="/skills/">My skills</Span6> with modern development languages enable me create sites that are lightning fast. They flow smoothly for users, rank highly on Google, and outperform WordPress sites. 
           </H3>   
           <P>
-            If you're here for the Gatsby Starter, take a look around. The repository for this website is <Span4 href="https://www.gatsbyjs.com/" target="_blank">here</Span4>. Please note that I still have a few things to finish.
+            If you're here for the Gatsby Starter, take a look around. The repository for this website is <Span4 href="https://github.com/sparker888" target="_blank">here</Span4>. Please note that I still have a few things to finish.
           </P>
           <P>
              The website you are looking at now is my latest project. The process inspired the site's first article: <Span5 to="/blog/sparker888-gatsby-and-mdx-like-blogging-on-steroids">Gatsby and MDX: Like blogging on steroids</Span5>.

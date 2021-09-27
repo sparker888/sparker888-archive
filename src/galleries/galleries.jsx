@@ -48,11 +48,12 @@ const Gallery = ({ data }) => {
   )
 }
 
-export default Gallery
+export default Gallery;
 
-export const pageQuery = graphql`
+export const query = graphql`
 query {
-  gallery: contentfulGallery(galleryName: {eq: "Coastal Florida Photography"}) {
+  query GalleryItemQuery($slug: String!) {
+    item: contentfulGallery(slug: { eq: $slug }) {
     id
     galleryName
     galleryDescription {

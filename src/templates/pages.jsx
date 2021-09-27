@@ -153,6 +153,7 @@ const Pages = (props) => {
 export default Pages;
 
 export const query = graphql`
+query {
   query ArticleItemQuery($slug: String!) {
     item: contentfulArticle(slug: { eq: $slug }) {
       body {

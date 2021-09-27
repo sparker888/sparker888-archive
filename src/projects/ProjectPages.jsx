@@ -6,7 +6,7 @@ import { BgImage } from "gbimage-bridge"
 import PropTypes from "prop-types"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
-const ProjectPage = (props) => {
+const ProjectPages = (props) => {
   const {
     title,
     intro,
@@ -23,7 +23,6 @@ const ProjectPage = (props) => {
   } = props
 
   const heroImage = getImage(hero)
-
   const image = getImage(screenshot)
   const image2 = getImage(screenshot2)
 
@@ -120,7 +119,7 @@ const ProjectPage = (props) => {
   )
 }
 
-ProjectPage.propTypes = {
+ProjectPages.propTypes = {
   title: PropTypes.string.isRequired,
   intro: PropTypes.object.isRequired,
   tag: PropTypes.string.isRequired,
@@ -132,10 +131,12 @@ ProjectPage.propTypes = {
   description: PropTypes.object.isRequired,
 }
 
-export default ProjectPage
+export default ProjectPages;
 
 export const query = graphql`
-  fragment ProjectPage on ContentfulProject {
+query {
+query ProjectItemQuery($slug: String!) {
+  item: contentfulProject(slug: { eq: $slug }) {
     title
     intro {
       childMdx {
