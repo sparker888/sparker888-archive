@@ -59,7 +59,7 @@ const BlockWrapper = tw.div`
 px-4 lg:w-1/2 sm:px-8 xl:pr-16
 `
 const H1 = tw.h1`
-text-4xl tracking-tight font-extrabold text-fogra sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl
+text-4xl tracking-tight font-extrabold text-fogra sm:text-4xl md:text-5xl lg:text-6xl
 `
 const H3 = tw.h3`
 mt-3 max-w-md mx-auto font-serif text-2xl md:text-3xl text-amber-darkest md:mt-5 md:max-w-3xl
@@ -68,10 +68,10 @@ const Span1 = tw.span`
 block inline text-fogra-light mb-1 md:mb-2 
 `
 const Span2 = tw.span`
-block inline text-fogra-light sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
+block inline text-fogra-light sm:text-4xl md:text-5xl lg:text-6xl
 `
 const Span3 = tw.span`
-block inline text-fogra-lightest sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
+block inline text-fogra-lightest sm:text-4xl md:text-5xl lg:text-6xl
 `
 const Span4 = tw.a`
 text-kobe hover:text-amber

@@ -45,12 +45,12 @@ const Sparker = () => {
             <BottomSection>
 
               <ContentWrapper>
-                <H2 id="join-heading">I Enjoy Working with Talented People</H2>
+                <H2 id="join-heading">Looking for a talented Web professional?</H2>
                 <P>
-                  I'm very fortunate to be able to work with some great companies, teams and clients to create amazing products and drive record sales revenue. 
+                  I've worked the Web since 1995 with major brands, small businesses and talented entrepreneurs. My teams and I have had great success -- driving record traffic and sales revenue. 
                 </P>
                 <P>
-                  I appreciate your consideration for your next project. If you have important business goals to achieve, I can help you make it happen!
+                  I would appreciate your consideration for your next project or campaign. If you have important business goals to achieve online, I can help you and your team make it happen!
                 </P>
                 <CtaLink to="/contact/">Contact Me</CtaLink>
               </ContentWrapper>
