@@ -33,7 +33,7 @@ const ProjectsIntro = () => {
       </LeftBlock>
       <RightBlock>
         <Image
-          src="https://res.cloudinary.com/gravital-digital/image/upload/v1632685222/sparker888-studio-low_hzb7oa.jpg"
+          src="https://res.cloudinary.com/gravital-digital/image/upload/v1632750993/studio-shot-final-opt_sygpd3.jpg"
           alt="@sparker888's studio"
         />
       </RightBlock>
