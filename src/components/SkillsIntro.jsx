@@ -10,7 +10,7 @@ const ProjectsIntro = () => {
           <H1>
             
             <Span2>With modern development skills,</Span2>{" "}
-            <Span3>I build websites that perform.</Span3><Span1>🚀</Span1>
+            <Span3>I create websites that deliver.</Span3><Span1>🚀</Span1>
           </H1>
           <H3>
             Five years ago, Matt Biilimann coined the term Jamstack <Span6 href="https://jamstack.org/" target="_blank">at Smashing Conference</Span6>. His talk inspired me to jump back into the development world. 
@@ -65,10 +65,10 @@ const H3 = tw.h3`
 mt-3 max-w-md mx-auto font-serif text-2xl md:text-3xl text-amber-darkest md:mt-5 md:max-w-3xl
 `
 const Span1 = tw.span`
-block inline mb-2 md:mb-4 sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl
+block inline mb-2 md:mb-4 text-amber-darkest sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl
 `
 const Span2 = tw.span`
-block inline text-fogra sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
+block inline text-fogra-light sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
 `
 const Span3 = tw.span`
 block inline text-fogra-lightest sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl
