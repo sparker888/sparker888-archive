@@ -87,7 +87,7 @@ const H2 = tw.h2`
 text-3xl tracking-tight font-extrabold text-fogra sm:text-4xl
 `
 const P = tw.p`
-mt-3 max-w-2xl mx-auto text-xl text-kobe sm:mt-4
+mt-3 max-w-2xl mx-auto text-xl text-amber-dark sm:mt-4
 `
 const CardsWrapper = tw.div`
 mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-none

@@ -12,7 +12,7 @@ const GalleryIntro = () => {
             <Span3>I&#8217;ve gone minimalist and lightweight!</Span3>
           </H1>
           <H3>
-            I&#8217;ve also stepped up my game as a professional photographer. I&#8217;m now a licensed and insured <Span6 href="https://www.ppa.com/" target="_blank">PPA</Span6> member!
+            I&#8217;ve also stepped up my game as a professional photographer. I&#8217;m now a certified and insured <Span6 href="https://www.ppa.com/" target="_blank">PPA</Span6> member!
           </H3>
           <P>
             This year, I focused on light and portable for quick real estate, on-site, and outdoor shoots. The equipment includes a lighter camera -- the Sony a6600, a carbon fiber tripod, several light yet powerful flashes from Godox, and lightweight modifiers, backdrops and stands designed for travel. Here are a few of the results.
