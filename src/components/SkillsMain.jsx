@@ -140,7 +140,7 @@ const Span1 = tw.span`
 block text-amber-dark
 `
 const Span2 = tw.span`
-block text-ming-light mt-6
+block text-ming-light mt-2
 `
 const Span3 = tw.span`
 block text-amber-dark mt-12
