@@ -45,9 +45,12 @@ const Sparker = () => {
             <BottomSection>
 
               <ContentWrapper>
-                <H2 id="join-heading">I Enjoy Working with Successful Teams</H2>
+                <H2 id="join-heading">I Enjoy Working with Talented People</H2>
                 <P>
-                  I'm very fortunate to be able to work with some great companies, teams and clients to create amazing work and drive record sales revenue. I would enjoy talking with you about your next project, position and business goals.
+                  I'm very fortunate to be able to work with some great companies, teams and clients to create amazing products and drive record sales revenue. 
+                </P>
+                <P>
+                  I appreciate your consideration for your next project. If you have important business goals to achieve, I can help you make it happen!
                 </P>
                 <CtaLink to="/contact/">Contact Me</CtaLink>
               </ContentWrapper>
