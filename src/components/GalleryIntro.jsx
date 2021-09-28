@@ -1,6 +1,7 @@
 import tw, { styled } from "twin.macro"
 import React from "react"
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
+import PropTypes from "prop-types"
 
 const GalleryIntro = () => {
   return (
@@ -19,7 +20,7 @@ const GalleryIntro = () => {
           </P>
           <ButtonWrap>
             <Button1>
-              <Link1 to="../hurricane-larry-photography">Dive In!</Link1>
+              <Link1 to="../gallery/coastal-florida-photography">Dive In!</Link1>
             </Button1>
             {/* <Button2>
                   <Link2 href="/blog">My Blog</Link2>

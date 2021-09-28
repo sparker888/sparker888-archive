@@ -25,7 +25,7 @@ const SingleGalleryCard = (props) => {
           <TagWrapper>
             <Category>Sony Alpha Gallery</Category>
           </TagWrapper>
-          <ArticleLink to={`/${slug}`}>
+          <ArticleLink to={`/gallery/${slug}`}>
             <ArticleTitle>{galleryName}</ArticleTitle>
             <ArticleIntro><MDXRenderer>{galleryDescription.childMdx.body}</MDXRenderer></ArticleIntro>
           </ArticleLink>

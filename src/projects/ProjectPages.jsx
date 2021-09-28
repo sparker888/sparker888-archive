@@ -4,6 +4,9 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { BgImage } from "gbimage-bridge"
 import PropTypes from "prop-types"
+import Layout from "../layouts/Layout"
+import Seo from "../components/Seo"
+import ProjectWrapper from "./ProjectWrapper"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
 const ProjectPages = (props) => {
@@ -20,102 +23,122 @@ const ProjectPages = (props) => {
     nextProjectUrl,
     description,
     summary,
-  } = props
+  } = props.data.item
 
   const heroImage = getImage(hero)
   const image = getImage(screenshot)
   const image2 = getImage(screenshot2)
 
   return (
-    <>
-      <StyledBgImage image={heroImage}>
-        <FlexWrapper>
-          <TextWrapper>
-            <H1>{title}</H1>
-            <Button href={liveUrl} target="_blank">
-              View Live
-            </Button>
-          </TextWrapper>
-        </FlexWrapper>
-      </StyledBgImage>
+    <Layout>
+      <Seo
+        title={title}
+        description={description}
+        publicURL={screenshot.localFile.publicURL}
+      />
       <OuterWrapper>
-        <InnerWrapper>
-          <SectionOneWrapper>
-            <ProjectTitle>
-              <H2>{tag}</H2>
-              <Title>{secondTitle}</Title>
-            </ProjectTitle>
-            <ProjectIntro>
-              <IntroParagraph>
-                <MDXRenderer>{intro.childMdx.body}</MDXRenderer>
-              </IntroParagraph>
-            </ProjectIntro>
-            <DescriptionOuterWrapper>
-              <DescriptionInnerWrapper>
-                <Description>
-                  <DescriptionText>
-                  <MDXRenderer>{description.childMdx.body}</MDXRenderer>
-                  </DescriptionText>
-                  <SubHead>{subhead}</SubHead>
-                  <SummaryText>
-                  <MDXRenderer>{summary.childMdx.body}</MDXRenderer>
-                  </SummaryText>
-                </Description>
-                <ButtonWrapper>
-                  <Button1>
-                    <Button1Style href={liveUrl} target="_blank">
-                      Live Site
-                    </Button1Style>
-                  </Button1>
-                  <Button2>
-                    <Button2Style to={nextProjectUrl}>
-                      Next Project
-                    </Button2Style>
-                  </Button2>
-                </ButtonWrapper>
-              </DescriptionInnerWrapper>
-            </DescriptionOuterWrapper>
-          </SectionOneWrapper>
+      <ProjectWrapper>
+        <StyledBgImage image={heroImage}>
+          <FlexWrapper>
+            <TextWrapper>
+              <H1>{title}</H1>
+              <Button href={liveUrl} target="_blank">
+                View Live
+              </Button>
+            </TextWrapper>
+          </FlexWrapper>
+        </StyledBgImage>
+          <InnerWrapper>
+            <SectionOneWrapper>
+              <ProjectTitle>
+                <H2>{tag}</H2>
+                <Title>{secondTitle}</Title>
+              </ProjectTitle>
+              <ProjectIntro>
+                <IntroParagraph>
+                  <MDXRenderer>{intro.childMdx.body}</MDXRenderer>
+                </IntroParagraph>
+              </ProjectIntro>
+              <DescriptionOuterWrapper>
+                <DescriptionInnerWrapper>
+                  <Description>
+                    <DescriptionText>
+                      <MDXRenderer>{description.childMdx.body}</MDXRenderer>
+                    </DescriptionText>
+                    <SubHead>{subhead}</SubHead>
+                    <SummaryText>
+                      <MDXRenderer>{summary.childMdx.body}</MDXRenderer>
+                    </SummaryText>
+                  </Description>
+                  <ButtonWrapper>
+                    <Button1>
+                      <Button1Style href={liveUrl} target="_blank">
+                        Live Site
+                      </Button1Style>
+                    </Button1>
+                    <Button2>
+                      <Button2Style to={nextProjectUrl}>
+                        Next Project
+                      </Button2Style>
+                    </Button2>
+                  </ButtonWrapper>
+                </DescriptionInnerWrapper>
+              </DescriptionOuterWrapper>
+            </SectionOneWrapper>
 
-          <ScreenOuterWrapper>
-            <ScreenInnerWrapper>
-              <PatternSection>
-                <PatternDefinition />
-                <Svg width={404} height={392} fill="none" viewBox="0 0 404 392">
-                  <defs>
-                    <pattern
-                      id="837c3e70-6c3a-44e6-8854-cc48c737b659"
-                      x={0}
-                      y={0}
-                      width={20}
-                      height={20}
-                      patternUnits="userSpaceOnUse"
-                    >
-                      <Rect
-                        x={0}
-                        y={0}
-                        width={4}
-                        height={4}
-                        fill="currentColor"
-                      />
-                    </pattern>
-                  </defs>
-                  <rect
+            <ScreenOuterWrapper>
+              <ScreenInnerWrapper>
+                <PatternSection>
+                  <PatternDefinition />
+                  <Svg
                     width={404}
                     height={392}
-                    fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"
+                    fill="none"
+                    viewBox="0 0 404 392"
+                  >
+                    <defs>
+                      <pattern
+                        id="837c3e70-6c3a-44e6-8854-cc48c737b659"
+                        x={0}
+                        y={0}
+                        width={20}
+                        height={20}
+                        patternUnits="userSpaceOnUse"
+                      >
+                        <Rect
+                          x={0}
+                          y={0}
+                          width={4}
+                          height={4}
+                          fill="currentColor"
+                        />
+                      </pattern>
+                    </defs>
+                    <rect
+                      width={404}
+                      height={392}
+                      fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"
+                    />
+                  </Svg>
+                </PatternSection>
+                <ScreenSection>
+                  <GatsbyImage
+                    image={image}
+                    alt={title}
+                    className="screenShot"
                   />
-                </Svg>
-              </PatternSection>
-              <ScreenSection>
-                <GatsbyImage image={image} alt={title} className="screenShot" />
-                <GatsbyImage image={image2} alt={secondTitle} className="screenShot" />
-              </ScreenSection>
-            </ScreenInnerWrapper>
-          </ScreenOuterWrapper>
-        </InnerWrapper>
+                  <GatsbyImage
+                    image={image2}
+                    alt={secondTitle}
+                    className="screenShot"
+                  />
+                </ScreenSection>
+              </ScreenInnerWrapper>
+            </ScreenOuterWrapper>
+          </InnerWrapper>
+      </ProjectWrapper>
       </OuterWrapper>
-    </>
+    </Layout>
   )
 }
 
@@ -131,50 +154,53 @@ ProjectPages.propTypes = {
   description: PropTypes.object.isRequired,
 }
 
-export default ProjectPages;
+export default ProjectPages
 
 export const query = graphql`
-query {
-query ProjectItemQuery($slug: String!) {
-  item: contentfulProject(slug: { eq: $slug }) {
-    title
-    intro {
-      childMdx {
-        body
+  query ProjectItemQuery($slug: String!) {
+    item: contentfulProject(slug: { eq: $slug }) {
+      title
+      intro {
+        childMdx {
+          body
+        }
       }
-    }
-    tag
-    subhead
-    secondTitle
-    liveUrl
-    nextProjectUrl
-    summary {
-      childMdx {
-        body
+      tag
+      subhead
+      secondTitle
+      liveUrl
+      nextProjectUrl
+      summary {
+        childMdx {
+          body
+        }
       }
-    }
-    description {
-      childMdx {
-        body
+      description {
+        childMdx {
+          body
+        }
       }
-    }
-    hero {
-      gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
-    }
-    screenshot {
-      gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
-    }
-    screenshot2 {
-      gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
+      hero {
+        gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
+      }
+      screenshot {
+        gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
+        localFile {
+          publicURL
+        }
+      }
+      screenshot2 {
+        gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
+      }
     }
   }
 `
 
 const OuterWrapper = tw.div`
-bg-white pb-8 sm:pb-12 lg:pb-12
+w-full my-0
 `
 const InnerWrapper = tw.div`
-pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-24
+bg-almond-light pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-24
 `
 const SectionOneWrapper = tw.section`
 sm: mx-12
@@ -275,5 +301,5 @@ const ScreenSection = styled.div`
   }
 `
 const Rect = tw.rect`
-text-gray-200
+text-ming-lightest
 `

@@ -1,21 +1,37 @@
 import tw, { styled } from "twin.macro"
 import React from "react"
 import Layout from "../layouts/Layout"
+import PropTypes from "prop-types"
+import Seo from "../components/Seo"
 import { Link, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import SimpleReactLightboxPro, { SRLWrapper } from "simple-react-lightbox-pro"
 
-const Gallery = ({ data }) => {
+const Gallery = (props) => {
+  const {
+    galleryName,
+    galleryMainImage,
+    galleryDescription,
+    previousGalleryUrl,
+    nextGalleryUrl,
+    galleryItems,
+  } = props.data.item
+
   return (
     <div>
       <Layout>
+      <Seo
+        title={galleryName}
+        description={galleryDescription}
+        publicURL={galleryMainImage.localFile.publicURL}
+      />
         <OuterWrapper>
           <InnerWrapper>
-            <GalleryTitle>{`${data.gallery.galleryName}`}</GalleryTitle>
+            <GalleryTitle>{galleryName}</GalleryTitle>
             <SimpleReactLightboxPro>
               <SRLWrapper options={options}>
                 <GalleryWrapper>
-                  {data.gallery.galleryItems.map(({ localFile }) => (
+                  {galleryItems.map(({ localFile }) => (
                     <ImageWrap key={localFile.name}> 
                       <PublicURL href={`${localFile.publicURL}`}>
                         <GatsbyImage
@@ -31,12 +47,12 @@ const Gallery = ({ data }) => {
             </SimpleReactLightboxPro>
             <ButtonWrapper>
               <Button1>
-                <Button1Style to="../hurricane-larry-photography">
+                <Button1Style to={`../../gallery/${nextGalleryUrl}`}>
                   Next Gallery
                 </Button1Style>
               </Button1>
               <Button2>
-                <Button2Style to="../real-estate-and-art-photography">
+                <Button2Style to={`../../gallery/${previousGalleryUrl}`}>
                   Previous Gallery
                 </Button2Style>
               </Button2>
@@ -48,19 +64,33 @@ const Gallery = ({ data }) => {
   )
 }
 
-export default Gallery;
+Gallery.propTypes = {
+  galleryName: PropTypes.string.isRequired,
+  galleryDescription: PropTypes.object.isRequired,
+  previousGalleryUrl: PropTypes.string.isRequired,
+  nextGalleryUrl: PropTypes.string.isRequired,
+  galleryItems: PropTypes.object.isRequired,
+}
 
-export const query = graphql`
-query {
-  query GalleryItemQuery($slug: String!) {
-    item: contentfulGallery(slug: { eq: $slug }) {
-    id
+export default Gallery
+
+export const pageQuery = graphql`
+query GalleryItemQuery($slug: String!) {
+  item: contentfulGallery(slug: { eq: $slug }) {
     galleryName
+    galleryMainImage {
+      gatsbyImageData(height: 200, width: 300, quality: 100, placeholder: BLURRED)
+      localFile {
+        publicURL
+      }
+        }
     galleryDescription {
       childMdx {
         body
       }
     }
+    previousGalleryUrl
+    nextGalleryUrl
     galleryItems {
       title
       localFile {

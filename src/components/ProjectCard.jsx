@@ -26,7 +26,7 @@ const ProjectCard = (props) => {
           <TagWrapper>
             <Category>{tag}</Category>
           </TagWrapper>
-          <ProjectLink to={`/${slug}`}>
+          <ProjectLink to={`/projects/${slug}`}>
             <ProjectTitle>{title}</ProjectTitle>
             <ProjectIntro>
               <MDXRenderer>{intro.childMdx.body}</MDXRenderer>

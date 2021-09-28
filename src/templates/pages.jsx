@@ -28,9 +28,7 @@ const Pages = (props) => {
         publicURL={mainImage.localFile.publicURL}
       />
       <ArticleWrapper>
-        <OuterWrapper>
           <InnerWrapper>
-            <ProjectInnerWrapper>
               <MainImageWrapper>
                 <GatsbyImage image={image} alt={title} />
               </MainImageWrapper>
@@ -142,9 +140,7 @@ const Pages = (props) => {
                   <MDXRenderer>{body.childMdx.body}</MDXRenderer>
                 </Body>
               </MainContentWrapper>
-            </ProjectInnerWrapper>
           </InnerWrapper>
-        </OuterWrapper>
       </ArticleWrapper>
     </Layout>
   )
@@ -153,7 +149,6 @@ const Pages = (props) => {
 export default Pages;
 
 export const query = graphql`
-query {
   query ArticleItemQuery($slug: String!) {
     item: contentfulArticle(slug: { eq: $slug }) {
       body {
@@ -185,14 +180,8 @@ query {
   }
 `
 
-const OuterWrapper = tw.div`
-relative pt-4 pb-8 px-4 sm:px-6 lg:pt-12 lg:pb-12 lg:px-12
-`
 const InnerWrapper = tw.div`
-relative w-full 
-`
-const ProjectInnerWrapper = tw.div`
-relative pb-16 bg-almond-light overflow-hidden rounded-lg shadow-lg sm:mx-6 md:mx-6 lg:mx-8 xl:mx-12 2xl:mx-20 3xl:mx-24
+bg-almond-light relative w-full pb-12
 `
 const MainImageWrapper = tw.div`
 w-full pb-8
@@ -234,5 +223,5 @@ const PublishDate = tw.p`
 pt-0 mt-0 lg: mb-8 text-sm leading-tight tracking-tight text-fogra-light
 `
 const Body = tw.div`
-mt-12 font-serif prose prose-lg text-fogra mx-16 mx-auto
+mt-12 font-serif prose prose-lg  text-fogra-light mx-16 mx-auto
 `

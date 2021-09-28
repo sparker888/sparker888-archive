@@ -1,91 +1,85 @@
-// Create pages for blogs, projects and galleries separately using three separate
-// queries. We use the `graphql` function which returns a Promise and ultimately
-// resolves all three queries using Promise.all(Promise[])
-exports.createPages = ({ actions, graphql }) => {
-	const { createPage } = actions;
-	const blogTemplate = path.resolve('./src/templates/pages.jsx');
-  const projectTemplate = path.resolve('./src/projects/ProjectPages.jsx');
-  const galleryTemplate = path.resolve('./src/galleries/galleries.jsx');
+const path = require(`path`)
 
-	// Individual blogs pages
-	const blogs = graphql(`
-  {
-    allContentfulArticle {
-      nodes {
-        slug
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
+
+  // Individual article pages
+  const articles = graphql(`
+      {
+        articles: allContentfulArticle {
+          nodes {
+            slug
+          }
+        }
+      }
+    `).then(({ errors, data }) => {
+      if (errors) {
+        Promise.reject(errors)
+      }
+
+      if (data && data.articles) {
+        const component = path.resolve("./src/templates/pages.jsx")
+        data.articles.nodes.map(({ slug }) => {
+          createPage({
+            path: `/blog/${slug}`,
+            component,
+            context: { slug },
+          })
+        })
+      }
+    })
+
+    // Individual project pages
+    const projects = graphql(`
+    {
+      projects: allContentfulProject {
+        nodes {
+          slug
+        }
       }
     }
-  }
-`).then(result => {
-		if (result.errors) {
-			Promise.reject(result.errors);
-		}
+    `).then(({ errors, data }) => {
+    if (errors) {
+      Promise.reject(errors)
+    }
 
-		// Create blog pages
-		result.data.allContentfulArticle.nodes.forEach(({ node }) => {
-			createPage({
-				path: `/blog/${node.slug}`,
-				component: blogTemplate,
-        context: {
-          slug: node.slug,
-        },
-			});
-		});
-	});
+    if (data && data.projects) {
+      const component = path.resolve("./src/projects/ProjectPages.jsx")
+      data.projects.nodes.map(({ slug }) => {
+        createPage({
+          path: `/projects/${slug}`,
+          component,
+          context: { slug },
+        })
+      })
+    }
+    })
 
-	// Individual project pages
-	const projects = graphql(`
-  {
-    allContentfulProject {
-      nodes {
-        slug
+    // Individual gallery pages
+    const galleries = graphql(`
+    {
+      galleries: allContentfulGallery {
+        nodes {
+          slug
+        }
       }
     }
-  }
-`).then(result => {
-		if (result.errors) {
-			Promise.reject(result.errors);
-		}
-
-		// Create project pages
-		result.data.allContentfulProject.nodes.forEach(({ node }) => {
-			createPage({
-				path: `/projects/${node.slug}`,
-				component: projectTemplate,
-        context: {
-          slug: node.slug,
-        },
-			});
-		});
-	});
-
-  	// Individual gallery pages
-	const galleries = graphql(`
-  {
-    allContentfulGallery {
-      nodes {
-        slug
-      }
+    `).then(({ errors, data }) => {
+    if (errors) {
+      Promise.reject(errors)
     }
-  }
-`).then(result => {
-  if (result.errors) {
-    Promise.reject(result.errors);
-  }
 
-  // Create gallery pages
-  result.data.allContentfulGallery.nodes.forEach(({ node }) => {
-    createPage({
-      path: `/gallery/${node.slug}`,
-      component: galleryTemplate,
-      context: {
-        slug: node.slug,
-      },
-    });
-  });
-});
-
-	// Return a Promise which would wait for all three queries to resolve
-	return Promise.all([blogs, projects, galleries]);
-};
-
+    if (data && data.galleries) {
+      const component = path.resolve("./src/galleries/galleries.jsx")
+      data.galleries.nodes.map(({ slug }) => {
+        createPage({
+          path: `/gallery/${slug}`,
+          component,
+          context: { slug },
+        })
+      })
+    }
+    })
+    
+  return Promise.all([articles, projects, galleries])
+}

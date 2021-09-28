@@ -23,7 +23,7 @@ const ProjectsIntro = () => {
           </P>
           <ButtonWrap>
             <Button1>
-              <Link1 to="../project-gravital-digital">Take a Look</Link1>
+              <Link1 to="../projects/project-gravital-digital">Take a Look</Link1>
             </Button1>
             {/* <Button2>
                   <Link2 href="/blog">My Blog</Link2>

@@ -5,7 +5,7 @@ import GalleryIntro from "../components/GalleryIntro";
 import MultipleGalleryCards from "../components/MultipleGalleryCards"
 import { graphql } from "gatsby"
 
-const Projects = ({ data }) => {
+const Gallery = ({ data }) => {
 
   return (
     <Layout>
@@ -21,11 +21,11 @@ const Projects = ({ data }) => {
   );
 };
 
-export default Projects
+export default Gallery
 
 export const query = graphql`
   query GalleryQuery {
-    gallery: allContentfulGallery {
+    gallery: allContentfulGallery (filter: {featured: {eq: true}}, sort: { fields: [order] order: ASC} ) {
       nodes {
         ...GalleryCard
       }

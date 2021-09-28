@@ -29,8 +29,8 @@ const H2 = props => {
 export { H1, H2 }
 
 const HeadingOne = tw.div`
-text-4xl mt-2 mb-2 font-sans text-fogra
+text-4xl mt-2 mb-2 font-sans
 `
 const HeadingTwo = tw.div`
-  text-2xl font-sans text-fogra
+  text-2xl font-sans
 `
