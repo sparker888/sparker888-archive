@@ -1,6 +1,6 @@
 import tw, { styled } from "twin.macro"
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const SkillsMain = () => {

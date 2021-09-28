@@ -1,7 +1,5 @@
-import tw, { styled } from "twin.macro"
 import React from "react"
 import Layout from "../layouts/Layout"
-import { Link } from "gatsby"
 
 const NotFoundPage = () => {
   return (

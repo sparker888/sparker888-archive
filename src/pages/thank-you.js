@@ -8,7 +8,7 @@ const ThankYou = () => {
     <Layout>
       <OuterWrapper>
         <InnerWrapper>
-          <MAIN>
+          <Main>
             <P>Thank you!</P>
             <Content>
               <ContentWrapper>
@@ -27,7 +27,7 @@ const ThankYou = () => {
             </a> */}
               </ButtonWrapper>
             </Content>
-          </MAIN>
+          </Main>
         </InnerWrapper>
       </OuterWrapper>
     </Layout>
@@ -42,7 +42,7 @@ bg-almond min-h-screen px-4 py-16 sm:px-6 sm:py-24 md:grid md:place-items-center
 const InnerWrapper = tw.div`
 max-w-max mx-auto
 `
-const MAIN = tw.main`
+const Main = tw.main`
 sm:flex
 `
 const P = tw.p`

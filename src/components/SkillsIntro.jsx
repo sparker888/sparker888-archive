@@ -1,6 +1,5 @@
-import tw, { styled } from "twin.macro"
+import tw from "twin.macro"
 import React from "react"
-import { Link } from "gatsby"
 
 const ProjectsIntro = () => {
   return (
@@ -81,7 +80,4 @@ text-fogra-lightest hover:text-amber
 `
 const P = tw.p`
 mt-3 max-w-md mx-auto font-serif text-xl text-fogra-light sm:text-xl md:mt-5 lg:mt-10 md:max-w-3xl
-`
-const Link1 = styled(Link)`
-  ${tw`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-kobe hover:bg-kobe-light md:py-4 md:text-lg md:px-10`}
 `

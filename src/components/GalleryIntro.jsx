@@ -1,7 +1,6 @@
 import tw, { styled } from "twin.macro"
 import React from "react"
-import { graphql, Link } from "gatsby"
-import PropTypes from "prop-types"
+import { Link } from "gatsby"
 
 const GalleryIntro = () => {
   return (

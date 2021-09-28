@@ -76,9 +76,6 @@ block inline text-fogra-lightest sm:text-4xl md:text-5xl lg:text-6xl
 const Span4 = tw.a`
 text-kobe hover:text-amber
 `
-const Span5 = styled(Link)`
-  ${tw`block inline text-kobe hover:text-amber`}
-`
 const Span6 = styled(Link)`
   ${tw`block inline text-fogra-lightest hover:text-amber`}
 `
