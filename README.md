@@ -56,7 +56,7 @@ For more details, see [this Tuts](https://webdesign.tutsplus.com/articles/an-int
 
 ## Use this repository as a Gatsby + Tailwind + twin starter (more soon)
 
-**Current Status as of September 27, 2021 - the site is still under construction** 
+**Current Status as of September 28, 2021 - the site is still under construction** 
 
 sparker888-tailwindcss-starter a work in progress that started 8-18-21. I plan to have it completed on 10-1-21.
 
@@ -123,6 +123,6 @@ To learn more about Gatsby, use the following resources:
 
 You can check out [the Gatsby GitHub repository](https://github.com/gatsbyjs/gatsby) - your feedback and contributions are welcome!
 
-## Thanks for your interest! You can visit my [business site](https://www.gravitaldigital.com), follow me on Twitter at [@sparker888](https://www.twitter.com/sparker888), and if you're into video games, join me and my friends playing [Eve Online](https://www.eveonline.com/signup?invc=bed0f5cf-ea4b-4c92-9128-b76165d69757).
+## Thanks for your interest! You can follow me on Twitter at [@sparker888](https://www.twitter.com/sparker888), and if you're into video games, join me and my friends playing [Eve Online](https://www.eveonline.com/signup?invc=bed0f5cf-ea4b-4c92-9128-b76165d69757).
 
 ### Fly safe!
