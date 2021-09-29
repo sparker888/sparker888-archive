@@ -34,7 +34,7 @@ const Intro = () => {
       </LeftBlock>
       <RightBlock>
         <Image
-          src="https://res.cloudinary.com/gravital-digital/image/upload/v1632675566/intro_image-short_acvnac.jpg"
+          src="https://res.cloudinary.com/gravital-digital/image/upload/v1632918451/home-page-image-opt_z1n6yd.jpg"
           alt="Performance Websites"
         />
       </RightBlock>
