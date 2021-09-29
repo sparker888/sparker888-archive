@@ -88,6 +88,12 @@ module.exports = {
       __key: "pages",
     },
     {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -120
+      }
+    },
+    {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-PTGCLGT",

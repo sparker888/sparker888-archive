@@ -1,5 +1,6 @@
 import tw, {styled } from "twin.macro";
 import React, { useState } from "react";
+import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby";
 import LinksMobile from "./LinksMobile";
 import LinksDesktop from "./LinksDesktop";
@@ -14,18 +15,12 @@ export default function Header() {
         <InnerWrapper>
           <NavWrapperTop>
             <IconLink to="/">
-              <SVGIcon
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 128 128">
-                <path d="M 27.234,80.19 50.52,102.74 C 80.46,77.65 118.54,55.8 120.62,7.05 71.96,10.7 50.38,48.8 27.234,80.19 Z" />
-                <path d="M 105.79162,32.141736 A 7.1393516,7.222031 44.076489 1 1 95.533635,22.209212 7.1393516,7.222031 44.076489 1 1 105.79162,32.141736 Z" />
-                <path d="M 91.621624,46.781736 A 7.1393517,7.2220311 44.076489 1 1 81.363635,36.849212 7.1393517,7.2220311 44.076489 1 1 91.621624,46.781736 Z" />
-                <path d="M 77.261624,61.611736 A 7.1393517,7.2220311 44.076489 1 1 67.003635,51.679212 7.1393517,7.2220311 44.076489 1 1 77.261624,61.611736 Z" />
-                <path d="M 27.234,80.19 7.461,87.05 C 11.737,74.37 18.504,57.98 27.637,52.38 33.64,48.7 47.96,51.44 47.96,51.44 L 27.234,80.19 Z" />
-                <path d="m 51.23,102.01 -6.22,19.98 c 12.54,-4.68 28.7,-11.97 34.01,-21.28 3.48,-6.12 0.28,-20.34 0.28,-20.34 l -28.07,21.64 z" />
-              </SVGIcon>
+          <StaticImage
+            src="../images/rocket-logo.svg"
+            alt="JS"
+            height={50}
+            layout="fixed"/>
             </IconLink>
-
             <div>
               <ButtonWrap type="button" onClick={() => setIsOpen(!isOpen)}>
                 <IconButton> 

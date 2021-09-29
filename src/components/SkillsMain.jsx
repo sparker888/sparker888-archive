@@ -23,7 +23,7 @@ const SkillsMain = () => {
   const image = getImage(mainImage)
 
   return (
-    <Wrapper>
+    <Wrapper id="webdev">
       <TopSectionWrapper>
         <HeadlineOuterWrapper>
           <HeadlineInnerWrapper>
@@ -182,8 +182,8 @@ const H2 = tw.h2`
 text-center text-almond text-xl font-semibold uppercase tracking-wide
 `
 const TechnologiesWrapper = tw.div`
-  mt-8 grid grid-cols-2 gap-8 sm:grid-cols-3  lg:grid-cols-5
+mt-8 grid grid-cols-2 gap-8 sm:grid-cols-3  lg:grid-cols-5
 `
 const TechnologiesImageWrapper = tw.div`
-  flex mx-1.5 mb-2 sm:mx-6 sm:mt-3
- `
+flex mx-1.5 mb-2 sm:mx-6 sm:mt-3
+`

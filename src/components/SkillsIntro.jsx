@@ -1,5 +1,6 @@
-import tw from "twin.macro"
+import tw, { styled } from "twin.macro"
 import React from "react"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const ProjectsIntro = () => {
   return (
@@ -7,27 +8,51 @@ const ProjectsIntro = () => {
       <LeftBlock>
         <BlockWrapper>
           <H1>
-            
             <Span2>With modern development skills,</Span2>{" "}
-            <Span3>I create websites that deliver.</Span3><Span1>🚀</Span1>
+            <Span3>I create websites that deliver.</Span3>
+            <Span1>🚀</Span1>
           </H1>
           <H3>
-            Five years ago, Matt Biilimann coined the term Jamstack <Span6 href="https://jamstack.org/" target="_blank">at Smashing Conference</Span6>. His talk inspired me to jump back into the development world. 
+            Five years ago, Matt Biilimann coined the term Jamstack{" "}
+            <Span6 href="https://jamstack.org/" target="_blank">
+              at Smashing Conference
+            </Span6>
+            . His talk inspired me to jump back into the development world.
           </H3>
           <P>
-            So starting last year, I learned React. With a focus on my UI/UX specialty, I dove deep into several different styling systems, worked with a few headless CMS providers, and started working with<Span4 href="https://greensock.com/" target="_blank"> Greensock</Span4> animation. My biggest achievement has been becoming proficient with 
-            <Span4 href="https://www.gatsbyjs.com/" target="_blank"> Gatsby</Span4>.</P>
-          <P>
-            I've really enjoyed learning and using <Span4 href="https://graphql.org/" target="_blank">GraphQL</Span4> and <Span4 href="https://mdxjs.com/mdx/" target="_blank">MDX</Span4>, so I'm in the midst of a deep dive into these technologies now.
+            So starting last year, I learned React. With a focus on my UI/UX
+            specialty, I dove deep into several different styling systems,
+            worked with a few headless CMS providers, and started working with
+            <Span4 href="https://greensock.com/" target="_blank">
+              {" "}
+              Greensock
+            </Span4>{" "}
+            animation. My biggest achievement has been becoming proficient with
+            <Span4 href="https://www.gatsbyjs.com/" target="_blank">
+              {" "}
+              Gatsby
+            </Span4>
+            .
           </P>
-          {/*<ButtonWrap>
+          <P>
+            I've really enjoyed learning and using{" "}
+            <Span4 href="https://graphql.org/" target="_blank">
+              GraphQL
+            </Span4>{" "}
+            and{" "}
+            <Span4 href="https://mdxjs.com/mdx/" target="_blank">
+              MDX
+            </Span4>
+            , so I'm in the midst of a deep dive into these technologies now.
+          </P>
+          <ButtonWrap>
             <Button1>
-              <Link1 to="../project-gravital-digital">Dive In!</Link1>
+              <Link1 to="/skills#webdev">Web Developer</Link1>
             </Button1>
-             <Button2>
-                  <Link2 href="/blog">My Blog</Link2>
-                </Button2> 
-          </ButtonWrap>*/}
+            <Button2>
+              <Link2 to="/skills#digmarketer">Digital Marketer</Link2>
+            </Button2>
+          </ButtonWrap>
         </BlockWrapper>
       </LeftBlock>
       <RightBlock>
@@ -80,4 +105,19 @@ text-fogra-lightest hover:text-amber
 `
 const P = tw.p`
 mt-3 max-w-md mx-auto font-serif text-xl text-fogra-light sm:text-xl md:mt-5 lg:mt-10 md:max-w-3xl
+`
+const ButtonWrap = tw.div`
+mt-10 sm:flex sm:justify-center lg:justify-start
+`
+const Button1 = tw.button`
+rounded-md shadow sm:mt-0
+`
+const Button2 = tw.button`
+ml-3 rounded-md shadow
+`
+const Link1 = styled(AnchorLink)`
+  ${tw`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-ming hover:bg-ming-light md:py-4 md:text-lg md:px-10`}
+`
+const Link2 = styled(AnchorLink)`
+  ${tw`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-kobe hover:bg-kobe-light md:py-4 md:text-lg md:px-10`}
 `

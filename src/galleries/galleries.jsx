@@ -38,6 +38,8 @@ const Gallery = (props) => {
                           image={localFile.childImageSharp.gatsbyImageData}
                           alt={localFile.name.split("_").join(" ").split(".")[0]}
                           className="imageBox"
+                          srl_gallery_image="true"
+                          srl_overlay="true"
                         />
                       </PublicURL>
                     </ImageWrap>
@@ -98,8 +100,6 @@ query GalleryItemQuery($slug: String!) {
         name
         childImageSharp {
           gatsbyImageData(
-            width: 600
-            height: 400
             quality: 50
             transformOptions: {fit: COVER}
             placeholder: BLURRED
@@ -128,13 +128,6 @@ const ImageWrap = styled.div`
     width: 100%;
   }
 `
-// I'm keeping these here for a possible overlay.
-// const Overlay = tw.div`
-// mt-2
-// `
-// const OverlayText = tw.h1`
-// text-amber
-// `
 const PublicURL = tw.a`
 text-fogra
 `

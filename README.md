@@ -66,6 +66,7 @@ This repo started with `gatsby init` and I added and configured the following pl
 - [Green Sock Animation Platform (gsap)](https://greensock.com/blog/learning/react/)
 - [Simple React lightbox](https://simple-react-lightbox.dev/)
 - [gatsby-source-filesystem](https://www.gatsbyjs.com/plugins/gatsby-source-filesystem)
+- [gatsby-plugin-anchor-links](https://www.gatsbyjs.com/plugins/gatsby-plugin-anchor-links/)
 - [gatsby-plugin-image](https://www.gatsbyjs.com/plugins/gatsby-plugin-image)
 - [gatsby-plugin-sharp](https://www.gatsbyjs.com/plugins/gatsby-plugin-sharp)
 - [gatsby-transformer-sharp](https://www.gatsbyjs.com/plugins/gatsby-transformer-shar)
