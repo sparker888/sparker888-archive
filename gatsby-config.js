@@ -29,6 +29,7 @@ module.exports = {
     publicURL: "/sparker888-social-image.jpg", // This will be the default 'social' image for social media shares (in the static folder)
     organization: "Gravital Digital",
     author: "@sparker888",
+    name: "facebook-domain-verification content=n5hwp1vocfsi394ttexpeqruhjo0a1",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
