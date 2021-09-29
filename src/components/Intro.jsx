@@ -9,7 +9,7 @@ const Intro = () => {
       <LeftBlock>
         <BlockWrapper>
           <H1>
-            <Span1>🤙 Aloha!</Span1>{" "}
+            <Span1>👋🏼 Hey!</Span1>{" "}
             <Span2>I&#8217;m Steve.</Span2>{" "}
             <Span3>I build high-performance websites.</Span3>
           </H1>

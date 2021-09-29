@@ -44,7 +44,7 @@ const Contact = () => {
     graphql`
       query {
         placeholderImage: file(
-          relativePath: { eq: "mesh-gradient2-light.png" }
+          relativePath: { eq: "nebula-bg-opt.jpg" }
         ) {
           childImageSharp {
             gatsbyImageData(
@@ -71,10 +71,10 @@ const Contact = () => {
               <HeaderH1>Get in touch</HeaderH1>
               <HeaderP>
                 Thanks for reaching out. If you would prefer to schedule a
-                30-minute phone or zoom call, please book a time{" "}
+                30-minute phone or zoom call, please{" "}
                 <Span href="https://calendly.com/sparker888/" target="_blank">
                   {" "}
-                  on my calendar
+                  book a time on my calendar
                 </Span>
                 . I look forward to chatting with you and will reply as soon as
                 possible.
@@ -326,10 +326,10 @@ const HeaderContentWrap = tw.div`
 relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8
 `
 const HeaderH1 = tw.h1`
-text-4xl font-extrabold tracking-tight text-kobe sm:text-5xl lg:text-6xl
+text-4xl font-extrabold tracking-tight text-almond sm:text-5xl lg:text-6xl
 `
 const HeaderP = tw.p`
-mt-6 text-xl text-fogra-light max-w-3xl
+mt-6 text-xl text-amber-dark max-w-3xl
 `
 const Span = tw.a`
 text-kobe hover:text-amber
@@ -347,7 +347,7 @@ const MainContentGridWrap = tw.div`
 grid grid-cols-1 lg:grid-cols-3
 `
 const ContactInfoWrap = tw.div`
-relative overflow-hidden py-10 px-6 bg-gradient-to-b from-ming to-ming-lightest sm:px-10 xl:p-12
+relative overflow-hidden py-10 px-6 bg-gradient-to-b from-amber-dark to-kobe sm:px-10 xl:p-12
 `
 const DecorativeWrap = tw.div`
 absolute inset-0 pointer-events-none sm:hidden
@@ -362,10 +362,10 @@ const DecorativeWrap3 = tw.div`
 hidden absolute top-0 right-0 bottom-0 w-1/2 pointer-events-none lg:block
 `
 const ContactHeader = tw.h2`
-text-lg font-medium text-white
+text-lg font-medium text-amber-darkest
 `
 const ContactP = tw.p`
-mt-6 text-base text-ming-light max-w-3xl
+mt-6 text-base text-fogra-light max-w-3xl
 `
 const ContactDl = tw.dl`
 mt-8 space-y-6

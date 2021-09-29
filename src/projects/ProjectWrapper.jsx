@@ -8,7 +8,7 @@ const ProjectWrapper = ({ children }) => {
   const { placeholderImage } = useStaticQuery(
     graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "mesh-gradient2.png" }) {
+        placeholderImage: file(relativePath: { eq: "nebula-bg-opt.jpg" }) {
           childImageSharp {
             gatsbyImageData(
               quality: 25

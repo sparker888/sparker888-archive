@@ -12,7 +12,7 @@ const BlogCards
   const { placeholderImage } = useStaticQuery(
     graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "mesh-gradient.png" }) {
+        placeholderImage: file(relativePath: { eq: "nebula-bg-opt.jpg" }) {
           childImageSharp {
             gatsbyImageData(
               quality: 25
