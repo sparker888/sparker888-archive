@@ -45,7 +45,7 @@ const Sparker = () => {
             <BottomSection>
 
               <ContentWrapper>
-                <H2 id="join-heading">Looking for a talented Web professional?</H2>
+                <H2 id="join-heading">Looking for a talented Web and Digital Marketing professional?</H2>
                 <P>
                   I've worked the Web since 1995 with major brands, small businesses and talented entrepreneurs. My teams and I have had great success -- driving record traffic and sales revenue. 
                 </P>
