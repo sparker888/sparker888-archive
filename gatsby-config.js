@@ -8,7 +8,7 @@ module.exports = {
     menu: [
       { name: "Stephen Parker", to: "/" },
       { name: "Projects", to: "/projects/" },
-      { name: "Skills", to: "/skills" },
+      { name: "Skills", to: "/skills/" },
       { name: "Gallery", to: "/gallery/" },
       { name: "Articles", to: "/blog/" },
       { name: "Contact", to: "/contact/" },
