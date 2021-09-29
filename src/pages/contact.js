@@ -326,13 +326,13 @@ const HeaderContentWrap = tw.div`
 relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8
 `
 const HeaderH1 = tw.h1`
-text-4xl font-extrabold tracking-tight text-almond sm:text-5xl lg:text-6xl
+text-4xl font-extrabold tracking-tight text-amber-dark sm:text-5xl lg:text-6xl
 `
 const HeaderP = tw.p`
-mt-6 text-xl text-amber-dark max-w-3xl
+mt-6 text-xl text-almond max-w-3xl
 `
 const Span = tw.a`
-text-kobe hover:text-amber
+text-amber hover:text-kobe
 `
 const ContactSection = tw.section`
 relative bg-transparent
