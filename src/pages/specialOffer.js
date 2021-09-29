@@ -68,7 +68,7 @@ const Contact = () => {
         <OuterHeaderWrap>
           <InnerHeaderWrap>
             <HeaderContentWrap>
-              <HeaderH1>20% Off a full Site Design & Build</HeaderH1>
+              <HeaderH1>20% OFF a Full Site Design & Build</HeaderH1>
               <HeaderP>
                 This offer will be available to the first three cutomers that{" "}
                 <Span href="https://calendly.com/sparker888/" target="_blank">
@@ -77,7 +77,7 @@ const Contact = () => {
                 </Span>
                 . The project I envision for this discount is a straightforward four-to-six-page website with a blog. 
                 <HeaderP>I'll work with you on the corporate branding and message as well as assist with imagery and photography. These media will be separate costs. Either you can provide, or I can provide photography and suggest graphics. Many graphics we can get for free though. </HeaderP>
-                <HeaderP>The site will include a feedback/contact page for you as well as Google Analytics with a monthly report automatically emailed to you. The typical cost is $2,500. With the 30-minute consultation I'll provide a proposal within 48 hours. Typical turnaround is about six weeks.
+                <HeaderP>The site will include a feedback/contact page for you as well as Google Analytics with a monthly report automatically emailed to you. The typical cost is $2,500-$3,500. After we have our 30-minute consultation, I'll provide a proposal within 48 hours that details everything and provides the discount. Typical turnaround is 4-6 weeks.
                 </HeaderP>
               </HeaderP>
             </HeaderContentWrap>
