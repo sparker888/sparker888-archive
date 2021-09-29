@@ -93,5 +93,11 @@ module.exports = {
         enableWebVitalsTracking: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "914543605814596",
+      },
+    },
   ],
 };
