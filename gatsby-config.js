@@ -23,7 +23,7 @@ module.exports = {
     title: "Stephen Parker | Frontend Web Developer and Photographer",
     titleTemplate: "Stephen Parker | Frontend Developer and Photographer",
     description:
-      "Check out the latest work on @sparker888's portfolio site.",
+      "Lightning-fast websites that leave WordPress in the dust.",
     siteUrl: "https://www.sparker888.com", // No trailing slash allowed!
     twitterUsername: "@sparker888",
     publicURL: "/sparker888-default-image.jpg", // This will be the default image for social media shares (in the static folder)
