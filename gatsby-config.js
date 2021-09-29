@@ -26,7 +26,7 @@ module.exports = {
       "Lightning-fast websites that leave WordPress in the dust.",
     siteUrl: "https://www.sparker888.com", // No trailing slash allowed!
     twitterUsername: "@sparker888",
-    publicURL: "/sparker888-default-image.jpg", // This will be the default image for social media shares (in the static folder)
+    publicURL: "/sparker888-social-image.jpg", // This will be the default 'social' image for social media shares (in the static folder)
     organization: "Gravital Digital",
     author: "@sparker888",
   },
