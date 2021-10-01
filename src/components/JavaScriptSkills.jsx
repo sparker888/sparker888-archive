@@ -39,6 +39,11 @@ const skills = [
     description:
       " I know enough to look things up and create a working RegEx.",
   },
+  {
+    name: "Git version control",
+    description:
+      " While not JavaScript, I wanted to mention here that I've been using the software version control system since 2009.",
+  },
 ]
 
 export default function JavaScript() {

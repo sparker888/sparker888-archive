@@ -6,8 +6,7 @@ import { BgImage } from "gbimage-bridge"
 import PropTypes from "prop-types"
 import BlogCard from "./BlogCard"
 
-const BlogCards
- = ({ items }) => {
+const BlogCards = ({ items }) => {
 
   const { placeholderImage } = useStaticQuery(
     graphql`
