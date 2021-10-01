@@ -1,41 +1,89 @@
 import tw, { styled } from "twin.macro"
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import { graphql, Link } from "gatsby"
 import PropTypes from "prop-types"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
-const Heroes = props => {
-    const { heroTitle, color, heroText, justifyContent, flexDirection, heroImage, backgroundColor, liveUrl } = props
+const Heroes = (props) => {
+  const {
+    heroTitle,
+    color,
+    heroText,
+    justifyContent,
+    flexDirection,
+    heroImage,
+    backgroundColor,
+    liveUrl,
+  } = props
 
-    const image = getImage(heroImage)
-  
-    return (
+  const image = getImage(heroImage)
 
+  const title = useRef(null)
+  const mySkills = useRef(null)
+  const myProjects = useRef(null)
+
+  useEffect(() => {
+    let tl = gsap.timeline()
+    tl.from(title.current, {
+      yPercent: -100,
+      scrollTrigger: {
+        // Gallery button fades in from the left
+        trigger: title.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(mySkills.current, {
+      xPercent: -15,
+      scrollTrigger: {
+        // Gallery button fades in from the left
+        trigger: mySkills.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(myProjects.current, {
+      xPercent: 15,
+      scrollTrigger: {
+        // Projects button fades in from the right
+        trigger: myProjects.current,
+        start: "top 75%",
+        end: "center 100%",
+        scrub: 1.5,
+      },
+    })
+  }, [])
+
+  return (
     <SectionOne>
       <ImageWrapper>
-          <GatsbyImage image={image} alt={heroTitle} className="sectionImage"/>
-          <ColorCast css={{backgroundColor}} />
+        <GatsbyImage image={image} alt={heroTitle} className="sectionImage" />
+        <ColorCast css={{ backgroundColor }} />
       </ImageWrapper>
       <TextCover>
         <div>
-        <H1 css={{color, justifyContent}}>{heroTitle}</H1>
+          <H1 css={{ color, justifyContent }} ref={title}>{heroTitle}</H1>
         </div>
-        <FlexRow css={{flexDirection}}>
-        <P>{heroText}</P>
-        <Buttons>
-          <Button1>
-            <Link1 to="/skills/">Skills</Link1>
-          </Button1>
-          <Button2>
-            <Link2 to={`/${liveUrl}`}>Details</Link2>
-          </Button2>
-        </Buttons>
+        <FlexRow css={{ flexDirection }}>
+          <P>{heroText}</P>
+          <Buttons>
+            <Button1 ref={mySkills}>
+              <Link1 to="/skills/">Skills</Link1>
+            </Button1>
+            <Button2 ref={myProjects}>
+              <Link2 to={`/${liveUrl}`}>Details</Link2>
+            </Button2>
+          </Buttons>
         </FlexRow>
       </TextCover>
     </SectionOne>
-
-  );
-};
+  )
+}
 
 Heroes.propTypes = {
   order: PropTypes.number.isRequired,
@@ -48,12 +96,11 @@ Heroes.propTypes = {
   liveUrl: PropTypes.string.isRequired,
 }
 
-export default Heroes;
+export default Heroes
 
 export const query = graphql`
-  fragment HeroSections on ContentfulHeroes 
-  { 
-    order 
+  fragment HeroSections on ContentfulHeroes {
+    order
     heroTitle
     color
     heroText
@@ -61,7 +108,7 @@ export const query = graphql`
     flexDirection
     backgroundColor
     liveUrl
-    heroImage{
+    heroImage {
       gatsbyImageData(
         layout: FULL_WIDTH
         placeholder: BLURRED
@@ -75,10 +122,10 @@ const SectionOne = tw.div`
 relative bg-ming
 `
 const ImageWrapper = styled.div`
-${tw`absolute inset-0`}
-.sectionImage {
+  ${tw`absolute inset-0`}
+  .sectionImage {
     position: static;
-}
+  }
 `
 const ColorCast = tw.div`
 absolute inset-0 mix-blend-multiply

@@ -1,8 +1,11 @@
 import tw, { styled } from "twin.macro"
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
 import { BgImage } from "gbimage-bridge"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 const Sparker = () => {
   const { placeholderImage } = useStaticQuery(
@@ -23,17 +26,75 @@ const Sparker = () => {
 
   const pluginImage = getImage(placeholderImage)
 
+  let portrait = useRef(null)
+  let headline = useRef(null)
+  let bodyCopy1 = useRef(null)
+  let bodyCopy2 = useRef(null)
+  const button = useRef(null)
+
+  useEffect(() => {
+    let tl = gsap.timeline()
+    tl.from(portrait.current, {
+      xPercent: -10,
+      scrollTrigger: {
+        // Portrait fades in from the left
+        trigger: portrait.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(headline.current, {
+      xPercent: 10,
+      scrollTrigger: {
+        // Headline fades in from the right
+        trigger: headline.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(bodyCopy1.current, {
+      xPercent: 15,
+      scrollTrigger: {
+        // Gallery button fades in from the right
+        trigger: bodyCopy1.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(bodyCopy2.current, {
+      xPercent: 20,
+      scrollTrigger: {
+        // Gallery button fades in from the right
+        trigger: bodyCopy2.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(button.current, {
+      xPercent: 25,
+      scrollTrigger: {
+        // Gallery button fades in from the right
+        trigger: button.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+  }, [])
+
   return (
     <StyledBgImage image={pluginImage}>
-    <Wrapper>
-      
+      <Wrapper>
         <InnerWrapper>
-        
           <Grid>
             <TopSection>
               <HiddenTop />
               <TopInnerWrapper>
-                <ImageWrapper>
+                <ImageWrapper ref={portrait}>
                   <ObjectCover
                     src="https://res.cloudinary.com/gravital-digital/image/upload/v1629628368/sparker-portrait_bv6dzq.jpg"
                     alt="Stephen Parker"
@@ -43,25 +104,28 @@ const Sparker = () => {
             </TopSection>
 
             <BottomSection>
-
               <ContentWrapper>
-                <H2 id="join-heading">Looking for a talented Web and Digital Marketing professional?</H2>
-                <P>
-                  I've worked the Web since 1995 with major brands, small businesses and talented entrepreneurs. My teams and I have had great success -- driving record traffic and sales revenue. 
+                <H2 id="join-heading" ref={headline}>
+                  Looking for a talented Web and Digital Marketing professional?
+                </H2>
+                <P ref={bodyCopy1}>
+                  I've worked the Web since 1995 with major brands, small
+                  businesses and talented entrepreneurs. My teams and I have had
+                  great success -- driving record traffic and sales revenue.
                 </P>
-                <P>
-                  I would appreciate your consideration for your next project or campaign. If you have important business goals to achieve online, I can help you and your team make it happen!
+                <P ref={bodyCopy2}>
+                  I would appreciate your consideration for your next project or
+                  campaign. If you have important business goals to achieve
+                  online, I can help you and your team make it happen!
                 </P>
-                <CtaLink to="/contact/">Contact Me</CtaLink>
+                <CtaLink to="/contact/" ref={button}>
+                  Contact Me
+                </CtaLink>
               </ContentWrapper>
-
             </BottomSection>
-
           </Grid>
-          
         </InnerWrapper>
-
-    </Wrapper>
+      </Wrapper>
     </StyledBgImage>
   )
 }

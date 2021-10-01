@@ -10,15 +10,38 @@ const Intro = () => {
   let logo = useRef(null)
   let hand = useRef(null)
   let headline1 = useRef(null)
-  let headline2 = useRef(null)
   const myGallery = useRef(null)
   const myProjects = useRef(null)
 
   useEffect(() => {
     let tl = gsap.timeline()
-    tl.fromTo(logo.current, {xPercent: -4, yPercent: -10}, {xPercent: 4, yPercent: -6, delay: 1, duration: 2, repeat: -1, yoyo:true, yoyoEase:true, ease: "power1" }, "<") // move spaceship up and down in a loop
-    tl.fromTo(hand.current, {x: -100, y: 0, opacity: 0}, { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" }, "<") // bring in first line from left
-    tl.fromTo(headline1.current, {x: 100, y: 0, opacity: 0}, { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" }, "<") // bring in second line from left
+    tl.fromTo(
+      logo.current,
+      { xPercent: -4, yPercent: -20 },
+      {
+        xPercent: 4,
+        yPercent: -6,
+        delay: 1,
+        duration: 4,
+        repeat: -1,
+        yoyo: true,
+        yoyoEase: true,
+        ease: "power1",
+      },
+      "<"
+    ) // move spaceship up and down in a loop
+    tl.fromTo(
+      hand.current,
+      { x: -100, y: 0, opacity: 0 },
+      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
+      "<"
+    ) // bring in first line from left
+    tl.fromTo(
+      headline1.current,
+      { x: 100, y: 0, opacity: 0 },
+      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
+      "<"
+    ) // bring in second line from left
     tl.from(myGallery.current, {
       xPercent: -15,
       scrollTrigger: {
@@ -32,7 +55,7 @@ const Intro = () => {
     tl.from(myProjects.current, {
       xPercent: 15,
       scrollTrigger: {
-        // Gallery button fades in from the right
+        // Projects button fades in from the right
         trigger: myProjects.current,
         start: "top 75%",
         end: "top center",
@@ -46,7 +69,8 @@ const Intro = () => {
       <LeftBlock>
         <BlockWrapper>
           <H1>
-            <Span1 ref={hand}>👋🏼 Hey!</Span1> <Span2 ref={headline1}>I&#8217;m Steve.</Span2>{" "}
+            <Span1 ref={hand}>👋🏼 Hey!</Span1>{" "}
+            <Span2 ref={headline1}>I&#8217;m Steve.</Span2>{" "}
             <Span3>I build high-performance websites.</Span3>
           </H1>
           <H3>
@@ -82,7 +106,7 @@ const Intro = () => {
         </BlockWrapper>
       </LeftBlock>
       <RightBlock>
-      <Image
+        <Image
           src="https://res.cloudinary.com/gravital-digital/image/upload/v1633022291/home-intro-bg_mrn4tb.jpg"
           alt="Performance Websites Space Background"
         />
@@ -94,7 +118,6 @@ const Intro = () => {
             layout="constrained"
           />
         </LogoWrapper>
-
       </RightBlock>
     </Main>
   )
