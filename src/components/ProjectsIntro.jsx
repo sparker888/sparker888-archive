@@ -1,18 +1,52 @@
 import tw, { styled } from "twin.macro"
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import { Link } from "gatsby"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 const ProjectsIntro = () => {
+
+  const headline1 = useRef(null)
+  const headline2 = useRef(null)
+  const button = useRef(null)
+
+  useEffect(() => {
+    let tl = gsap.timeline()
+    tl.fromTo(
+      headline1.current,
+      { x: -100, y: 0, opacity: 0 },
+      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
+      "<"
+    ) // bring in first line from left
+    tl.fromTo(
+      headline2.current,
+      { x: 100, y: 0, opacity: 0 },
+      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
+      "<"
+    ) // bring in second line from left
+    tl.to(button.current, {
+      xPercent: 35,
+      scrollTrigger: {
+        // Projects button fades in from the right
+        trigger: button.current,
+        start: "top 75%",
+        end: "center 100%",
+        scrub: 1.5,
+      },
+    })
+  }, [])
+
   return (
     <Main>
       <LeftBlock>
         <BlockWrapper>
-          <H1>
+          <H1 ref={headline1}>
             <Span2>With the latest technology,</Span2>{" "}
             <Span3>I help businesses succeed!</Span3>{" "}
             <Span1>✨</Span1>
           </H1>
-          <H3>
+          <H3 ref={headline2}>
             This year I built an amazing studio! Thanks to a lot of cool technology and <Span6 to="/skills/" >improved skills</Span6>, I&#8217;m helping more businesses meet their goals.
           </H3>
           <P>
@@ -22,7 +56,7 @@ const ProjectsIntro = () => {
             This year,  I've been able to help clients get more visibility on the Web and score highly for <Span4 href="https://gravitaldigital.com/blog/navigating-google-core-web-vitals-report/" target="_blank">Google's new algorithm measures</Span4> to help them move up in the search engine rankings for more traffic and sales. 
           </P>
           <ButtonWrap>
-            <Button1>
+            <Button1 ref={button}>
               <Link1 to="../projects/project-gravital-digital">Take a Look</Link1>
             </Button1>
             {/* <Button2>
