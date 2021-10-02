@@ -6,3 +6,4 @@ import SimpleReactLightbox from 'simple-react-lightbox-pro'
 export const wrapRootElement = ({ element }) => (
   <SimpleReactLightbox>{element}</SimpleReactLightbox>
 )
+

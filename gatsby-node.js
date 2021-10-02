@@ -83,3 +83,4 @@ exports.createPages = async ({ graphql, actions }) => {
     
   return Promise.all([articles, projects, galleries])
 }
+

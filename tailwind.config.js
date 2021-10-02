@@ -67,5 +67,4 @@ module.exports = {
     require('@tailwindcss/aspect-ratio'),
   ],
 }
-
 // See a supported list of Tailwind plugins compatible with twin.macro here: https://twin-docs.netlify.app/plugin-support
