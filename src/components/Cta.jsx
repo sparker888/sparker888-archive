@@ -91,8 +91,8 @@ const ButtonInnerWrap = tw.div`
 mt-5 flex flex-row-reverse text-base max-w-prose mx-auto lg:max-w-none
 `
 const Button1Style = tw.a`
-w-full flex items-center justify-center mx-2 px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-kobe hover:bg-kobe-light
+w-full flex items-center justify-center mx-2 px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-ming hover:bg-ming-light
 `
 const Button2Style = styled(Link)`
-  ${tw`w-full flex items-center mx-2 justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-ming hover:bg-ming-light`}
+  ${tw`animate-pulse w-full flex items-center mx-2 justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-kobe hover:bg-kobe-light`}
 `

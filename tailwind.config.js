@@ -55,11 +55,31 @@ module.exports = {
         '-10': '-10',
         '-20': '-20',
        },
+       animation: {
+         bounce: 'bounce 2s infinite'
+       },
+       keyframes: {
+         bounce: {
+          '0%, 100%': {
+            transform: 'translateY(-2%)',
+            animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)',
+          },
+          '50%': {
+            transform: 'translateY(0)',
+            animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
+          },
+         },
+       },
     },  
     fontFamily: {
       sans: ["Montserrat", "system-ui", "sans-serif"],
       serif: ["Inria Serif", "ui-serif", "Georgia"],
     },
+    variants: {
+      extend: {
+        animation: ['hover', 'focus'],
+      }
+    }
   },
   plugins: [
     require('@tailwindcss/forms'),

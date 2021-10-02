@@ -126,5 +126,5 @@ const CardsWrapper = tw.div`
 mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none
 `
 const CardsInnerWrap = tw.section`
-flex flex-col rounded-lg shadow-lg overflow-hidden bg-almond
+flex flex-col rounded-lg shadow-lg overflow-hidden bg-almond hover:animate-bounce
 `
