@@ -1,7 +1,10 @@
 import tw, { css } from "twin.macro"
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { CheckIcon } from "@heroicons/react/outline"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 const skills = [
   {
@@ -42,19 +45,62 @@ const skills = [
 ]
 
 export default function ReactSkills() {
+
+  const icon2 = useRef(null)
+  const title2 = useRef(null)
+  const paragraph2 = useRef(null)
+
+  useEffect(() => {
+    let tl = gsap.timeline()
+    tl.from(icon2.current, {
+      yPercent: -120,
+      scrollTrigger: {
+        // Icon fades in from the top
+        trigger: icon2.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(title2.current, {
+      yPercent: -40,
+      scrollTrigger: {
+        // Title fades in from the top
+        trigger: title2.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(paragraph2.current, {
+      yPercent: 40,
+      scrollTrigger: {
+        // Paragraph fades in from the bottom
+        trigger: paragraph2.current,
+        start: "top 75%",
+        end: "center 100%",
+        scrub: 1.5,
+      },
+    })
+  }, [])
+
   return (
     <Wrapper>
       <InnerWrapper>
         <div>
-          <StaticImage
-            src="../images/react.svg"
-            alt="JS"
-            height={50}
-            layout="fixed"
-          />
-          <Title>React</Title>
-          <Description>
-            I am relatively new to React, yet I'm comfortable with all the basics in terms of designing components, passing props and using essential hooks. I'm learning more advanced concepts now.
+          <div ref={icon2}>
+            <StaticImage
+              src="../images/react.svg"
+              alt="JS"
+              height={50}
+              layout="fixed"
+            />
+          </div>
+          <Title ref={title2}>React</Title>
+          <Description ref={paragraph2}>
+            I am relatively new to React, yet I'm comfortable with all the
+            basics in terms of designing components, passing props and using
+            essential hooks. I'm learning more advanced concepts now.
           </Description>
         </div>
         <SkillsWrapper>

@@ -1,7 +1,10 @@
 import tw, { styled } from "twin.macro"
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 const SkillsMain = () => {
   const { mainImage } = useStaticQuery(
@@ -22,14 +25,63 @@ const SkillsMain = () => {
 
   const image = getImage(mainImage)
 
+  const headline1 = useRef(null)
+  const headline2 = useRef(null)
+  const headline3 = useRef(null)
+  const headline4 = useRef(null)
+
+  useEffect(() => {
+    let tl = gsap.timeline({ defaults: { opacity: 0 } })
+    tl.from(headline1.current, {
+      xPercent: -5,
+      scrollTrigger: {
+        // Headline 1 fades in from the left
+        trigger: headline1.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(headline2.current, {
+      xPercent: 5,
+      scrollTrigger: {
+        // Headline 2 fades in from the right
+        trigger: headline2.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    }) 
+    tl.from(headline3.current, {
+      xPercent: -5,
+      scrollTrigger: {
+        // Headline 3 fades in from the right
+        trigger: headline3.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    }) 
+    tl.from(headline4.current, {
+      xPercent: 5,
+      scrollTrigger: {
+        // Headline 4 fades in from the right
+        trigger: headline4.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    }) 
+  }, [])
+
   return (
     <Wrapper id="webdev">
       <TopSectionWrapper>
         <HeadlineOuterWrapper>
           <HeadlineInnerWrapper>
             <H1>
-              <Span1>My skills as a UI/UX React/Gatsby developer</Span1>
-              <Span2>deliver performance for companies like this:</Span2>
+              <Span1 ref={headline1}>My skills as a UI/UX React/Gatsby developer</Span1>
+              <Span2 ref={headline2}>deliver performance for companies like this:</Span2>
             </H1>
           </HeadlineInnerWrapper>
         </HeadlineOuterWrapper>
@@ -57,14 +109,14 @@ const SkillsMain = () => {
               scores and is set up as a Progressive Web App.
             </P>
             <H1>
-              <Span3>I'm continuously improving my personal performance as well.</Span3>
+              <Span3 ref={headline3}>I'm continuously improving my personal performance as well.</Span3>
             </H1>
           </CopyInnerWrapper>
         </CopyOuterWrapper>
       </TopSectionWrapper>
       <BottomSectionWrapper>
         <BottomSectionInnerWrapper>
-          <H2>These are the key technologies that I have experience with</H2>
+          <H2 ref={headline4}>These are the key technologies that I have experience with</H2>
           <TechnologiesWrapper>
             <TechnologiesImageWrapper>
               <StaticImage

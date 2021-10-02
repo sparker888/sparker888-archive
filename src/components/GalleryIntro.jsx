@@ -1,24 +1,58 @@
 import tw, { styled } from "twin.macro"
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import { Link } from "gatsby"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 const GalleryIntro = () => {
+
+  const headline1 = useRef(null)
+  const headline2 = useRef(null)
+  const button = useRef(null)
+
+  useEffect(() => {
+    let tl = gsap.timeline()
+    tl.fromTo(
+      headline1.current,
+      { x: -100, y: 0, opacity: 0 },
+      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
+      "<"
+    ) // bring in first block from left
+    tl.fromTo(
+      headline2.current,
+      { x: 100, y: 0, opacity: 0 },
+      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
+      "<"
+    ) // bring in second block from right
+    tl.to(button.current, {
+      xPercent: 35,
+      scrollTrigger: {
+        // Articles button comes in from the left
+        trigger: button.current,
+        start: "top 50%",
+        end: "center 100%",
+        scrub: 1.5,
+      },
+    })
+  }, [])
+
   return (
     <Main>
       <LeftBlock>
         <BlockWrapper>
-          <H1>
+          <H1 ref={headline1}>
           <Span1>📸</Span1> <Span2>For speed and efficiency,</Span2>{" "}
             <Span3>I&#8217;ve gone minimalist and lightweight!</Span3>
           </H1>
-          <H3>
+          <H3 ref={headline2}>
             I&#8217;ve also stepped up my game as a professional photographer. I&#8217;m now a certified and insured <Span6 href="https://www.ppa.com/" target="_blank">PPA</Span6> member!
           </H3>
           <P>
             This year, I focused on light and portable for quick real estate, on-site, and outdoor shoots. The equipment includes a lighter camera -- the Sony a6600, a carbon fiber tripod, several light yet powerful flashes from Godox, and lightweight modifiers, backdrops and stands designed for travel. Here are a few of the results.
           </P>
           <ButtonWrap>
-            <Button1>
+            <Button1 ref={button}>
               <Link1 to="../gallery/coastal-florida-photography">Dive In!</Link1>
             </Button1>
             {/* <Button2>

@@ -1,18 +1,63 @@
 import tw, { styled } from "twin.macro"
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 const ProjectsIntro = () => {
+
+  const headline1 = useRef(null)
+  const headline2 = useRef(null)
+  const developer = useRef(null)
+  const marketer = useRef(null)
+
+  useEffect(() => {
+    let tl = gsap.timeline()
+    tl.fromTo(
+      headline1.current,
+      { x: -100, y: 0, opacity: 0 },
+      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
+      "<"
+    ) // bring in first block from left
+    tl.fromTo(
+      headline2.current,
+      { x: 100, y: 0, opacity: 0 },
+      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
+      "<"
+    ) // bring in second line from left
+    tl.from(developer.current, {
+      xPercent: -15,
+      scrollTrigger: {
+        // bring in second block from the right
+        trigger: developer.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(marketer.current, {
+      xPercent: 15,
+      scrollTrigger: {
+        // Projects button fades in from the right
+        trigger: marketer.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+  }, [])
+
   return (
     <Main>
       <LeftBlock>
         <BlockWrapper>
-          <H1>
+          <H1 ref={headline1}>
             <Span2>With modern development skills,</Span2>{" "}
             <Span3>I create websites that deliver.</Span3>
             <Span1>🚀</Span1>
           </H1>
-          <H3>
+          <H3 ref={headline2}>
             Five years ago, Matt Biilimann coined the term Jamstack{" "}
             <Span6 href="https://jamstack.org/" target="_blank">
               at Smashing Conference
@@ -46,10 +91,10 @@ const ProjectsIntro = () => {
             , so I'm in the midst of a deep dive into these technologies now.
           </P>
           <ButtonWrap>
-            <Button1>
+            <Button1 ref={developer}>
               <Link1 to="/skills#webdev">Web Developer</Link1>
             </Button1>
-            <Button2>
+            <Button2 ref={marketer}>
               <Link2 to="/skills#digmarketer">Digital Marketer</Link2>
             </Button2>
           </ButtonWrap>

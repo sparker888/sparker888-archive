@@ -1,24 +1,51 @@
 import tw, { styled } from "twin.macro"
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import { Link } from "gatsby"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 const ArticlesIntro = () => {
+
+  const headline1 = useRef(null)
+  const button = useRef(null)
+
+  useEffect(() => {
+    let tl = gsap.timeline()
+    tl.fromTo(
+      headline1.current,
+      { x: -100, y: 0, opacity: 0 },
+      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
+      "<"
+    ) // bring in top block from left
+    tl.to(button.current, {
+      xPercent: 35,
+      scrollTrigger: {
+        // Projects button comes in from the left
+        trigger: button.current,
+        start: "top 75%",
+        end: "center 100%",
+        scrub: 1.5,
+      },
+    })
+  }, [])
+
   return (
     <Main>
       <LeftBlock>
         <BlockWrapper>
-          <H1>
+          <H1 ref={headline1}>
             <Span2>Articles on modern development,</Span2>{" "} <Span1>🚁</Span1> 
             <Span3>marketing, drones and more!</Span3>{" "}
           </H1>
           <P>
-            Here on my blog, my goal is to share some of the coolest things I'm working with in the development world. I've also worked with teams helping to market and sell companies, so I'll share some insights to being successful. Occasionally, you might get <Span4 href="https://i.imgur.com/ElNzCqq.png" target="_blank">cool art</Span4> and weird memes. 
+            Here on my blog, my goal is to share some of the coolest things I'm working with in the development world. I've also collaborated with teams to market products and services online, so I'll share some insights on successful digital marketing. Occasionally, you might get <Span4 href="https://i.imgur.com/ElNzCqq.png" target="_blank">cool art</Span4> and weird memes. 
           </P>
           <P>
-            Having grown up on the Space Coast of Florida, I have a passion for technology, space and the ocean. I grew up as a space baby with an engineer for a father so I spent a lot of time working on cars, watching NASA launches, and sailing and surfing.  I'll share some stories and beautiful images of Florida and Hawaii. Aloha!
+            Having grown up on the Space Coast of Florida, I have a passion for technology, space and the ocean. I grew up as a space baby with an engineer for a father so I spent a lot of time working on cars, watching NASA launches, and sailing and surfing.  I'll share some stories and beautiful images of Florida -- and Hawaii too! Aloha!
           </P>
           <ButtonWrap>
-            <Button1>
+            <Button1 ref={button}>
               <Link1 to="../blog/sparker888-gatsby-and-mdx-like-blogging-on-steroids">Dive In!</Link1>
             </Button1>
               {/* <Button2>

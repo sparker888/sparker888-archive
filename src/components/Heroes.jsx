@@ -30,7 +30,7 @@ const Heroes = (props) => {
     tl.from(title.current, {
       yPercent: -100,
       scrollTrigger: {
-        // Gallery button fades in from the left
+        // Title fades in from the top
         trigger: title.current,
         start: "top 75%",
         end: "top center",

@@ -1,7 +1,10 @@
 import tw, { css } from "twin.macro"
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { CheckIcon } from "@heroicons/react/outline"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 const skills = [
   {
@@ -16,8 +19,7 @@ const skills = [
   },
   {
     name: "CSS Text, Color, Fonts",
-    description:
-      " typography, color values, gradients, and unit sizing.",
+    description: " typography, color values, gradients, and unit sizing.",
   },
   {
     name: "CSS Flexbox",
@@ -47,19 +49,63 @@ const skills = [
 ]
 
 export default function CssSkills() {
+  const icon1 = useRef(null)
+  const title1 = useRef(null)
+  const paragraph1 = useRef(null)
+
+  useEffect(() => {
+    let tl = gsap.timeline()
+    tl.from(icon1.current, {
+      yPercent: -120,
+      scrollTrigger: {
+        // Icon fades in from the top
+        trigger: icon1.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(title1.current, {
+      yPercent: -40,
+      scrollTrigger: {
+        // Title fades in from the top
+        trigger: title1.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(paragraph1.current, {
+      yPercent: 40,
+      scrollTrigger: {
+        // Paragraph fades in from the bottom
+        trigger: paragraph1.current,
+        start: "top 75%",
+        end: "center 100%",
+        scrub: 1.5,
+      },
+    })
+  }, [])
+
   return (
     <Wrapper>
       <InnerWrapper>
         <div>
-          <StaticImage
-            src="../images/css3.svg"
-            alt="JS"
-            height={50}
-            layout="fixed"
-          />
-          <Title>CSS 3</Title>
-          <Description>
-            I have used CSS for many years and understand the language well. During my career, I have gone from vanilla CSS, to using libraries and frameworks, to design systems, preprocessors and now use modern styling and utility systems such as Styled Components, Theme UI and Tailwindcss.
+          <div ref={icon1}>
+            <StaticImage
+              src="../images/css3.svg"
+              alt="JS"
+              height={50}
+              layout="fixed"
+            />
+          </div>
+          <Title ref={title1}>CSS 3</Title>
+          <Description ref={paragraph1}>
+            I have used CSS for many years and understand the language well.
+            During my career, I have gone from vanilla CSS, to using libraries
+            and frameworks, to design systems, preprocessors and now use modern
+            styling and utility systems such as Styled Components, Theme UI and
+            Tailwindcss.
           </Description>
         </div>
         <SkillsWrapper>

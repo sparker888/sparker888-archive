@@ -1,13 +1,15 @@
 import tw, { css } from "twin.macro"
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { CheckIcon } from "@heroicons/react/outline"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 const skills = [
   {
     name: "JavaScript Basics",
-    description:
-      " JS Variables, Types, Array Methods and Operators",
+    description: " JS Variables, Types, Array Methods and Operators",
   },
   {
     name: "Functional Programming in JS",
@@ -21,13 +23,11 @@ const skills = [
   },
   {
     name: "Some Advanced Concepts",
-    description:
-      " Polyfills, Async and Defer, Debouncing and Throttling.",
+    description: " Polyfills, Async and Defer, Debouncing and Throttling.",
   },
   {
     name: "Storage in JavaScript",
-    description:
-      " localStorage and sessionStorage.",
+    description: " localStorage and sessionStorage.",
   },
   {
     name: "JQuery",
@@ -36,8 +36,7 @@ const skills = [
   },
   {
     name: "Regular Expressions",
-    description:
-      " I know enough to look things up and create a working RegEx.",
+    description: " I know enough to look things up and create a working RegEx.",
   },
   {
     name: "Git version control",
@@ -47,19 +46,62 @@ const skills = [
 ]
 
 export default function JavaScript() {
+  const icon = useRef(null)
+  const title = useRef(null)
+  const paragraph = useRef(null)
+
+  useEffect(() => {
+    let tl = gsap.timeline()
+    tl.from(icon.current, {
+      yPercent: -120,
+      scrollTrigger: {
+        // Icon fades in from the top
+        trigger: icon.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(title.current, {
+      yPercent: -40,
+      scrollTrigger: {
+        // Title fades in from the top
+        trigger: title.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(paragraph.current, {
+      yPercent: 40,
+      scrollTrigger: {
+        // Paragraph fades in from the bottom
+        trigger: paragraph.current,
+        start: "top 75%",
+        end: "center 100%",
+        scrub: 1.5,
+      },
+    })
+  }, [])
+
   return (
     <Wrapper>
       <InnerWrapper>
         <div>
-          <StaticImage
-            src="../images/js.svg"
-            alt="JS"
-            height={50}
-            layout="fixed"
-          />
-          <Title>JavaScript ES6</Title>
-          <Description>
-            I have used JavaScript for many years but I was not using it when the big changes happened with ES6 and the now common practice of arrow and higher order functions. I'm learning them quickly (and really enjoy them).
+          <div ref={icon}>
+            <StaticImage
+              src="../images/js.svg"
+              alt="JS"
+              height={50}
+              layout="fixed"
+            />
+          </div>
+          <Title ref={title}>JavaScript ES6</Title>
+          <Description ref={paragraph}>
+            I have used JavaScript for many years but I was not using it when
+            the big changes happened with ES6 and the now common practice of
+            arrow and higher order functions. I'm learning them quickly (and
+            really enjoy them).
           </Description>
         </div>
         <SkillsWrapper>

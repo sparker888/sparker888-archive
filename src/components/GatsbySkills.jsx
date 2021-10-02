@@ -1,7 +1,10 @@
 import tw, { css } from "twin.macro"
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { CheckIcon } from "@heroicons/react/outline"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 const skills = [
   {
@@ -47,19 +50,64 @@ const skills = [
 ]
 
 export default function GatsbySkills() {
+
+  const icon3 = useRef(null)
+  const title3 = useRef(null)
+  const paragraph3 = useRef(null)
+
+  useEffect(() => {
+    let tl = gsap.timeline()
+    tl.from(icon3.current, {
+      yPercent: -120,
+      scrollTrigger: {
+        // Icon fades in from the top
+        trigger: icon3.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(title3.current, {
+      yPercent: -40,
+      scrollTrigger: {
+        // Title fades in from the top
+        trigger: title3.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(paragraph3.current, {
+      yPercent: 40,
+      scrollTrigger: {
+        // Paragraph fades in from the bottom
+        trigger: paragraph3.current,
+        start: "top 75%",
+        end: "center 100%",
+        scrub: 1.5,
+      },
+    })
+  }, [])
+
   return (
     <Wrapper>
       <InnerWrapper>
         <div>
-          <StaticImage
-            src="../images/gatsby.svg"
-            alt="JS"
-            height={50}
-            layout="fixed"
-          />
-          <Title>GatsbyJS</Title>
-          <Description>
-            Having used other static site tools in the past, I consider GatsbyJS to be in another category. This system of using React is simply amazing in terms of the quality and number of plugins that make difficult React configurations trivial. Gatsby has a huge future and I'm all in with the community.
+          <div ref={icon3}>
+            <StaticImage
+              src="../images/gatsby.svg"
+              alt="JS"
+              height={50}
+              layout="fixed"
+            />
+          </div>
+          <Title ref={title3}>GatsbyJS</Title>
+          <Description ref={paragraph3}>
+            Having used other static site tools in the past, I consider GatsbyJS
+            to be in another category. This system of using React is simply
+            amazing in terms of the quality and number of plugins that make
+            difficult React configurations trivial. Gatsby has a huge future and
+            I'm all in with the community.
           </Description>
         </div>
         <SkillsWrapper>

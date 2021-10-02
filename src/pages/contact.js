@@ -1,10 +1,13 @@
 import tw, { styled } from "twin.macro"
-import React, { useState } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import Layout from "../layouts/Layout"
 import { navigate, graphql, useStaticQuery } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
 import { BgImage } from "gbimage-bridge"
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 // This function encodes the captured form data in the format that Netlify's backend requires
 function encode(data) {
@@ -60,6 +63,25 @@ const Contact = () => {
 
   const pluginImage = getImage(placeholderImage)
 
+  const headline = useRef(null)
+  const paragraph = useRef(null)
+
+  useEffect(() => {
+    let tl = gsap.timeline()
+    tl.fromTo(
+      headline.current,
+      { x: -100, y: 0, opacity: 0 },
+      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
+      "<"
+    ) // bring in headline from the left
+    tl.fromTo(
+      paragraph.current,
+      { x: 100, y: 0, opacity: 0 },
+      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
+      "<"
+    ) // bring in paragraph from the right
+  }, [])
+
   return (
     <StyledBgImage image={pluginImage}>
     <Layout>
@@ -68,8 +90,8 @@ const Contact = () => {
         <OuterHeaderWrap>
           <InnerHeaderWrap>
             <HeaderContentWrap>
-              <HeaderH1>Get in touch</HeaderH1>
-              <HeaderP>
+              <HeaderH1 ref={headline}>Get in touch</HeaderH1>
+              <HeaderP ref={paragraph}>
                 Thanks for reaching out. If you would prefer to schedule a
                 30-minute phone or zoom call, please{" "}
                 <Span href="https://calendly.com/sparker888/" target="_blank">

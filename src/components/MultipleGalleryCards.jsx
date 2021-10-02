@@ -1,10 +1,13 @@
 import tw from "twin.macro"
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
 import { BgImage } from "gbimage-bridge"
 import PropTypes from "prop-types"
 import SingleGalleryCard from "./SingleGalleryCard"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 const MultipleGalleryCards
  = ({ items }) => {
@@ -27,6 +30,33 @@ const MultipleGalleryCards
 
   const pluginImage = getImage(placeholderImage)
 
+  const headline1 = useRef(null)
+  const headline2 = useRef(null)
+
+  useEffect(() => {
+    let tl = gsap.timeline({ defaults: { opacity: 0 } })
+    tl.from(headline1.current, {
+      xPercent: -5,
+      scrollTrigger: {
+        // Headline 1 fades in from the left
+        trigger: headline1.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(headline2.current, {
+      xPercent: 5,
+      scrollTrigger: {
+        // Headline 2 fades in from the right
+        trigger: headline2.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    }) 
+  }, [])
+
   return (
     <Container>
       <StyledBgImage image={pluginImage}>
@@ -36,10 +66,10 @@ const MultipleGalleryCards
           </Inset>
           <InnerWrapper>
             <TitleWrapper>
-              <H2>
+              <H2 ref={headline1}>
                 My Featured Galleries
               </H2>
-              <P>
+              <P ref={headline2}>
                 My kit includes several Sony Alpha cameras and both studio and travel gear for architectural, food and portraiture work.
               </P>
             </TitleWrapper>
@@ -87,10 +117,10 @@ const TitleWrapper = tw.div`
 text-center
 `
 const H2 = tw.h2`
-text-3xl tracking-tight font-extrabold text-fogra sm:text-4xl
+text-3xl tracking-tight font-extrabold text-amber-dark sm:text-4xl
 `
 const P = tw.p`
-mt-3 max-w-2xl mx-auto text-xl text-kobe sm:mt-4
+mt-3 max-w-2xl mx-auto text-xl text-almond sm:mt-4
 `
 const CardsWrapper = tw.div`
 mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none

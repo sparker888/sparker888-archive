@@ -1,7 +1,10 @@
 import tw, { css } from "twin.macro"
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { CheckIcon } from "@heroicons/react/outline"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 const skills = [
   {
@@ -29,23 +32,67 @@ const skills = [
     description:
       " Currently, I'm learning more about the GraphQL specification, Schemas and Types.",
   },
-
 ]
 
 export default function GraphqlSkills() {
+
+  const icon4 = useRef(null)
+  const title4 = useRef(null)
+  const paragraph4 = useRef(null)
+
+  useEffect(() => {
+    let tl = gsap.timeline()
+    tl.from(icon4.current, {
+      yPercent: -120,
+      scrollTrigger: {
+        // Icon fades in from the top
+        trigger: icon4.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(title4.current, {
+      yPercent: -40,
+      scrollTrigger: {
+        // Title fades in from the top
+        trigger: title4.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(paragraph4.current, {
+      yPercent: 40,
+      scrollTrigger: {
+        // Paragraph fades in from the bottom
+        trigger: paragraph4.current,
+        start: "top 75%",
+        end: "center 100%",
+        scrub: 1.5,
+      },
+    })
+  }, [])
+
   return (
     <Wrapper>
       <InnerWrapper>
         <div>
-          <StaticImage
-            src="../images/graphql.svg"
-            alt="JS"
-            height={50}
-            layout="fixed"
-          />
-          <Title>GraphQL</Title>
-          <Description>
-            GraphQL query language is new to me as it is to many developers. Fortunately, I have used it to query both local data and API data from third-party sources for several projects now and I'm very comfortable with Gatsby's GraphiQL interface, Gatsby plugins that expose available data and common GraphQL data structures.
+          <div ref={icon4}>
+            <StaticImage
+              src="../images/graphql.svg"
+              alt="JS"
+              height={50}
+              layout="fixed"
+            />
+          </div>
+          <Title ref={title4}>GraphQL</Title>
+          <Description ref={paragraph4}>
+            GraphQL query language is new to me as it is to many developers.
+            Fortunately, I have used it to query both local data and API data
+            from third-party sources for several projects now and I'm very
+            comfortable with Gatsby's GraphiQL interface, Gatsby plugins that
+            expose available data and common GraphQL data structures.
           </Description>
         </div>
         <SkillsWrapper>

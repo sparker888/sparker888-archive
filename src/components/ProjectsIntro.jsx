@@ -18,17 +18,17 @@ const ProjectsIntro = () => {
       { x: -100, y: 0, opacity: 0 },
       { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
       "<"
-    ) // bring in first line from left
+    ) // bring in first block from left
     tl.fromTo(
       headline2.current,
       { x: 100, y: 0, opacity: 0 },
       { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
       "<"
-    ) // bring in second line from left
+    ) // bring in second block from right
     tl.to(button.current, {
       xPercent: 35,
       scrollTrigger: {
-        // Projects button fades in from the right
+        // Projects button comes in from the left
         trigger: button.current,
         start: "top 75%",
         end: "center 100%",

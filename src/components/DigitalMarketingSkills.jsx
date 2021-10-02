@@ -1,7 +1,10 @@
 import tw, { css } from "twin.macro"
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { CheckIcon } from "@heroicons/react/outline"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 const skills = [
   {
@@ -47,19 +50,66 @@ const skills = [
 ]
 
 export default function GatsbySkills() {
+
+  const icon5 = useRef(null)
+  const title5 = useRef(null)
+  const paragraph5 = useRef(null)
+
+  useEffect(() => {
+    let tl = gsap.timeline()
+    tl.from(icon5.current, {
+      yPercent: -120,
+      scrollTrigger: {
+        // Icon fades in from the top
+        trigger: icon5.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(title5.current, {
+      yPercent: -40,
+      scrollTrigger: {
+        // Title fades in from the top
+        trigger: title5.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
+      },
+    })
+    tl.from(paragraph5.current, {
+      yPercent: 40,
+      scrollTrigger: {
+        // Paragraph fades in from the bottom
+        trigger: paragraph5.current,
+        start: "top 75%",
+        end: "center 100%",
+        scrub: 1.5,
+      },
+    })
+  }, [])
+
   return (
     <Wrapper id="digmarketer">
       <InnerWrapper>
         <div>
-          <StaticImage
-            src="../images/rocket-logo.svg"
-            alt="JS"
-            height={50}
-            layout="fixed"
-          />
-          <Title>Digital Marketing</Title>
-          <Description>
-            Throughout my career I have worked in Marketing Communications departments, in agencies, or running a Sales and Marketing department as a Director-level manager. I have seen many technologies come and go, but basic principles of success remain the same -- well-planned and executed campaigns to the right target with great creative and proper management tend to be the successful ones. I've managed and been involved in many.
+          <div ref={icon5}>
+            <StaticImage
+              src="../images/rocket-logo.svg"
+              alt="JS"
+              height={50}
+              layout="fixed"
+            />
+          </div>
+          <Title ref={title5}>Digital Marketing</Title>
+          <Description ref={paragraph5}>
+            Throughout my career I have worked in Marketing Communications
+            departments, in agencies, or running a Sales and Marketing
+            department as a Director-level manager. I have seen many
+            technologies come and go, but basic principles of success remain the
+            same -- well-planned and executed campaigns to the right target with
+            great creative and proper management tend to be the successful ones.
+            I've managed and been involved in many.
           </Description>
         </div>
         <SkillsWrapper>

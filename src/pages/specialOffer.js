@@ -1,10 +1,13 @@
 import tw, { styled } from "twin.macro"
-import React, { useState } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import Layout from "../layouts/Layout"
 import { navigate, graphql, useStaticQuery } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
 import { BgImage } from "gbimage-bridge"
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 // This function encodes the captured form data in the format that Netlify's backend requires
 function encode(data) {
@@ -60,6 +63,39 @@ const Contact = () => {
 
   const pluginImage = getImage(placeholderImage)
 
+  const headline = useRef(null)
+  const paragraph1 = useRef(null)
+  const paragraph2 = useRef(null)
+  const paragraph3 = useRef(null)
+
+  useEffect(() => {
+    let tl = gsap.timeline()
+    tl.fromTo(
+      headline.current,
+      { x: -100, y: 0, opacity: 0 },
+      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
+      "<"
+    ) // bring in headline from the left
+    tl.fromTo(
+      paragraph1.current,
+      { x: 100, y: 0, opacity: 0 },
+      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
+      "<"
+    ) // bring in paragraph from the right
+    tl.fromTo(
+      paragraph2.current,
+      { x: 100, y: 0, opacity: 0 },
+      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
+      "<"
+    ) // bring in paragraph from the right
+    tl.fromTo(
+      paragraph3.current,
+      { x: 100, y: 0, opacity: 0 },
+      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
+      "<"
+    ) // bring in paragraph from the right
+  }, [])
+
   return (
     <StyledBgImage image={pluginImage}>
     <Layout>
@@ -68,16 +104,16 @@ const Contact = () => {
         <OuterHeaderWrap>
           <InnerHeaderWrap>
             <HeaderContentWrap>
-              <HeaderH1>20% OFF a Full Site Design & Build</HeaderH1>
-              <HeaderP>
+              <HeaderH1 ref={headline}>20% OFF a Full Site Design & Build</HeaderH1>
+              <HeaderP ref={paragraph1}>
                 This offer will be available to the first three cutomers that{" "}
                 <Span href="https://calendly.com/sparker888/" target="_blank">
                   {" "}
                   book a time on my calendar
                 </Span>
                 . The project I envision for this discount is a straightforward four-to-six-page website with a blog. 
-                <HeaderP>I'll work with you on the corporate branding and message as well as assist with imagery and photography. These media will be separate costs. Either you can provide, or I can provide photography and suggest graphics. Many graphics we can get for free though. </HeaderP>
-                <HeaderP>The site will include a feedback/contact page for you as well as Google Analytics with a monthly report automatically emailed to you. The typical cost is $2,500-$3,500. After we have our 30-minute consultation, I'll provide a proposal within 48 hours that details everything and provides the discount. Typical turnaround is 4-6 weeks.
+                <HeaderP ref={paragraph2}>I'll work with you on the corporate branding and message as well as assist with imagery and photography. These media will be separate costs. Either you can provide, or I can provide photography and suggest graphics. Many graphics we can get for free though. </HeaderP>
+                <HeaderP ref={paragraph3}>The site will include a feedback/contact page for you as well as Google Analytics with a monthly report automatically emailed to you. The typical cost is $2,500-$3,500. After we have our 30-minute consultation, I'll provide a proposal within 48 hours that details everything and provides the discount. Typical turnaround is 4-6 weeks.
                 </HeaderP>
               </HeaderP>
             </HeaderContentWrap>
