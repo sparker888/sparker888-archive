@@ -17,10 +17,10 @@ const Intro = () => {
     let tl = gsap.timeline()
     tl.fromTo(
       logo.current,
-      { xPercent: 5, yPercent: -10 },
+      { xPercent: 0, yPercent: 0 },
       {
-        xPercent: -5,
-        yPercent: -5,
+        xPercent: 15,
+        yPercent: -15,
         delay: 1,
         duration: 8,
         repeat: -1,
