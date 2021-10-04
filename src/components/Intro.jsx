@@ -8,8 +8,8 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Intro = () => {
   let logo = useRef(null)
-  let hand = useRef(null)
   let headline1 = useRef(null)
+  let headline2 = useRef(null)
   const myGallery = useRef(null)
   const myProjects = useRef(null)
 
@@ -31,13 +31,13 @@ const Intro = () => {
       "<"
     ) // move spaceship up and down in a loop
     tl.fromTo(
-      hand.current,
+      headline1.current,
       { x: -100, y: 0, opacity: 0 },
       { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
       "<"
     ) // bring in first line from left
     tl.fromTo(
-      headline1.current,
+      headline2.current,
       { x: 100, y: 0, opacity: 0 },
       { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
       "<"
@@ -68,12 +68,12 @@ const Intro = () => {
     <Main>
       <LeftBlock>
         <BlockWrapper>
-          <H1>
-            <Span1 ref={hand}>👋🏼 Hey!</Span1>{" "}
-            <Span2 ref={headline1}>I&#8217;m Steve.</Span2>{" "}
+          <H1 ref={headline1}>
+            <Span1>👋🏼 Hey!</Span1>{" "}
+            <Span2>I&#8217;m Steve.</Span2>{" "}
             <Span3>I build high-performance websites.</Span3>
           </H1>
-          <H3>
+          <H3 ref={headline2}>
             <Span6 to="/skills/">My skills</Span6> with modern development
             languages enable me create sites that are lightning fast. They flow
             smoothly for users, rank highly on Google, and outperform WordPress

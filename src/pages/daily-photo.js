@@ -1,4 +1,4 @@
-import tw, { styled } from "twin.macro"
+import tw, { styled, css } from "twin.macro"
 import React, { useEffect, useRef } from "react"
 import { graphql, useStaticQuery } from 'gatsby'
 import { getImage } from 'gatsby-plugin-image';
@@ -63,7 +63,11 @@ const DailyPhoto = () => {
         <H2>
           <Span ref={headline1}>Kahuna Nui Hale Kealohalani Makua</Span>
           <Span ref={headline2}>“Love all you see, including yourself.”</Span>
-          <Span ref={headline3}>— Hale Makua</Span>
+          <Span ref={headline3} css={css`
+                      text-align: right;
+                      margin-top: 2rem;
+                      margin-right: 2rem;
+                    `}>— Hale Makua</Span>
         </H2>
       </InnerWrapper>
     </OuterWrapper>
