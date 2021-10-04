@@ -57,7 +57,7 @@ const Sparker = () => {
     tl.from(bodyCopy1.current, {
       xPercent: 15,
       scrollTrigger: {
-        // Gallery button fades in from the right
+        // Middle line fades in from the right
         trigger: bodyCopy1.current,
         start: "top 75%",
         end: "top center",
@@ -67,7 +67,7 @@ const Sparker = () => {
     tl.from(bodyCopy2.current, {
       xPercent: 20,
       scrollTrigger: {
-        // Gallery button fades in from the right
+        // Bottom line fades in from the right
         trigger: bodyCopy2.current,
         start: "top 75%",
         end: "top center",
@@ -77,7 +77,7 @@ const Sparker = () => {
     tl.from(button.current, {
       xPercent: 25,
       scrollTrigger: {
-        // Gallery button fades in from the right
+        // Button fades in from the right
         trigger: button.current,
         start: "top 75%",
         end: "top center",

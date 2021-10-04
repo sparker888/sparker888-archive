@@ -1,9 +1,12 @@
 import tw, { styled } from "twin.macro"
-import React from 'react'
+import React, { useEffect, useRef } from "react"
 import { graphql, useStaticQuery } from 'gatsby'
 import { getImage } from 'gatsby-plugin-image';
 import { BgImage } from 'gbimage-bridge';
 import Layout from '../layouts/Layout';
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 const DailyPhoto = () => {
   const { placeholderImage123 } = useStaticQuery(
@@ -26,6 +29,31 @@ const DailyPhoto = () => {
   const StyledBgImage = tw(BgImage)`
   min-h-screen
   `
+  let headline1 = useRef(null)
+  let headline2 = useRef(null)
+  let headline3 = useRef(null)
+
+  useEffect(() => {
+    let tl = gsap.timeline()
+    tl.fromTo(
+      headline1.current,
+      { x: -100, y: 0, opacity: 0 },
+      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
+      "<"
+    ) // bring in first headline from left
+    tl.fromTo(
+      headline2.current,
+      { x: 100, y: 0, opacity: 0 },
+      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
+      "<"
+    ) // bring in second headline from right
+    tl.fromTo(
+      headline3.current,
+      { x: 0, y: 100, opacity: 0 },
+      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
+      "<"
+    ) // bring in second headline from right
+  }, [])
 
   return (
     <Layout>
@@ -33,9 +61,9 @@ const DailyPhoto = () => {
       <OuterWrapper>
       <InnerWrapper>
         <H2>
-          <Span>Kahuna Nui Hale Kealohalani Makua</Span>
-          <Span>“Love all you see, including yourself.”</Span>
-          <Span>— Hale Makua</Span>
+          <Span ref={headline1}>Kahuna Nui Hale Kealohalani Makua</Span>
+          <Span ref={headline2}>“Love all you see, including yourself.”</Span>
+          <Span ref={headline3}>— Hale Makua</Span>
         </H2>
       </InnerWrapper>
     </OuterWrapper>
