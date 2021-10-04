@@ -106,15 +106,15 @@ const Sparker = () => {
             <BottomSection>
               <ContentWrapper>
                 <H2 id="join-heading" ref={headline}>
-                  Looking for a talented Web and Digital Marketing professional?
+                  Looking for a talented Frontend Web Developer with a marketing communications background?
                 </H2>
                 <P ref={bodyCopy1}>
                   I've worked the Web since 1995 with major brands, small
                   businesses and talented entrepreneurs. My teams and I have had
-                  great success -- driving record traffic and sales revenue.
+                  great success creating sites that driving record traffic and sales revenue.
                 </P>
                 <P ref={bodyCopy2}>
-                  I would appreciate your consideration for your next project or
+                  I would appreciate your consideration for your next digital project or
                   campaign. If you have important business goals to achieve
                   online, I can help you and your team make it happen!
                 </P>
