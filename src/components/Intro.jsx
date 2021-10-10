@@ -75,7 +75,7 @@ const Intro = () => {
           </H1>
           <H3 ref={headline2}>
             <Span6 to="/skills/">My skills</Span6> with modern development
-            languages enable me create sites that are lightning fast. They flow
+            languages enable me to create sites that are lightning fast. They flow
             smoothly for users, rank highly on Google, and outperform WordPress
             sites.
           </H3>
