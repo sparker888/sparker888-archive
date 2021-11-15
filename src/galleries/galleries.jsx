@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 import Seo from "../components/Seo"
 import { Link, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import SimpleReactLightboxPro, { SRLWrapper } from "simple-react-lightbox-pro"
+import SimpleReactLightboxPro, { SRLWrapper } from "simple-react-lightbox"
 
 const Gallery = (props) => {
   const {

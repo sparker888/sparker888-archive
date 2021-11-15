@@ -10,7 +10,7 @@ Here's [why it's important](https://gravitaldigital.com/blog/googles-biggest-alg
 
 I'm a 🚀 Space, 🐬 Sea and 🚗 Car Geek. I'm passionate about 📸 photography and 🖥️ website design and development.
 
-*🚧 NOTE: As of October 4, 2021 this site is still under construction. I'm just putting the final polish on now. 🚧*
+*🚧 NOTE: As of November 15, 2021 this site is still under construction. I'm just putting the final polish on now. 🚧*
 
 This is the README.md for my site that also serves as a Gatsby 3.x starter repository bringing together the magic of [Tailwindcss](https://tailwindcss.com/) with [twin](https://github.com/ben-rogerson/twin.macro) and the super animation powers of [GSAP](https://greensock.com/). The project uses a core set of modern [Gatsby plugins](https://www.gatsbyjs.com/plugins) as listed below. I'm also experimenting with [Simple React lightbox](https://simple-react-lightbox.dev/).
 
@@ -58,7 +58,7 @@ For more details, see [this Tuts](https://webdesign.tutsplus.com/articles/an-int
 
 **Current Status as of October 4, 2021 - the site is still under construction, but I'm putting the final polish on now.** 
 
-sparker888-tailwindcss-starter a work in progress that started 8-18-21. I plan to have it completed on 10-15-21.
+sparker888-tailwindcss-starter a work in progress that started 8-18-21. I plan to have it completed on 11-15-21.
 
 This repo started with `gatsby init` and I added and configured the following plugins (if not already part of the initial install):
 
