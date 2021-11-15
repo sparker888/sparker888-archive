@@ -32,13 +32,13 @@ const Intro = () => {
     ) // move spaceship up and down in a loop
     tl.fromTo(
       headline1.current,
-      { x: -100, y: 0, opacity: 100 },
+      { x: -100, y: 0, opacity: 0 },
       { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
       "<"
     ) // bring in first line from left
     tl.fromTo(
       headline2.current,
-      { x: 100, y: 0, opacity: 100 },
+      { x: 100, y: 0, opacity: 0 },
       { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
       "<"
     ) // bring in second line from left
