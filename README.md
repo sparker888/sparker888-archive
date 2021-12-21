@@ -10,7 +10,7 @@ Here's [why it's important](https://gravitaldigital.com/blog/googles-biggest-alg
 
 I'm a 🚀 Space, 🐬 Sea and 🚗 Car Geek. I'm passionate about 📸 photography and 🖥️ website design and development.
 
-*🚧 NOTE: As of December 2021 this site is under construction. I'm just putting the final polish on now, but I have to change out Simple React Lighthouse and the developer had to shut the pro version down for the forseeable future. 🚧*
+*🚧 NOTE: As of December 2021 this site is under construction. I'm just putting the final polish on now, but I have to change out Simple React Lighthouse because the developer had a family issue and shut the pro version down for the forseeable future. Hit me up if you have a good lightbox solution for React/Gatsby. 🚧*
 
 This is the README.md for my site that also serves as a Gatsby 3.x starter repository bringing together the magic of [Tailwindcss](https://tailwindcss.com/) with [twin](https://github.com/ben-rogerson/twin.macro) and the super animation powers of [GSAP](https://greensock.com/). The project uses a core set of modern [Gatsby plugins](https://www.gatsbyjs.com/plugins) as listed below. I'm also experimenting with [Simple React lightbox](https://simple-react-lightbox.dev/).
 
