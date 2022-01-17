@@ -20,10 +20,10 @@ module.exports = {
       gravital: "https://gravitaldigital.com/",
     },
     locale: "en",
-    title: "Stephen Parker | Frontend Web Developer and Photographer",
-    titleTemplate: "Stephen Parker | Frontend Developer and Photographer",
+    title: "Stephen Parker | Front-end Web Developer and Photographer",
+    titleTemplate: "Stephen Parker | Front-end Web Developer and Photographer",
     description:
-      "Lightning-fast websites that leave WordPress in the dust.",
+      "Lightning-fast websites by sparker888 and Gatsby.",
     siteUrl: "https://www.sparker888.com", // No trailing slash allowed!
     twitterUsername: "@sparker888",
     publicURL: "/sparker888-social-image.jpg", // This will be the default 'social' image for social media shares (in the static folder)
