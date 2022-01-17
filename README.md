@@ -62,7 +62,7 @@ For more details, see [this Tuts](https://webdesign.tutsplus.com/articles/an-int
 
 **Current Status as of January 17, 2022 - the site is still under construction, but I'm putting the final polish on now.** 
 
-sparker888-tailwindcss-starter a work in progress that started 8-18-21 and it will be ready to clone around the first of the year.
+sparker888-tailwindcss-starter a work in progress that started 8-18-21 and it will be ready to clone around the first of February 2022.
 
 This repo started with `gatsby init` and I added and configured the following plugins (if not already part of the initial install):
 
