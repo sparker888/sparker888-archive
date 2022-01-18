@@ -76,8 +76,7 @@ const Intro = () => {
           <H3 ref={headline2}>
             <Span6 to="/skills/">My skills</Span6> with modern development
             languages enable me to create sites that are lightning fast. They flow
-            smoothly for users, rank highly on Google, and outperform WordPress
-            sites.
+            smoothly for users, rank highly on Google.
           </H3>
           <P>
             If you're here for the Gatsby Starter, take a look around. The
@@ -88,10 +87,9 @@ const Intro = () => {
             . Please note that I still have a few things to finish.
           </P>
           <P>
-            The website you are looking at now is my latest project. The process
-            inspired the site's first article:{" "}
-            <Span5 to="/blog/sparker888-gatsby-and-mdx-like-blogging-on-steroids">
-              Gatsby and MDX: Like blogging on steroids
+            Check out my latest article:{" "}
+            <Span5 to="/blog/a-new-year-a-new-drone-dji-mavic3">
+            A New Year, a New Drone — My DJI Mavic 3
             </Span5>
             .
           </P>
