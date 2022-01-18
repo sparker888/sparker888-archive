@@ -75,8 +75,7 @@ const Intro = () => {
           </H1>
           <H3 ref={headline2}>
             <Span6 to="/skills/">My skills</Span6> with modern development
-            languages enable me to create sites that are lightning fast. They flow
-            smoothly for users, rank highly on Google.
+            languages enable me to create sites that are lightning fast. I'm now producing Gatsby sites that score consistently well on Google Lighthouse.
           </H3>
           <P>
             If you're here for the Gatsby Starter, take a look around. The
