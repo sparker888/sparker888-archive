@@ -75,15 +75,15 @@ const Intro = () => {
           </H1>
           <H3 ref={headline2}>
             <Span6 to="/skills/">My skills</Span6> with modern development
-            languages enable me to create sites that are lightning fast. I'm now producing Gatsby sites that score consistently well on Google Lighthouse.
+            allow me to produce Gatsby sites that score consistently well on Google Lighthouse. <Span6 to="/contact/">Do you want to rank?</Span6>
           </H3>
           <P>
             If you're here for the Gatsby Starter, take a look around. The
-            repository for this website is{" "}
+            repository is{" "}
             <Span4 href="https://github.com/sparker888" target="_blank">
               here
             </Span4>
-            . Please note that I still have a few things to finish.
+            . I still have a few things to finish up.
           </P>
           <P>
             Check out my latest article:{" "}
