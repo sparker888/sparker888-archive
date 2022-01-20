@@ -106,17 +106,17 @@ const Sparker = () => {
             <BottomSection>
               <ContentWrapper>
                 <H2 id="join-heading" ref={headline}>
-                  Looking for a talented Frontend Web Developer with a marketing background?
+                  Looking for a developer that knows the power of Jamstack and SEO?
                 </H2>
                 <P ref={bodyCopy1}>
                   I've worked the Web since 1995 with major brands, small
                   businesses and talented entrepreneurs. My teams and I have had
-                  great success creating sites that drive record traffic and sales revenue.
+                  great success creating sites that drive traffic and conversions.
                 </P>
                 <P ref={bodyCopy2}>
-                  I would appreciate your consideration for your next digital project or
-                  campaign. If you have important business goals to achieve
-                  online, I can help you and your team make it happen!
+                  I'm now putting this knowledge and experience into promoting
+                  GatsbyJS as a proven solution for headless and decoupled tech
+                  stacks that beat the competition with competitive rankings.
                 </P>
                 <CtaLink to="/contact/" ref={button}>
                   Contact Me
