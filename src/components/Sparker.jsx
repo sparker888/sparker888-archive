@@ -116,7 +116,7 @@ const Sparker = () => {
                 <P ref={bodyCopy2}>
                   I'm now putting this knowledge and experience into promoting
                   GatsbyJS as a proven solution for headless and decoupled tech
-                  stacks that beat the competition with competitive rankings.
+                  stacks that beat the competition in highly-competitive SERPs.
                 </P>
                 <CtaLink to="/contact/" ref={button}>
                   Contact Me
