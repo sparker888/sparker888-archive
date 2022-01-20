@@ -47,13 +47,13 @@ const ProjectsIntro = () => {
             <Span1>✨</Span1>
           </H1>
           <H3 ref={headline2}>
-            This year I built an amazing studio! Thanks to a lot of cool technology and <Span6 to="/skills/" >improved skills</Span6>, I&#8217;m helping more businesses meet their goals.
+            Check out my amazing studio! Thanks to a lot of cool technology and <Span6 to="/skills/" >improved skills</Span6>, I&#8217;m helping more businesses succeed digitally.
           </H3>
           <P>
-            For 25 years, I have worked with some fantastic teams to build and manage digital properties for some of the largest brands, smallest businesses, brightest entrepreneurs and <Span4 href="https://sparker888.github.io/eve_ships/" target="_blank">just for fun</Span4>. 
+            For 25 years, I have worked with some fantastic teams to build and manage digital properties for large brands, small businesses, bright entrepreneurs and <Span4 href="https://sparker888.github.io/eve_ships/" target="_blank">just for fun</Span4>. 
           </P>
           <P>
-            This year,  I've been able to help clients get more visibility on the Web and score highly for <Span4 href="https://gravitaldigital.com/blog/navigating-google-core-web-vitals-report/" target="_blank">Google's new algorithm measures</Span4> to help them move up in the search engine rankings for more traffic and sales. 
+            Now, with this studio, I'm able to combine my love for web development with my passion for photography and videography to create fantastic online experiences!
           </P>
           <ButtonWrap>
             <Button1 ref={button}>
