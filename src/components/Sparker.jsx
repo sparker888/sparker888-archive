@@ -106,7 +106,7 @@ const Sparker = () => {
             <BottomSection>
               <ContentWrapper>
                 <H2 id="join-heading" ref={headline}>
-                  Looking for a developer that knows the power of Jamstack and SEO?
+                  Looking for a modern web developer that understands marketing, media and search engines?
                 </H2>
                 <P ref={bodyCopy1}>
                   I've worked the Web since 1995 with major brands, small
@@ -115,8 +115,8 @@ const Sparker = () => {
                 </P>
                 <P ref={bodyCopy2}>
                   I'm now putting this knowledge and experience into promoting
-                  GatsbyJS as a proven solution for headless and decoupled tech
-                  stacks that beat the competition in highly-competitive SERPs.
+                  GatsbyJS as a proven solution for companies in highly-competitive 
+                  industries where SERP rankings, accessibility and usability are critical.
                 </P>
                 <CtaLink to="/contact/" ref={button}>
                   Contact Me

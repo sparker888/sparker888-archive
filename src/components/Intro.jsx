@@ -71,19 +71,14 @@ const Intro = () => {
           <H1 ref={headline1}>
             <Span1>👋🏼 Hey!</Span1>{" "}
             <Span2>I&#8217;m Steve.</Span2>{" "}
-            <Span3>I build high-performance websites.</Span3>
+            <Span3>I build sites that win competitive rankings.</Span3>
           </H1>
           <H3 ref={headline2}>
-            <Span6 to="/skills/">My skills</Span6> with modern development
-            allow me to produce Gatsby sites that score consistently well on Google Lighthouse. <Span6 to="/contact/">Do you want to rank?</Span6>
+            My expertise with <Span6 to="/skills/">modern development</Span6>{" "}
+            and Gatsby enable me to produce sites that score highly on Google Lighthouse.  
           </H3>
           <P>
-            If you're here for the Gatsby Starter, take a look around. The
-            repository is{" "}
-            <Span4 href="https://github.com/sparker888" target="_blank">
-              here
-            </Span4>
-            . I still have a few things to finish up.
+            How are your rankings? I'm happy to <Span6 to="/contact/">run a report</Span6> and review your website's Lighthouse scores and top Google keyword rankings.
           </P>
           <P>
             Check out my latest article:{" "}
@@ -94,10 +89,10 @@ const Intro = () => {
           </P>
           <ButtonWrap>
             <Button1 ref={myGallery}>
-              <Link1 to="/gallery/">My Gallery</Link1>
+              <Link1 to="/gallery/">Photo Gallery</Link1>
             </Button1>
             <Button2 ref={myProjects}>
-              <Link2 to="/projects/">My Projects</Link2>
+              <Link2 to="/projects/">Web Projects</Link2>
             </Button2>
           </ButtonWrap>
         </BlockWrapper>
