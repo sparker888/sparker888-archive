@@ -39,10 +39,10 @@ const ArticlesIntro = () => {
             <Span3>marketing, drones and more!</Span3>{" "}
           </H1>
           <P>
-            Here on my blog, my goal is to share some of the coolest things I'm working with in the development world. I've also collaborated with teams to market products and services online, so I'll share some insights on successful digital marketing. Occasionally, you might get <Span4 href="https://i.imgur.com/ElNzCqq.png" target="_blank">cool art</Span4> and weird memes. 
+            Here on my blog, my goal is to share some of the coolest things that can be done with Jamstack tools and services. I'm collaborating with other Gatsby developers, so I'll share some insights on projects we work on and news in the community. Occasionally, I'll also publish some <Span4 href="https://i.imgur.com/ElNzCqq.png" target="_blank">cool art</Span4> and weird memes. 
           </P>
           <P>
-            Having grown up on the Space Coast of Florida, I have a passion for technology, space and the ocean. I grew up as a space baby with an engineer for a father so I spent a lot of time working on cars, watching NASA launches, and sailing and surfing.  I'll share some stories and beautiful images of Florida -- and Hawaii too! Aloha!
+            Having grown up on the Space Coast of Florida, I have a passion for technology, space and the ocean. I grew up as a space baby with an engineer for a father so I spent a lot of time working on cars, watching NASA launches, and sailing and surfing.  I'll share some stories and beautiful images of Florida, and one of my favorite destinations -- Hawaii!!
           </P>
           <ButtonWrap>
             <Button1 ref={button}>

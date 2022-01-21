@@ -70,7 +70,7 @@ const MultipleGalleryCards
                 My Featured Galleries
               </H2>
               <P ref={headline2}>
-                My kit includes several Sony Alpha cameras and both studio and travel gear for architectural, food and portraiture work.
+                My kit includes several Sony Alpha cameras and two drones including the new DJI Mavic 3 that features a Hasselblad camera and 4K 60fps for fantastic slow motion video.
               </P>
             </TitleWrapper>
             <CardsWrapper>

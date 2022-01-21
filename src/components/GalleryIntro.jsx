@@ -46,10 +46,16 @@ const GalleryIntro = () => {
             <Span3>I&#8217;ve gone minimalist and lightweight!</Span3>
           </H1>
           <H3 ref={headline2}>
-            I&#8217;ve also stepped up my game as a professional photographer. I&#8217;m now a certified and insured <Span6 href="https://www.ppa.com/" target="_blank">PPA</Span6> member!
+          I&#8217;ve also stepped up my game again to become a commercial operator <Span6 href="https://www.faa.gov/uas/commercial_operators/" target="_blank">FAA-certified 107 sUAS</Span6> drone pilot!
           </H3>
           <P>
-            This year, I focused on light and portable for quick real estate, on-site, and outdoor shoots. The equipment includes a lighter camera -- the Sony a6600, a carbon fiber tripod, several light yet powerful flashes from Godox, and lightweight modifiers, backdrops and stands designed for travel. Here are a few of the results.
+            Last year, I focused on light and portable for efficient location shoots with the Sony a6600 and battery-powered lights. 
+          </P>
+          <P>
+            For 2022, I purchased <Span5 to="/blog/a-new-year-a-new-drone-dji-mavic3">the new DJI Mavic 3 </Span5>and passed the FAA pilot certification test to fly larger drones in restricted airspace. During the year, I'll be adding more aerial footage to the galleries below.
+          </P>
+          <P>
+            You can also see more of my work on <Span6 href="https://www.instagram.com/sparker808/" target="_blank">Instagram</Span6>.
           </P>
           <ButtonWrap>
             <Button1 ref={button}>
@@ -102,6 +108,9 @@ block inline text-fogra-light sm:text-4xl md:text-5xl lg:text-6xl
 `
 const Span3 = tw.span`
 block inline text-fogra-lightest sm:text-4xl md:text-5xl lg:text-6xl
+`
+const Span5 = styled(Link)`
+  ${tw`block inline text-kobe hover:text-amber`}
 `
 const Span6 = tw.a`
 text-fogra-lightest hover:text-amber

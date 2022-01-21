@@ -34,13 +34,13 @@ const Cta = () => {
       <OuterContentWrapper>
         <InnerContentWrapper>
           <SubTitle>
-            UI/UX React/Gatsby Developer & Photographer
+            Let's Do Something Great
           </SubTitle>
           <Title>
             Thanks for your consideration
           </Title>
           <Copy>
-            I&#8217;m always interested in supporting talented people and organizations that create amazing things. I can work virtually anywhere, and I'm available for on-site work in the Greater Orlando and Brevard area. 
+            I&#8217;m always interested in supporting talented people and organizations that create amazing things. I can work virtually anywhere, and I'm available for on-site work in the Greater Orlando / Space Coast area. 
           </Copy>
           <ButtonOuterWrap>
             <ButtonInnerWrap>
