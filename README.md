@@ -8,9 +8,9 @@ Here's [why it's important](https://gravitaldigital.com/blog/googles-biggest-alg
 
 ## Aloha 🤙 and thanks for stopping by.
 
-I'm a 🚀 Space, 🐬 Sea and 🚗 Car Geek. I'm passionate about 📸 photography and 🖥️ website design and development. My business is a Gatsby partner.
+I'm a Gatsby dev @GoGravital and an 🚁 FAA-certified drone pilot. My business is a 💜Gatsby partner.
 
-## 💡 Why I'm love using Gatsby + Tailwind + Twin
+## 💡 Why I love using Gatsby + Tailwind + Twin
 
 **Why Gatsby?**
 
