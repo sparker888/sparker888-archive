@@ -82,8 +82,8 @@ const Intro = () => {
           </P>
           <P>
             Check out my latest article:{" "}
-            <Span5 to="/blog/a-new-year-a-new-drone-dji-mavic3">
-            A New Year, a New Drone — My DJI Mavic 3
+            <Span5 to="/blog/quick-overviewo-of-astro-static-site-generator">
+            Meet Astro, a minimal static site generator
             </Span5>
             .
           </P>
