@@ -8,7 +8,7 @@ Here's [why it's important](https://gravitaldigital.com/blog/googles-biggest-alg
 
 ## Aloha 🤙 and thanks for stopping by.
 
-I'm a Gatsby dev @GoGravital and an 🚁 FAA-certified drone pilot. My business is a 💜Gatsby partner.
+I'm a React 💜 Gatsby dev @GoGravital • 🚁 FAA-certified drone pilot • 📸 PPA Photographer • and 🚀 Gamer.
 
 ## 💡 Why I love using Gatsby + Tailwind + Twin
 
