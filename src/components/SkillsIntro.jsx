@@ -79,8 +79,8 @@ const ProjectsIntro = () => {
               NEXT.js
             </Span4>
             <Span4 href="https://www.gatsbyjs.com/" target="_blank">
-            {" "}
-              and Gatsby
+            {" and "}
+              Gatsby
             </Span4>
             . I've also become familiar with using{" "}
             <Span4 href="https://graphql.org/" target="_blank">
