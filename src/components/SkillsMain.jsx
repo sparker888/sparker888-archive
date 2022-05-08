@@ -145,16 +145,16 @@ const SkillsMain = () => {
             </TechnologiesImageWrapper>
             <TechnologiesImageWrapper>
               <StaticImage
-                src="../images/react.svg"
-                alt="React"
+                src="../images/nextjs.svg"
+                alt="Next.js"
                 height={100}
                 layout="constrained"
               />
             </TechnologiesImageWrapper>
             <TechnologiesImageWrapper>
               <StaticImage
-                src="../images/nextjs.svg"
-                alt="Next.js"
+                src="../images/react.svg"
+                alt="React"
                 height={100}
                 layout="constrained"
               />
