@@ -63,6 +63,15 @@ module.exports = {
     "gatsby-plugin-styled-components",
     "gatsby-plugin-mdx-embed",
     {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        extensions: [`.md`, `.mdx`],
+        defaultLayouts: {
+          pages: path.join(__dirname, "./src/templates/pages.jsx"),
+        },
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
