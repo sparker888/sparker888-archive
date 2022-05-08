@@ -37,6 +37,9 @@ const Heroes = (props) => {
         scrub: 1.5,
       },
     })
+  }, [])
+    useEffect(() => {
+    let tl = gsap.timeline()
     tl.from(mySkills.current, {
       xPercent: -15,
       scrollTrigger: {
@@ -47,6 +50,9 @@ const Heroes = (props) => {
         scrub: 1.5,
       },
     })
+  }, [])
+    useEffect(() => {
+    let tl = gsap.timeline()
     tl.from(myProjects.current, {
       xPercent: 15,
       scrollTrigger: {
