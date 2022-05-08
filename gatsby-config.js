@@ -57,19 +57,9 @@ module.exports = {
         downloadLocal: true,
       },
     },
-    {
-      resolve: "gatsby-plugin-mdx",
-      options: {
-        extensions: [`.md`, `.mdx`],
-        defaultLayouts: {
-          pages: path.join(__dirname, "./src/templates/pages.jsx"),
-        },
-      },
-    },
     "gatsby-plugin-postcss",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    "gatsby-plugin-mdx-embed",
     "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-source-filesystem",
