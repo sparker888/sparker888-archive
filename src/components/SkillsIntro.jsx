@@ -74,13 +74,21 @@ const ProjectsIntro = () => {
             . His talk inspired me to jump back into the development world.
           </H3>
             <P>Since that time, I have learned React and become proficient with
-            <Span4 href="https://www.gatsbyjs.com/" target="_blank">
-              {" "}
-              Gatsby
+            {" "}
+            <Span4 href="https://nextjs.org/" target="_blank">
+              NEXT.js
             </Span4>
-            . I've enjoyed learning and using{" "}
+            <Span4 href="https://www.gatsbyjs.com/" target="_blank">
+            {" "}
+              and Gatsby
+            </Span4>
+            . I've also become familiar with using{" "}
             <Span4 href="https://graphql.org/" target="_blank">
               GraphQL
+            </Span4>
+            ,{" "}
+            <Span4 href="https://tailwindcss.com/" target="_blank">
+              Tailwind
             </Span4>
             ,{" "}
             <Span4 href="https://mdxjs.com/mdx/" target="_blank">

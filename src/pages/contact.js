@@ -74,6 +74,9 @@ const Contact = () => {
       { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
       "<"
     ) // bring in headline from the left
+  }, [])
+  useEffect(() => {
+    let tl = gsap.timeline()
     tl.fromTo(
       paragraph.current,
       { x: 100, y: 0, opacity: 0 },
