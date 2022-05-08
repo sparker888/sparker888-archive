@@ -12,3 +12,8 @@
     @apply text-fogra;
   }
 }
+@layer base {
+  body {
+    @apply bg-fogra;
+  }
+}

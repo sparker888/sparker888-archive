@@ -62,6 +62,9 @@ export default function ReactSkills() {
         scrub: 1.5,
       },
     })
+  }, [])
+  useEffect(() => {
+    let tl = gsap.timeline()
     tl.from(title2.current, {
       yPercent: -40,
       scrollTrigger: {
@@ -72,6 +75,9 @@ export default function ReactSkills() {
         scrub: 1.5,
       },
     })
+  }, [])
+  useEffect(() => {
+    let tl = gsap.timeline()  
     tl.from(paragraph2.current, {
       yPercent: 40,
       scrollTrigger: {

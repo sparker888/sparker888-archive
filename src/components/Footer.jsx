@@ -1,16 +1,15 @@
 import tw, { styled } from "twin.macro";
 import React from "react";
-import gatsbylogo from "../images/gatsby.svg";
-import tailwindlogo from "../images/tailwind.svg";
+import gravitallogo from "../images/gravital-icon.svg";
 
 export default function Example() {
   return (
     <FooterBar>
       <Wrapper>
         <ExternalLink
-          href="https://github.com/sparker888/sparker888"
+          href="https://gravitaldigital.com/"
         >
-          Use this site as a <InlineIcon src={gatsbylogo} alt="GatsbyJS"/> Gatsby + <InlineIcon src={tailwindlogo} alt="Tailwindcss"/> Tailwindcss + twin starter!
+          Need a site or app for your company? Visit <InlineIcon src={gravitallogo} alt="GatsbyJS"/> Gravital Digital!
         </ExternalLink>
 
         <SocialLinks>

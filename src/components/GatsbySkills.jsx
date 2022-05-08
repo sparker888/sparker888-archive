@@ -67,6 +67,9 @@ export default function GatsbySkills() {
         scrub: 1.5,
       },
     })
+  }, [])
+  useEffect(() => {
+    let tl = gsap.timeline()
     tl.from(title3.current, {
       yPercent: -40,
       scrollTrigger: {
@@ -77,6 +80,9 @@ export default function GatsbySkills() {
         scrub: 1.5,
       },
     })
+  }, [])
+  useEffect(() => {
+    let tl = gsap.timeline()  
     tl.from(paragraph3.current, {
       yPercent: 40,
       scrollTrigger: {

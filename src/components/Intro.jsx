@@ -30,18 +30,27 @@ const Intro = () => {
       },
       "<"
     ) // move spaceship up and down in a loop
+  }, [])
+  useEffect(() => {
+    let tl = gsap.timeline()
     tl.fromTo(
       headline1.current,
       { x: -100, y: 0, opacity: 0 },
       { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
       "<"
     ) // bring in first line from left
+  }, [])
+  useEffect(() => {
+    let tl = gsap.timeline()
     tl.fromTo(
       headline2.current,
       { x: 100, y: 0, opacity: 0 },
       { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
       "<"
     ) // bring in second line from left
+  }, [])
+  useEffect(() => {
+    let tl = gsap.timeline()
     tl.from(myGallery.current, {
       xPercent: -15,
       scrollTrigger: {
@@ -52,6 +61,9 @@ const Intro = () => {
         scrub: 1.5,
       },
     })
+  }, [])
+  useEffect(() => {
+    let tl = gsap.timeline()
     tl.from(myProjects.current, {
       xPercent: 15,
       scrollTrigger: {
@@ -62,7 +74,8 @@ const Intro = () => {
         scrub: 1.5,
       },
     })
-  }, [])
+}, [])
+  
 
   return (
     <Main>
@@ -71,14 +84,14 @@ const Intro = () => {
           <H1 ref={headline1}>
             <Span1>👋🏼 Hey!</Span1>{" "}
             <Span2>I&#8217;m Steve.</Span2>{" "}
-            <Span3>I build sites that win competitive rankings.</Span3>
+            <Span3>I build sites that are blazing fast.</Span3>
           </H1>
           <H3 ref={headline2}>
             My expertise with <Span6 to="/skills/">modern development</Span6>{" "}
-            and Gatsby enable me to produce sites that score highly on Google Lighthouse.  
+            and React enable me to create websites and apps that perform well and score highly on Google Lighthouse.  
           </H3>
           <P>
-            How are your rankings? I'm happy to <Span6 to="/contact/">run a report</Span6> and review your website's Lighthouse scores and top Google keyword rankings.
+            How good are your Google rankings and Lighthouse scores? I'm happy to <Span6 to="/contact/">run a report</Span6> and review your website's Lighthouse scores and Google search engine results.
           </P>
           <P>
             Check out my latest article:{" "}

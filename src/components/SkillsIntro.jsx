@@ -20,13 +20,19 @@ const ProjectsIntro = () => {
       { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
       "<"
     ) // bring in first block from left
+  }, [])
+  useEffect(() => {
+    let tl = gsap.timeline()
     tl.fromTo(
       headline2.current,
       { x: 100, y: 0, opacity: 0 },
       { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
       "<"
     ) // bring in second line from left
-    tl.from(developer.current, {
+  }, [])
+    useEffect(() => {
+      let tl = gsap.timeline()
+      tl.from(developer.current, {
       xPercent: -15,
       scrollTrigger: {
         // bring in second block from the right
@@ -36,7 +42,10 @@ const ProjectsIntro = () => {
         scrub: 1.5,
       },
     })
-    tl.from(marketer.current, {
+  }, [])
+    useEffect(() => {
+      let tl = gsap.timeline()
+     tl.from(marketer.current, {
       xPercent: 15,
       scrollTrigger: {
         // Projects button fades in from the right

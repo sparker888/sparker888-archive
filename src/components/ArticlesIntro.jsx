@@ -18,16 +18,19 @@ const ArticlesIntro = () => {
       { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
       "<"
     ) // bring in top block from left
-    tl.to(button.current, {
-      xPercent: 35,
+  }, [])
+  useEffect(() => {
+    let tl = gsap.timeline()
+    tl.from(button.current, {
+      xPercent: -150,
       scrollTrigger: {
-        // Projects button comes in from the left
+        // Projects button fades in from the right
         trigger: button.current,
         start: "top 75%",
-        end: "center 100%",
+        end: "top center",
         scrub: 1.5,
       },
-    })
+    }) 
   }, [])
 
   return (
@@ -46,7 +49,7 @@ const ArticlesIntro = () => {
           </P>
           <ButtonWrap>
             <Button1 ref={button}>
-              <Link1 to="../blog/sparker888-gatsby-and-mdx-like-blogging-on-steroids">Dive In!</Link1>
+              <Link1 to="../blog/quick-overviewo-of-astro-static-site-generator">Dive In!</Link1>
             </Button1>
               {/* <Button2>
                 <Link2 href="/blog">My Blog</Link2>
@@ -100,7 +103,7 @@ const P = tw.p`
 mt-3 max-w-md mx-auto font-serif text-xl text-fogra-light sm:text-xl md:mt-5 lg:mt-10 md:max-w-3xl
 `
 const ButtonWrap = tw.div`
-mt-10 sm:flex sm:justify-center lg:justify-start
+mt-10 sm:flex sm:justify-center lg:justify-end pr-10
 `
 const Button1 = tw.button`
 rounded-md shadow

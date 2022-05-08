@@ -19,20 +19,26 @@ const GalleryIntro = () => {
       { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
       "<"
     ) // bring in first block from left
+  }, [])
+    useEffect(() => {
+      let tl = gsap.timeline()
     tl.fromTo(
       headline2.current,
       { x: 100, y: 0, opacity: 0 },
       { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
       "<"
     ) // bring in second block from right
-    tl.to(button.current, {
-      xPercent: 35,
-      scrollTrigger: {
-        // Articles button comes in from the left
-        trigger: button.current,
-        start: "top 50%",
-        end: "center 100%",
-        scrub: 1.5,
+  }, [])
+    useEffect(() => {
+      let tl = gsap.timeline()
+      tl.from(button.current, {
+        xPercent: -150,
+        scrollTrigger: {
+          // Projects button fades in from the right
+          trigger: button.current,
+          start: "top 75%",
+          end: "top center",
+          scrub: 1.5,
       },
     })
   }, [])
@@ -119,7 +125,7 @@ const P = tw.p`
 mt-3 max-w-md mx-auto font-serif text-xl text-fogra-light sm:text-xl md:mt-5 lg:mt-10 md:max-w-3xl
 `
 const ButtonWrap = tw.div`
-mt-10 sm:flex sm:justify-center lg:justify-start
+mt-10 sm:flex sm:justify-center lg:justify-end pr-10
 `
 const Button1 = tw.button`
 rounded-md shadow

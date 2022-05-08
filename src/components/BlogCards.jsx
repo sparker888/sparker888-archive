@@ -44,7 +44,10 @@ const BlogCards = ({ items }) => {
         scrub: 1.5,
       },
     })
-    tl.from(headline2.current, {
+  }, [])
+    useEffect(() => {
+      let tl = gsap.timeline({ defaults: { opacity: 0 } })
+      tl.from(headline2.current, {
       xPercent: 5,
       scrollTrigger: {
         // Headline 2 fades in from the right

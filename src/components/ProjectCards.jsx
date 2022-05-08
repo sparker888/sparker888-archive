@@ -44,6 +44,9 @@ const ProjectCards = ({ items }) => {
         scrub: 1.5,
       },
     })
+  }, [])
+    useEffect(() => {
+    let tl = gsap.timeline({ defaults: { opacity: 0 } })   
     tl.from(headline2.current, {
       xPercent: 5,
       scrollTrigger: {

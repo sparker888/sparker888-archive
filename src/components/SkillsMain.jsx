@@ -42,6 +42,9 @@ const SkillsMain = () => {
         scrub: 1.5,
       },
     })
+  }, [])
+    useEffect(() => {
+    let tl = gsap.timeline({ defaults: { opacity: 0 } })    
     tl.from(headline2.current, {
       xPercent: 5,
       scrollTrigger: {
@@ -52,6 +55,9 @@ const SkillsMain = () => {
         scrub: 1.5,
       },
     }) 
+  }, [])
+    useEffect(() => {
+    let tl = gsap.timeline({ defaults: { opacity: 0 } })
     tl.from(headline3.current, {
       xPercent: -5,
       scrollTrigger: {
@@ -62,6 +68,9 @@ const SkillsMain = () => {
         scrub: 1.5,
       },
     }) 
+  }, [])
+    useEffect(() => {
+    let tl = gsap.timeline({ defaults: { opacity: 0 } })
     tl.from(headline4.current, {
       xPercent: 5,
       scrollTrigger: {

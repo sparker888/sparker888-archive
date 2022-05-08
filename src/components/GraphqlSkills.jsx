@@ -52,6 +52,9 @@ export default function GraphqlSkills() {
         scrub: 1.5,
       },
     })
+  }, [])
+  useEffect(() => {
+    let tl = gsap.timeline()
     tl.from(title4.current, {
       yPercent: -40,
       scrollTrigger: {
@@ -62,6 +65,9 @@ export default function GraphqlSkills() {
         scrub: 1.5,
       },
     })
+  }, [])
+  useEffect(() => {
+    let tl = gsap.timeline()  
     tl.from(paragraph4.current, {
       yPercent: 40,
       scrollTrigger: {

@@ -35,7 +35,7 @@ const Sparker = () => {
   useEffect(() => {
     let tl = gsap.timeline()
     tl.from(portrait.current, {
-      xPercent: -10,
+      xPercent: -5,
       scrollTrigger: {
         // Portrait fades in from the left
         trigger: portrait.current,
@@ -44,8 +44,11 @@ const Sparker = () => {
         scrub: 1.5,
       },
     })
+  }, [])
+    useEffect(() => {
+    let tl = gsap.timeline()
     tl.from(headline.current, {
-      xPercent: 10,
+      xPercent: 5,
       scrollTrigger: {
         // Headline fades in from the right
         trigger: headline.current,
@@ -54,8 +57,11 @@ const Sparker = () => {
         scrub: 1.5,
       },
     })
+  }, [])
+    useEffect(() => {
+    let tl = gsap.timeline()
     tl.from(bodyCopy1.current, {
-      xPercent: 15,
+      xPercent: 8,
       scrollTrigger: {
         // Middle line fades in from the right
         trigger: bodyCopy1.current,
@@ -64,8 +70,11 @@ const Sparker = () => {
         scrub: 1.5,
       },
     })
+  }, [])
+    useEffect(() => {
+    let tl = gsap.timeline()
     tl.from(bodyCopy2.current, {
-      xPercent: 20,
+      xPercent: 11,
       scrollTrigger: {
         // Bottom line fades in from the right
         trigger: bodyCopy2.current,
@@ -74,8 +83,11 @@ const Sparker = () => {
         scrub: 1.5,
       },
     })
+  }, [])
+    useEffect(() => {
+    let tl = gsap.timeline()
     tl.from(button.current, {
-      xPercent: 25,
+      xPercent: 14,
       scrollTrigger: {
         // Button fades in from the right
         trigger: button.current,

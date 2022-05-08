@@ -61,7 +61,7 @@
     "mdx-embed": "0.0.19",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^14.0.2",
-    "postcss-preset-env": "^6.7.0",
+    "postcss-preset-env": "^7.5.0",
     "prism-react-renderer": "^1.2.1",
     "prismjs": "^1.26.0",
     "prop-types": "^15.8.1",
