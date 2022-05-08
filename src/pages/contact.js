@@ -231,19 +231,11 @@ const Contact = () => {
                 <Form
                   form
                   name="contact"
-                  id="bss-netlify-form"
+                  id="sparker888-contact-form"
                   method="POST"
                   onSubmit={handleSubmit}
-                  action="/"
-                  data-netlify="true"
-                  data-netlify-honeypot="bot-field"
+                  action="https://getform.io/f/57be50a0-c6ab-46e8-87fa-74979934caba"
                 >
-                  <input type="hidden" name="form-name" value="contact" />
-                  <p hidden>
-                    <label>
-                      Don’t fill this out: <input name="bot-field" />
-                    </label>
-                  </p>
                   <div>
                     <LabelFirstName htmlFor="first-name">
                       First name
