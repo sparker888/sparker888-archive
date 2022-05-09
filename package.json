@@ -36,6 +36,7 @@
     "@tailwindcss/aspect-ratio": "^0.2.2",
     "@tailwindcss/forms": "^0.3.4",
     "@tailwindcss/typography": "^0.4.1",
+    "axios": "^0.27.2",
     "dotenv": "^10.0.0",
     "gatsby": "^3.14.6",
     "gatsby-background-image": "^1.6.0",

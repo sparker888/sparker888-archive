@@ -1,5 +1,6 @@
 import tw, { styled } from "twin.macro"
 import React, { useState, useEffect, useRef } from "react"
+import axios from "axios";
 import Layout from "../layouts/Layout"
 import { navigate, graphql, useStaticQuery } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
@@ -9,39 +10,42 @@ import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
-// This function encodes the captured form data in the format that Netlify's backend requires
-function encode(data) {
-  return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-}
-
 const Contact = () => {
 
-  const [name, setName] = useState("")
-
+  const [serverState, setServerState] = useState({
+    submitting: false,
+    status: null
+  });
   const handleChange = (e) => {
-    setName({ ...name, [e.target.name]: e.target.value })
+    setServerState({ ...serverState, [e.target.serverState]: e.target.value })
   }
-
-  const handleSubmit = (event) => {
-    // Prevent the default onSubmit behavior
-    event.preventDefault();
-    // POST the encoded form with the content-type header that's required for a text submission
-    // Note that the header will be different for POSTing a file
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ 
-        "form-name": event.target.getAttribute("name"), 
-        ...name
-      })
-    })
-      // On success, redirect to the custom success page using Gatsby's `navigate` helper function
-      .then(() => navigate("/thank-you/"))
-      // On error, show the error in an alert
-      .catch(error => alert(error));
+  const handleServerResponse = (ok, msg, form) => {
+    setServerState({
+      submitting: false,
+      status: { ok, msg }
+    });
+    if (ok) {
+      navigate("/thank-you/");
+    }
   };
+  const handleOnSubmit = e => {
+    e.preventDefault();
+    const form = e.target;
+    setServerState({ submitting: true });
+    axios({
+      method: "post",
+      url: "https://getform.io/f/57be50a0-c6ab-46e8-87fa-74979934caba",
+      data: new FormData(form)
+    })
+      .then(r => {
+        handleServerResponse(true, "Thanks!", form);
+      })
+      .catch(r => {
+        handleServerResponse(false, r.response.data.error, form);
+      });
+  };
+
+
 
   const { placeholderImage } = useStaticQuery(
     graphql`
@@ -228,14 +232,7 @@ const Contact = () => {
               {/* Contact form */}
               <ContactFormWrap>
                 <FormTitle>Send me a message</FormTitle>
-                <Form
-                  form
-                  name="contact"
-                  id="sparker888-contact-form"
-                  method="POST"
-                  onSubmit={handleSubmit}
-                  action="https://getform.io/f/57be50a0-c6ab-46e8-87fa-74979934caba"
-                >
+                <Form onSubmit={handleOnSubmit}>
                   <div>
                     <LabelFirstName htmlFor="first-name">
                       First name
