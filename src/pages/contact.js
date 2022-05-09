@@ -224,7 +224,7 @@ const Contact = () => {
                   </dt>
                   <ContactMailDd>
                     <MailIcon className="mailIcon" aria-hidden="true" />
-                    <MarginSpan>sparker888 at google.com</MarginSpan>
+                    <MarginSpan>sparker888 at gmail.com</MarginSpan>
                   </ContactMailDd>
                 </ContactDl>
               </ContactInfoWrap>
@@ -343,10 +343,10 @@ const HeaderH1 = tw.h1`
 text-4xl font-extrabold tracking-tight text-amber-dark sm:text-5xl lg:text-6xl
 `
 const HeaderP = tw.p`
-mt-6 text-xl text-almond max-w-3xl
+mt-6 text-xl text-fogra-light max-w-3xl
 `
 const Span = tw.a`
-text-amber hover:text-kobe
+text-kobe hover:text-kobe-light
 `
 const ContactSection = tw.section`
 relative bg-transparent
