@@ -94,10 +94,11 @@ const ProjectsIntro = () => {
             <Span4 href="https://mdxjs.com/mdx/" target="_blank">
               MDX
             </Span4>
-            ,{` `}<Span4 href="https://greensock.com/" target="_blank">
-              {` `}
+            ,{` and `}
+            <Span4 href="https://greensock.com/" target="_blank">
               Greensock
-            </Span4>{` `}
+            </Span4>
+             {` `}
             animation in addition to quite a few platform plugins.
           </P>
           <P>
