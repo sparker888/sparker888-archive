@@ -20,7 +20,7 @@ module.exports = {
       gravital: "https://gravitaldigital.com/",
     },
     locale: "en",
-    title: "Stephen Parker | Front-end Web Developer and Photographer",
+    title: "Stephen Parker | Web Developer and Photographer",
     titleTemplate: "Stephen Parker | Front-end Web Developer and Photographer",
     description:
       "Lightning-fast websites by sparker888 and Gatsby.",
@@ -39,7 +39,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest", // See https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/
       options: {
-        name: `sparker888 Gatsby Tailwinds Starter`,
+        name: `sparker888 Portfolio`,
         short_name: `sparker888`,
         start_url: `/`,
         background_color: `#333663`, // The background_color property is used on the splash screen when the application is first launched on mobile.
