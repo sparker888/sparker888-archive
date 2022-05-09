@@ -43,9 +43,9 @@ const skills = [
       " Identifying bottlenecks, Chrome performance tab, DevTools Profiler, Production builds.",
   },
   {
-    name: "NextJS",
+    name: "Next.js",
     description:
-      " I've taken my React skills to the next level by studying and developing numerous projects with the framework and deploying them using Vercel'.",
+      " I've taken my React skills to the next level by studying and developing numerous projects with the Next.js framework and deploying them on Vercel.",
   },
 ]
 
