@@ -89,7 +89,7 @@ const SkillsMain = () => {
         <HeadlineOuterWrapper>
           <HeadlineInnerWrapper>
             <H1>
-              <Span1 ref={headline1}>My skills as a UI/UX React/Gatsby developer</Span1>
+              <Span1 ref={headline1}>My skills as a React/Jamstack developer</Span1>
               <Span2 ref={headline2}>deliver performance for companies like this:</Span2>
             </H1>
           </HeadlineInnerWrapper>
