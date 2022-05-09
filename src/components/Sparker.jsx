@@ -127,8 +127,8 @@ const Sparker = () => {
                 </P>
                 <P ref={bodyCopy2}>
                   I'm now putting this knowledge and experience into promoting
-                  GatsbyJS as a proven solution for companies in highly-competitive 
-                  industries where SERP rankings, accessibility and usability are critical.
+                  React and Jamstack architecture solutions for companies in highly-competitive 
+                  industries where SERP rankings, accessibility and user experience are critical.
                 </P>
                 <CtaLink to="/contact/" ref={button}>
                   Contact Me
