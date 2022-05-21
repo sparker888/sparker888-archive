@@ -13,7 +13,7 @@ const Intro = () => {
   const myGallery = useRef(null)
   const myProjects = useRef(null)
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     let tl = gsap.timeline()
     tl.fromTo(
       logo.current,
@@ -31,7 +31,7 @@ const Intro = () => {
       "<"
     ) // move spaceship up and down in a loop
   }, [])
-  useEffect(() => {
+  useLayoutEffect(() => {
     let tl = gsap.timeline()
     tl.fromTo(
       headline1.current,
@@ -40,7 +40,7 @@ const Intro = () => {
       "<"
     ) // bring in first line from left
   }, [])
-  useEffect(() => {
+  useLayoutEffect(() => {
     let tl = gsap.timeline()
     tl.fromTo(
       headline2.current,
@@ -49,7 +49,7 @@ const Intro = () => {
       "<"
     ) // bring in second line from left
   }, [])
-  useEffect(() => {
+  useLayoutEffect(() => {
     let tl = gsap.timeline()
     tl.from(myGallery.current, {
       xPercent: -15,
@@ -62,7 +62,7 @@ const Intro = () => {
       },
     })
   }, [])
-  useEffect(() => {
+  useLayoutEffect(() => {
     let tl = gsap.timeline()
     tl.from(myProjects.current, {
       xPercent: 15,
