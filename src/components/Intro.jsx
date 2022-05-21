@@ -1,5 +1,5 @@
 import tw, { styled } from "twin.macro"
-import React, { useEffect, useRef } from "react"
+import React, { useLayoutEffect, useRef } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import { gsap } from "gsap"
