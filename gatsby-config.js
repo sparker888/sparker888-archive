@@ -21,9 +21,9 @@ module.exports = {
     },
     locale: "en",
     title: "Stephen Parker | Web Developer and Photographer",
-    titleTemplate: "Stephen Parker | Front-end Web Developer and Photographer",
+    titleTemplate: "Stephen Parker | Web Developer and Photographer",
     description:
-      "Lightning-fast websites by sparker888 and Gatsby.",
+      "Portfolio of @sparker888.",
     siteUrl: "https://www.sparker888.com", // No trailing slash allowed!
     twitterUsername: "@sparker888",
     publicURL: "/sparker888-social-image.jpg", // This will be the default 'social' image for social media shares (in the static folder)
