@@ -1,8 +1,8 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
-});
+})
 
-const path = require("path");
+const path = require("path")
 module.exports = {
   siteMetadata: {
     menu: [
@@ -20,10 +20,9 @@ module.exports = {
       gravital: "https://gravitaldigital.com/",
     },
     locale: "en",
-    title: "Stephen Parker | Web Developer and Photographer",
-    titleTemplate: "Stephen Parker | Web Developer and Photographer",
-    description:
-      "Portfolio of @sparker888.",
+    title: "@sparker888 | Web Developer & Photographer",
+    titleTemplate: "@sparker888 | Web Developer & Photographer",
+    description: "Portfolio of @sparker888.",
     siteUrl: "https://www.sparker888.com", // No trailing slash allowed!
     twitterUsername: "@sparker888",
     publicURL: "/sparker888-social-image.jpg", // This will be the default 'social' image for social media shares (in the static folder)
@@ -90,8 +89,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
-        offset: -120
-      }
+        offset: -120,
+      },
     },
     {
       resolve: "gatsby-plugin-google-tagmanager",
@@ -107,5 +106,4 @@ module.exports = {
       },
     },
   ],
-};
-
+}
