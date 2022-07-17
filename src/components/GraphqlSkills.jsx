@@ -32,10 +32,24 @@ const skills = [
     description:
       " Currently, I'm learning more about the GraphQL specification, Schemas and Types.",
   },
+  {
+    name: "Endpoints",
+    description:
+      " I've built numerous endpoints in Next.js that support multiple parameters making decisions on how they operate.",
+  },
+  {
+    name: "HTTP Methods",
+    description:
+      " My training gave me a solid understanding of when to use what HTTP requests and implementing function handlers to handle different requests.",
+  },
+  {
+    name: "Responses",
+    description:
+      " I have implemented methods to handle GET and POST requests, reject certain methods, return error codes, redirects and handle incoming and outgoing data.",
+  },
 ]
 
 export default function GraphqlSkills() {
-
   const icon4 = useRef(null)
   const title4 = useRef(null)
   const paragraph4 = useRef(null)
@@ -43,12 +57,12 @@ export default function GraphqlSkills() {
   useEffect(() => {
     let tl = gsap.timeline()
     tl.from(icon4.current, {
-      yPercent: -120,
+      yPercent: -80,
       scrollTrigger: {
         // Icon fades in from the top
         trigger: icon4.current,
-        start: "top 75%",
-        end: "top center",
+        start: "bottom 100%",
+        end: "top 25%",
         scrub: 1.5,
       },
     })
@@ -60,21 +74,21 @@ export default function GraphqlSkills() {
       scrollTrigger: {
         // Title fades in from the top
         trigger: title4.current,
-        start: "top 75%",
-        end: "top center",
+        start: "bottom 100%",
+        end: "top 25%",
         scrub: 1.5,
       },
     })
   }, [])
   useEffect(() => {
-    let tl = gsap.timeline()  
+    let tl = gsap.timeline()
     tl.from(paragraph4.current, {
       yPercent: 40,
       scrollTrigger: {
         // Paragraph fades in from the bottom
         trigger: paragraph4.current,
-        start: "top 75%",
-        end: "center 100%",
+        start: "bottom 100%",
+        end: "top 25%",
         scrub: 1.5,
       },
     })
@@ -92,13 +106,13 @@ export default function GraphqlSkills() {
               layout="fixed"
             />
           </div>
-          <Title ref={title4}>GraphQL</Title>
+          <Title ref={title4}>GraphQL and REST API</Title>
           <Description ref={paragraph4}>
-            GraphQL query language is new to me as it is to many developers.
-            Fortunately, I have used it to query both local data and API data
-            from third-party sources for several projects now and I'm very
-            comfortable with Gatsby's GraphiQL interface, Gatsby plugins that
-            expose available data and common GraphQL data structures.
+            GraphQL query language is quickly becoming as important as REST API
+            and I'm enjoying using it to query both local data and API data from
+            third-party sources. I've also completed a REST API 101 in a
+            development bootcamp with projects that covered Endpoints, HTTP
+            Methods and Responses.
           </Description>
         </div>
         <SkillsWrapper>

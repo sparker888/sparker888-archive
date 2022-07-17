@@ -8,72 +8,49 @@ gsap.registerPlugin(ScrollTrigger)
 
 const skills = [
   {
-    name: "React Fundamentals",
+    name: "Relational Databases",
     description:
-      " Virtual DOM, JSX, Components, props and state Objects, Unidirectional Data Flow, Server-side Rendering.",
+      " I'm clear with and use the query operation type, operation name and many standard query fields -- particularly those used with GatsbyJS.",
   },
   {
-    name: "Lists and Keys",
+    name: "SQL Language",
     description:
-      " I'm very familiar with the .map() function to convert both lists of data (arrays) as well as other components into lists of elements with the key prop.",
+      " I understand how GraphQL schemas are set up and able to write queries against data.",
   },
   {
-    name: "Event Listeners and Handling Events",
+    name: "Prisma ORM",
     description:
-      " I'm very familiar with onClick, onChange and onSubmit props and using these to toggle states and manage data'.",
+      " I can query, sort and filter and combine many common data types including JSON, markdown, MDX and media.",
   },
   {
-    name: "Essential React Hooks",
+    name: "Models and Schema Files",
     description:
-      " useState hook, useEffect hook, useRef hook, and Callback functions.",
+      " I'm able to define GraphQL query fragments to manage and format data as I have done for this site.",
   },
   {
-    name: "Advanced React Hooks",
+    name: "Database Syncing",
     description:
-      " I have only read about more advanced and custom hooks such as the useMemo, useContext, and useReducer hooks.",
+      " Currently, I'm learning more about the GraphQL specification, Schemas and Types.",
   },
   {
-    name: "State Management",
+    name: "Server Side Props and API Routes",
     description:
-      " I understand the basics of the Redux library and have worked with Actions, Reduders and Store in two learning projects.",
-  },
-  {
-    name: "React Performance",
-    description:
-      " Identifying bottlenecks, Chrome performance tab, DevTools Profiler, Production builds.",
-  },
-  {
-    name: "Next.js",
-    description:
-      " I've taken my React skills to the next level by studying and developing numerous projects with the Next.js framework and deploying them on Vercel.",
+      " I've built numerous endpoints in Next.js that support multiple parameters making decisions on how they operate.",
   },
 ]
 
-export default function ReactSkills() {
-  const icon2 = useRef(null)
-  const title2 = useRef(null)
-  const paragraph2 = useRef(null)
+export default function GraphqlSkills() {
+  const icon4 = useRef(null)
+  const title4 = useRef(null)
+  const paragraph4 = useRef(null)
 
   useEffect(() => {
     let tl = gsap.timeline()
-    tl.from(icon2.current, {
+    tl.from(icon4.current, {
       yPercent: -80,
       scrollTrigger: {
         // Icon fades in from the top
-        trigger: icon2.current,
-        start: "top 100%",
-        end: "top 45%",
-        scrub: 1.5,
-      },
-    })
-  }, [])
-  useEffect(() => {
-    let tl = gsap.timeline()
-    tl.from(title2.current, {
-      yPercent: -40,
-      scrollTrigger: {
-        // Title fades in from the top
-        trigger: title2.current,
+        trigger: icon4.current,
         start: "bottom 100%",
         end: "top 25%",
         scrub: 1.5,
@@ -82,11 +59,24 @@ export default function ReactSkills() {
   }, [])
   useEffect(() => {
     let tl = gsap.timeline()
-    tl.from(paragraph2.current, {
+    tl.from(title4.current, {
+      yPercent: -40,
+      scrollTrigger: {
+        // Title fades in from the top
+        trigger: title4.current,
+        start: "bottom 100%",
+        end: "top 25%",
+        scrub: 1.5,
+      },
+    })
+  }, [])
+  useEffect(() => {
+    let tl = gsap.timeline()
+    tl.from(paragraph4.current, {
       yPercent: 40,
       scrollTrigger: {
         // Paragraph fades in from the bottom
-        trigger: paragraph2.current,
+        trigger: paragraph4.current,
         start: "bottom 100%",
         end: "top 25%",
         scrub: 1.5,
@@ -98,19 +88,23 @@ export default function ReactSkills() {
     <Wrapper>
       <InnerWrapper>
         <div>
-          <div ref={icon2}>
+          <div ref={icon4}>
             <StaticImage
-              src="../images/react.svg"
-              alt="JS"
+              src="../images/postgres.svg"
+              alt="PostgreSQL"
               height={50}
               layout="fixed"
             />
           </div>
-          <Title ref={title2}>React</Title>
-          <Description ref={paragraph2}>
-            I am relatively new to React, yet I'm comfortable with all the
-            basics in terms of designing components, passing props and using
-            essential hooks. I'm learning more advanced concepts now.
+          <Title ref={title4}>PostgreSQL and Databases</Title>
+          <Description ref={paragraph4}>
+            Recently, I've been focusing more time on databases, and in
+            particular relational databases, SQL, PostgreSQL and Prisma. I
+            worked with SQL years ago, so I brushed up on that first. Then, in a
+            development bootcamp, I began working with Railway, the popular
+            cloud database. From there, we covered the full React lifecycle from
+            building forms, to creating schemas, to input validation, to
+            creating, updating and deleting records.
           </Description>
         </div>
         <SkillsWrapper>

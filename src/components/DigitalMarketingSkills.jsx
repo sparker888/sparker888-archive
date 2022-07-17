@@ -50,7 +50,6 @@ const skills = [
 ]
 
 export default function GatsbySkills() {
-
   const icon5 = useRef(null)
   const title5 = useRef(null)
   const paragraph5 = useRef(null)
@@ -58,12 +57,12 @@ export default function GatsbySkills() {
   useEffect(() => {
     let tl = gsap.timeline()
     tl.from(icon5.current, {
-      yPercent: -120,
+      yPercent: -80,
       scrollTrigger: {
         // Icon fades in from the top
         trigger: icon5.current,
-        start: "top 75%",
-        end: "top center",
+        start: "bottom 100%",
+        end: "top 25%",
         scrub: 1.5,
       },
     })
@@ -75,21 +74,21 @@ export default function GatsbySkills() {
       scrollTrigger: {
         // Title fades in from the top
         trigger: title5.current,
-        start: "top 75%",
-        end: "top center",
+        start: "bottom 100%",
+        end: "top 25%",
         scrub: 1.5,
       },
     })
   }, [])
   useEffect(() => {
-    let tl = gsap.timeline()  
+    let tl = gsap.timeline()
     tl.from(paragraph5.current, {
       yPercent: 40,
       scrollTrigger: {
         // Paragraph fades in from the bottom
         trigger: paragraph5.current,
-        start: "top 75%",
-        end: "center 100%",
+        start: "bottom 100%",
+        end: "top 25%",
         scrub: 1.5,
       },
     })

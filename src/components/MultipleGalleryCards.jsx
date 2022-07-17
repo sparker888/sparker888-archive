@@ -53,8 +53,8 @@ const MultipleGalleryCards
       scrollTrigger: {
         // Headline 2 fades in from the right
         trigger: headline2.current,
-        start: "top 75%",
-        end: "top center",
+        start: "top 60%",
+        end: "top 40%",
         scrub: 1.5,
       },
     }) 

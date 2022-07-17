@@ -10,7 +10,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
 const BlogCards = ({ items }) => {
-
   const { placeholderImage } = useStaticQuery(
     graphql`
       query {
@@ -39,15 +38,15 @@ const BlogCards = ({ items }) => {
       scrollTrigger: {
         // Headline 1 fades in from the left
         trigger: headline1.current,
-        start: "top 75%",
-        end: "top center",
+        start: "top 60%",
+        end: "top 40%",
         scrub: 1.5,
       },
     })
   }, [])
-    useEffect(() => {
-      let tl = gsap.timeline({ defaults: { opacity: 0 } })
-      tl.from(headline2.current, {
+  useEffect(() => {
+    let tl = gsap.timeline({ defaults: { opacity: 0 } })
+    tl.from(headline2.current, {
       xPercent: 5,
       scrollTrigger: {
         // Headline 2 fades in from the right
@@ -56,7 +55,7 @@ const BlogCards = ({ items }) => {
         end: "top center",
         scrub: 1.5,
       },
-    }) 
+    })
   }, [])
 
   return (
@@ -68,19 +67,18 @@ const BlogCards = ({ items }) => {
           </Inset>
           <InnerWrapper>
             <TitleWrapper>
-              <H2 ref={headline1}>
-                My Featured Articles
-              </H2>
+              <H2 ref={headline1}>My Featured Articles</H2>
               <P ref={headline2}>
-                My blog will focus on modern Jamstack development, trends in digital marketing, and helpful advice for photographers.
+                My blog will focus on modern Jamstack development, trends in
+                digital marketing, and helpful advice for photographers.
               </P>
             </TitleWrapper>
             <CardsWrapper>
-                {items.map(item => (
-                    <CardsInnerWrap key={item.id}>
-                    <BlogCard {...item} />
-                    </CardsInnerWrap>
-                ))}
+              {items.map((item) => (
+                <CardsInnerWrap key={item.id}>
+                  <BlogCard {...item} />
+                </CardsInnerWrap>
+              ))}
             </CardsWrapper>
           </InnerWrapper>
         </OuterWrapper>
@@ -89,13 +87,11 @@ const BlogCards = ({ items }) => {
   )
 }
 
-BlogCards
-.propTypes = {
-    items: PropTypes.arrayOf(PropTypes.object).isRequired,
-  }
+BlogCards.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+}
 
 export default BlogCards
-
 
 const Container = tw.div`
 w-full

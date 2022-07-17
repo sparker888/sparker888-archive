@@ -8,44 +8,39 @@ gsap.registerPlugin(ScrollTrigger)
 
 const skills = [
   {
-    name: "File System",
+    name: "Pages and Routing",
     description:
-      " With Gatsby I'm very comfortable creating both unique and template-based pages. I have years of experience composing component elements like headers and footers into pages. I've now also worked with wrapping pages in layouts, passing props, pulling SEO data from gatsby.config and working with the file system in general.",
+      " Using NextJS, I'm very comfortable with both static and dynamic content taken from a database, markdown files and more. This includes working with page ids and useRouter for blogs, for example, and content requiring url slugs and pretty slugs. I'm also familiar with how router.query works and is made available once frontend JavaScript loads.",
   },
   {
-    name: "Styling",
+    name: "Data Fetching",
     description:
-      " Gatsby supports multiple styling systems I'm familiar with including standard CSS, preprocessors like Sass and CSS-in-JSS solutions like Styled Components, Tailwind and theme-ui. I've also worked with combining style systems such as Tailwind and Emotion using twin.",
+      " I'm familiar with the Next.js feature of getServerSideProps to fetch data and return it as an object with the props. I've worked with using getStaticPaths and getStaticProps to generate static pages but with data. I'm used to common patterns involved with importing JSON files as posts, using Object.keys() that enabling iterating over produced arrays using map().",
   },
   {
-    name: "Images and Media",
+    name: "API Routes",
     description:
-      " Gatsby's image and media handling are simply stellar. I'm very familiar with the key image plugins and comfortable with both static and dynamic GraphQL queries and performance configurations. I've also worked with cloud-based image services such as Cloudinary and Imgur.",
+      " In addition to page routes, I've also created API routes with Next.js. It's quite powerful to pull endpoint data to create dynamic content. In the dev bootcamp we created API routes that fetch data from a database and return it as JSON for say a specific id value. We then used this data in the frontend to create dynamic content.",
   },
   {
-    name: "Plugins and Themes",
+    name: "Deploying on Vercel",
     description:
-      " Gatsby's plugin and theme ecosystem is amazing and well supported. I have have experience using several dozen common plugins and have worked with a number of complex packages that include payment systems, Auth-0, MDX and Contentful.",
+      " I've used several deployment platforms, and the most recent is Vercel. The big benefit of Vercel is that they make Next.js, so it makes sense to deploy Next.js projects to Vercel. Similar to Netlify, I know how to point to a GitHub repo, configure projects in Vercel, configure deployment, env info, DNS info, SSL encryption and the basics of serverless functions.",
   },
   {
-    name: "Sourcing Data",
+    name: "Authentication and Sessions",
     description:
-      " I have the knowledge and resources to pull data from wherever it lives -- a CMS, the filesystem, a spreadsheet, a database, and in many formats and through common APIs.",
+      " I have experience working with the NextAuth.js library for Next.js. In a dev bootcamp we set up a PostgreSQL library and an .env file to hold our authentication data. We created data models for Users, VerificationToken, Account and Session to build our authentication system. Then used https://mailtrap.io to 'fake' email sending to test our authentication system. ",
   },
   {
-    name: "SEO",
+    name: "Image Optimization",
     description:
-      " I have created customized SEO configurations using React Helmet with content front matter and images to provide optimal search and social performance.",
+      " Using next/image and the <Image > component, I build the system to import and optimize images with a number of properties including static local images as well as images from external URLs. In addition to src, width and height, I'm familiar with the optional props for different layout behaviors to loading behaviors and formats.",
   },
   {
-    name: "Deployment Pipeline",
+    name: "Additional Knowledge",
     description:
-      " I'm comfortable working with Gatsby's CLI and development servers, working with various APIs, providing previews to content providers and CDN deployment.",
-  },
-  {
-    name: "Performance and Scaling",
-    description:
-      " I've primarily focused on the basics such as image optimization and lazy load/inline scripts. I've moved on to purge css to remove unnecessary styling file size overhead. I'm learning more in this area now.",
+      " Other areas of using Next.js I'm somewhat familiar with but haven't spent too much time with yet include testing, accessibility and other APIs such as next/script, next/head and next/streaming. I'm looking forward to digging into these topics in the coming weeks.",
   },
 ]
 
@@ -100,13 +95,13 @@ export default function GatsbySkills() {
         <div>
           <div ref={icon3}>
             <StaticImage
-              src="../images/gatsby.svg"
-              alt="JS"
+              src="../images/nextjs-black.svg"
+              alt="NextJS"
               height={50}
               layout="fixed"
             />
           </div>
-          <Title ref={title3}>GatsbyJS</Title>
+          <Title ref={title3}>NextJS</Title>
           <Description ref={paragraph3}>
             Having used other static site tools in the past, I consider GatsbyJS
             to be in another category. This system of using React is simply

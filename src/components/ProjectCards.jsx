@@ -10,7 +10,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
 const ProjectCards = ({ items }) => {
-
   const { placeholderImage } = useStaticQuery(
     graphql`
       query {
@@ -39,14 +38,14 @@ const ProjectCards = ({ items }) => {
       scrollTrigger: {
         // Headline 1 fades in from the left
         trigger: headline1.current,
-        start: "top 75%",
-        end: "top center",
+        start: "top 60%",
+        end: "top 40%",
         scrub: 1.5,
       },
     })
   }, [])
-    useEffect(() => {
-    let tl = gsap.timeline({ defaults: { opacity: 0 } })   
+  useEffect(() => {
+    let tl = gsap.timeline({ defaults: { opacity: 0 } })
     tl.from(headline2.current, {
       xPercent: 5,
       scrollTrigger: {
@@ -56,7 +55,7 @@ const ProjectCards = ({ items }) => {
         end: "top center",
         scrub: 1.5,
       },
-    }) 
+    })
   }, [])
 
   return (
@@ -68,19 +67,18 @@ const ProjectCards = ({ items }) => {
           </Inset>
           <InnerWrapper>
             <TitleWrapper>
-              <H2 ref={headline1}>
-                My Featured Projects
-              </H2>
+              <H2 ref={headline1}>My Featured Projects</H2>
               <P ref={headline2}>
-                These projects showcase both my UI/UX development and digital media capabilities as a photographer and videographer. Enjoy!
+                These projects showcase both my UI/UX development and digital
+                media capabilities as a photographer and videographer. Enjoy!
               </P>
             </TitleWrapper>
             <CardsWrapper>
-                {items.map(item => (
-                    <CardsInnerWrap key={item.id}>
-                    <ProjectCard {...item} />
-                    </CardsInnerWrap>
-                ))}
+              {items.map((item) => (
+                <CardsInnerWrap key={item.id}>
+                  <ProjectCard {...item} />
+                </CardsInnerWrap>
+              ))}
             </CardsWrapper>
           </InnerWrapper>
         </OuterWrapper>
@@ -90,8 +88,8 @@ const ProjectCards = ({ items }) => {
 }
 
 ProjectCards.propTypes = {
-    items: PropTypes.arrayOf(PropTypes.object).isRequired,
-  }
+  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+}
 
 export default ProjectCards
 

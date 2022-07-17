@@ -17,8 +17,8 @@ const ProjectsIntro = () => {
       scrollTrigger: {
         // Projects button fades in from the left bottom
         trigger: button.current,
-        start: "top 75%",
-        end: "top center",
+        start: "top 60%",
+        end: "top 40%",
         scrub: 1.5,
       },
     })

@@ -19,8 +19,8 @@ const ProjectsIntro = () => {
       scrollTrigger: {
         // Developer button fades in from the left bottom
         trigger: developer.current,
-        start: "top 75%",
-        end: "top center",
+        start: "top 60%",
+        end: "top 40%",
         scrub: 1.5,
       },
     })
@@ -33,8 +33,8 @@ const ProjectsIntro = () => {
       scrollTrigger: {
         // Marketer button fades in from the right
         trigger: marketer.current,
-        start: "top 75%",
-        end: "top center",
+        start: "top 60%",
+        end: "top 40%",
         scrub: 1.5,
       },
     })

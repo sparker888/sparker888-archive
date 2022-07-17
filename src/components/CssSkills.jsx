@@ -56,12 +56,12 @@ export default function CssSkills() {
   useEffect(() => {
     let tl = gsap.timeline()
     tl.from(icon1.current, {
-      yPercent: -120,
+      yPercent: -80,
       scrollTrigger: {
         // Icon fades in from the top
         trigger: icon1.current,
-        start: "top 75%",
-        end: "top center",
+        start: "bottom 100%",
+        end: "top 25%",
         scrub: 1.5,
       },
     })
@@ -73,8 +73,8 @@ export default function CssSkills() {
       scrollTrigger: {
         // Title fades in from the top
         trigger: title1.current,
-        start: "top 75%",
-        end: "top center",
+        start: "bottom 100%",
+        end: "top 25%",
         scrub: 1.5,
       },
     })
@@ -86,8 +86,8 @@ export default function CssSkills() {
       scrollTrigger: {
         // Paragraph fades in from the bottom
         trigger: paragraph1.current,
-        start: "top 75%",
-        end: "center 100%",
+        start: "bottom 100%",
+        end: "top 25%",
         scrub: 1.5,
       },
     })
