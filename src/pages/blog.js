@@ -1,6 +1,7 @@
 import tw from "twin.macro"
 import React from "react";
 import Layout from "../layouts/Layout";
+import ScrollButton from "../components/scrollUp"
 import ArticlesIntro from "../components/ArticlesIntro";
 import BlogCards from "../components/BlogCards"
 import { graphql } from "gatsby"
@@ -9,6 +10,7 @@ const Blog = ({ data }) => {
   console.log(data)
   return (
     <Layout>
+      <ScrollButton />
       <ArticlesIntro />
       <FeaturedArticlesWrapper>
         {data.article && data.article.nodes.length > 0 ? (
@@ -18,7 +20,7 @@ const Blog = ({ data }) => {
         )}
       </FeaturedArticlesWrapper>
     </Layout>
-  );
+  )
 };
 
 export default Blog
