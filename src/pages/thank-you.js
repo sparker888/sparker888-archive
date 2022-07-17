@@ -46,7 +46,7 @@ const Main = tw.main`
 sm:flex
 `
 const P = tw.p`
-text-4xl font-extrabold text-kobe-light sm:text-5xl
+text-4xl font-extrabold text-kobe-light sm:text-5xl sm:text-right
 `
 const Content = tw.div`
 sm:ml-6
