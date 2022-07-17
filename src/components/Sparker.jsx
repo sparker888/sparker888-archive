@@ -40,7 +40,7 @@ const Sparker = () => {
         // Portrait fades in from the left
         trigger: portrait.current,
         start: "top 75%",
-        end: "top center",
+        end: "top 60%",
         scrub: 1.5,
       },
     })
@@ -53,7 +53,7 @@ const Sparker = () => {
         // Headline fades in from the bottom
         trigger: headline.current,
         start: "top 75%",
-        end: "top center",
+        end: "top 60%",
         scrub: 1.5,
       },
     })
@@ -66,7 +66,7 @@ const Sparker = () => {
         // Middle line fades in from the bottom
         trigger: bodyCopy1.current,
         start: "top 75%",
-        end: "top center",
+        end: "top 60%",
         scrub: 1.5,
       },
     })
@@ -79,7 +79,7 @@ const Sparker = () => {
         // Bottom line fades in from the bottom
         trigger: bodyCopy2.current,
         start: "top 75%",
-        end: "top center",
+        end: "top 60%",
         scrub: 1.5,
       },
     })
@@ -92,7 +92,7 @@ const Sparker = () => {
         // Button fades in from the bottom
         trigger: button.current,
         start: "top 75%",
-        end: "top center",
+        end: "top 60%",
         scrub: 1.5,
       },
     })
