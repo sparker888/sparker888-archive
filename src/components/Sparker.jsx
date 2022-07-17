@@ -45,12 +45,12 @@ const Sparker = () => {
       },
     })
   }, [])
-    useEffect(() => {
+  useEffect(() => {
     let tl = gsap.timeline()
     tl.from(headline.current, {
-      xPercent: 5,
+      yPercent: 50,
       scrollTrigger: {
-        // Headline fades in from the right
+        // Headline fades in from the bottom
         trigger: headline.current,
         start: "top 75%",
         end: "top center",
@@ -58,12 +58,12 @@ const Sparker = () => {
       },
     })
   }, [])
-    useEffect(() => {
+  useEffect(() => {
     let tl = gsap.timeline()
     tl.from(bodyCopy1.current, {
-      xPercent: 8,
+      yPercent: 50,
       scrollTrigger: {
-        // Middle line fades in from the right
+        // Middle line fades in from the bottom
         trigger: bodyCopy1.current,
         start: "top 75%",
         end: "top center",
@@ -71,12 +71,12 @@ const Sparker = () => {
       },
     })
   }, [])
-    useEffect(() => {
+  useEffect(() => {
     let tl = gsap.timeline()
     tl.from(bodyCopy2.current, {
-      xPercent: 11,
+      yPercent: 50,
       scrollTrigger: {
-        // Bottom line fades in from the right
+        // Bottom line fades in from the bottom
         trigger: bodyCopy2.current,
         start: "top 75%",
         end: "top center",
@@ -84,12 +84,12 @@ const Sparker = () => {
       },
     })
   }, [])
-    useEffect(() => {
+  useEffect(() => {
     let tl = gsap.timeline()
     tl.from(button.current, {
-      xPercent: 14,
+      yPercent: 100,
       scrollTrigger: {
-        // Button fades in from the right
+        // Button fades in from the bottom
         trigger: button.current,
         start: "top 75%",
         end: "top center",
@@ -118,17 +118,20 @@ const Sparker = () => {
             <BottomSection>
               <ContentWrapper>
                 <H2 id="join-heading" ref={headline}>
-                  Looking for a modern web developer that understands marketing, media and search engines?
+                  Looking for a modern web developer that understands marketing,
+                  media and search engines?
                 </H2>
                 <P ref={bodyCopy1}>
                   I've worked the Web since 1995 with major brands, small
                   businesses and talented entrepreneurs. My teams and I have had
-                  great success creating sites that drive traffic and conversions.
+                  great success creating sites that drive traffic and
+                  conversions.
                 </P>
                 <P ref={bodyCopy2}>
                   I'm now putting this knowledge and experience into promoting
-                  React and Jamstack architecture solutions for companies in highly-competitive 
-                  industries where SERP rankings, accessibility and user experience are critical.
+                  React and Jamstack architecture solutions for companies in
+                  highly-competitive industries where SERP rankings,
+                  accessibility and user experience are critical.
                 </P>
                 <CtaLink to="/contact/" ref={button}>
                   Contact Me

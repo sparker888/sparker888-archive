@@ -6,35 +6,16 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
 const ProjectsIntro = () => {
-
   const headline1 = useRef(null)
   const headline2 = useRef(null)
   const button = useRef(null)
 
   useEffect(() => {
     let tl = gsap.timeline()
-    tl.fromTo(
-      headline1.current,
-      { x: -100, y: 0, opacity: 0 },
-      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
-      "<"
-    ) // bring in first block from left
-  }, [])
-    useEffect(() => {
-      let tl = gsap.timeline()
-    tl.fromTo(
-      headline2.current,
-      { x: 100, y: 0, opacity: 0 },
-      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
-      "<"
-    ) // bring in second block from right
-  }, [])
-    useEffect(() => {
-      let tl = gsap.timeline()
     tl.from(button.current, {
-      xPercent: -150,
+      xPercent: -35,
       scrollTrigger: {
-        // Projects button fades in from the right
+        // Projects button fades in from the left bottom
         trigger: button.current,
         start: "top 75%",
         end: "top center",
@@ -49,21 +30,35 @@ const ProjectsIntro = () => {
         <BlockWrapper>
           <H1 ref={headline1}>
             <Span2>With the latest technology,</Span2>{" "}
-            <Span3>I help businesses succeed!</Span3>{" "}
-            <Span1>✨</Span1>
+            <Span3>I help businesses succeed!</Span3> <Span1>✨</Span1>
           </H1>
           <H3 ref={headline2}>
-            Check out my amazing studio! Thanks to a lot of cool technology and <Span6 to="/skills/" >improved skills</Span6>, I&#8217;m helping more businesses succeed digitally.
+            Check out my amazing studio! Thanks to a lot of cool technology and{" "}
+            <Span6 to="/skills/">improved skills</Span6>, I&#8217;m helping more
+            businesses succeed digitally.
           </H3>
           <P>
-            For 25 years, I have worked with some fantastic teams to build and manage digital properties for large brands, small businesses, bright entrepreneurs and <Span4 href="https://sparker888.github.io/eve_ships/" target="_blank">just for fun</Span4>. 
+            For 25 years, I have worked with some fantastic teams to build and
+            manage digital properties for large brands, small businesses, bright
+            entrepreneurs and{" "}
+            <Span4
+              href="https://sparker888.github.io/eve_ships/"
+              target="_blank"
+            >
+              just for fun
+            </Span4>
+            .
           </P>
           <P>
-            Now, with this studio, I'm able to combine my love for web development with my passion for photography and videography to create fantastic online experiences!
+            Now, with this studio, I'm able to combine my love for web
+            development with my passion for photography and videography to
+            create fantastic online experiences!
           </P>
           <ButtonWrap>
             <Button1 ref={button}>
-              <Link1 to="../projects/project-gravital-digital">Take a Look</Link1>
+              <Link1 to="../projects/project-gravital-digital">
+                Take a Look
+              </Link1>
             </Button1>
             {/* <Button2>
                   <Link2 href="/blog">My Blog</Link2>

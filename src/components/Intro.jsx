@@ -33,28 +33,11 @@ const Intro = () => {
   }, [])
   useLayoutEffect(() => {
     let tl = gsap.timeline()
-    tl.fromTo(
-      headline1.current,
-      { x: -100, y: 0, opacity: 0 },
-      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
-      "<"
-    ) // bring in first line from left
-  }, [])
-  useLayoutEffect(() => {
-    let tl = gsap.timeline()
-    tl.fromTo(
-      headline2.current,
-      { x: 100, y: 0, opacity: 0 },
-      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
-      "<"
-    ) // bring in second line from left
-  }, [])
-  useLayoutEffect(() => {
-    let tl = gsap.timeline()
     tl.from(myGallery.current, {
       xPercent: -15,
+      yPercent: 100,
       scrollTrigger: {
-        // Gallery button fades in from the left
+        // Gallery button fades in from the left bottom
         trigger: myGallery.current,
         start: "top 75%",
         end: "top center",
@@ -66,37 +49,39 @@ const Intro = () => {
     let tl = gsap.timeline()
     tl.from(myProjects.current, {
       xPercent: 15,
+      yPercent: 100,
       scrollTrigger: {
-        // Projects button fades in from the right
+        // Projects button fades in from the right bottom
         trigger: myProjects.current,
         start: "top 75%",
         end: "top center",
         scrub: 1.5,
       },
     })
-}, [])
-  
+  }, [])
 
   return (
     <Main>
       <LeftBlock>
         <BlockWrapper>
           <H1 ref={headline1}>
-            <Span1>👋🏼 Hey!</Span1>{" "}
-            <Span2>I&#8217;m Steve.</Span2>{" "}
+            <Span1>👋🏼 Hey!</Span1> <Span2>I&#8217;m Steve.</Span2>{" "}
             <Span3>I build sites that are blazing fast.</Span3>
           </H1>
           <H3 ref={headline2}>
             My expertise with <Span6 to="/skills/">modern development</Span6>{" "}
-            and React enable me to create websites and apps that perform well and score highly on Google Lighthouse.  
+            and React enable me to create websites and apps that perform well
+            and score highly on Google Lighthouse.
           </H3>
           <P>
-            How good are your Google rankings and Lighthouse scores? I'm happy to <Span6 to="/contact/">run a report</Span6> and review your website's Lighthouse scores and Google search engine results.
+            How good are your Google rankings and Lighthouse scores? I'm happy
+            to <Span6 to="/contact/">run a report</Span6> and review your
+            website's Lighthouse scores and Google search engine results.
           </P>
           <P>
             Check out my latest article:{" "}
             <Span5 to="/blog/quick-overviewo-of-astro-static-site-generator">
-            Meet Astro, a minimal static site generator
+              Meet Astro, a minimal static site generator
             </Span5>
             .
           </P>
@@ -137,7 +122,7 @@ const LeftBlock = tw.div`
 mx-auto max-w-7xl w-full pt-8 pb-10 text-center lg:py-16 lg:text-left
 `
 const RightBlock = tw.div`
-flex relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full
+flex relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full overflow-hidden
 `
 const Image = tw.img`
 absolute inset-0 w-full h-full object-cover object-top

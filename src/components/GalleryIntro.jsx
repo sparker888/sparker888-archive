@@ -6,39 +6,20 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
 const GalleryIntro = () => {
-
   const headline1 = useRef(null)
   const headline2 = useRef(null)
   const button = useRef(null)
 
   useEffect(() => {
     let tl = gsap.timeline()
-    tl.fromTo(
-      headline1.current,
-      { x: -100, y: 0, opacity: 0 },
-      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
-      "<"
-    ) // bring in first block from left
-  }, [])
-    useEffect(() => {
-      let tl = gsap.timeline()
-    tl.fromTo(
-      headline2.current,
-      { x: 100, y: 0, opacity: 0 },
-      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
-      "<"
-    ) // bring in second block from right
-  }, [])
-    useEffect(() => {
-      let tl = gsap.timeline()
-      tl.from(button.current, {
-        xPercent: -150,
-        scrollTrigger: {
-          // Projects button fades in from the right
-          trigger: button.current,
-          start: "top 75%",
-          end: "top center",
-          scrub: 1.5,
+    tl.from(button.current, {
+      xPercent: -35,
+      scrollTrigger: {
+        // Dove In! button fades in from the left bottom
+        trigger: button.current,
+        start: "top 75%",
+        end: "top center",
+        scrub: 1.5,
       },
     })
   }, [])
@@ -48,24 +29,45 @@ const GalleryIntro = () => {
       <LeftBlock>
         <BlockWrapper>
           <H1 ref={headline1}>
-          <Span1>📸</Span1> <Span2>For speed and efficiency,</Span2>{" "}
+            <Span1>📸</Span1> <Span2>For speed and efficiency,</Span2>{" "}
             <Span3>I&#8217;ve gone minimalist and lightweight!</Span3>
           </H1>
           <H3 ref={headline2}>
-          I&#8217;ve also stepped up my game again to become a commercial operator <Span6 href="https://www.faa.gov/uas/commercial_operators/" target="_blank">FAA-certified 107 sUAS</Span6> drone pilot!
+            I&#8217;ve also stepped up my game again to become a commercial
+            operator{" "}
+            <Span6
+              href="https://www.faa.gov/uas/commercial_operators/"
+              target="_blank"
+            >
+              FAA-certified 107 sUAS
+            </Span6>{" "}
+            drone pilot!
           </H3>
           <P>
-            Last year, I focused on light and portable for efficient location shoots with the Sony a6600 and battery-powered lights. 
+            Last year, I focused on light and portable for efficient location
+            shoots with the Sony a6600 and battery-powered lights.
           </P>
           <P>
-            For 2022, I purchased <Span5 to="/blog/a-new-year-a-new-drone-dji-mavic3">the new DJI Mavic 3 </Span5>and passed the FAA pilot certification test to fly larger drones in restricted airspace. During the year, I'll be adding more aerial footage to the galleries below.
+            For 2022, I purchased{" "}
+            <Span5 to="/blog/a-new-year-a-new-drone-dji-mavic3">
+              the new DJI Mavic 3{" "}
+            </Span5>
+            and passed the FAA pilot certification test to fly larger drones in
+            restricted airspace. During the year, I'll be adding more aerial
+            footage to the galleries below.
           </P>
           <P>
-            You can also see more of my work on <Span6 href="https://www.instagram.com/sparker808/" target="_blank">Instagram</Span6>.
+            You can also see more of my work on{" "}
+            <Span6 href="https://www.instagram.com/sparker808/" target="_blank">
+              Instagram
+            </Span6>
+            .
           </P>
           <ButtonWrap>
             <Button1 ref={button}>
-              <Link1 to="../gallery/coastal-florida-photography">Dive In!</Link1>
+              <Link1 to="../gallery/coastal-florida-photography">
+                Dive In!
+              </Link1>
             </Button1>
             {/* <Button2>
                   <Link2 href="/blog">My Blog</Link2>

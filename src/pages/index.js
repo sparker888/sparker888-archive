@@ -3,6 +3,7 @@ import React from "react";
 import Seo from "../components/Seo";
 import Layout from "../layouts/Layout";
 import Intro from "../components/Intro";
+import ScrollButton from "../components/scrollUp";
 import Sparker from "../components/Sparker"
 import Featured from "../components/Featured";
 import { graphql } from "gatsby";
@@ -10,6 +11,7 @@ import { graphql } from "gatsby";
 const IndexPage = ({ data }) => {
   return (
     <Layout>
+      <ScrollButton />
       <Seo />
       <Intro />
       <Sparker />
@@ -21,7 +23,7 @@ const IndexPage = ({ data }) => {
         )}
       </FeaturedHeroesWrapper>
     </Layout>
-  );
+  )
 };
 
 export default IndexPage;

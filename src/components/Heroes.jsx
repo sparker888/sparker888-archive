@@ -38,28 +38,30 @@ const Heroes = (props) => {
       },
     })
   }, [])
-    useEffect(() => {
+  useEffect(() => {
     let tl = gsap.timeline()
     tl.from(mySkills.current, {
       xPercent: -15,
+      yPercent: 25,
       scrollTrigger: {
-        // Gallery button fades in from the left
+        // Gallery button fades in from the left bottom
         trigger: mySkills.current,
-        start: "top 75%",
-        end: "top center",
+        start: "top bottom",
+        end: "top 75%",
         scrub: 1.5,
       },
     })
   }, [])
-    useEffect(() => {
+  useEffect(() => {
     let tl = gsap.timeline()
     tl.from(myProjects.current, {
       xPercent: 15,
+      yPercent: 25,
       scrollTrigger: {
-        // Projects button fades in from the right
+        // Projects button fades in from the right bottom
         trigger: myProjects.current,
-        start: "top 75%",
-        end: "center 100%",
+        start: "top bottom",
+        end: "top 75%",
         scrub: 1.5,
       },
     })
@@ -73,7 +75,9 @@ const Heroes = (props) => {
       </ImageWrapper>
       <TextCover>
         <div>
-          <H1 css={{ color, justifyContent }} ref={title}>{heroTitle}</H1>
+          <H1 css={{ color, justifyContent }} ref={title}>
+            {heroTitle}
+          </H1>
         </div>
         <FlexRow css={{ flexDirection }}>
           <P>{heroText}</P>

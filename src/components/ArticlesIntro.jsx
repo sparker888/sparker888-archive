@@ -6,23 +6,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
 const ArticlesIntro = () => {
-
   const headline1 = useRef(null)
   const button = useRef(null)
 
   useEffect(() => {
     let tl = gsap.timeline()
-    tl.fromTo(
-      headline1.current,
-      { x: -100, y: 0, opacity: 0 },
-      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
-      "<"
-    ) // bring in top block from left
-  }, [])
-  useEffect(() => {
-    let tl = gsap.timeline()
     tl.from(button.current, {
-      xPercent: -150,
+      xPercent: -35,
       scrollTrigger: {
         // Projects button fades in from the right
         trigger: button.current,
@@ -30,7 +20,7 @@ const ArticlesIntro = () => {
         end: "top center",
         scrub: 1.5,
       },
-    }) 
+    })
   }, [])
 
   return (
@@ -38,20 +28,35 @@ const ArticlesIntro = () => {
       <LeftBlock>
         <BlockWrapper>
           <H1 ref={headline1}>
-            <Span2>Articles on modern development,</Span2>{" "} <Span1>🚁</Span1> 
+            <Span2>Articles on modern development,</Span2> <Span1>🚁</Span1>
             <Span3>marketing, drones and more!</Span3>{" "}
           </H1>
           <P>
-            Here on my blog, my goal is to share some of the coolest things that can be done with Jamstack tools and services. I'm collaborating with other Gatsby developers, so I'll share some insights on projects we work on and news in the community. Occasionally, I'll also publish some <Span4 href="https://i.imgur.com/ElNzCqq.png" target="_blank">cool art</Span4> and weird memes. 
+            Here on my blog, my goal is to share some of the coolest things that
+            can be done with Jamstack tools and services. I'm collaborating with
+            other Gatsby developers, so I'll share some insights on projects we
+            work on and news in the community. Occasionally, I'll also publish
+            some{" "}
+            <Span4 href="https://i.imgur.com/ElNzCqq.png" target="_blank">
+              cool art
+            </Span4>{" "}
+            and weird memes.
           </P>
           <P>
-            Having grown up on the Space Coast of Florida, I have a passion for technology, space and the ocean. I grew up as a space baby with an engineer for a father so I spent a lot of time working on cars, watching NASA launches, and sailing and surfing.  I'll share some stories and beautiful images of Florida, and one of my favorite destinations -- Hawaii!!
+            Having grown up on the Space Coast of Florida, I have a passion for
+            technology, space and the ocean. I grew up as a space baby with an
+            engineer for a father so I spent a lot of time working on cars,
+            watching NASA launches, and sailing and surfing. I'll share some
+            stories and beautiful images of Florida, and one of my favorite
+            destinations -- Hawaii!!
           </P>
           <ButtonWrap>
             <Button1 ref={button}>
-              <Link1 to="../blog/quick-overviewo-of-astro-static-site-generator">Dive In!</Link1>
+              <Link1 to="../blog/quick-overviewo-of-astro-static-site-generator">
+                Dive In!
+              </Link1>
             </Button1>
-              {/* <Button2>
+            {/* <Button2>
                 <Link2 href="/blog">My Blog</Link2>
               </Button2> */}
           </ButtonWrap>
@@ -111,4 +116,3 @@ rounded-md shadow
 const Link1 = styled(Link)`
   ${tw`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-kobe hover:bg-kobe-light md:py-4 md:text-lg md:px-10`}
 `
-

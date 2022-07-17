@@ -6,7 +6,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
 const ProjectsIntro = () => {
-
   const headline1 = useRef(null)
   const headline2 = useRef(null)
   const developer = useRef(null)
@@ -14,28 +13,11 @@ const ProjectsIntro = () => {
 
   useEffect(() => {
     let tl = gsap.timeline()
-    tl.fromTo(
-      headline1.current,
-      { x: -100, y: 0, opacity: 0 },
-      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
-      "<"
-    ) // bring in first block from left
-  }, [])
-  useEffect(() => {
-    let tl = gsap.timeline()
-    tl.fromTo(
-      headline2.current,
-      { x: 100, y: 0, opacity: 0 },
-      { x: 0, y: 0, opacity: 100, duration: 1.5, ease: "back" },
-      "<"
-    ) // bring in second line from left
-  }, [])
-    useEffect(() => {
-      let tl = gsap.timeline()
-      tl.from(developer.current, {
+    tl.from(developer.current, {
       xPercent: -15,
+      yPercent: 50,
       scrollTrigger: {
-        // bring in second block from the right
+        // Developer button fades in from the left bottom
         trigger: developer.current,
         start: "top 75%",
         end: "top center",
@@ -43,12 +25,13 @@ const ProjectsIntro = () => {
       },
     })
   }, [])
-    useEffect(() => {
-      let tl = gsap.timeline()
-     tl.from(marketer.current, {
+  useEffect(() => {
+    let tl = gsap.timeline()
+    tl.from(marketer.current, {
       xPercent: 15,
+      yPercent: 50,
       scrollTrigger: {
-        // Projects button fades in from the right
+        // Marketer button fades in from the right
         trigger: marketer.current,
         start: "top 75%",
         end: "top center",
@@ -73,7 +56,8 @@ const ProjectsIntro = () => {
             </Span6>
             . His talk inspired me to jump back into the development world.
           </H3>
-            <P>Since that time, I have learned React and become proficient with
+          <P>
+            Since that time, I have learned React and become proficient with
             {` `}
             <Span4 href="https://nextjs.org/" target="_blank">
               NEXT.js
@@ -98,11 +82,13 @@ const ProjectsIntro = () => {
             <Span4 href="https://greensock.com/" target="_blank">
               Greensock
             </Span4>
-             {` `}
+            {` `}
             animation in addition to quite a few platform plugins.
           </P>
           <P>
-            My company is now a Gatsby partner and I've teamed up with a few developers to provide support for those wanting to move to a lightning-fast platform that consistently ranks well on Google.
+            My company is now a Gatsby partner and I've teamed up with a few
+            developers to provide support for those wanting to move to a
+            lightning-fast platform that consistently ranks well on Google.
           </P>
           <ButtonWrap>
             <Button1 ref={developer}>
