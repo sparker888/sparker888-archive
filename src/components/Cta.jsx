@@ -33,19 +33,18 @@ const Cta = () => {
       </MainImageWrapper>
       <OuterContentWrapper>
         <InnerContentWrapper>
-          <SubTitle>
-            Let's Do Something Great
-          </SubTitle>
-          <Title>
-            Thanks for your consideration
-          </Title>
+          <SubTitle>Let's Do Something Great</SubTitle>
+          <Title>Thanks for your consideration</Title>
           <Copy>
-            I&#8217;m always interested in supporting talented people and organizations that create amazing things. I can work virtually anywhere, and I'm available for on-site work in the Greater Orlando / Space Coast area. 
+            I&#8217;m always interested in supporting talented people and
+            organizations that create amazing things. I can work virtually
+            anywhere, and I'm available for on-site work in the Greater Orlando
+            / Space Coast area.
           </Copy>
           <ButtonOuterWrap>
             <ButtonInnerWrap>
               <Button2Style to="/contact/">Contact Me</Button2Style>
-              <Button1Style href={`../Sparker888_Résumé_2021.pdf`}>
+              <Button1Style href={`../Sparker888_Résumé_2022.pdf`}>
                 Download Résumé
               </Button1Style>
             </ButtonInnerWrap>
