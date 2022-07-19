@@ -42,11 +42,6 @@ const skills = [
     description:
       " Identifying bottlenecks, Chrome performance tab, DevTools Profiler, Production builds.",
   },
-  {
-    name: "Next.js",
-    description:
-      " I've taken my React skills to the next level by studying and developing numerous projects with the Next.js framework and deploying them on Vercel.",
-  },
 ]
 
 export default function ReactSkills() {
