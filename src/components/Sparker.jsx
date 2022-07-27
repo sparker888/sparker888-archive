@@ -1,7 +1,7 @@
 import tw, { styled } from "twin.macro"
 import React, { useEffect, useRef } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import { getImage } from "gatsby-plugin-image"
+import { getImage, StaticImage } from "gatsby-plugin-image"
 import { BgImage } from "gbimage-bridge"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
@@ -107,10 +107,15 @@ const Sparker = () => {
               <HiddenTop />
               <TopInnerWrapper>
                 <ImageWrapper ref={portrait}>
-                  <ObjectCover
-                    src="https://res.cloudinary.com/gravital-digital/image/upload/v1629628368/sparker-portrait_bv6dzq.jpg"
-                    alt="Stephen Parker"
-                  />
+                  <ObjectCover>
+                    <StaticImage
+                      src="../images/sparker-portrait.jpg"
+                      alt="Stephen Parker"
+                      placeholder="blurred"
+                      layout="fixed"
+                      width={400}
+                    />
+                  </ObjectCover>
                 </ImageWrapper>
               </TopInnerWrapper>
             </TopSection>
@@ -171,7 +176,7 @@ max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0
 const ImageWrapper = tw.div`
 aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1 mb-10
 `
-const ObjectCover = tw.img`
+const ObjectCover = tw.div`
 object-cover object-center rounded-3xl shadow-2xl
 `
 const BottomSection = tw.div`
