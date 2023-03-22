@@ -19,8 +19,8 @@ const Intro = () => {
       logo.current,
       { xPercent: 0, yPercent: 0 },
       {
-        xPercent: 15,
-        yPercent: -15,
+        xPercent: 10,
+        yPercent: -10,
         delay: 1,
         duration: 8,
         repeat: -1,
@@ -96,10 +96,14 @@ const Intro = () => {
         </BlockWrapper>
       </LeftBlock>
       <RightBlock>
-        <Image
-          src="https://res.cloudinary.com/gravital-digital/image/upload/v1633022291/home-intro-bg_mrn4tb.jpg"
-          alt="Performance Websites Space Background"
-        />
+        <ImageWrapper>
+          <StaticImage
+            src="../images/home-intro-bg.jpg"
+            alt="Speed coding background"
+            width={1000}
+            layout="constrained"
+          />
+        </ImageWrapper>
         <LogoWrapper ref={logo}>
           <StaticImage
             src="../images/rocket-logo.svg"
@@ -124,7 +128,7 @@ mx-auto max-w-7xl w-full pt-8 pb-10 text-center lg:py-16 lg:text-left
 const RightBlock = tw.div`
 flex relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full overflow-hidden
 `
-const Image = tw.img`
+const ImageWrapper = tw.div`
 absolute inset-0 w-full h-full object-cover object-top
 `
 const BlockWrapper = tw.div`
