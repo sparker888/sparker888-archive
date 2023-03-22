@@ -20,11 +20,11 @@ const Gallery = (props) => {
   return (
     <div>
       <Layout>
-      <Seo
-        title={galleryName}
-        description={galleryDescription}
-        publicURL={galleryMainImage.localFile.publicURL}
-      />
+        <Seo
+          title={galleryName}
+          description={galleryDescription}
+          publicURL={galleryMainImage.localFile.publicURL}
+        />
         <OuterWrapper>
           <InnerWrapper>
             <GalleryTitle>{galleryName}</GalleryTitle>
@@ -32,11 +32,13 @@ const Gallery = (props) => {
               <SRLWrapper options={options}>
                 <GalleryWrapper>
                   {galleryItems.map(({ localFile }) => (
-                    <ImageWrap key={localFile.name}> 
+                    <ImageWrap key={localFile.name}>
                       <PublicURL href={`${localFile.publicURL}`}>
                         <GatsbyImage
                           image={localFile.childImageSharp.gatsbyImageData}
-                          alt={localFile.name.split("_").join(" ").split(".")[0]}
+                          alt={
+                            localFile.name.split("_").join(" ").split(".")[0]
+                          }
                           className="imageBox"
                           srl_gallery_image="true"
                           srl_overlay="true"
@@ -77,38 +79,43 @@ Gallery.propTypes = {
 export default Gallery
 
 export const pageQuery = graphql`
-query GalleryItemQuery($slug: String!) {
-  item: contentfulGallery(slug: { eq: $slug }) {
-    galleryName
-    galleryMainImage {
-      gatsbyImageData(height: 200, width: 300, quality: 100, placeholder: BLURRED)
-      localFile {
-        publicURL
-      }
+  query GalleryItemQuery($slug: String!) {
+    item: contentfulGallery(slug: { eq: $slug }) {
+      galleryName
+      galleryMainImage {
+        gatsbyImageData(
+          height: 200
+          width: 300
+          quality: 100
+          placeholder: BLURRED
+        )
+        localFile {
+          publicURL
         }
-    galleryDescription {
-      childMdx {
-        body
       }
-    }
-    previousGalleryUrl
-    nextGalleryUrl
-    galleryItems {
-      title
-      localFile {
-        publicURL
-        name
-        childImageSharp {
-          gatsbyImageData(
-            quality: 50
-            transformOptions: {fit: COVER}
-            placeholder: BLURRED
-          )
+      galleryDescription {
+        internal {
+          content
+        }
+      }
+      previousGalleryUrl
+      nextGalleryUrl
+      galleryItems {
+        title
+        localFile {
+          publicURL
+          name
+          childImageSharp {
+            gatsbyImageData(
+              quality: 50
+              transformOptions: { fit: COVER }
+              placeholder: BLURRED
+            )
+          }
         }
       }
     }
   }
-}
 `
 const OuterWrapper = tw.div`
 bg-fogra-light

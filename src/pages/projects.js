@@ -27,7 +27,10 @@ export default Projects
 
 export const query = graphql`
   query ProjectsQuery {
-    project: allContentfulProject (filter: {featured: {eq: true}}, sort: { fields: [order] order: ASC} ) {
+    project: allContentfulProject(
+      filter: { featured: { eq: true } }
+      sort: { order: ASC }
+    ) {
       nodes {
         ...ProjectCard
       }

@@ -30,7 +30,7 @@ export default IndexPage;
 
 export const query = graphql`
   query HomeQuery {
-    heroes: allContentfulHeroes (sort: { fields: [order] order: ASC} ) {
+    heroes: allContentfulHeroes(sort: { order: ASC }) {
       nodes {
         ...HeroSections
       }

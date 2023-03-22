@@ -37,17 +37,17 @@ const ProjectPages = (props) => {
         publicURL={screenshot.localFile.publicURL}
       />
       <OuterWrapper>
-      <ProjectWrapper>
-        <StyledBgImage image={heroImage}>
-          <FlexWrapper>
-            <TextWrapper>
-              <H1>{title}</H1>
-              <Button href={liveUrl} target="_blank">
-                View Live
-              </Button>
-            </TextWrapper>
-          </FlexWrapper>
-        </StyledBgImage>
+        <ProjectWrapper>
+          <StyledBgImage image={heroImage}>
+            <FlexWrapper>
+              <TextWrapper>
+                <H1>{title}</H1>
+                <Button href={liveUrl} target="_blank">
+                  View Live
+                </Button>
+              </TextWrapper>
+            </FlexWrapper>
+          </StyledBgImage>
           <InnerWrapper>
             <SectionOneWrapper>
               <ProjectTitle>
@@ -56,18 +56,18 @@ const ProjectPages = (props) => {
               </ProjectTitle>
               <ProjectIntro>
                 <IntroParagraph>
-                  <MDXRenderer>{intro.childMdx.body}</MDXRenderer>
+                  <MDXRenderer>{intro.internal.content}</MDXRenderer>
                 </IntroParagraph>
               </ProjectIntro>
               <DescriptionOuterWrapper>
                 <DescriptionInnerWrapper>
                   <Description>
                     <DescriptionText>
-                      <MDXRenderer>{description.childMdx.body}</MDXRenderer>
+                      <MDXRenderer>{description.internal.content}</MDXRenderer>
                     </DescriptionText>
                     <SubHead>{subhead}</SubHead>
                     <SummaryText>
-                      <MDXRenderer>{summary.childMdx.body}</MDXRenderer>
+                      <MDXRenderer>{summary.internal.content}</MDXRenderer>
                     </SummaryText>
                   </Description>
                   <ButtonWrapper>
@@ -136,7 +136,7 @@ const ProjectPages = (props) => {
               </ScreenInnerWrapper>
             </ScreenOuterWrapper>
           </InnerWrapper>
-      </ProjectWrapper>
+        </ProjectWrapper>
       </OuterWrapper>
     </Layout>
   )
@@ -161,8 +161,8 @@ export const query = graphql`
     item: contentfulProject(slug: { eq: $slug }) {
       title
       intro {
-        childMdx {
-          body
+        internal {
+          content
         }
       }
       tag
@@ -171,13 +171,13 @@ export const query = graphql`
       liveUrl
       nextProjectUrl
       summary {
-        childMdx {
-          body
+        internal {
+          content
         }
       }
       description {
-        childMdx {
-          body
+        internal {
+          content
         }
       }
       hero {

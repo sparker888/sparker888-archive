@@ -28,7 +28,7 @@ export const query = graphql`
   query GalleryQuery {
     gallery: allContentfulGallery(
       filter: { featured: { eq: true } }
-      sort: { fields: [order], order: ASC }
+      sort: { order: ASC }
     ) {
       nodes {
         ...GalleryCard

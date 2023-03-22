@@ -29,7 +29,7 @@ const ProjectCard = (props) => {
           <ProjectLink to={`/projects/${slug}`}>
             <ProjectTitle>{title}</ProjectTitle>
             <ProjectIntro>
-              <MDXRenderer>{intro.childMdx.body}</MDXRenderer>
+              <MDXRenderer>{intro.internal.content}</MDXRenderer>
             </ProjectIntro>
           </ProjectLink>
         </FlexWrapper>
@@ -55,8 +55,8 @@ export const query = graphql`
     title
     slug
     intro {
-      childMdx {
-        body
+      internal {
+        content
       }
     }
     tag

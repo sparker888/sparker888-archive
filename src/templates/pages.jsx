@@ -28,132 +28,117 @@ const Pages = (props) => {
         publicURL={mainImage.localFile.publicURL}
       />
       <ArticleWrapper>
-          <InnerWrapper>
-              <MainImageWrapper>
-                <GatsbyImage image={image} alt={title} />
-              </MainImageWrapper>
-              <OuterPatternWrapper>
-                <PatternWrapper aria-hidden="true">
-                  <Svg1
-                    width={404}
-                    height={384}
-                    fill="none"
-                    viewBox="0 0 404 384"
+        <InnerWrapper>
+          <MainImageWrapper>
+            <GatsbyImage image={image} alt={title} />
+          </MainImageWrapper>
+          <OuterPatternWrapper>
+            <PatternWrapper aria-hidden="true">
+              <Svg1 width={404} height={384} fill="none" viewBox="0 0 404 384">
+                <defs>
+                  <pattern
+                    id="74b3fd99-0a6f-4271-bef2-e80eeafdf357"
+                    x={0}
+                    y={0}
+                    width={20}
+                    height={20}
+                    patternUnits="userSpaceOnUse"
                   >
-                    <defs>
-                      <pattern
-                        id="74b3fd99-0a6f-4271-bef2-e80eeafdf357"
-                        x={0}
-                        y={0}
-                        width={20}
-                        height={20}
-                        patternUnits="userSpaceOnUse"
-                      >
-                        <Rect1
-                          x={0}
-                          y={0}
-                          width={4}
-                          height={4}
-                          fill="currentColor"
-                        />
-                      </pattern>
-                    </defs>
-                    <rect
-                      width={404}
-                      height={384}
-                      fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)"
+                    <Rect1
+                      x={0}
+                      y={0}
+                      width={4}
+                      height={4}
+                      fill="currentColor"
                     />
-                  </Svg1>
-                  <Svg2
-                    width={404}
-                    height={384}
-                    fill="none"
-                    viewBox="0 0 404 384"
+                  </pattern>
+                </defs>
+                <rect
+                  width={404}
+                  height={384}
+                  fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)"
+                />
+              </Svg1>
+              <Svg2 width={404} height={384} fill="none" viewBox="0 0 404 384">
+                <defs>
+                  <pattern
+                    id="f210dbf6-a58d-4871-961e-36d5016a0f49"
+                    x={0}
+                    y={0}
+                    width={20}
+                    height={20}
+                    patternUnits="userSpaceOnUse"
                   >
-                    <defs>
-                      <pattern
-                        id="f210dbf6-a58d-4871-961e-36d5016a0f49"
-                        x={0}
-                        y={0}
-                        width={20}
-                        height={20}
-                        patternUnits="userSpaceOnUse"
-                      >
-                        <Rect1
-                          x={0}
-                          y={0}
-                          width={4}
-                          height={4}
-                          fill="currentColor"
-                        />
-                      </pattern>
-                    </defs>
-                    <rect
-                      width={404}
-                      height={384}
-                      fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)"
+                    <Rect1
+                      x={0}
+                      y={0}
+                      width={4}
+                      height={4}
+                      fill="currentColor"
                     />
-                  </Svg2>
-                  <Svg3
-                    width={404}
-                    height={384}
-                    fill="none"
-                    viewBox="0 0 404 384"
+                  </pattern>
+                </defs>
+                <rect
+                  width={404}
+                  height={384}
+                  fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)"
+                />
+              </Svg2>
+              <Svg3 width={404} height={384} fill="none" viewBox="0 0 404 384">
+                <defs>
+                  <pattern
+                    id="d3eb07ae-5182-43e6-857d-35c643af9034"
+                    x={0}
+                    y={0}
+                    width={20}
+                    height={20}
+                    patternUnits="userSpaceOnUse"
                   >
-                    <defs>
-                      <pattern
-                        id="d3eb07ae-5182-43e6-857d-35c643af9034"
-                        x={0}
-                        y={0}
-                        width={20}
-                        height={20}
-                        patternUnits="userSpaceOnUse"
-                      >
-                        <Rect1
-                          x={0}
-                          y={0}
-                          width={4}
-                          height={4}
-                          className="text-fogra-lightest"
-                          fill="currentColor"
-                        />
-                      </pattern>
-                    </defs>
-                    <rect
-                      width={404}
-                      height={384}
-                      fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)"
+                    <Rect1
+                      x={0}
+                      y={0}
+                      width={4}
+                      height={4}
+                      className="text-fogra-lightest"
+                      fill="currentColor"
                     />
-                  </Svg3>
-                </PatternWrapper>
-              </OuterPatternWrapper>
-              <MainContentWrapper>
-                <IntroContentWrapper>
-                  <h1>
-                    <CategoryWrapper>{category.name}</CategoryWrapper>
-                    <TitleWrapper>{title}</TitleWrapper>
-                    <Author>{author.name}</Author>
-                    <PublishDate>{publishDate}</PublishDate>
-                  </h1>
-                </IntroContentWrapper>
-                <Body>
-                  <MDXRenderer>{body.childMdx.body}</MDXRenderer>
-                </Body>
-              </MainContentWrapper>
-          </InnerWrapper>
+                  </pattern>
+                </defs>
+                <rect
+                  width={404}
+                  height={384}
+                  fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)"
+                />
+              </Svg3>
+            </PatternWrapper>
+          </OuterPatternWrapper>
+          <MainContentWrapper>
+            <IntroContentWrapper>
+              <h1>
+                <CategoryWrapper>{category.name}</CategoryWrapper>
+                <TitleWrapper>{title}</TitleWrapper>
+                <Author>{author.name}</Author>
+                <PublishDate>{publishDate}</PublishDate>
+              </h1>
+            </IntroContentWrapper>
+            <Body>
+              <MDXRenderer>{body.internal.content}</MDXRenderer>
+            </Body>
+          </MainContentWrapper>
+        </InnerWrapper>
       </ArticleWrapper>
     </Layout>
   )
 }
 
-export default Pages;
+export default Pages
 
 export const query = graphql`
   query ArticleItemQuery($slug: String!) {
     item: contentfulArticle(slug: { eq: $slug }) {
       body {
-        childMdx {
-          body
+        internal {
+          content
         }
       }
       mainImage {

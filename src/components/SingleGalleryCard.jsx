@@ -6,12 +6,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import PropTypes from "prop-types"
 
 const SingleGalleryCard = (props) => {
-  const {
-    slug,
-    galleryName,
-    galleryDescription,
-    galleryMainImage,
-  } = props
+  const { slug, galleryName, galleryDescription, galleryMainImage } = props
 
   const image = getImage(galleryMainImage)
 
@@ -27,7 +22,9 @@ const SingleGalleryCard = (props) => {
           </TagWrapper>
           <ArticleLink to={`/gallery/${slug}`}>
             <ArticleTitle>{galleryName}</ArticleTitle>
-            <ArticleIntro><MDXRenderer>{galleryDescription.childMdx.body}</MDXRenderer></ArticleIntro>
+            <ArticleIntro>
+              <MDXRenderer>{galleryDescription.internal.content}</MDXRenderer>
+            </ArticleIntro>
           </ArticleLink>
         </FlexWrapper>
       </ContentWrapper>
@@ -50,11 +47,16 @@ export const query = graphql`
     id
     galleryName
     galleryMainImage {
-      gatsbyImageData(height: 200, width: 300, quality: 100, placeholder: BLURRED)
-        }
+      gatsbyImageData(
+        height: 200
+        width: 300
+        quality: 100
+        placeholder: BLURRED
+      )
+    }
     galleryDescription {
-      childMdx {
-        body
+      internal {
+        content
       }
     }
   }
