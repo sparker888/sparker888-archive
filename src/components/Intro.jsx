@@ -19,8 +19,8 @@ const Intro = () => {
       logo.current,
       { xPercent: 0, yPercent: 0 },
       {
-        xPercent: 15,
-        yPercent: -15,
+        xPercent: 10,
+        yPercent: -10,
         delay: 1,
         duration: 8,
         repeat: -1,
