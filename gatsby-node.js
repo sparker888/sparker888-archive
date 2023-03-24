@@ -1,5 +1,18 @@
 const path = require(`path`)
 
+// Added due to simple-react-lightbox package trying to access the process module, which is no longer available by default in Webpack 5
+
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      fallback: {
+        process: require.resolve("process/browser"),
+      },
+    },
+  })
+}
+
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 

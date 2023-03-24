@@ -1,7 +1,7 @@
 import tw, { css } from "twin.macro"
 import React, { useEffect, useRef } from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import { CheckIcon } from "@heroicons/react/outline"
+import { CheckIcon } from "@heroicons/react/24/outline"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)

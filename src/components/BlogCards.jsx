@@ -1,8 +1,7 @@
 import tw from "twin.macro"
 import React, { useEffect, useRef } from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import { getImage } from "gatsby-plugin-image"
-import { BgImage } from "gbimage-bridge"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 import BlogCard from "./BlogCard"
 import { gsap } from "gsap"
@@ -60,7 +59,7 @@ const BlogCards = ({ items }) => {
 
   return (
     <Container>
-      <StyledBgImage image={pluginImage}>
+      <StyledPlaceholderImage image={pluginImage}>
         <OuterWrapper>
           <Inset>
             <SetHeight />
@@ -82,7 +81,7 @@ const BlogCards = ({ items }) => {
             </CardsWrapper>
           </InnerWrapper>
         </OuterWrapper>
-      </StyledBgImage>
+      </StyledPlaceholderImage>
     </Container>
   )
 }
@@ -96,7 +95,7 @@ export default BlogCards
 const Container = tw.div`
 w-full
 `
-const StyledBgImage = tw(BgImage)`
+const StyledPlaceholderImage = tw(GatsbyImage)`
 w-full bg-center bg-cover
 `
 const OuterWrapper = tw.div`

@@ -1,8 +1,7 @@
 import tw from "twin.macro"
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import { getImage } from "gatsby-plugin-image"
-import { BgImage } from "gbimage-bridge"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const ProjectWrapper = ({ children }) => {
   const { placeholderImage } = useStaticQuery(
@@ -25,13 +24,11 @@ const ProjectWrapper = ({ children }) => {
 
   return (
     <Container>
-      <StyledBgImage image={pluginImage}>
+      <StyledPlaceholderImage image={pluginImage}>
         <OuterWrapper>
-          <ProjectInnerWrap>
-            {children}
-          </ProjectInnerWrap>
+          <ProjectInnerWrap>{children}</ProjectInnerWrap>
         </OuterWrapper>
-      </StyledBgImage>
+      </StyledPlaceholderImage>
     </Container>
   )
 }
@@ -41,7 +38,7 @@ export default ProjectWrapper
 const Container = tw.div`
 w-full
 `
-const StyledBgImage = tw(BgImage)`
+const StyledPlaceholderImage = tw(GatsbyImage)`
 w-full bg-center bg-cover
 `
 const OuterWrapper = tw.div`

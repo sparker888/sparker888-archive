@@ -1,8 +1,7 @@
 import tw, { styled } from "twin.macro"
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { BgImage } from "gbimage-bridge"
 import PropTypes from "prop-types"
 import Layout from "../layouts/Layout"
 import Seo from "../components/Seo"
@@ -38,7 +37,7 @@ const ProjectPages = (props) => {
       />
       <OuterWrapper>
         <ProjectWrapper>
-          <StyledBgImage image={heroImage}>
+          <StyledPlaceholderImage image={heroImage}>
             <FlexWrapper>
               <TextWrapper>
                 <H1>{title}</H1>
@@ -47,7 +46,7 @@ const ProjectPages = (props) => {
                 </Button>
               </TextWrapper>
             </FlexWrapper>
-          </StyledBgImage>
+          </StyledPlaceholderImage>
           <InnerWrapper>
             <SectionOneWrapper>
               <ProjectTitle>
@@ -205,7 +204,7 @@ bg-almond-light pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-24
 const SectionOneWrapper = tw.section`
 sm: mx-12
 `
-const StyledBgImage = tw(BgImage)`
+const StyledPlaceholderImage = tw(GatsbyImage)`
 w-full bg-center bg-cover h-128
 `
 const FlexWrapper = tw.div`

@@ -1,6 +1,6 @@
 import tw, { css } from "twin.macro"
 import React from "react"
-import { ChatAlt2Icon } from "@heroicons/react/outline"
+import { ChatBubbleLeftRightIcon } from "@heroicons/react/24/outline"
 
 const Blockquote = ({ children }) => {
   return (
@@ -8,7 +8,7 @@ const Blockquote = ({ children }) => {
       <OuterWrapper>
         <InnerWrapper>
           <PatternWrapper>
-          <ChatAlt2Icon
+          <ChatBubbleLeftRightIcon
             aria-hidden="true"
             css={css`
                 position: absolute;

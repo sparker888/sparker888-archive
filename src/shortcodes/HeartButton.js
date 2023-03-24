@@ -1,6 +1,6 @@
 import React from "react"
 import { styled, css } from "twin.macro"
-import { HeartIcon } from "@heroicons/react/outline"
+import { HeartIcon } from "@heroicons/react/24/outline"
 
 const HeartButton = () => {
   const [value, setValue] = React.useState(0)

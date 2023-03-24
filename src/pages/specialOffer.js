@@ -2,8 +2,7 @@ import tw, { styled } from "twin.macro"
 import React, { useState, useEffect, useRef } from "react"
 import Layout from "../layouts/Layout"
 import { navigate, graphql, useStaticQuery } from "gatsby"
-import { getImage } from "gatsby-plugin-image"
-import { BgImage } from "gbimage-bridge"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
@@ -12,12 +11,11 @@ gsap.registerPlugin(ScrollTrigger)
 // This function encodes the captured form data in the format that Netlify's backend requires
 function encode(data) {
   return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
 }
 
 const Contact = () => {
-
   const [name, setName] = useState("")
 
   const handleChange = (e) => {
@@ -26,29 +24,27 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     // Prevent the default onSubmit behavior
-    event.preventDefault();
+    event.preventDefault()
     // POST the encoded form with the content-type header that's required for a text submission
     // Note that the header will be different for POSTing a file
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ 
-        "form-name": event.target.getAttribute("name"), 
-        ...name
-      })
+      body: encode({
+        "form-name": event.target.getAttribute("name"),
+        ...name,
+      }),
     })
       // On success, redirect to the custom success page using Gatsby's `navigate` helper function
       .then(() => navigate("/thank-you/"))
       // On error, show the error in an alert
-      .catch(error => alert(error));
-  };
+      .catch((error) => alert(error))
+  }
 
   const { placeholderImage } = useStaticQuery(
     graphql`
       query {
-        placeholderImage: file(
-          relativePath: { eq: "nebula-bg-opt.jpg" }
-        ) {
+        placeholderImage: file(relativePath: { eq: "nebula-bg-opt.jpg" }) {
           childImageSharp {
             gatsbyImageData(
               quality: 25
@@ -97,260 +93,287 @@ const Contact = () => {
   }, [])
 
   return (
-    <StyledBgImage image={pluginImage}>
-    <Layout>
-      {/* Header */}
-      
+    <StyledPlaceholderImage image={pluginImage}>
+      <Layout>
+        {/* Header */}
+
         <OuterHeaderWrap>
           <InnerHeaderWrap>
             <HeaderContentWrap>
-              <HeaderH1 ref={headline}>20% OFF a Full Site Design & Build</HeaderH1>
+              <HeaderH1 ref={headline}>
+                20% OFF a Full Site Design & Build
+              </HeaderH1>
               <HeaderP ref={paragraph1}>
                 This offer will be available to the first three cutomers that{" "}
                 <Span href="https://calendly.com/sparker888/" target="_blank">
                   {" "}
                   book a time on my calendar
                 </Span>
-                . The project I envision for this discount is a straightforward four-to-six-page website with a blog. 
-                <HeaderP ref={paragraph2}>I'll work with you on the corporate branding and message as well as assist with imagery and photography. These media will be separate costs. Either you can provide, or I can provide photography and suggest graphics. Many graphics we can get for free though. </HeaderP>
-                <HeaderP ref={paragraph3}>The site will include a feedback/contact page for you as well as Google Analytics with a monthly report automatically emailed to you. The typical cost is $2,500-$3,500. After we have our 30-minute consultation, I'll provide a proposal within 48 hours that details everything and provides the discount. Typical turnaround is 4-6 weeks.
+                . The project I envision for this discount is a straightforward
+                four-to-six-page website with a blog.
+                <HeaderP ref={paragraph2}>
+                  I'll work with you on the corporate branding and message as
+                  well as assist with imagery and photography. These media will
+                  be separate costs. Either you can provide, or I can provide
+                  photography and suggest graphics. Many graphics we can get for
+                  free though.{" "}
+                </HeaderP>
+                <HeaderP ref={paragraph3}>
+                  The site will include a feedback/contact page for you as well
+                  as Google Analytics with a monthly report automatically
+                  emailed to you. The typical cost is $2,500-$3,500. After we
+                  have our 30-minute consultation, I'll provide a proposal
+                  within 48 hours that details everything and provides the
+                  discount. Typical turnaround is 4-6 weeks.
                 </HeaderP>
               </HeaderP>
             </HeaderContentWrap>
           </InnerHeaderWrap>
         </OuterHeaderWrap>
 
-      {/* Contact section */}
-      <ContactSection aria-labelledby="contact-heading">
-        <MainContentOuterWrap>
-          <MainContentInnerWrap>
-            <MainContentGridWrap>
-              {/* Contact information */}
-              <ContactInfoWrap>
-                {/* Decorative angle backgrounds */}
-                <DecorativeWrap aria-hidden="true">
-                  <Svg2
-                    width={343}
-                    height={388}
-                    viewBox="0 0 343 388"
-                    fill="none"
-                    preserveAspectRatio="xMidYMid slice"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M-99 461.107L608.107-246l707.103 707.107-707.103 707.103L-99 461.107z"
-                      fill="url(#linear1)"
-                      fillOpacity=".1"
-                    />
-                    <defs>
-                      <linearGradient
-                        id="linear1"
-                        x1="254.553"
-                        y1="107.554"
-                        x2="961.66"
-                        y2="814.66"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stopColor="#fff" />
-                        <stop offset={1} stopColor="#fff" stopOpacity={0} />
-                      </linearGradient>
-                    </defs>
-                  </Svg2>
-                </DecorativeWrap>
-                <DecorativeWrap2 aria-hidden="true">
-                  <Svg2
-                    width={359}
-                    height={339}
-                    viewBox="0 0 359 339"
-                    fill="none"
-                    preserveAspectRatio="xMidYMid slice"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M-161 382.107L546.107-325l707.103 707.107-707.103 707.103L-161 382.107z"
-                      fill="url(#linear2)"
-                      fillOpacity=".1"
-                    />
-                    <defs>
-                      <linearGradient
-                        id="linear2"
-                        x1="192.553"
-                        y1="28.553"
-                        x2="899.66"
-                        y2="735.66"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stopColor="#fff" />
-                        <stop offset={1} stopColor="#fff" stopOpacity={0} />
-                      </linearGradient>
-                    </defs>
-                  </Svg2>
-                </DecorativeWrap2>
-                <DecorativeWrap3 aria-hidden="true">
-                  <Svg2
-                    width={160}
-                    height={678}
-                    viewBox="0 0 160 678"
-                    fill="none"
-                    preserveAspectRatio="xMidYMid slice"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M-161 679.107L546.107-28l707.103 707.107-707.103 707.103L-161 679.107z"
-                      fill="url(#linear3)"
-                      fillOpacity=".1"
-                    />
-                    <defs>
-                      <linearGradient
-                        id="linear3"
-                        x1="192.553"
-                        y1="325.553"
-                        x2="899.66"
-                        y2="1032.66"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stopColor="#fff" />
-                        <stop offset={1} stopColor="#fff" stopOpacity={0} />
-                      </linearGradient>
-                    </defs>
-                  </Svg2>
-                </DecorativeWrap3>
-                <ContactHeader>My Contact Info</ContactHeader>
-                <ContactP>
-                  You can also reach me using one of the following:
-                </ContactP>
-                <ContactDl>
-                  <dt>
-                    <ScreenReader>Phone number</ScreenReader>
-                  </dt>
-                  <ContactPhoneDd>
-                    <PhoneIcon className="phoneIcon" aria-hidden="true" />
-                    <MarginSpan>+1 407-710-5497</MarginSpan>
-                  </ContactPhoneDd>
-                  <dt>
-                    <ScreenReader>Email</ScreenReader>
-                  </dt>
-                  <ContactMailDd>
-                    <MailIcon className="mailIcon" aria-hidden="true" />
-                    <MarginSpan>sparker888 at google.com</MarginSpan>
-                  </ContactMailDd>
-                </ContactDl>
-              </ContactInfoWrap>
+        {/* Contact section */}
+        <ContactSection aria-labelledby="contact-heading">
+          <MainContentOuterWrap>
+            <MainContentInnerWrap>
+              <MainContentGridWrap>
+                {/* Contact information */}
+                <ContactInfoWrap>
+                  {/* Decorative angle backgrounds */}
+                  <DecorativeWrap aria-hidden="true">
+                    <Svg2
+                      width={343}
+                      height={388}
+                      viewBox="0 0 343 388"
+                      fill="none"
+                      preserveAspectRatio="xMidYMid slice"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M-99 461.107L608.107-246l707.103 707.107-707.103 707.103L-99 461.107z"
+                        fill="url(#linear1)"
+                        fillOpacity=".1"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="linear1"
+                          x1="254.553"
+                          y1="107.554"
+                          x2="961.66"
+                          y2="814.66"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#fff" />
+                          <stop offset={1} stopColor="#fff" stopOpacity={0} />
+                        </linearGradient>
+                      </defs>
+                    </Svg2>
+                  </DecorativeWrap>
+                  <DecorativeWrap2 aria-hidden="true">
+                    <Svg2
+                      width={359}
+                      height={339}
+                      viewBox="0 0 359 339"
+                      fill="none"
+                      preserveAspectRatio="xMidYMid slice"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M-161 382.107L546.107-325l707.103 707.107-707.103 707.103L-161 382.107z"
+                        fill="url(#linear2)"
+                        fillOpacity=".1"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="linear2"
+                          x1="192.553"
+                          y1="28.553"
+                          x2="899.66"
+                          y2="735.66"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#fff" />
+                          <stop offset={1} stopColor="#fff" stopOpacity={0} />
+                        </linearGradient>
+                      </defs>
+                    </Svg2>
+                  </DecorativeWrap2>
+                  <DecorativeWrap3 aria-hidden="true">
+                    <Svg2
+                      width={160}
+                      height={678}
+                      viewBox="0 0 160 678"
+                      fill="none"
+                      preserveAspectRatio="xMidYMid slice"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M-161 679.107L546.107-28l707.103 707.107-707.103 707.103L-161 679.107z"
+                        fill="url(#linear3)"
+                        fillOpacity=".1"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="linear3"
+                          x1="192.553"
+                          y1="325.553"
+                          x2="899.66"
+                          y2="1032.66"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#fff" />
+                          <stop offset={1} stopColor="#fff" stopOpacity={0} />
+                        </linearGradient>
+                      </defs>
+                    </Svg2>
+                  </DecorativeWrap3>
+                  <ContactHeader>My Contact Info</ContactHeader>
+                  <ContactP>
+                    You can also reach me using one of the following:
+                  </ContactP>
+                  <ContactDl>
+                    <dt>
+                      <ScreenReader>Phone number</ScreenReader>
+                    </dt>
+                    <ContactPhoneDd>
+                      <PhoneIcon className="phoneIcon" aria-hidden="true" />
+                      <MarginSpan>+1 407-710-5497</MarginSpan>
+                    </ContactPhoneDd>
+                    <dt>
+                      <ScreenReader>Email</ScreenReader>
+                    </dt>
+                    <ContactMailDd>
+                      <MailIcon className="mailIcon" aria-hidden="true" />
+                      <MarginSpan>sparker888 at google.com</MarginSpan>
+                    </ContactMailDd>
+                  </ContactDl>
+                </ContactInfoWrap>
 
-              {/* Contact form */}
-              <ContactFormWrap>
-                <FormTitle>Feel free to provide me with additional details ahead of time here. Thank you!</FormTitle>
-                <Form
-                  form
-                  name="special-offer-form"
-                  id="sparker888-netlify-form"
-                  method="POST"
-                  onSubmit={handleSubmit}
-                  action="/"
-                  data-netlify="true"
-                  data-netlify-honeypot="bot-field"
-                >
-                  <input type="hidden" name="form-name" value="contact" />
-                  <p hidden>
-                    <label>
-                      Don’t fill this out: <input name="bot-field" />
-                    </label>
-                  </p>
-                  <div>
-                    <LabelFirstName htmlFor="first-name">
-                      First name
-                    </LabelFirstName>
-                    <Mt1>
-                      <InputTextFirstName
-                        type="text"
-                        name="first-name"
-                        id="first-name"
-                        autoComplete="given-name"
-                        onChange={handleChange}
-                      />
-                    </Mt1>
-                  </div>
-                  <div>
-                    <LabelLastName htmlFor="last-name">Last name</LabelLastName>
-                    <Mt1>
-                      <InputTextLastName
-                        type="text"
-                        name="last-name"
-                        id="last-name"
-                        autoComplete="family-name"
-                        onChange={handleChange}
-                      />
-                    </Mt1>
-                  </div>
-                  <div>
-                    <LabelEmail htmlFor="email">Email</LabelEmail>
-                    <Mt1>
-                      <InputEmail
-                        id="email"
-                        name="email"
-                        type="email"
-                        autoComplete="email"
-                        onChange={handleChange}
-                      />
-                    </Mt1>
-                  </div>
-                  <div>
-                    <FlexDiv>
-                      <LabelPhone htmlFor="phone">Phone</LabelPhone>
-                      <SpanPhoneOpt id="phone-optional">Optional</SpanPhoneOpt>
-                    </FlexDiv>
-                    <Mt1>
-                      <InputPhone
-                        type="text"
-                        name="phone"
-                        id="phone"
-                        autoComplete="tel"
-                        aria-describedby="phone-optional"
-                        onChange={handleChange}
-                      />
-                    </Mt1>
-                  </div>
-                  <ColSpan>
-                    <LabelSubject htmlFor="subject">Subject</LabelSubject>
-                    <Mt1>
-                      <InputSubject type="text" name="subject" id="subject" onChange={handleChange} />
-                    </Mt1>
-                  </ColSpan>
-                  <ColSpan>
-                    <FlexDiv>
-                      <LabelMessage htmlFor="message">Message</LabelMessage>
-                      <MessageMax id="message-max">
-                        Max. 500 characters
-                      </MessageMax>
-                    </FlexDiv>
-                    <Mt1>
-                      <TextArea
-                        id="message"
-                        name="message"
-                        rows={4}
-                        aria-describedby="message-max"
-                        defaultValue={""}
-                        onChange={handleChange}
-                      />
-                    </Mt1>
-                  </ColSpan>
-                  <ButtonWrap>
-                    <SubmitButton type="submit">Submit</SubmitButton>
-                  </ButtonWrap>
-                </Form>
-              </ContactFormWrap>
-            </MainContentGridWrap>
-          </MainContentInnerWrap>
-        </MainContentOuterWrap>
-      </ContactSection>
-    </Layout>
-    </StyledBgImage>
+                {/* Contact form */}
+                <ContactFormWrap>
+                  <FormTitle>
+                    Feel free to provide me with additional details ahead of
+                    time here. Thank you!
+                  </FormTitle>
+                  <Form
+                    form
+                    name="special-offer-form"
+                    id="sparker888-netlify-form"
+                    method="POST"
+                    onSubmit={handleSubmit}
+                    action="/"
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field"
+                  >
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p hidden>
+                      <label>
+                        Don’t fill this out: <input name="bot-field" />
+                      </label>
+                    </p>
+                    <div>
+                      <LabelFirstName htmlFor="first-name">
+                        First name
+                      </LabelFirstName>
+                      <Mt1>
+                        <InputTextFirstName
+                          type="text"
+                          name="first-name"
+                          id="first-name"
+                          autoComplete="given-name"
+                          onChange={handleChange}
+                        />
+                      </Mt1>
+                    </div>
+                    <div>
+                      <LabelLastName htmlFor="last-name">
+                        Last name
+                      </LabelLastName>
+                      <Mt1>
+                        <InputTextLastName
+                          type="text"
+                          name="last-name"
+                          id="last-name"
+                          autoComplete="family-name"
+                          onChange={handleChange}
+                        />
+                      </Mt1>
+                    </div>
+                    <div>
+                      <LabelEmail htmlFor="email">Email</LabelEmail>
+                      <Mt1>
+                        <InputEmail
+                          id="email"
+                          name="email"
+                          type="email"
+                          autoComplete="email"
+                          onChange={handleChange}
+                        />
+                      </Mt1>
+                    </div>
+                    <div>
+                      <FlexDiv>
+                        <LabelPhone htmlFor="phone">Phone</LabelPhone>
+                        <SpanPhoneOpt id="phone-optional">
+                          Optional
+                        </SpanPhoneOpt>
+                      </FlexDiv>
+                      <Mt1>
+                        <InputPhone
+                          type="text"
+                          name="phone"
+                          id="phone"
+                          autoComplete="tel"
+                          aria-describedby="phone-optional"
+                          onChange={handleChange}
+                        />
+                      </Mt1>
+                    </div>
+                    <ColSpan>
+                      <LabelSubject htmlFor="subject">Subject</LabelSubject>
+                      <Mt1>
+                        <InputSubject
+                          type="text"
+                          name="subject"
+                          id="subject"
+                          onChange={handleChange}
+                        />
+                      </Mt1>
+                    </ColSpan>
+                    <ColSpan>
+                      <FlexDiv>
+                        <LabelMessage htmlFor="message">Message</LabelMessage>
+                        <MessageMax id="message-max">
+                          Max. 500 characters
+                        </MessageMax>
+                      </FlexDiv>
+                      <Mt1>
+                        <TextArea
+                          id="message"
+                          name="message"
+                          rows={4}
+                          aria-describedby="message-max"
+                          defaultValue={""}
+                          onChange={handleChange}
+                        />
+                      </Mt1>
+                    </ColSpan>
+                    <ButtonWrap>
+                      <SubmitButton type="submit">Submit</SubmitButton>
+                    </ButtonWrap>
+                  </Form>
+                </ContactFormWrap>
+              </MainContentGridWrap>
+            </MainContentInnerWrap>
+          </MainContentOuterWrap>
+        </ContactSection>
+      </Layout>
+    </StyledPlaceholderImage>
   )
 }
 
 export default Contact
 
-const StyledBgImage = tw(BgImage)`
+const StyledPlaceholderImage = tw(GatsbyImage)`
 w-full bg-center bg-cover
 `
 const OuterHeaderWrap = tw.div`

@@ -3,8 +3,7 @@ import React, { useState, useEffect, useRef } from "react"
 import axios from "axios"
 import Layout from "../layouts/Layout"
 import { navigate, graphql, useStaticQuery } from "gatsby"
-import { getImage } from "gatsby-plugin-image"
-import { BgImage } from "gbimage-bridge"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
@@ -85,7 +84,7 @@ const Contact = () => {
   }, [])
 
   return (
-    <StyledBgImage image={pluginImage}>
+    <StyledPlaceholderImage image={pluginImage}>
       <Layout>
         {/* Header */}
 
@@ -325,13 +324,13 @@ const Contact = () => {
           </MainContentOuterWrap>
         </ContactSection>
       </Layout>
-    </StyledBgImage>
+    </StyledPlaceholderImage>
   )
 }
 
 export default Contact
 
-const StyledBgImage = tw(BgImage)`
+const StyledPlaceholderImage = tw(GatsbyImage)`
 w-full bg-center bg-cover
 `
 const OuterHeaderWrap = tw.div`

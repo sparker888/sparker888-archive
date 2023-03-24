@@ -33,6 +33,9 @@ module.exports = {
   plugins: [
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-styled-components",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
@@ -57,17 +60,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-postcss",
-    {
-      resolve: `gatsby-plugin-sharp`,
-      options: {
-        // Defaults used for gatsbyImageData and StaticImage
-        defaults: {},
-        // Relates to "options.failOn" in https://sharp.pixelplumbing.com/api-constructor#parameters
-        failOn: `warning`,
-      },
-    },
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-styled-components",
     "gatsby-plugin-mdx-embed",
     {
       resolve: "gatsby-plugin-mdx",
@@ -107,12 +99,6 @@ module.exports = {
         includeInDevelopment: false,
         defaultDataLayer: { platform: `gatsby` },
         enableWebVitalsTracking: true,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-facebook-pixel`,
-      options: {
-        pixelId: "448796836214637",
       },
     },
   ],

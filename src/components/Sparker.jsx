@@ -1,8 +1,7 @@
 import tw, { styled } from "twin.macro"
 import React, { useEffect, useRef } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import { getImage, StaticImage } from "gatsby-plugin-image"
-import { BgImage } from "gbimage-bridge"
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
@@ -99,7 +98,7 @@ const Sparker = () => {
   }, [])
 
   return (
-    <StyledBgImage image={pluginImage}>
+    <StyledPlaceholderImage image={pluginImage}>
       <Wrapper>
         <InnerWrapper>
           <Grid>
@@ -146,7 +145,7 @@ const Sparker = () => {
           </Grid>
         </InnerWrapper>
       </Wrapper>
-    </StyledBgImage>
+    </StyledPlaceholderImage>
   )
 }
 
@@ -155,7 +154,7 @@ export default Sparker
 const Wrapper = tw.div`
 relative py-16 bg-transparent
 `
-const StyledBgImage = tw(BgImage)`
+const StyledPlaceholderImage = tw(GatsbyImage)`
 w-full bg-center bg-cover
 `
 const InnerWrapper = tw.div`

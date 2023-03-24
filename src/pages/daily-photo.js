@@ -1,22 +1,21 @@
 import tw, { styled, css } from "twin.macro"
 import React, { useEffect, useRef } from "react"
-import { graphql, useStaticQuery } from 'gatsby'
-import { getImage } from 'gatsby-plugin-image';
-import { BgImage } from 'gbimage-bridge';
-import Layout from '../layouts/Layout';
+import { graphql, useStaticQuery } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import Layout from "../layouts/Layout"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
 const DailyPhoto = () => {
   const { placeholderImage123 } = useStaticQuery(
-          graphql`
+    graphql`
       query {
         placeholderImage123: file(relativePath: { eq: "palm-tree.jpg" }) {
           childImageSharp {
             gatsbyImageData(
-              quality: 50, 
-              webpOptions: {quality: 70}, 
+              quality: 50
+              webpOptions: { quality: 70 }
               width: 2000
             )
           }
@@ -24,9 +23,9 @@ const DailyPhoto = () => {
       }
     `
   )
-  const pluginImage = getImage(placeholderImage123);
+  const pluginImage = getImage(placeholderImage123)
 
-  const StyledBgImage = tw(BgImage)`
+  const StyledPlaceholderImage = tw(GatsbyImage)`
   min-h-screen
   `
   let headline1 = useRef(null)
@@ -57,21 +56,28 @@ const DailyPhoto = () => {
 
   return (
     <Layout>
-      <StyledBgImage image={pluginImage}>
-      <OuterWrapper>
-      <InnerWrapper>
-        <H2>
-          <Span ref={headline1}>Kahuna Nui Hale Kealohalani Makua</Span>
-          <Span ref={headline2}>“Love all you see, including yourself.”</Span>
-          <Span ref={headline3} css={css`
-                      text-align: right;
-                      margin-top: 2rem;
-                      margin-right: 2rem;
-                    `}>— Hale Makua</Span>
-        </H2>
-      </InnerWrapper>
-    </OuterWrapper>
-      </StyledBgImage>
+      <StyledPlaceholderImage image={pluginImage}>
+        <OuterWrapper>
+          <InnerWrapper>
+            <H2>
+              <Span ref={headline1}>Kahuna Nui Hale Kealohalani Makua</Span>
+              <Span ref={headline2}>
+                “Love all you see, including yourself.”
+              </Span>
+              <Span
+                ref={headline3}
+                css={css`
+                  text-align: right;
+                  margin-top: 2rem;
+                  margin-right: 2rem;
+                `}
+              >
+                — Hale Makua
+              </Span>
+            </H2>
+          </InnerWrapper>
+        </OuterWrapper>
+      </StyledPlaceholderImage>
     </Layout>
   )
 }

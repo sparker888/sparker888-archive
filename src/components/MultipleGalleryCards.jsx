@@ -1,17 +1,14 @@
 import tw from "twin.macro"
 import React, { useEffect, useRef } from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import { getImage } from "gatsby-plugin-image"
-import { BgImage } from "gbimage-bridge"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 import SingleGalleryCard from "./SingleGalleryCard"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
-const MultipleGalleryCards
- = ({ items }) => {
-
+const MultipleGalleryCards = ({ items }) => {
   const { placeholderImage } = useStaticQuery(
     graphql`
       query {
@@ -46,8 +43,8 @@ const MultipleGalleryCards
       },
     })
   }, [])
-    useEffect(() => {
-    let tl = gsap.timeline({ defaults: { opacity: 0 } })    
+  useEffect(() => {
+    let tl = gsap.timeline({ defaults: { opacity: 0 } })
     tl.from(headline2.current, {
       xPercent: 5,
       scrollTrigger: {
@@ -57,51 +54,49 @@ const MultipleGalleryCards
         end: "top 40%",
         scrub: 1.5,
       },
-    }) 
+    })
   }, [])
 
   return (
     <Container>
-      <StyledBgImage image={pluginImage}>
+      <StyledPlaceholderImage image={pluginImage}>
         <OuterWrapper>
           <Inset>
             <SetHeight />
           </Inset>
           <InnerWrapper>
             <TitleWrapper>
-              <H2 ref={headline1}>
-                My Featured Galleries
-              </H2>
+              <H2 ref={headline1}>My Featured Galleries</H2>
               <P ref={headline2}>
-                My kit includes several Sony Alpha cameras and two drones including the new DJI Mavic 3 that features a Hasselblad camera and 4K 60fps for fantastic slow motion video.
+                My kit includes several Sony Alpha cameras and two drones
+                including the new DJI Mavic 3 that features a Hasselblad camera
+                and 4K 60fps for fantastic slow motion video.
               </P>
             </TitleWrapper>
             <CardsWrapper>
-                {items.map(item => (
-                    <CardsInnerWrap key={item.id}>
-                    <SingleGalleryCard {...item} />
-                    </CardsInnerWrap>
-                ))}
+              {items.map((item) => (
+                <CardsInnerWrap key={item.id}>
+                  <SingleGalleryCard {...item} />
+                </CardsInnerWrap>
+              ))}
             </CardsWrapper>
           </InnerWrapper>
         </OuterWrapper>
-      </StyledBgImage>
+      </StyledPlaceholderImage>
     </Container>
   )
 }
 
-MultipleGalleryCards
-.propTypes = {
-    items: PropTypes.arrayOf(PropTypes.object).isRequired,
-  }
+MultipleGalleryCards.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+}
 
 export default MultipleGalleryCards
-
 
 const Container = tw.div`
 w-full
 `
-const StyledBgImage = tw(BgImage)`
+const StyledPlaceholderImage = tw(GatsbyImage)`
 w-full bg-center bg-cover
 `
 const OuterWrapper = tw.div`

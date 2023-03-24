@@ -1,6 +1,6 @@
 import React from "react"
 import tw, { css } from "twin.macro"
-import { ArrowCircleUpIcon } from "@heroicons/react/solid"
+import { ArrowUpCircleIcon } from "@heroicons/react/24/solid"
 import ScrollUp from "react-scrollup-lite"
 
 export default function ScrollButton() {
@@ -12,7 +12,7 @@ export default function ScrollButton() {
       className="scroll-up"
     >
       <ScrollButtonStyle>
-        <ArrowCircleUpIcon
+        <ArrowUpCircleIcon
           aria-hidden="true"
           css={css`
             position: absolute;
@@ -30,9 +30,3 @@ export default function ScrollButton() {
 const ScrollButtonStyle = tw.button`
 flex items-center justify-center rounded-full border border-transparent px-4 py-3 hover:bg-white
 `
-
-{
-  /* const ArrowStyle = tw.div`
-h-0 w-0 text-fogra-lightest group-hover:animate-bounce group-hover:text-amber md:h-16 md:w-16
-` */
-}
